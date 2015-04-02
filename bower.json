@@ -1,0 +1,8 @@
+{
+    "name": "hoshudojo",
+    "version": "2.0.0",
+    "dependencies": {
+        "modularized-normalize-scss": "3.0.2",
+        "include-media": "~1.1.2"
+    }
+}

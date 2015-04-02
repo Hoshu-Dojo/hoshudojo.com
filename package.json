@@ -1,0 +1,8 @@
+{
+    "name": "hoshudojo",
+    "siteUrl": "http://www.hoshudojo.com",
+    "version": "2.0.0",
+    "dependencies": {
+        "grunt": "0.4.5"
+    }
+}

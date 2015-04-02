@@ -9,10 +9,10 @@
 # By default all files are ignored.  You'll need to whitelist
 # any mu-plugins, plugins, or themes you want to include in the repo.
 #
-# To ignore uncommitted changes in a file that is already tracked, use 
+# To ignore uncommitted changes in a file that is already tracked, use
 # git update-index --assume-unchanged
 #
-# To stop tracking a file that is currently tracked, use 
+# To stop tracking a file that is currently tracked, use
 # git rm --cached
 #
 # Change Log:
@@ -84,12 +84,20 @@ Thumbs.db
 # track these files, if they exist
 !.gitignore
 !.editorconfig
+!.bowerrc
 !README.md
 !CHANGELOG.md
 !composer.json
+!package.json
+!bower.json
+!Gemfile
+!Gemfile.lock
+!Gruntfile.js
+
+# Whitelisted directories
+!node_modules/
+!bower_components/
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/example-theme/
+!wp-content/themes/hoshu-dojo-theme/
