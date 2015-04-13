@@ -1,0 +1,54 @@
+/*!
+Theme Name: Hoshu Dojo
+Author: Jeff Kamo
+Author URI: https://www.jeffkamo.com/
+Version: 1.0
+License: MIT
+License URI: https://tldrlegal.com/license/mit-license
+*/
+
+
+// Stylesheet
+// ===
+
+@charset 'UTF-8';
+
+
+// Utilities
+// ---
+
+// @import 'styles/utilities';
+
+
+// Base
+// ---
+//
+// Baseline and default styles for native elements.
+//
+// 1. We use Normalize to make browsers render all elements more consistently
+//    and in line with modern standards. You could replace this with a reset if
+//    you prefer.
+// 2. We use Vellum (http://github.com/mobify/vellum) as our default project
+//    styles. These contain a sane set of defaults that should get changed on
+//    every project as needed.
+
+// @import 'styles/normalize'; // 1
+@import 'base'; // 2
+
+
+// Components
+// ----------
+//
+// Styles for a set of reusable, composable UI modules. These are the building
+// blocks for a site, and should comprise the bulk of the styles.
+
+// @import 'styles/components';
+
+
+// Templates
+// ---------
+//
+// Template-specific styles. Can be used for layout and – sparingly – for
+// page-specific tweaks.
+
+// @import 'styles/templates';
