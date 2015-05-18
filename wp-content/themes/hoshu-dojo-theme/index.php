@@ -13,64 +13,132 @@
             <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
 
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,100,700,400' rel='stylesheet' type='text/css'>
+
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
 
-        <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
+        <a class="skip-link u-visually-hidden" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header class="t-home__hero">
+            <div class="c-splash-card">
+                <div class="c-splash-card__banner">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/src/img/home-banner-mobile.jpg" alt="Photograph of Thomas Groendal and Ben Lew facing off in a Jodo kata" width="320" />
+                </div>
+
+                <div class="c-splash-card__overlay">
+                    <h1>
+                        <span>Hoshu Dojo</span>
+                        <span class="u-visually-hidden">|</span>
+                        <span class="l-japanese u-white">豊州道場</span>
+                    </h1>
+
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/src/img/logo-mobile.png" alt="Hoshu Dojo Logo" width="78" />
+                </div>
+
+                <div class="c-splash-card__content">
+                    <p class="c-h6">Martial Arts, Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</p>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="c-nav-bar">
+                <li class="c-nav-bar__item">
+                    <a href="#" class="c-nav-bar__link">Menu</a>
+                </li>
+                <li class="c-nav-bar__item">
+                    <a href="#" class="c-nav-bar__link">About</a>
+                </li>
+                <li class="c-nav-bar__item">
+                    <a href="#" class="c-nav-bar__link">Location</a>
+                </li>
+                <li class="c-nav-bar__item">
+                    <a href="#" class="c-nav-bar__link">Events</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="t-home__about">
+            <h2 class="u-visually-hidden">About</h2>
+            <p>Practice Moving Zen – Experience Traditional Japanese Martial Arts</p>
+
+            <h3>Shindo Muso Ryu Jodo</h3>
+            <p>Feel like a bad ass while weilding a stick. Crush your opponents and build your confidence, all at once!</p>
+
+            <h3>Daito Ryu Aikijujutsu</h3>
+            <p>Not unlike Jiu Jitsu, learn to tear enemies in half with your bare hands – old school style!</p>
         </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
+        <div class="t-home__instructor">
+            <h2>Head Instructor</h2>
+            <p>Read <a href="#">about Goto Sensei</a> who spent ten years in Japan, including a year in Nagoya and Tokyo as something <a href="#">his Q&amp;A blog</a> for something and all that about.</p>
+            <p><a href="#">View all instructors</a></p>
+            <a href="#" class="c-button">Contact Instructor</a>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <div class="t-home__locations">
+            <h2>Locations</h2>
+            <p></p>
+            <p><a href="#"></a></p>
+            <a href="#" class="c-button"></a>
+        </div>
 
-        <script src="js/main.js"></script>
+        <div class="t-home__events">
+            <h2>Upcoming Events</h2>
+            <p></p>
+            <p><a href="#"></a></p>
+            <a href="#" class="c-button"></a>
+        </div>
+
+        <div class="t-home__blog">
+            <h2>Blog</h2>
+            <p></p>
+            <p><a href="#"></a></p>
+            <a href="#" class="c-button"></a>
+        </div>
+
+        <div class="t-home__contact">
+            <h2>Ask a Question</h2>
+            <p></p>
+            <p><a href="#"></a></p>
+            <a href="#" class="c-button"></a>
+        </div>
+
+        <footer>
+            <h2>Site Content</h2>
+
+            <h3>Language</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <h3>Social</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <h3>Navigation</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div class="">© Copyright 2012 – 2015</div>
+        </footer>
+
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script-->
+
+        <!--script src="js/main.js"></script-->
     </body>
 </html>

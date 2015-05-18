@@ -1,3 +1,22 @@
-html {
-    background: red;
-}
+// Base
+// ===
+
+
+// Normalize
+// ---
+
+@import 'base/normalize';
+
+
+// Global
+// ---
+
+@import 'base/global';
+
+
+// Other Base Styles
+// ---
+
+@import 'base/document';
+@import 'base/list';
+@import 'base/typography';

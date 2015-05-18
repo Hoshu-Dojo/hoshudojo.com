@@ -1,0 +1,26 @@
+// Headings
+// ===
+
+.c-h1 {
+    @extend %h1;
+}
+
+.c-h2 {
+    @extend %h2;
+}
+
+.c-h3 {
+    @extend %h3;
+}
+
+.c-h4 {
+    @extend %h4;
+}
+
+.c-h5 {
+    @extend %h5;
+}
+
+.c-h6 {
+    @extend %h6;
+}

@@ -1,0 +1,32 @@
+// Nav Bar
+// ===
+
+.c-nav-bar {
+    display: flex;
+    padding: 1rem 0;
+
+    background: #000;
+}
+
+
+// Item
+// ---
+
+.c-nav-bar__item {
+    flex: 1 1 auto;
+
+    text-align: center;
+}
+
+
+// Link
+// ---
+
+.c-nav-bar__link {
+    display: block;
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+}

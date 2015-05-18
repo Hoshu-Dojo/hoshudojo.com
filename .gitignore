@@ -101,3 +101,11 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/hoshu-dojo-theme/
+
+# ignore files for sure!
+*.scssc
+*.sass-cache
+*.css.map
+*.map
+wp-content/themes/hoshu-dojo-theme/assets/styles/stylesheet.css.map
+node_modules/
