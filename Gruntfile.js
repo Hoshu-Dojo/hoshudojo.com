@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                     ]
                 },
 				files: {
-					'wp-content/themes/hoshu-dojo-theme/stylesheet.css': 'wp-content/themes/hoshu-dojo-theme/src/styles/stylesheet.scss',
+					'wp-content/themes/hoshu-dojo-theme/style.css': 'wp-content/themes/hoshu-dojo-theme/src/styles/style.scss',
 				}
 			}
 		},
