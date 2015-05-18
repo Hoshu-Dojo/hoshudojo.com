@@ -7,7 +7,7 @@
         <meta name="description" content="Hoshu Dojo – Martials Arts, Shindo Muso Ryu and Daito Ryu Aikijujutsus">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/stylesheet.css">
+        <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
 
         <!--[if lt IE 9]>
             <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/html5-3.6-respond-1.4.2.min.js"></script>
