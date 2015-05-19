@@ -5,49 +5,15 @@
 }
 
 
-// Hero Logo
+// Hero
 // ---
-//
-// I use this section to create a unique layout for the Logo and the site title
-//
-// 1. Absolutely position the logo image relative the the hero logo container
-// 2. Set `display: block` to ensure flexbox works
 
 .t-home__hero {
-    position: relative; // 1
 
-    .c-splash-card__banner img {
-        width: 100%;
-    }
+    .c-logo {
+        margin-bottom: -8rem;
 
-    .c-splash-card__overlay img {
-        position: absolute; // 1
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        margin: auto;
-    }
-
-    h1 {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 0;
-    }
-
-    span {
-        display: block; // 2
-
-        // Logo spacer
-        &:last-child::after {
-            content: '';
-
-            display: block;
-            height: 78px;
-            width: 78px;
-            margin: 1.5rem 0;
-        }
+        transform: translateY(-50%);
     }
 }
 
@@ -69,49 +35,13 @@
 
 // Instructor Section
 // ---
-//
-// 1. Allow the content to collapse over top of the image
-// 2. Allow this much of the image to peek through above of the content
 
 .t-home__instructor {
-    position: relative; // 1
-    padding-top: 10rem; // 2
-
-    .c-sheet {
-        position: relative;
-        z-index: $stage-layer;
-
-        background: rgba(255, 255, 255, 0.7);
-    }
-
-    img {
-        position: absolute; // 1
-        top: 0;
-        z-index: $backdrop-layer; // 1
-    }
 }
 
 
 // Location Section
 // ---
-//
-// 1. Allow the content to collapse over top of the image
-// 2. Allow this much of the image to peek through above of the content
 
 .t-home__locations {
-    position: relative; // 1
-    padding-top: 10rem; // 2
-
-    .c-sheet {
-        position: relative;
-        z-index: $stage-layer;
-
-        background: rgba(255, 255, 255, 0.7);
-    }
-
-    img {
-        position: absolute; // 1
-        top: 0;
-        z-index: $backdrop-layer; // 1
-    }
 }

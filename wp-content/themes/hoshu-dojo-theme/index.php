@@ -2,22 +2,18 @@
 
 <header class="t-home__hero">
     <div class="c-splash-card">
-        <div class="c-splash-card__banner">
-            <img src="<?php getImgDirectory(); ?>/home-banner-mobile.jpg" alt="Photograph of Thomas Groendal and Ben Lew facing off in a Jodo kata" width="320" />
-        </div>
-
-        <div class="c-splash-card__overlay">
-            <h1>
-                <span>Hoshu Dojo</span>
-                <span class="u-visually-hidden">|</span>
-                <span class="l-japanese u-white">豊州道場</span>
-            </h1>
-
-            <img src="<?php getImgDirectory(); ?>/logo-mobile.png" alt="Hoshu Dojo Logo" width="78" />
-        </div>
+        <aside class="c-splash-card__banner">
+            <img src="<?php getImgDirectory(); ?>/home-banner-mobile.jpg" class="c-splash-card__image" alt="Photograph of Thomas Groendal and Ben Lew facing off in a Jodo kata" width="320" />
+        </aside>
 
         <div class="c-splash-card__content">
-            <p class="c-h3 u-weight--light">Martial Arts, Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</p>
+            <?php component('logo'); ?>
+
+            <div class="c-sheet">
+                <p class="c-h3">
+                    <span class="u-weight--light">Martial Arts, Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</span>
+                </p>
+            </div>
         </div>
     </div>
 </header>
@@ -53,27 +49,38 @@
 </section>
 
 <section class="t-home__instructor">
-    <img src="<?php getImgDirectory(); ?>/head-instructor-banner.jpg" alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" />
-    <div class="c-sheet">
-        <h2>Head Instructor</h2>
-        <p>Read <a href="#">about Goto Sensei</a> who spent ten years in Japan, including a year in Nagoya and Tokyo as something <a href="#">his Q&amp;A blog</a> for something and all that about.</p>
-        <p><a href="#">View all instructors</a></p>
-        <a href="#" class="c-button">Contact Instructor</a>
+    <div class="c-overlay-card">
+        <img src="<?php getImgDirectory(); ?>/head-instructor-banner.jpg" class="c-overlay-card__image" alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" />
+
+        <div class="c-overlay-card__content">
+            <div class="c-sheet">
+                <h2>Head Instructor</h2>
+                <p>Read <a href="#">about Goto Sensei</a> who spent ten years in Japan, including a year in Nagoya and Tokyo as something <a href="#">his Q&amp;A blog</a> for something and all that about.</p>
+                <p><a href="#">View all instructors</a></p>
+                <a href="#" class="c-button">Contact Instructor</a>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="t-home__locations">
-    <img src="<?php getImgDirectory(); ?>/location-banner.jpg" alt="Photo of a classroom with students throughout" />
-    <div class="c-sheet">
-        <h2>Locations</h2>
-        <ul>
-            <li>Hoshu Jodokai – Oita, Japan</li>
-            <li>Portland Dojo – Oregan, United States</li>
-            <li>Vancouver Dojo – British Columbia, Canada</li>
-            <li>Cancun Dojo – Quintana Roo, Mexico</li>
-            <li>Long Distance Learning – North America</li>
-        </ul>
-        <a href="#" class="c-button">Find Location Near You</a>
+    <div class="c-overlay-card">
+        <div class="c-overlay-card__image">
+            <img src="<?php getImgDirectory(); ?>/location-banner.jpg" alt="Photo of a classroom with students throughout" />
+        </div>
+        <div class="c-overlay-card__content">
+            <div class="c-sheet">
+                <h2>Locations</h2>
+                <ul>
+                    <li>Hoshu Jodokai – Oita, Japan</li>
+                    <li>Portland Dojo – Oregan, United States</li>
+                    <li>Vancouver Dojo – British Columbia, Canada</li>
+                    <li>Cancun Dojo – Quintana Roo, Mexico</li>
+                    <li>Long Distance Learning – North America</li>
+                </ul>
+                <a href="#" class="c-button">Find Location Near You</a>
+            </div>
+        </div>
     </div>
 </section>
 

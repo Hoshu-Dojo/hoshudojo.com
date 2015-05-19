@@ -1,11 +1,9 @@
 // Splash Card
 // ===
 //
-// A UI card that contains a banner, content and an overlay item between the
-// banner and content.
+// A UI card that contains a banner and center aligned content.
 
 .c-splash-card {
-    text-align: center;
 }
 
 
@@ -17,13 +15,11 @@
 }
 
 
-// Overlay
+// Image
 // ---
 
-.c-splash-card__overlay {
-    margin-bottom: -8rem;
-
-    transform: translateY(-50%);
+.c-splash-card__image {
+    width: 100%;
 }
 
 
@@ -31,5 +27,5 @@
 // ---
 
 .c-splash-card__content {
-    padding: 1rem 2rem;
+    text-align: center;
 }

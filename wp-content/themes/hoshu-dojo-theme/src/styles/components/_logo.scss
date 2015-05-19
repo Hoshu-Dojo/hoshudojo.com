@@ -1,0 +1,70 @@
+// Logo
+// ===
+//
+// The logo is a responsive collection of three elements: the logo image, and
+// the textual site names in English and Japanese.
+//
+// 1. Absolutely position the logo image relative the `.c-logo` container
+
+$logo__size: 78px;
+
+.c-logo {
+    position: relative; // 1
+}
+
+
+// Inner
+// ---
+//
+// The inner wrapper is responsible for laying out the content inside it. The
+// Japanese title should appear at the top, the english at the bottom and the
+// image logo in the middle.
+
+.c-logo__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+
+    text-align: center;
+}
+
+
+// Image
+// ---
+//
+// 1. Absolutely position the logo image relative the `.c-logo` container
+
+.c-logo__image {
+    position: absolute; // 1
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: $logo__size;
+    width: $logo__size;
+
+    margin: auto;
+}
+
+
+// Pseudo Image
+// ---
+//
+// The pseudo image is used to fill the space between the English and Japanese
+// site names to simulate the presence of the logo image. This is done, because
+// the markup for the `.c-logo__image` is in a different container, so in order
+// to position the text accurately and similarly as the logo, this pseudo logo
+// is used
+
+.c-logo__pseudo-image {
+
+    &::before {
+        content: '';
+
+        display: block;
+        height: $logo__size;
+        width: $logo__size;
+        margin: 1.5rem 0;
+    }
+}
