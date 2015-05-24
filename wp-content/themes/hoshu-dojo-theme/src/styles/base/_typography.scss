@@ -70,3 +70,7 @@ a {
     color: $anchor-color;
     text-decoration: none;
 }
+
+abbr[title] {
+    border-bottom: 0;
+}

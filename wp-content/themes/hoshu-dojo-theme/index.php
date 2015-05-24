@@ -36,8 +36,9 @@
 </nav>
 
 <section class="t-home__about">
-    <div class="c-text-content c-sheet">
+    <div class="c-sheet u-text-content">
         <h2 class="u-visually-hidden">About Hoshu Dojo</h2>
+
         <p class="c-h2 u-weight--light">Practice Moving Zen – Experience Traditional Japanese Martial Arts</p>
 
         <h3>Shindo Muso Ryu Jodo</h3>
@@ -54,10 +55,16 @@
 
         <div class="c-overlay-card__content">
             <div class="c-sheet">
-                <h2>Head Instructor</h2>
+                <header class="c-sheet__header">
+                    <h2>Head Instructor</h2>
+                </header>
+
                 <p>Read <a href="#">about Goto Sensei</a> who spent ten years in Japan, including a year in Nagoya and Tokyo as something <a href="#">his Q&amp;A blog</a> for something and all that about.</p>
                 <p><a href="#">View all instructors</a></p>
-                <a href="#" class="c-button">Contact Instructor</a>
+
+                <footer class="c-sheet__footer">
+                    <a href="#" class="c-button">Contact Instructor</a>
+                </footer>
             </div>
         </div>
     </div>
@@ -70,15 +77,19 @@
         </div>
         <div class="c-overlay-card__content">
             <div class="c-sheet">
-                <h2>Locations</h2>
-                <ul>
-                    <li>Hoshu Jodokai – Oita, Japan</li>
-                    <li>Portland Dojo – Oregan, United States</li>
-                    <li>Vancouver Dojo – British Columbia, Canada</li>
-                    <li>Cancun Dojo – Quintana Roo, Mexico</li>
-                    <li>Long Distance Learning – North America</li>
-                </ul>
-                <a href="#" class="c-button">Find Location Near You</a>
+                <header class="c-sheet__header">
+                    <h2>Locations</h2>
+                </header>
+
+                <p><a href="#">Hoshu Jodokai</a> – Oita, Japan</p>
+                <p><a href="#">Portland Dojo</a> – Oregan, United States</p>
+                <p><a href="#">Vancouver Dojo</a> – British Columbia, Canada</p>
+                <p><a href="#">Cancun Dojo</a> – Quintana Roo, Mexico</p>
+                <p><a href="#">Long Distance Learning</a> – North America</p>
+
+                <footer class="c-sheet__footer">
+                    <a href="#" class="c-button">Find Location Near You</a>
+                </footer>
             </div>
         </div>
     </div>
@@ -86,59 +97,83 @@
 
 <section class="t-home__events">
     <div class="c-sheet">
-        <h2>Upcoming Events</h2>
+        <header class="c-sheet__header">
+            <h2>Upcoming Events</h2>
+        </header>
 
-        <article>
-            <div class="">
-                <h3>Hoshu Vancouver Dojo Monthly Seminar</h3>
-                <p>7:30am – 12:00pm</p>
-            </div>
-            <div class="">
-                <a href="#">Dec 31</a>
-            </div>
-        </article>
+        <div class="c-event-list">
+            <article class="c-event-list-item">
+                <div class="c-event-list-item__date">
+                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
+                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
+                        31
+                    </a>
+                </div>
+                <div class="c-event-list-item__content">
+                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
+                    <p>December 13, 2014</p>
+                    <p>7:30am – 12:00pm</p>
+                </div>
+            </article>
 
-        <article>
-            <div class="">
-                <h3>Hoshu Vancouver Dojo Monthly Seminar</h3>
-                <p>7:30am – 12:00pm</p>
-            </div>
-            <div class="">
-                <a href="#">Dec 31</a>
-            </div>
-        </article>
+            <article class="c-event-list-item">
+                <div class="c-event-list-item__date">
+                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
+                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
+                        31
+                    </a>
+                </div>
+                <div class="c-event-list-item__content">
+                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
+                    <p>December 13, 2014</p>
+                    <p>7:30am – 12:00pm</p>
+                </div>
+            </article>
 
-        <article>
-            <div class="">
-                <h3>Hoshu Vancouver Dojo Monthly Seminar</h3>
-                <p>7:30am – 12:00pm</p>
-            </div>
-            <div class="">
-                <a href="#">Dec 31</a>
-            </div>
-        </article>
+            <article class="c-event-list-item">
+                <div class="c-event-list-item__date">
+                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
+                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
+                        31
+                    </a>
+                </div>
+                <div class="c-event-list-item__content">
+                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
+                    <p>December 13, 2014</p>
+                    <p>7:30am – 12:00pm</p>
+                </div>
+            </article>
+        </div>
 
-        <a href="#" class="c-button">View All Events</a>
+        <footer class="c-sheet__footer">
+            <a href="#" class="c-button">View All Events</a>
+        </footer>
     </div>
 </section>
 
 <section class="t-home__blog">
     <div class="c-sheet">
-        <h2>Blog</h2>
+        <header class="c-sheet__header">
+            <h2>Blog</h2>
+        </header>
 
-        <article class="">
-            <h3>Hoshu Dojo Summer Camp...</h3>
-            <p>February 4, 2014</p>
-            <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
-        </article>
+        <div class="c-blog-list">
+            <article class="c-blog-list-item u-text-content">
+                <h3><a href="#">Hoshu Dojo Summer Camp...</a></h3>
+                <p><small>February 4, 2014</small></p>
+                <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
+            </article>
 
-        <article class="">
-            <h3>Hoshu Dojo Summer Camp...</h3>
-            <p>February 4, 2014</p>
-            <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
-        </article>
+            <article class="c-blog-list-item u-text-content">
+                <h3><a href="#">Hoshu Dojo Summer Camp...</a></h3>
+                <p><small>February 4, 2014</small></p>
+                <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
+            </article>
+        </div>
 
-        <a href="#" class="c-button">View All Blog Posts</a>
+        <footer class="c-sheet__footer">
+            <a href="#" class="c-button">View All Blog Posts</a>
+        </footer>
     </div>
 </section>
 

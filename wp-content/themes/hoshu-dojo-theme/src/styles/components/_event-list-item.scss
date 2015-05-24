@@ -1,0 +1,64 @@
+// Event List Item
+// ===
+//
+// 1. Absolutely position `.c-event-list-item__date` relative to the parent
+//   `.c-event-list-item` container
+
+$event-list-item-date-size: 6rem;
+
+.c-event-list-item {
+    position: relative; // 1
+}
+
+
+// Content
+// ---
+//
+// 1. Padding is to prevent content from overflowing beneath/overtop of the date
+
+.c-event-list-item__content {
+    padding-left: $event-list-item-date-size + 2rem; // 1
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+// Date
+// ---
+//
+// 1. Remove date from the content flow. Allow it to just stick to the top
+//    left of the `.c-event-list-item` container
+
+.c-event-list-item__date {
+    position: absolute; // 1
+}
+
+
+// Link
+// ---
+
+.c-event-list-item__link {
+    @extend %c-link-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $event-list-item-date-size;
+    padding: 1rem;
+
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+// Month
+// ---
+
+.c-event-list-item__month {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
