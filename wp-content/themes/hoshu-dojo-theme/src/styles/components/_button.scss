@@ -10,4 +10,13 @@
     color: white;
     font-weight: 300;
     text-align: center;
+    line-height: 2rem;
+}
+
+
+// CTA Themed
+// ---
+
+.c-button.c--cta {
+    background: $anchor-color;
 }

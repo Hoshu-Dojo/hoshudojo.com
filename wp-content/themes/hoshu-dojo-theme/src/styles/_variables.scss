@@ -18,6 +18,37 @@ $anchor-color: $blue;
 $images-path: '/wp-content/themes/hoshu-dojo-theme/src/img';
 
 
+// Icons Settings
+// ---
+//
+// These variables are used to add your icon font file to your CSS, and also to
+// help generate your icon component classes.
+
+// Name the iconset you would like to use
+$icon-font: 'social-icons';
+
+// Set the path to the icon font files. Notice there is no slash at the end!
+$icon-font-path: '../fonts/icons/#{$icon-font}';
+
+// List of icons made available your $icon-font file. Use this icon list to
+// generate your icon component classes.
+$icon-list: (
+    facebook: '\e000',
+    twitter : '\e001',
+    google  : '\e002',
+    youtube : '\e003',
+    tumblr  : '\e004'
+);
+
+// Font formats is used in the web-font mixin to build out a list of source
+// urls for each format.
+$font-formats: (
+    'woff2': 'woff2',
+    'woff': 'woff',
+    'ttf': 'truetype'
+);
+
+
 // Layers and `z-index`
 // ---
 //

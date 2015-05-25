@@ -18,7 +18,8 @@
     </div>
 </header>
 
-<nav>
+<nav role="navigation">
+    <h2 class="u-visually-hidden">Main Navigation</h2>
     <ul class="c-nav-bar">
         <li class="c-nav-bar__item">
             <a href="#" class="c-nav-bar__link">Menu</a>
@@ -183,27 +184,41 @@
 
         <form class="" action="index.html" method="post">
             <div class="c-field-row">
-                <div class="c-field"><input type="text"></div>
-            </div>
-            <div class="c-field-row">
-                <div class="c-field"><input type="text"></div>
-            </div>
-            <div class="c-field-row">
                 <div class="c-field">
-                    <select type="text">
-                        <option value="1">Jodo</option>
-                        <option value="1">Daito Ryu</option>
-                        <option value="1">Other</option>
-                    </select>
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" type="text">
                 </div>
             </div>
             <div class="c-field-row">
                 <div class="c-field">
-                    <textarea name="name" rows="8"></textarea>
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" type="text">
+                </div>
+            </div>
+            <div class="c-field-row">
+                <div class="c-field">
+                    <label for="contact-topic">Topic</label>
+                    <div class="c-select">
+                        <select id="contact-topic">
+                            <option value="1">Jodo</option>
+                            <option value="1">Daito Ryu</option>
+                            <option value="1">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="c-field-row">
+                <div class="c-field">
+                    <label for="contact-question">Your Question</label>
+                    <textarea id="contact-question" name="name" rows="4"></textarea>
                 </div>
             </div>
 
-            <input type="submit" class="c-button"></a>
+            <div class="c-field-row">
+                <div class="c-field">
+                    <input type="submit" class="c-button c--cta"></a>
+                </div>
+            </div>
         </form>
     </div>
 </section>

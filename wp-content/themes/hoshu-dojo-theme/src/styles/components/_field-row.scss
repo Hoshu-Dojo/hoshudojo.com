@@ -1,0 +1,88 @@
+// Field Row
+// ===
+//
+// The Field Row component contains one or more Field components, which can be
+// then further styles and structured with layout classes like arrange or grid.
+//
+// 1. Remove white-space from the elements inside the .c-field-row
+
+.c-field-row {
+
+    > * {
+        line-height: 0; // 1
+    }
+
+    ~ .c-field-row {
+        margin-top: 1.5rem; // why the magic number?
+    }
+
+    // This creates a larger space bellow all `.c--fieldset` instances
+    // ~ .c-field-row.c--fieldset,
+    // &.c--fieldset + .c-field-row:not(.c--fieldset) {
+    //     margin-top: 40px; // why the magic number?
+    // }
+}
+
+
+// Fieldset Modifier
+// ---
+//
+// Fieldset is a way of identifying within a form a set of related fields. For
+// example, the "Change Email Address" set of fields or "Change Password" fields
+// in the Edit Profile page.
+//
+// Note that a `.c-field-row.c--fieldset` can in fact have more `.c-field-row`
+// elements nested inside!
+//
+// 1. Absolutely position the pseudo elements relative to the parent .c--fieldset
+// 2. Remove top margin and border from between sibling `c--fieldset` elements
+
+// .c-field-row.c--fieldset {
+//     position: relative; // 1
+//
+//     // padding: map-get($v-spacing__map, s) 0 map-get($v-spacing__map, m);
+//
+//     &::before,
+//     &::after {
+//         content: '';
+//
+//         position: absolute; // 1
+//         // right: -($page-margin);
+//         left: 0;
+//
+//         display: block;
+//         // border-top: $border;
+//     }
+//
+//     &::before {
+//         top: 0;
+//     }
+//
+//     &::after {
+//         bottom: 0;
+//     }
+//
+//     + .c-field-row.c--fieldset {
+//         margin-top: 0; // 2
+//
+//         &::before {
+//             content: none; // 2
+//         }
+//     }
+//
+//     .c-field > .c-field-row__legend + * {
+//         margin-top: 1.5rem;
+//     }
+// }
+
+
+// Fieldrow Fieldset Label
+// ---
+//
+// .c-field-row__legend {
+//     font-weight: bold;
+// }
+//
+// .c-field-row__legend-suffix {
+//     float: right;
+// }

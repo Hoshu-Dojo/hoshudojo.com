@@ -1,31 +1,39 @@
-    <footer>
-        <h2>Site Content</h2>
+    <footer class="c-footer">
+        <nav class="c-footer__links" role="navigation">
+            <h2 class="u-visually-hidden">Site Content</h2>
 
-        <h3>Language</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <h3 class="u-visually-hidden">Region</h3>
+            <ul class="c-footer__region">
+                <li><a href="#">Japan</a></li>
+                <li><a href="#">US / Canada</a></li>
+                <li><a href="#">Mexico</a></li>
+            </ul>
 
-        <h3>Social</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <h3 class="u-visually-hidden">Social</h3>
+            <ul class="c-footer__social">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google Plus</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Tumblr</a></li>
+            </ul>
 
-        <h3>Navigation</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <h3 class="u-visually-hidden">Navigation</h3>
+            <ul class="c-footer__sub-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
 
-        <div class="">© Copyright 2012 – 2015</div>
+        <div class="c-footer__info" role="contentinfo">
+            <span class="c-h6">© Copyright 2012 – 2015</span>
+        </div>
     </footer>
 
     <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

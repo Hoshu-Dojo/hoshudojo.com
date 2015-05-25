@@ -1,0 +1,116 @@
+// Field
+// ===
+//
+// This component is responsible for the __laying out__ of form elements more
+// than the visual appearance of form elements.
+
+
+// Field Container
+// ---
+//
+// 1. Absolutely position checkboxes relative to its parent .c-form-row
+// 2. Align and position the radio or checkbox labels so they don't overlap and
+//    so that they are initially vertically aligned
+// 3. Modifier class for search field
+
+.c-field {
+    position: relative; // 1
+
+    label {
+        display: inline-block;
+
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    // General child layout
+    label + *,
+    .c-label + * {
+        margin-top: 0.5rem;
+    }
+
+    label + span {
+        display: inline-block;
+    }
+
+    // Unique child layout (i.e. absolute positioned)
+    > [type="radio"],
+    > [type="checkbox"] {
+        position: absolute; // 1
+
+        + label {
+            // Removing margin-top because the text was vertically misaligned
+            // with the checkbox and radios
+            margin-left: 30px; // 2
+        }
+
+        &[disabled] {
+            opacity: 0.7;
+
+            + label {
+                opacity: 0.3;
+
+                pointer-events: none;
+            }
+        }
+    }
+
+    // Floated child layout
+    // .c-field__optional {
+    //     float: right;
+    // }
+}
+
+
+// Field Error
+// ---
+//
+// 1. Fix icon size so it aligns with text
+// 2. This class can be used on <span> elements where we need to change it
+//    to a block element so we can space things out evenly.
+// 3. Override inline styles
+//
+// .c-field.c--error {
+//
+//     > label,
+//     > .c-label {
+//         color: red;
+//     }
+//
+//     > input,
+//     > textarea,
+//     > .c-select {
+//         border-color: red;
+//
+//         &:focus {
+//             border-color: $anchor-color;
+//         }
+//     }
+// }
+//
+// .c-field__error {
+//
+//     display: block; // 2
+//     // margin-top: map-get($v-spacing__map, xs);
+//
+//     color: red;
+//     font-weight: bold;
+//     // font-size: $caption-font-size - 1 !important; // 3
+//
+//     &::before {
+//         display: inline-block;
+//         height: 1em; // 1
+//         margin-right: 1rem;
+//
+//         line-height: 0.7em; // 1
+//     }
+// }
+
+
+// Field Optional
+// ---
+//
+// .c-field__optional {
+//     // color: $xlight-font-color;
+//     font-weight: bold;
+// }

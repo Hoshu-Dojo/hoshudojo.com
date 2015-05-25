@@ -1,0 +1,106 @@
+// Footer
+// ===
+
+.c-footer {
+}
+
+
+// Links
+// ---
+
+.c-footer__links {
+    padding: 3rem 2rem;
+
+    background: #f2f2f2;
+}
+
+
+// Region
+// ---
+
+.c-footer__region {
+    display: flex;
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    &::before,
+    &::after {
+        content: '–';
+
+        display: block;
+        padding: 0 1rem;
+
+        color: #888;
+    }
+
+    &::before {
+        order: 2;
+    }
+
+    &::after {
+        order: 4;
+    }
+
+    li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    :nth-of-type(1) {
+        order: 1;
+    }
+
+    :nth-of-type(2) {
+        order: 3;
+    }
+
+    :nth-of-type(3) {
+        order: 5;
+    }
+}
+
+
+// Social
+// ---
+
+.c-footer__social {
+    display: flex;
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    li {
+        display: block;
+        flex: 1 1 auto;
+    }
+}
+
+
+// Sub-Navigaton
+// ---
+//
+// 1. Clearfix
+
+.c-footer__sub-nav {
+    overflow: hidden; // 1
+
+    li {
+        float: left;
+
+        width: (100% / 3);
+        padding: 0.5rem 0;
+    }
+}
+
+
+// Info
+// ---
+
+.c-footer__info {
+    padding: 1rem 2rem;
+
+    background: black;
+
+    color: white;
+}

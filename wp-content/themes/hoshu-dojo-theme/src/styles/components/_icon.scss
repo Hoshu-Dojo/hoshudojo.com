@@ -1,0 +1,77 @@
+// Icon
+// ====
+
+
+// Icon Font
+// ---
+
+@include web-font($icon-font, $icon-font-path);
+
+
+// Icon Component
+// ---
+//
+// This is the base icon class which must be applied to the element first.
+
+.c-icon {
+    @include icon-font;
+
+    position: relative;
+
+    display: inline-block;
+    min-width: 1em;
+    min-height: 0.7em;
+    vertical-align: 0.1em;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        height: 0;
+        margin: auto;
+
+        line-height: 0;
+    }
+}
+
+
+// Replace Icon
+// ---
+
+.c-icon.c--replace,
+[data-icon-replace="true"] {
+    @include icon-font-replace;
+}
+
+
+// Icon Names
+// ---
+//
+// The icon name is a data attribute added to the element in tandem with the
+// icon component class (.c-icon)
+//
+// Icon Names and generated based on the $icon-list map. Therefore, to see the
+// full list of available icons, see $icon-list in _variables.scss
+
+@each $name, $character in $icon-list {
+    [data-icon-name="#{$name}"]::before {
+        content: icon-address($name);
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
+// Specific icon tweaks
+
+[data-icon-name="facebook"],
+[data-icon-name="twitter"],
+[data-icon-name="youtube"],
+[data-icon-name="android"],
+[data-icon-name="windows"],
+[data-icon-name="apple"] {
+    font-size: 125%;
+}
