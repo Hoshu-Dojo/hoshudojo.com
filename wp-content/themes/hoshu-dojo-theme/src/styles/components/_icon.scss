@@ -20,7 +20,7 @@
 
     display: inline-block;
     min-width: 1em;
-    min-height: 0.7em;
+    min-height: 1em;
     vertical-align: 0.1em;
 
     &::before {
@@ -33,7 +33,7 @@
         height: 0;
         margin: auto;
 
-        line-height: 0;
+        line-height: 0.5em;
     }
 }
 
@@ -41,8 +41,7 @@
 // Replace Icon
 // ---
 
-.c-icon.c--replace,
-[data-icon-replace="true"] {
+.c-icon.c--replace {
     @include icon-font-replace;
 }
 
@@ -62,16 +61,4 @@
         speak: none;
         -webkit-font-smoothing: antialiased;
     }
-}
-
-
-// Specific icon tweaks
-
-[data-icon-name="facebook"],
-[data-icon-name="twitter"],
-[data-icon-name="youtube"],
-[data-icon-name="android"],
-[data-icon-name="windows"],
-[data-icon-name="apple"] {
-    font-size: 125%;
 }

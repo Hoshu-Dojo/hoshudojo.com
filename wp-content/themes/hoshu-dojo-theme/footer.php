@@ -11,11 +11,11 @@
 
             <h3 class="u-visually-hidden">Social</h3>
             <ul class="c-footer__social">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Google Plus</a></li>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Tumblr</a></li>
+                <li><a href="#" class="c-icon c--replace" data-icon-name="facebook">Facebook</a></li>
+                <li><a href="#" class="c-icon c--replace" data-icon-name="twitter">Twitter</a></li>
+                <li><a href="#" class="c-icon c--replace" data-icon-name="google">Google Plus</a></li>
+                <li><a href="#" class="c-icon c--replace" data-icon-name="youtube">Youtube</a></li>
+                <li><a href="#" class="c-icon c--replace" data-icon-name="tumblr">Tumblr</a></li>
             </ul>
 
             <h3 class="u-visually-hidden">Navigation</h3>
