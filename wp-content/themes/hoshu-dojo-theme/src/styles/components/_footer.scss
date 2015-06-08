@@ -12,6 +12,23 @@
     padding: 3rem 2rem;
 
     background: #f2f2f2;
+
+    @include media('>=desktop') {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+// Inner
+// ---
+
+.c-footer__inner {
+    @include media('>=desktop') {
+        max-width: 400px;
+
+        text-align: center;
+    }
 }
 
 

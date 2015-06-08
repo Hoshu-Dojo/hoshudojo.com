@@ -3,7 +3,10 @@
 <header class="t-home__hero">
     <div class="c-splash-card">
         <aside class="c-splash-card__banner">
-            <img src="<?php getImgDirectory(); ?>/home-banner-mobile.jpg" class="c-splash-card__image" alt="Photograph of Thomas Groendal and Ben Lew facing off in a Jodo kata" width="320" />
+            <picture>
+                <source srcset="<?php getImgDirectory(); ?>/home-banner-desktop.jpg" media="(min-width: 600px)" />
+                <img src="<?php getImgDirectory(); ?>/home-banner-mobile.jpg" class="c-splash-card__image" alt="Photograph of Thomas Groendal and Ben Lew facing off in a Jodo kata" width="320" />
+            </picture>
         </aside>
 
         <div class="c-splash-card__content">
@@ -42,11 +45,15 @@
 
         <p class="c-h2 u-weight--light">Practice Moving Zen – Experience Traditional Japanese Martial Arts</p>
 
-        <h3>Shindo Muso Ryu Jodo</h3>
-        <p>Feel like a bad ass while weilding a stick. Crush your opponents and build your confidence, all at once!</p>
+        <div class="t-home__about-left">
+            <h3>Shindo Muso Ryu Jodo</h3>
+            <p>Feel like a bad ass while weilding a stick. Crush your opponents and build your confidence, all at once!</p>
+        </div>
 
-        <h3>Daito Ryu Aikijujutsu</h3>
-        <p>Not unlike Jiu Jitsu, learn to tear enemies in half with your bare hands – old school style!</p>
+        <div class="t-home__about-right">
+            <h3>Daito Ryu Aikijujutsu</h3>
+            <p>Not unlike Jiu Jitsu, learn to tear enemies in half with your bare hands – old school style!</p>
+        </div>
     </div>
 </section>
 
@@ -54,7 +61,7 @@
     <div class="c-overlay-card">
         <img src="<?php getImgDirectory(); ?>/head-instructor-banner.jpg" class="c-overlay-card__image" alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" />
 
-        <div class="c-overlay-card__content">
+        <div class="c-overlay-card__content c--right">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>Head Instructor</h2>
@@ -73,10 +80,9 @@
 
 <section class="t-home__locations">
     <div class="c-overlay-card">
-        <div class="c-overlay-card__image">
-            <img src="<?php getImgDirectory(); ?>/location-banner.jpg" alt="Photo of a classroom with students throughout" />
-        </div>
-        <div class="c-overlay-card__content">
+        <img src="<?php getImgDirectory(); ?>/location-banner.jpg" class="c-overlay-card__image" alt="Photo of a classroom with students throughout" />
+
+        <div class="c-overlay-card__content c--left">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>Locations</h2>

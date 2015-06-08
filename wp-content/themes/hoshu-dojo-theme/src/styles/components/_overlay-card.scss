@@ -7,6 +7,11 @@
 .c-overlay-card {
     position: relative; // 1
     padding-top: 10rem; // 2
+    overflow: hidden;
+
+    @include media('>=desktop') {
+        padding-top: 0;
+    }
 }
 
 
@@ -19,6 +24,12 @@
     position: absolute; // 1
     top: 0;
     z-index: $backdrop-layer; // 1
+
+    @include media('>=desktop') {
+        position: static;
+
+        width: 100%;
+    }
 }
 
 
@@ -32,4 +43,31 @@
     z-index: $stage-layer; // 1
 
     background: rgba(255, 255, 255, 0.7);
+
+    @include media('>=desktop') {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+
+        background: rgba(255, 255, 255, 0.1);
+
+        color: white;
+
+        &.c--right {
+            right: 5%;
+        }
+
+        &.c--left {
+            left: 5%;
+        }
+
+        a {
+            color: white;
+        }
+    }
 }

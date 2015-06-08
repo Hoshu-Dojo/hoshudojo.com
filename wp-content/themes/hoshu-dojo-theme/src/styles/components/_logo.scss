@@ -3,29 +3,70 @@
 //
 // The logo is a responsive collection of three elements: the logo image, and
 // the textual site names in English and Japanese.
-//
-// 1. Absolutely position the logo image relative the `.c-logo` container
 
-$logo__size: 78px;
+$logo__mobile-size: 78px;
+$logo__desktop-size: 240px;
 
 .c-logo {
-    position: relative; // 1
 }
 
 
 // Inner
 // ---
 //
-// The inner wrapper is responsible for laying out the content inside it. The
-// Japanese title should appear at the top, the english at the bottom and the
-// image logo in the middle.
+// 1. Absolutely position the logo image relative the `.c-logo` container
 
 .c-logo__inner {
-    display: flex;
-    flex-direction: column-reverse;
+    position: relative; // 1
+
+    @include media('>=desktop') {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+}
+
+
+// Text
+// ---
+//
+// The inner wrapper is responsible for laying out the content inside it. The
+// Japanese title should appear at the top and the english at the bottom.
+//
+// On smaller screen sizes, the logo inner content will appear above and below
+// the site logo
+//
+// 1. Set the english text to the bottom and the Japanese text to the top
+// 2. Create space between the logo and the text
+
+.c-logo__text {
+    display: flex; // 1
+    flex-direction: column-reverse; // 1
     margin-bottom: 0;
 
-    text-align: center;
+    @include media('<desktop') {
+        text-align: center;
+    }
+
+    @include media('>=desktop') {
+        margin-left: 2rem; // 2
+
+        font-size: 6rem;
+        line-height: 7rem;
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+
+// Title
+// ---
+
+.c-logo__title {
+
+    @include media('>=desktop') {
+        margin-top: 2rem;
+    }
 }
 
 
@@ -35,16 +76,23 @@ $logo__size: 78px;
 // 1. Absolutely position the logo image relative the `.c-logo` container
 
 .c-logo__image {
-    position: absolute; // 1
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: $logo__size;
-    width: $logo__size;
-
     margin: auto;
+
+    @include media('<desktop') {
+        position: absolute; // 1
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        height: $logo__mobile-size;
+        width: $logo__mobile-size;
+    }
+
+    @include media ('>=desktop') {
+        height: $logo__desktop-size;
+        width: $logo__desktop-size;
+    }
 }
 
 
@@ -59,12 +107,19 @@ $logo__size: 78px;
 
 .c-logo__pseudo-image {
 
-    &::before {
-        content: '';
+    @include media('<desktop') {
+        &::before {
+            content: '';
 
-        display: block;
-        height: $logo__size;
-        width: $logo__size;
-        margin: 1.5rem 0;
+            display: block;
+            height: $logo__mobile-size;
+            width: $logo__mobile-size;
+            margin: 1.5rem 0;
+
+            // @include media ('>desktop') {
+            //     height: $logo__desktop-size;
+            //     width: $logo__desktop-size;
+            // }
+        }
     }
 }
