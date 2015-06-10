@@ -165,17 +165,17 @@
         </header>
 
         <div class="c-blog-list">
-            <article class="c-blog-list-item u-text-content">
-                <h3><a href="#">Hoshu Dojo Summer Camp...</a></h3>
-                <p><small>February 4, 2014</small></p>
-                <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
-            </article>
 
-            <article class="c-blog-list-item u-text-content">
-                <h3><a href="#">Hoshu Dojo Summer Camp...</a></h3>
-                <p><small>February 4, 2014</small></p>
-                <p>Three angles of Tom and Ed performing Monomi, the sixth kata from the Seitei Jodo curriculum of the ZNKR. Full list of ZNKR Seitei Jodo Kata with different angles... <a href="#">Read more</a></p>
-            </article>
+            <?php
+            query_posts('posts_per_page=2');
+
+			while (have_posts()) : the_post();
+
+				get_template_part( '_blog-list-item' );
+
+			endwhile;
+            ?>
+
         </div>
 
         <footer class="c-sheet__footer">
