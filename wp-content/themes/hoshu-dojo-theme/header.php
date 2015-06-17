@@ -14,7 +14,7 @@
         <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/html5-3.6-respond-1.4.2.min.js"></script>
     <![endif]-->
 
-    <!--?php wp_head(); ?-->
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 

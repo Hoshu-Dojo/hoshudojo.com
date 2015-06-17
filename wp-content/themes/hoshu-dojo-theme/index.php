@@ -108,49 +108,27 @@
             <h2>Upcoming Events</h2>
         </header>
 
-        <div class="c-event-list">
-            <article class="c-event-list-item">
-                <div class="c-event-list-item__date">
-                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
-                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
-                        31
-                    </a>
-                </div>
-                <div class="c-event-list-item__content">
-                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
-                    <p>December 13, 2014</p>
-                    <p>7:30am – 12:00pm</p>
-                </div>
-            </article>
+        <div class="t-home__widget-area-1">
+			<?php dynamic_sidebar( 'sidebar-1' ) ?>
+		</div>
 
-            <article class="c-event-list-item">
-                <div class="c-event-list-item__date">
-                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
-                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
-                        31
-                    </a>
-                </div>
-                <div class="c-event-list-item__content">
-                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
-                    <p>December 13, 2014</p>
-                    <p>7:30am – 12:00pm</p>
-                </div>
-            </article>
-
-            <article class="c-event-list-item">
-                <div class="c-event-list-item__date">
-                    <a href="#" class="c-event-list-item__link" aria-hidden="true">
-                        <abbr class="c-event-list-item__month" title="December">Dec</abbr>
-                        31
-                    </a>
-                </div>
-                <div class="c-event-list-item__content">
-                    <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
-                    <p>December 13, 2014</p>
-                    <p>7:30am – 12:00pm</p>
-                </div>
-            </article>
-        </div>
+        <?php
+        // <div class="c-event-list">
+        //     <article class="c-event-list-item">
+        //         <div class="c-event-list-item__date">
+        //             <a href="#" class="c-event-list-item__link" aria-hidden="true">
+        //                 <abbr class="c-event-list-item__month" title="December">Dec</abbr>
+        //                 31
+        //             </a>
+        //         </div>
+        //         <div class="c-event-list-item__content">
+        //             <p><a href="#">Hoshu Vancouver Dojo Monthly Seminar</a></p>
+        //             <p>December 13, 2014</p>
+        //             <p>7:30am – 12:00pm</p>
+        //         </div>
+        //     </article>
+        // </div>
+        ?>
 
         <footer class="c-sheet__footer">
             <a href="#" class="c-button">View All Events</a>
@@ -187,6 +165,10 @@
 <section class="t-home__contact">
     <div class="c-sheet">
         <h2>Ask a Question</h2>
+
+        <div class="t-home__widget-area-2">
+			<?php dynamic_sidebar( 'sidebar-2' ) ?>
+		</div>
 
         <form class="" action="index.html" method="post">
             <div class="c-field-row">
