@@ -169,45 +169,6 @@
         <div class="t-home__widget-area-2">
 			<?php dynamic_sidebar( 'sidebar-2' ) ?>
 		</div>
-
-        <form class="" action="index.html" method="post">
-            <div class="c-field-row">
-                <div class="c-field">
-                    <label for="contact-name">Name</label>
-                    <input id="contact-name" type="text">
-                </div>
-            </div>
-            <div class="c-field-row">
-                <div class="c-field">
-                    <label for="contact-email">Email</label>
-                    <input id="contact-email" type="text">
-                </div>
-            </div>
-            <div class="c-field-row">
-                <div class="c-field">
-                    <label for="contact-topic">Topic</label>
-                    <div class="c-select">
-                        <select id="contact-topic">
-                            <option value="1">Jodo</option>
-                            <option value="1">Daito Ryu</option>
-                            <option value="1">Other</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="c-field-row">
-                <div class="c-field">
-                    <label for="contact-question">Your Question</label>
-                    <textarea id="contact-question" name="name" rows="4"></textarea>
-                </div>
-            </div>
-
-            <div class="c-field-row">
-                <div class="c-field">
-                    <input type="submit" class="c-button c--cta"></a>
-                </div>
-            </div>
-        </form>
     </div>
 </section>
 

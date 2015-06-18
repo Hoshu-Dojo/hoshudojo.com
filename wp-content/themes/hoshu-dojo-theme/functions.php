@@ -48,6 +48,9 @@ register_sidebar( array(
 add_action('wp_print_styles', 'mytheme_dequeue_css_from_plugins', 100);
 function mytheme_dequeue_css_from_plugins()  {
 	wp_dequeue_style( "custom" );
+    wp_deregister_style( "custom" );
+    wp_dequeue_style( "grunion.css" );
+    wp_deregister_style( "grunion.css" );
 }
 
 ?>

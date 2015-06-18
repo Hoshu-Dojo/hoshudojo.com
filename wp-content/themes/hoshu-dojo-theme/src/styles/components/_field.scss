@@ -33,6 +33,11 @@
         display: inline-block;
     }
 
+    label span {
+        color: $required-color;
+        font-weight: bold;
+    }
+
     // Unique child layout (i.e. absolute positioned)
     > [type="radio"],
     > [type="checkbox"] {
