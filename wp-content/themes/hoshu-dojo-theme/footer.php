@@ -3,32 +3,36 @@
             <div class="c-footer__inner">
                 <h2 class="u-visually-hidden">Site Content</h2>
 
-                <h3 class="u-visually-hidden">Region</h3>
-                <ul class="c-footer__region">
-                    <li><a href="#">Japan</a></li>
-                    <li><a href="#">US / Canada</a></li>
-                    <li><a href="#">Mexico</a></li>
-                </ul>
+                <?php
+                // <h3 class="u-visually-hidden">Region</h3>
+                // <ul class="c-footer__region">
+                //     <li><a href="#">Japan</a></li>
+                //     <li><a href="#">US / Canada</a></li>
+                //     <li><a href="#">Mexico</a></li>
+                // </ul>
+                ?>
 
-                <h3 class="u-visually-hidden">Social</h3>
+                <h3 class="u-visually-hidden">Social Links</h3>
                 <ul class="c-footer__social">
-                    <li><a href="#" class="c-icon c--replace" data-icon-name="facebook">Facebook</a></li>
-                    <li><a href="#" class="c-icon c--replace" data-icon-name="twitter">Twitter</a></li>
-                    <li><a href="#" class="c-icon c--replace" data-icon-name="google">Google Plus</a></li>
-                    <li><a href="#" class="c-icon c--replace" data-icon-name="youtube">Youtube</a></li>
-                    <li><a href="#" class="c-icon c--replace" data-icon-name="tumblr">Tumblr</a></li>
+                    <li><a href="https://www.facebook.com/HoshuDojo" class="c-icon c--replace" data-icon-name="facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/hoshudojo" class="c-icon c--replace" data-icon-name="twitter">Twitter</a></li>
+                    <li><a href="https://plus.google.com/u/1/+HoshuDojoNA/about" class="c-icon c--replace" data-icon-name="google">Google Plus</a></li>
+                    <li><a href="https://www.youtube.com/user/HoshuDojo" class="c-icon c--replace" data-icon-name="youtube">Youtube</a></li>
+                    <li><a href="http://hoshudojo.tumblr.com/" class="c-icon c--replace" data-icon-name="tumblr">Tumblr</a></li>
                 </ul>
 
                 <h3 class="u-visually-hidden">Navigation</h3>
                 <ul class="c-footer__sub-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <?php
+                    // <li><a href="#">Contact</a></li>
+                    // <li><a href="#">Videos</a></li>
+                    // <li><a href="#">Gallery</a></li>
+                    // <li><a href="#">Blog</a></li>
+                    ?>
                 </ul>
             </div>
         </nav>

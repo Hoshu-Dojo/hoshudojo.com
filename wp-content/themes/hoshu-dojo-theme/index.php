@@ -25,16 +25,16 @@
     <h2 class="u-visually-hidden">Main Navigation</h2>
     <ul class="c-nav-bar">
         <li class="c-nav-bar__item">
-            <a href="#" class="c-nav-bar__link">Menu</a>
+            <a href="/" class="c-nav-bar__link">Home</a>
         </li>
         <li class="c-nav-bar__item">
-            <a href="#" class="c-nav-bar__link">About</a>
+            <a href="/about" class="c-nav-bar__link">About</a>
         </li>
         <li class="c-nav-bar__item">
-            <a href="#" class="c-nav-bar__link">Location</a>
+            <a href="/locations" class="c-nav-bar__link">Locations</a>
         </li>
         <li class="c-nav-bar__item">
-            <a href="#" class="c-nav-bar__link">Events</a>
+            <a href="/events" class="c-nav-bar__link">Events</a>
         </li>
     </ul>
 </nav>
@@ -47,13 +47,19 @@
 
         <div class="t-home__about-left">
             <h3>Shindo Muso Ryu Jodo</h3>
-            <p>Feel like a bad ass while weilding a stick. Crush your opponents and build your confidence, all at once!</p>
+            <p>Shindo Muso Ryu is the art of the short staff. In this art, we use a simple short staff against a sword-armed opponent.</p>
+            <p>In Jodo we use the flexibility of the Jo to overcome the inherent advantages of a blade wielding opponent.</p>
         </div>
 
         <div class="t-home__about-right">
             <h3>Daito Ryu Aikijujutsu</h3>
-            <p>Not unlike Jiu Jitsu, learn to tear enemies in half with your bare hands – old school style!</p>
+            <p>Daito Ryu Aikijujutsu is the original “Aiki” art, an this art of traditional jujutsu.</p>
+            <p>This art includes sophisticated throws, joint locks and strikes, offering a rich reserve of technical knowledge.</p>
         </div>
+
+        <div class="u-clearfix"></div>
+
+        <p><a href="/about" class="c-button c--cta">Learn More</a></p>
     </div>
 </section>
 
@@ -71,7 +77,7 @@
                 <p><a href="#">View all instructors</a></p>
 
                 <footer class="c-sheet__footer">
-                    <a href="#" class="c-button">Contact Instructor</a>
+                    <a href="/locations" class="c-button">Find an Instructor</a>
                 </footer>
             </div>
         </div>
@@ -95,7 +101,7 @@
                 <p><a href="#">Long Distance Learning</a> – North America</p>
 
                 <footer class="c-sheet__footer">
-                    <a href="#" class="c-button">Find Location Near You</a>
+                    <a href="/locations" class="c-button">Find Location Near You</a>
                 </footer>
             </div>
         </div>
@@ -131,7 +137,7 @@
         ?>
 
         <footer class="c-sheet__footer">
-            <a href="#" class="c-button">View All Events</a>
+            <a href="/events" class="c-button">View All Events</a>
         </footer>
     </div>
 </section>

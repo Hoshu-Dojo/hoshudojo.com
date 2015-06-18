@@ -65,6 +65,14 @@ $home__expected-mobile-logo-size: 79px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     }
 
+    @include media('<desktop') {
+        .c-h2,
+        .t-home__about-left,
+        .t-home__about-right { // "learn more" button
+            margin-bottom: 2rem;
+        }
+    }
+
     @include media('>=desktop') {
         background: black url($images-path + '/about-banner-desktop.jpg') no-repeat 0 0;
         background-size: cover;
@@ -86,6 +94,17 @@ $home__expected-mobile-logo-size: 79px;
             padding-top: 12rem;
             padding-bottom: 12rem;
             overflow: hidden; // 1
+        }
+
+        .u-clearfix + p {
+            padding-top: 7rem;
+        }
+
+        .c-button { // "learn more" button
+            width: 50%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            margin: 0 auto;
         }
     }
 }
