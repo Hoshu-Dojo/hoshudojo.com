@@ -28,9 +28,6 @@
             <a href="/" class="c-nav-bar__link">Home</a>
         </li>
         <li class="c-nav-bar__item">
-            <a href="/about" class="c-nav-bar__link">About</a>
-        </li>
-        <li class="c-nav-bar__item">
             <a href="/locations" class="c-nav-bar__link">Locations</a>
         </li>
         <li class="c-nav-bar__item">
@@ -58,8 +55,6 @@
         </div>
 
         <div class="u-clearfix"></div>
-
-        <p><a href="/about" class="c-button c--cta">Learn More</a></p>
     </div>
 </section>
 
@@ -73,12 +68,7 @@
                     <h2>Head Instructor</h2>
                 </header>
 
-                <p>Read <a href="#">about Goto Sensei</a> who spent ten years in Japan, including a year in Nagoya and Tokyo as something <a href="#">his Q&amp;A blog</a> for something and all that about.</p>
-                <p><a href="#">View all instructors</a></p>
-
-                <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">Find an Instructor</a>
-                </footer>
+                <p>Read about Goto Sensei who spent ten years in Japan, including a year in Nagoya and Tokyo as something his Q&amp;A blog for something and all that about.</p>
             </div>
         </div>
     </div>
@@ -94,14 +84,15 @@
                     <h2>Locations</h2>
                 </header>
 
-                <p><a href="#">Hoshu Jodokai</a> – Oita, Japan</p>
-                <p><a href="#">Portland Dojo</a> – Oregan, United States</p>
-                <p><a href="#">Vancouver Dojo</a> – British Columbia, Canada</p>
-                <p><a href="#">Cancun Dojo</a> – Quintana Roo, Mexico</p>
-                <p><a href="#">Long Distance Learning</a> – North America</p>
+                <p><a href="/locations#oita">Hoshu Jodokai</a> – Oita, Japan</p>
+                <p><a href="/locations#okinawa">Okinawa Dojo</a> – Okinawa, Japan</p>
+                <p><a href="/locations#portland">Portland Dojo</a> – Oregan, United States</p>
+                <p><a href="/locations#seattle">Seattle Dojo</a> – Washington, United States</p>
+                <p><a href="/locations#vancouver">Vancouver Dojo</a> – British Columbia, Canada</p>
+                <p><a href="/locations#cancun">Cancun Dojo</a> – Quintana Roo, Mexico</p>
 
                 <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">Find Location Near You</a>
+                    <a href="/locations" class="c-button">See Locations</a>
                 </footer>
             </div>
         </div>
@@ -142,6 +133,7 @@
     </div>
 </section>
 
+<?php /*
 <section class="t-home__blog">
     <div class="c-sheet">
         <header class="c-sheet__header">
@@ -167,6 +159,7 @@
         </footer>
     </div>
 </section>
+*/ ?>
 
 <section class="t-home__contact">
     <div class="c-sheet">
