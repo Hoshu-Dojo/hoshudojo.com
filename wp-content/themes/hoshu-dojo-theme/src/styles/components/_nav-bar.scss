@@ -1,11 +1,18 @@
 // Nav Bar
 // ===
+//
+// 1. Create space at the left and right side of the nav bar
 
 .c-nav-bar {
     display: flex;
     padding: 1rem 0;
 
     background: #000;
+
+    @include media('>=desktop') {
+        padding-left: 12.5%; // 1
+        padding-right: 12.5%; // 1
+    }
 }
 
 

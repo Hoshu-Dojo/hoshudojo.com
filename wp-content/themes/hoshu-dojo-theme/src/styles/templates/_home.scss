@@ -38,6 +38,20 @@ $home__expected-mobile-logo-size: 79px;
     }
 
     @include media('>=desktop') {
+        .c-splash-card__banner {
+            position: relative;
+
+            padding-bottom: 37%;
+            overflow: hidden;
+
+            picture {
+                position: absolute;
+                top: -5%;
+                right: 0;
+                left: 0;
+            }
+        }
+
         .c-logo {
             height: $home__expected-logo-size; // 1
         }
@@ -170,21 +184,25 @@ $home__expected-mobile-logo-size: 79px;
     @include media('>=desktop') {
         float: left;
 
-        width: (100% / 3);
+        width: (100% / 2);
+    }
+
+    @include media('>=extreme') {
+        padding-left: 5%;
     }
 }
 
 
 // Blog Section
 // ---
-
-.t-home__blog {
-    @include media('>=desktop') {
-        float: left;
-
-        width: (100% / 3);
-    }
-}
+//
+// .t-home__blog {
+//     @include media('>=desktop') {
+//         float: left;
+//
+//         width: (100% / 3);
+//     }
+// }
 
 
 // Contact Section
@@ -199,6 +217,10 @@ $home__expected-mobile-logo-size: 79px;
     @include media('>=desktop') {
         float: left;
 
-        width: (100% / 3);
+        width: (100% / 2);
+    }
+
+    @include media('>=extreme') {
+        padding-right: 5%;
     }
 }

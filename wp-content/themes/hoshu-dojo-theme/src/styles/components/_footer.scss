@@ -1,7 +1,10 @@
 // Footer
 // ===
+//
+// 1. Clear the columns above the footer in the homepage
 
 .c-footer {
+    clear: both; // 1
 }
 
 

@@ -75,7 +75,8 @@ $frontrow-layer:  1000; // 4
 
 $breakpoints: (
     phone: 320px,
-    desktop: 600px
+    desktop: 600px,
+    extreme: 1024px
 );
 
 $desktop: "screen and (min-width : 600px)";
