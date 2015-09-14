@@ -10,7 +10,7 @@
         </aside>
 
         <div class="c-splash-card__content">
-            <?php component('logo'); ?>
+            <?php component('hero-logo'); ?>
 
             <div class="c-sheet">
                 <p class="c-h3">

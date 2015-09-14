@@ -28,11 +28,11 @@ $home__expected-mobile-logo-size: 79px;
 
 .t-home__hero {
 
-    .c-logo {
+    .c-hero-logo {
         height: $home__expected-mobile-logo-size; // 1
     }
 
-    .c-logo__inner {
+    .c-hero-logo__inner {
         position: relative;
         top: -100%; // 2
     }
@@ -52,7 +52,7 @@ $home__expected-mobile-logo-size: 79px;
             }
         }
 
-        .c-logo {
+        .c-hero-logo {
             height: $home__expected-logo-size; // 1
         }
 
