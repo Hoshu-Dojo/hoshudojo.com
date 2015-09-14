@@ -2,9 +2,26 @@
 // ===
 
 .c-page-header {
-    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
 
     background: black;
 
     color: white;
+}
+
+
+// Logo
+// ---
+
+.c-page-header__logo {
+    flex: 0 0 auto;
+}
+
+
+// Nav
+
+.c-page-header__nav {
+    flex: 0 0 auto;
 }

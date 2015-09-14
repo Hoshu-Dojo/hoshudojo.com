@@ -21,6 +21,13 @@
 
     font-size: 1.1rem;
     line-height: 1.5rem;
+
+    @include media('>=desktop') {
+        padding-left: 2rem;
+
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
 }
 
 
@@ -29,4 +36,9 @@
 .c-logo__image {
     height: 3rem;
     width: 3rem;
+
+    @include media('>=desktop') {
+        height: 4rem;
+        width: 4rem;
+    }
 }

@@ -6,13 +6,23 @@ while ( have_posts() ) : the_post();
 ?>
 
     <div class="c-page-header">
-        <?php component('logo'); ?>
+        <div class="c-frame">
+            <div class="c-page-header__logo">
+                <?php component('logo'); ?>
+            </div>
+
+            <div class="c-page-header__nav">
+                <?php component('nav'); ?>
+            </div>
+        </div>
     </div>
 
     <main class="c-text-content c--padded">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <div class="c-frame">
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-        <?php the_content(); ?>
+            <?php the_content(); ?>
+        </div>
     </main>
 
 <?php

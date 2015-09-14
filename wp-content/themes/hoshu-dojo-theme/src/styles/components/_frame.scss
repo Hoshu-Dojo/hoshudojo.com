@@ -1,0 +1,17 @@
+// Frame
+// ===
+//
+// This component is responsible for framing it's content within a max-width and
+// aligns itself depending on screen size. For example, on small devices there
+// is no max-width. But on desktop screens, the max-size is a more readable,
+// smaller width and centers itself to the middle of the screen.
+
+.c-frame {
+    @include media('>=desktop') {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        max-width: 640px;
+    }
+}

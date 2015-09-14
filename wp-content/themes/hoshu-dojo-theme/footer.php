@@ -22,24 +22,17 @@
                 </ul>
 
                 <h3 class="u-visually-hidden">Navigation</h3>
-                <ul class="c-footer__sub-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/locations">Locations</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <?php
-                    // <li><a href="/about">About</a></li>
-                    // <li><a href="#">Contact</a></li>
-                    // <li><a href="#">Videos</a></li>
-                    // <li><a href="#">Gallery</a></li>
-                    // <li><a href="#">Blog</a></li>
-                    ?>
-                </ul>
+                <?php component('nav'); ?>
             </div>
         </nav>
 
         <div class="c-footer__info" role="contentinfo">
-            <p class="c-h6">We teach All Japan Kendo Federation Jodo in association with the Canadian Kendo Federation <strong>...blah blah blah, need remaining copy from Tom</strong></p>
-            <p class="c-h6">© Copyright 2012 – 2015</p>
+            <div class="c-text-content c--padded">
+                <div class="c-frame">
+                    <p class="c-h6">We teach All Japan Kendo Federation Jodo in association with the Canadian Kendo Federation <strong>...blah blah blah, need remaining copy from Tom</strong></p>
+                    <p class="c-h6">© Copyright 2012 – 2015</p>
+                </div>
+            </div>
         </div>
     </footer>
 
