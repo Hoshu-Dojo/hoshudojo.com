@@ -23,17 +23,21 @@
 
 <nav role="navigation">
     <h2 class="u-visually-hidden">Main Navigation</h2>
-    <ul class="c-nav-bar">
-        <li class="c-nav-bar__item">
-            <a href="/" class="c-nav-bar__link">Home</a>
-        </li>
-        <li class="c-nav-bar__item">
-            <a href="/locations" class="c-nav-bar__link">Locations</a>
-        </li>
-        <li class="c-nav-bar__item">
-            <a href="/events" class="c-nav-bar__link">Events</a>
-        </li>
-    </ul>
+    <div class="c-nav-bar">
+        <div class="c-frame">
+            <ul class="c-nav-bar__inner">
+                <li class="c-nav-bar__item">
+                    <a href="/" class="c-nav-bar__link">Home</a>
+                </li>
+                <li class="c-nav-bar__item">
+                    <a href="/locations" class="c-nav-bar__link">Locations</a>
+                </li>
+                <li class="c-nav-bar__item">
+                    <a href="/events" class="c-nav-bar__link">Events</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <section class="t-home__about">

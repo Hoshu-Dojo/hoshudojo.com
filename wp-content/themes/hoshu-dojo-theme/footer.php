@@ -22,7 +22,11 @@
                 </ul>
 
                 <h3 class="u-visually-hidden">Navigation</h3>
-                <?php component('nav'); ?>
+                <ul class="c-footer__nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/events">Events</a></li>
+                </ul>
             </div>
         </nav>
 

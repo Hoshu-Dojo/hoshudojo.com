@@ -4,15 +4,16 @@
 // 1. Create space at the left and right side of the nav bar
 
 .c-nav-bar {
+    background: #000;
+}
+
+
+// Inner
+// ---
+
+.c-nav-bar__inner {
     display: flex;
     padding: 1rem 0;
-
-    background: #000;
-
-    @include media('>=desktop') {
-        padding-left: 12.5%; // 1
-        padding-right: 12.5%; // 1
-    }
 }
 
 
@@ -23,6 +24,10 @@
     flex: 1 1 auto;
 
     text-align: center;
+
+    + .c-nav-bar__item {
+        padding-left: 2rem;
+    }
 }
 
 
