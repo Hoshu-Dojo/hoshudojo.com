@@ -27,7 +27,14 @@ module.exports = function(grunt) {
 		},
 		autoprefixer: {
 	        options: {
-	            browsers: ['iOS >= 6.0', 'Android >= 2.3', 'last 4 ChromeAndroid versions']
+	            browsers: [
+					'iOS >= 6.0',
+					'Android >= 4',
+					'last 4 ChromeAndroid versions',
+					'ie >= 10',
+					// 'Edge >= 12',
+					'Firefox >= 38'
+				]
 	        },
 	        multiple_files: {
 	            flatten: true,
