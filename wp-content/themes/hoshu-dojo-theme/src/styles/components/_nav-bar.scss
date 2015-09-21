@@ -25,6 +25,12 @@
 
     text-align: center;
 
+    &.c--hide-on-mobile {
+        @include media('<desktop') {
+            display: none;
+        }
+    }
+
     + .c-nav-bar__item {
         padding-left: 2rem;
     }

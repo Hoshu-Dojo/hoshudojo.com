@@ -15,7 +15,7 @@ while ( have_posts() ) : the_post();
                 <div class="c-page-header__nav">
                     <div class="c-nav-bar">
                         <ul class="c-nav-bar__inner">
-                            <li class="c-nav-bar__item">
+                            <li class="c-nav-bar__item c--hide-on-mobile">
                                 <a href="/" class="c-nav-bar__link">Home</a>
                             </li>
                             <li class="c-nav-bar__item">
