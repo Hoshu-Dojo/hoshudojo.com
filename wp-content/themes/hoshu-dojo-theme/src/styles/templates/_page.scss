@@ -1,0 +1,118 @@
+// Page (Generic Page Template)
+// ===
+
+.page {
+
+    // Responsive table
+    // ---
+    //
+    // I'm making the assumption that this is the only type of table that will
+    // ever appear on this website... hopefully this isn't a dangerous
+    // assumption.
+    //
+    // Additionally, I am specifically choosing not to use a class name because
+    // these tables exist in the content controlled by WP Users (the WYSIWYG)
+
+    table {
+        width: 100%;
+    }
+
+    @include media('<desktop') {
+        table,
+        tbody,
+        th,
+        tr,
+        td {
+            display: block;
+        }
+
+        thead { // Hide the TH from visual users, but not screen readers
+            position: absolute;
+            clip: rect(1px 1px 1px 1px); // for Internet Explorer
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        tr {
+            padding: 2rem 1.5rem;
+            border: 1px solid #ccc;
+
+            background: #f1f1f1;
+        }
+
+        td {
+
+            & + td {
+                // margin-top: 1.25rem;
+                padding-top: 1.75rem;
+                // border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            &::before {
+                display: block;
+
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                text-transform: uppercase;
+            }
+
+            &:nth-of-type(1) {
+                // content: 'Dojo Name';
+
+                font-size: 1.7rem;
+                font-weight: bold;
+                line-height: 2rem;
+            }
+
+            &:nth-of-type(2)::before {
+                content: 'Dojo Instructor';
+            }
+
+            &:nth-of-type(3)::before {
+                content: 'Times';
+            }
+
+            &:nth-of-type(4)::before {
+                content: 'Cost';
+            }
+
+            &:nth-of-type(5)::before {
+                content: 'Location';
+            }
+        }
+    }
+
+    @include media('>=desktop') {
+        table {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        tr {
+            padding: 2rem 1.5rem;
+            border: 1px solid #ccc;
+
+            background: #f1f1f1;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+
+            text-align: left;
+        }
+
+        td {
+            vertical-align: top;
+        }
+    }
+}
