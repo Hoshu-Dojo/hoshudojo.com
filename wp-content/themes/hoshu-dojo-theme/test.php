@@ -11,7 +11,47 @@
     <tbody>
 
         <tr>
-            <td><a href="/">Portland, Hoshu Dojo</a></td>
+            <td><a href="/">Hoshu Jodokai</a></td>
+            <td>
+                <p>Instructor...</p>
+                <p>Credentials...</p>
+            </td>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date...</td>
+                            <td>Time...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Cost...</td>
+            <td>Oita, Japan<br />Place<br/>Address</td>
+        </tr>
+
+        <tr>
+            <td><a href="/">Okinawa Dojo</a></td>
+            <td>
+                <p>Instructor...</p>
+                <p>Credentials...</p>
+            </td>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date...</td>
+                            <td>Time...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Cost...</td>
+            <td>Naha, Okinawa, Japan<br />Place<br/>Address</td>
+        </tr>
+
+        <tr>
+            <td><a href="/">Portland Dojo</a></td>
             <td>
                 <p>Thomas Groendal</p>
                 <p>Credentials...</p>
@@ -27,11 +67,11 @@
                 </table>
             </td>
             <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
+            <td>Portland, Oregan, United States<br />Place<br/>Address</td>
         </tr>
 
         <tr>
-            <td><a href="/">Vancouver, Hoshu Dojo</a></td>
+            <td><a href="/">Vancouver Dojo</a></td>
             <td>
                 <p>Ben Lew</p>
                 <p>Jodo Sandan, Iaido Sandan, Kobujutsu Shodan, Taekwondo Yidan</p>
@@ -52,11 +92,11 @@
                 </table>
             </td>
             <td>$15 drop in; $100 per 2 month session</td>
-            <td><p>Vancouver BC, Canada</p><p>Creekside Community Centre</p></td>
+            <td><p>Vancouver, BC, Canada</p><p>Creekside Community Centre</p></td>
         </tr>
 
         <tr>
-            <td><a href="/">Seattle &amp; Bellevue, Hoshu Dojo</a></td>
+            <td><a href="/">Seattle Dojo</a></td>
             <td>
                 <p>Marcus Phung</p>
                 <p>Credentials...</p>
@@ -72,11 +112,11 @@
                 </table>
             </td>
             <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
+            <td>Bellevue, Washington, United States<br />Place<br/>Address</td>
         </tr>
 
         <tr>
-            <td><a href="http://ewolson.wix.com/tonbo-dojo">Tonbo Dojo, Silverdale</a></td>
+            <td><a href="http://ewolson.wix.com/tonbo-dojo">Tonbo Dojo</a></td>
             <td>
                 <p>Ed Olson</p>
                 <p>Credentials...</p>
@@ -92,11 +132,31 @@
                 </table>
             </td>
             <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
+            <td>Silverdale, Washington, United States<br />Place<br/>Address</td>
         </tr>
 
         <tr>
-            <td><a href="/">Cancún, Hoshu Dojo</a></td>
+            <td><a href="http://ewolson.wix.com/tonbo-dojo">Los Angeles Dojo</a></td>
+            <td>
+                <p>Ed Olson</p>
+                <p>Credentials...</p>
+            </td>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date...</td>
+                            <td>Time...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Cost...</td>
+            <td>Los Angeles, California, United States<br />Place<br/>Address</td>
+        </tr>
+
+        <tr>
+            <td><a href="/">Cancún Dojo</a></td>
             <td>
                 <p>Mauricio Salazar</p>
                 <p>Credentials...</p>
@@ -112,67 +172,7 @@
                 </table>
             </td>
             <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
-        </tr>
-
-        <tr>
-            <td><a href="/">大分-Oita</a></td>
-            <td>
-                <p>Instructor...</p>
-                <p>Credentials...</p>
-            </td>
-            <td>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
-        </tr>
-
-        <tr>
-            <td><a href="/">豊州杖道会 – Hoshu Jodokai</a></td>
-            <td>
-                <p>Instructor...</p>
-                <p>Credentials...</p>
-            </td>
-            <td>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
-        </tr>
-
-        <tr>
-            <td><a href="/">大東流合気武道会 – Daito Ryu Aikibudokai</a></td>
-            <td>
-                <p>Instructor...</p>
-                <p>Credentials...</p>
-            </td>
-            <td>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>Cost...</td>
-            <td>Region<br />Place<br/>Address</td>
+            <td>Cancún, Quintana Roo, Mexico<br />Place<br/>Address</td>
         </tr>
 
     </tbody>

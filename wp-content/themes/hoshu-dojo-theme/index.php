@@ -49,12 +49,12 @@
         <div class="t-home__about-left">
             <h3>Shindo Muso Ryu Jodo</h3>
             <p>Shindo Muso Ryu is the art of the short staff. In this art, we use a simple short staff against a sword-armed opponent.</p>
-            <p>In Jodo we use the flexibility of the Jo to overcome the inherent advantages of a blade wielding opponent.</p>
+            <p>In Jodo we rely on precision and the flexibility of the Jo to overcome the inherent advantages of a blade wielding opponent.</p>
         </div>
 
         <div class="t-home__about-right">
             <h3>Daito Ryu Aikijujutsu</h3>
-            <p>Daito Ryu Aikijujutsu is the original “Aiki” art, an this art of traditional jujutsu.</p>
+            <p>Daito Ryu Aikijujutsu is the original “Aiki” art, an art of traditional Japanese jujutsu.</p>
             <p>This art includes sophisticated throws, joint locks and strikes, offering a rich reserve of technical knowledge.</p>
         </div>
 
@@ -72,7 +72,7 @@
                     <h2>Head Instructor</h2>
                 </header>
 
-                <p>Read about Goto Sensei who spent ten years in Japan, including a year in Nagoya and Tokyo as something his Q&amp;A blog for something and all that about.</p>
+                <p>Read about Kei Goto Sensei, a 7th dan Kyoshi in Jodo, and a direct student of Otofuji Ichizo sensei, and a 5th dan in Daito Ryu Aikijujutsu, and a direct student of Takeda Tokimune Sensei.<!--He has shared some of his thoughts on our blog.--></p>
             </div>
         </div>
     </div>
@@ -88,12 +88,14 @@
                     <h2>Locations</h2>
                 </header>
 
-                <p><a href="/locations#oita">Hoshu Jodokai</a> – Oita, Japan</p>
-                <p><a href="/locations#okinawa">Okinawa Dojo</a> – Okinawa, Japan</p>
-                <p><a href="/locations#portland">Portland Dojo</a> – Oregan, United States</p>
-                <p><a href="/locations#seattle">Seattle Dojo</a> – Washington, United States</p>
-                <p><a href="/locations#vancouver">Vancouver Dojo</a> – British Columbia, Canada</p>
-                <p><a href="/locations#cancun">Cancun Dojo</a> – Quintana Roo, Mexico</p>
+                <p>Hoshu Jodokai – Oita, Japan</p>
+                <p>Okinawa Dojo – Naha, Okinawa, Japan</p>
+                <p>Vancouver Dojo – Vancouver, British Columbia, Canada</p>
+                <p>Seattle Dojo – Bellevue, Washington, United States</p>
+                <p>Tombo Dojo – Silverdale, Washington, United States</p>
+                <p>Portland Dojo – Oregan, United States</p>
+                <p>Los Angeles Dojo – Los Angeles, California, United States</p>
+                <p>Cancun Dojo – Quintana Roo, Mexico</p>
 
                 <footer class="c-sheet__footer">
                     <a href="/locations" class="c-button">See Locations</a>
