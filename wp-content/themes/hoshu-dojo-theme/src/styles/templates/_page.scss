@@ -13,106 +13,150 @@
     // Additionally, I am specifically choosing not to use a class name because
     // these tables exist in the content controlled by WP Users (the WYSIWYG)
 
-    table {
+    .c-location-table {
         width: 100%;
-    }
 
-    @include media('<desktop') {
-        table,
-        tbody,
-        th,
-        tr,
-        td {
-            display: block;
-        }
-
-        thead { // Hide the TH from visual users, but not screen readers
-            position: absolute;
-            clip: rect(1px 1px 1px 1px); // for Internet Explorer
-            clip: rect(1px, 1px, 1px, 1px);
-            padding: 0;
-            border: 0;
-            height: 1px;
-            width: 1px;
-            overflow: hidden;
-        }
-
-        tr {
-            padding: 2rem 1.5rem;
-            border: 1px solid #ccc;
-
-            background: #f1f1f1;
-        }
-
-        td {
-
-            & + td {
-                // margin-top: 1.25rem;
-                padding-top: 1.75rem;
-                // border-top: 1px solid rgba(0, 0, 0, 0.1);
+        @include media('<desktop') {
+            > tbody,
+            > thead > tr,
+            > tbody > tr,
+            > thead > tr > th,
+            > tbody > tr > td {
+                display: block;
             }
 
-            &::before {
-                display: block;
+            > thead { // Hide the TH from visual users, but not screen readers
+                position: absolute;
+                clip: rect(1px 1px 1px 1px); // for Internet Explorer
+                clip: rect(1px, 1px, 1px, 1px);
+                padding: 0;
+                border: 0;
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+            }
 
-                color: rgba(0, 0, 0, 0.5);
+            > tbody > tr {
+                padding: 2rem 1.5rem;
+                border: 1px solid #ccc;
+
+                background: #f1f1f1;
+
+                + tr {
+                    margin-top: 2rem;
+                }
+            }
+
+            > tbody > tr > td {
+
+                & + td {
+                    // margin-top: 1.25rem;
+                    padding-top: 1.75rem;
+                    // border-top: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                &::before {
+                    display: block;
+
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    text-transform: uppercase;
+                }
+
+                &:nth-of-type(1) {
+                    // content: 'Dojo Name';
+
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    line-height: 2rem;
+                }
+
+                &:nth-of-type(2)::before {
+                    content: 'Dojo Instructor';
+                }
+
+                &:nth-of-type(3)::before {
+                    content: 'Times';
+                }
+
+                &:nth-of-type(4)::before {
+                    content: 'Cost';
+                }
+
+                &:nth-of-type(5)::before {
+                    content: 'Location';
+                }
+            }
+        }
+
+        @include media('>=desktop') {
+            & {
                 font-size: 1.1rem;
                 line-height: 1.5rem;
-                text-transform: uppercase;
             }
 
-            &:nth-of-type(1) {
-                // content: 'Dojo Name';
-
-                font-size: 1.7rem;
+            > thead {
                 font-weight: bold;
-                line-height: 2rem;
             }
 
-            &:nth-of-type(2)::before {
-                content: 'Dojo Instructor';
+            > thead > tr,
+            > tbody > tr {
+                padding: 2rem 1.5rem;
+                border: 1px solid #ccc;
+
+                background: #f1f1f1;
             }
 
-            &:nth-of-type(3)::before {
-                content: 'Times';
+            > thead > tr > th,
+            > tbody > tr > td {
+                padding: 0.75rem 1rem;
+
+                text-align: left;
             }
 
-            &:nth-of-type(4)::before {
-                content: 'Cost';
-            }
+            > tbody > tr > td {
+                vertical-align: top;
 
-            &:nth-of-type(5)::before {
-                content: 'Location';
+                // Time column
+                &:nth-of-type(3) {
+                    min-width: 165px;
+                }
+
+                //
+                &:nth-of-type(5) {
+                    min-width: 125px;
+                }
             }
         }
     }
 
-    @include media('>=desktop') {
-        table {
-            font-size: 1.1rem;
-            line-height: 1.5rem;
-        }
 
-        thead {
-            font-weight: bold;
-        }
+    // Inner Tables
+    // ---
+    //
+    // These are to be flattened, as I expect them to only be used to format
+    // rows of date-times
+
+    .c-location-table table {
+        width: 100%;
 
         tr {
-            padding: 2rem 1.5rem;
-            border: 1px solid #ccc;
-
-            background: #f1f1f1;
+            border: 0;
         }
 
+        tr,
         th,
         td {
-            padding: 0.75rem 1rem;
-
-            text-align: left;
+            padding: 0;
         }
 
-        td {
-            vertical-align: top;
+        td + td {
+            padding-left: 1rem;
+        }
+
+        tr + tr {
+            padding-top: 1rem;
         }
     }
 }
