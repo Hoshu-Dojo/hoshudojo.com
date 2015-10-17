@@ -72,7 +72,7 @@
                     <h2>Head Instructor</h2>
                 </header>
 
-                <p>Read about Kei Goto Sensei, a 7th dan Kyoshi in Jodo, and a direct student of Otofuji Ichizo sensei, and a 5th dan in Daito Ryu Aikijujutsu, and a direct student of Takeda Tokimune Sensei.<!--He has shared some of his thoughts on our blog.--></p>
+                <p>Kei Goto Sensei, our head instructor is based in Beppu City, Japan, and holds the rank of Kyoju in Daito Ryu Aikijujutsu, and was a direct student of Takeda Tokimune Sensei, and holds a 7th dan Kyoshi in Jodo under the All Japan Kendo Federation, and was a direct student of Otofuji Ichizo sensei and Tsuneyuki Ihashi Sensei.</p>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
                     <h2>Locations</h2>
                 </header>
 
-                <p>Hoshu Jodokai – Oita, Japan</p>
+                <p>Hoshu Aikijodokai – Oita, Japan</p>
                 <p>Okinawa Dojo – Naha, Okinawa, Japan</p>
                 <p>Vancouver Dojo – Vancouver, British Columbia, Canada</p>
                 <p>Seattle Dojo – Bellevue, Washington, United States</p>

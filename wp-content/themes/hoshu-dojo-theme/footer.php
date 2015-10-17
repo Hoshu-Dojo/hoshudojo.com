@@ -33,7 +33,7 @@
         <div class="c-footer__info" role="contentinfo">
             <div class="c-text-content c--padded">
                 <div class="c-frame">
-                    <p class="c-h6">We teach All Japan Kendo Federation Jodo in association with the Canadian Kendo Federation <strong>...blah blah blah, need remaining copy from Tom</strong></p>
+                    <p class="c-h6">We teach All Japan Kendo Federation Jodo in association with the All United States Kendo Federation and the Canadian Kendo Federation</p>
                     <p class="c-h6">© Copyright 2012 – 2015</p>
                 </div>
             </div>

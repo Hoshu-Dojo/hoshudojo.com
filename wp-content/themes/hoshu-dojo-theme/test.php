@@ -11,7 +11,7 @@
     <tbody>
 
         <tr>
-            <td><a href="/">Beppu Hokubu Kominkan</a></td>
+            <td><a href="/">Hoshu Aikijodokai</a></td>
             <td>
                 <p>
                     <strong>Kei Goto</strong><br />
@@ -46,6 +46,7 @@
             </td>
             <td>5,000 yen for both or 3,000 yen per one</td>
             <td>
+                Beppu Hokubu Kominkan
                 <div>Osu Sogo Taikukan (Osu Sports Park)</div>
                 Osu - 1-1 Aobamachi,<br />
                 Oita, Oita Prefecture 870-0908, Japan
