@@ -123,7 +123,12 @@
                     min-width: 165px;
                 }
 
-                //
+                // Cost column
+                &:nth-of-type(4) {
+                    width: 80px;
+                }
+
+                // Location
                 &:nth-of-type(5) {
                     min-width: 125px;
                 }
@@ -149,6 +154,10 @@
         th,
         td {
             padding: 0;
+        }
+
+        td:nth-child(2) {
+            text-align: right;
         }
 
         td + td {

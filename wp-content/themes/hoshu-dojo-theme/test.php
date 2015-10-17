@@ -11,71 +11,120 @@
     <tbody>
 
         <tr>
-            <td><a href="/">Hoshu Jodokai</a></td>
+            <td><a href="/">Beppu Hokubu Kominkan</a></td>
             <td>
-                <p>Instructor...</p>
-                <p>Credentials...</p>
+                <p>
+                    <strong>Kei Goto</strong><br />
+                    Jodo, 7 dan Kyoshi<br />
+                    Daito Ryu, Menkyo
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Monday (Jodo)</td>
+                            <td>7:00 - 9:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday (Jodo)</td>
+                            <td>7:00 - 9:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tuesdays (Daito Ryu)<br />
+                                at Compal Hall Judo Dojo
+                            </td>
+                            <td>8:00 - 10:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays (Daito Ryu)</td>
+                            <td>7:00 - 9:00pm</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Oita, Japan<br />Place<br/>Address</td>
+            <td>5,000 yen for both or 3,000 yen per one</td>
+            <td>
+                <div>Osu Sogo Taikukan (Osu Sports Park)</div>
+                Osu - 1-1 Aobamachi,<br />
+                Oita, Oita Prefecture 870-0908, Japan
+            </td>
         </tr>
 
         <tr>
             <td><a href="/">Okinawa Dojo</a></td>
             <td>
-                <p>Instructor...</p>
-                <p>Credentials...</p>
+                <p>
+                    <strong>Taisuke Yonamine</strong><br />
+                    Jodo, 4th dan
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Contact for Details</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Naha, Okinawa, Japan<br />Place<br/>Address</td>
+            <td>Contact for Details</td>
+            <td>
+                Naha, Okinawa, Japan<br />
+                Contact for Details
+            </td>
         </tr>
 
         <tr>
             <td><a href="/">Portland Dojo</a></td>
             <td>
-                <p>Thomas Groendal</p>
-                <p>Credentials...</p>
+                <p>
+                    <strong>Thomas Groendal</strong><br />
+                    Jodo, 5th dan<br />
+                    Daito Ryu, 3rd dan<br />
+                    Aikido, 1993-2007<br />
+                    Muso Shinden Ryu Iaido, 2nd dan<br />
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Wednesday (Jodo)</td>
+                            <td>7:00 - 9:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Monday (Daito Ryu)<br />
+                                at Multnomah Aikikai
+                            </td>
+                            <td>7:30 - 9:30pm</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Portland, Oregan, United States<br />Place<br/>Address</td>
+            <td>$50 per month inclusive</td>
+            <td>
+                Fulton Park Community Center</div>
+                68 SW Miles St<br />
+                Portland, OR 97219, United States<br /><br />
+                <div>Multnomah Aikikai</div>
+                6415 SW Macadam Ave<br />
+                Portland, OR 97239, United States<br />
+            </td>
         </tr>
 
         <tr>
             <td><a href="/">Vancouver Dojo</a></td>
             <td>
-                <p>Ben Lew</p>
-                <p>Jodo Sandan, Iaido Sandan, Kobujutsu Shodan, Taekwondo Yidan</p>
-                <p>benlew@hoshudojo.com</p>
+                <p>
+                    <strong>Ben Lew</strong><br />
+                    Jodo, 3rd dan<br />
+                    Iaido, 3rd dan<br />
+                    Kobujutsu, 4th dan<br />
+                    Taekwondo, Yidan
+                </p>
             </td>
             <td>
                 <table>
@@ -92,87 +141,137 @@
                 </table>
             </td>
             <td>$15 drop in; $100 per 2 month session</td>
-            <td><p>Vancouver, BC, Canada</p><p>Creekside Community Centre</p></td>
+            <td>
+                <p>
+                    Creekside Community Centre<br />
+                    1 Athletes Way<br />
+                    Vancouver, BC V5Y 0B1, Canada
+                </p>
+            </td>
         </tr>
 
         <tr>
             <td><a href="/">Seattle Dojo</a></td>
             <td>
-                <p>Marcus Phung</p>
-                <p>Credentials...</p>
+                <div><strong>Marcus Phung</strong></div>
+                <p>
+                    Jodo, 3rd dan<br />
+                    Iaido, 3rd dan
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Tuesday</td>
+                            <td>6:00pm - 7:15pm</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Bellevue, Washington, United States<br />Place<br/>Address</td>
+            <td>$40/month, $15 drop-in</td>
+            <td>
+                <div>North Bellevue Community Center (Craft Room)</div>
+                4063 148th Ave NE<br />
+                Bellevue, WA 98009, United States
+            </td>
         </tr>
 
         <tr>
             <td><a href="http://ewolson.wix.com/tonbo-dojo">Tonbo Dojo</a></td>
             <td>
-                <p>Ed Olson</p>
-                <p>Credentials...</p>
+                <p>
+                    <strong>Ed Olson</strong><br />
+                    Iaido, 4th Dan<br />
+                    Jodo, 3rd Dan<br />
+                    <i>cell</i> <a href="tel:16317937363">(631) 793-7363</a>
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Thursday</td>
+                            <td>8:00pm - 9:00</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Silverdale, Washington, United States<br />Place<br/>Address</td>
+            <td>YMCA membership fees</td>
+            <td>
+                Haselwood YMCA<br />
+                3909 NW Randall Way<br />
+                Silverdale, WA 98383, United States
+            </td>
         </tr>
 
         <tr>
-            <td><a href="http://ewolson.wix.com/tonbo-dojo">Los Angeles Dojo</a></td>
+            <td><a href="/">Pasadena Dojo</a></td>
             <td>
-                <p>Ed Olson</p>
-                <p>Credentials...</p>
+                <p>
+                    <strong>Narbeh Bagdasarian</strong><br />
+                    Jodo, 1st Kyu
+                </p>
+                <p>
+                    <strong>Levon Sukiassyan</strong><br />
+                    Jodo, 1st Kyu
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Tuesday</td>
+                            <td>8:30 - 10:30pm</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mondays<br />
+                                at Norwalk Kendo Dojo (intermittently)
+                            </td>
+                            <td>
+                                8:30pm - 10:00
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Los Angeles, California, United States<br />Place<br/>Address</td>
+            <td>No cost if one is a member of AUSKF or Southern California Kendo Federation</td>
+            <td>
+                <div>Pasadena Japanese Cultural Institute</div>
+                595 Lincoln Ave # 201<br />
+                Pasadena, CA 91103, United States<br /><br />
+
+                Norwalk Kendo Dojo<br />
+                Southeast Japanese Community Center<br />
+                14615 Gridley Road, Norwalk, CA 90650
+            </td>
         </tr>
 
         <tr>
-            <td><a href="/">Cancún Dojo</a></td>
+            <td><a href="/">Kuroi Pepeem Dojo</a></td>
             <td>
-                <p>Mauricio Salazar</p>
-                <p>Credentials...</p>
+                <div><strong>Mauricio Salazar</strong></div>
+                <p>
+                    Practicing since 2013
+                </p>
             </td>
             <td>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Date...</td>
-                            <td>Time...</td>
+                            <td>Wednesday</td>
+                            <td>8:00pm</td>
                         </tr>
                     </tbody>
                 </table>
             </td>
-            <td>Cost...</td>
-            <td>Cancún, Quintana Roo, Mexico<br />Place<br/>Address</td>
+            <td>$50 pesos ($5 dollars /class) &amp; an annual fee for testing, seminars and tournaments.</td>
+            <td>
+                <div>Gym Municipal Kuchil Baxal</div>
+                <div>Cancún, Quintana Roo, Mexico</div>
+                Contact for Details
+            </td>
         </tr>
 
     </tbody>
