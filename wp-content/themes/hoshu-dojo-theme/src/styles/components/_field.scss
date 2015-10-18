@@ -12,6 +12,7 @@
 // 2. Align and position the radio or checkbox labels so they don't overlap and
 //    so that they are initially vertically aligned
 // 3. Modifier class for search field
+// 4. Shameful laziness... overriding widtget styles :\
 
 .c-field {
     position: relative; // 1
@@ -58,6 +59,11 @@
                 pointer-events: none;
             }
         }
+    }
+
+    > [type="email"],
+    > [type="text"] {
+        width: 100% !important; // 4
     }
 
     // Floated child layout
