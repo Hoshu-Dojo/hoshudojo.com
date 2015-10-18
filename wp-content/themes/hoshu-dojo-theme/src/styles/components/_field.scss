@@ -62,7 +62,8 @@
     }
 
     > [type="email"],
-    > [type="text"] {
+    > [type="text"],
+    > textarea {
         width: 100% !important; // 4
     }
 
