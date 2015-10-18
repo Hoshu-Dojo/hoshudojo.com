@@ -11,7 +11,7 @@
     <tbody>
 
         <tr>
-            <td><a href="/">Hoshu Aikijodokai</a></td>
+            <td><a href="#contactUs">Hoshu Aikijodokai</a></td>
             <td>
                 <p>
                     <strong>Kei Goto</strong><br />
@@ -54,7 +54,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Okinawa Dojo</a></td>
+            <td><a href="#contactUs">Okinawa Dojo</a></td>
             <td>
                 <p>
                     <strong>Taisuke Yonamine</strong><br />
@@ -78,7 +78,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Portland Dojo</a></td>
+            <td><a href="#contactUs">Portland Dojo</a></td>
             <td>
                 <p>
                     <strong>Thomas Groendal</strong><br />
@@ -117,7 +117,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Vancouver Dojo</a></td>
+            <td><a href="#contactUs">Vancouver Dojo</a></td>
             <td>
                 <p>
                     <strong>Ben Lew</strong><br />
@@ -152,7 +152,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Seattle Dojo</a></td>
+            <td><a href="#contactUs">Seattle Dojo</a></td>
             <td>
                 <div><strong>Marcus Phung</strong></div>
                 <p>
@@ -207,7 +207,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Pasadena Dojo</a></td>
+            <td><a href="#contactUs">Pasadena Dojo</a></td>
             <td>
                 <p>
                     <strong>Narbeh Bagdasarian</strong><br />
@@ -250,7 +250,7 @@
         </tr>
 
         <tr>
-            <td><a href="/">Kuroi Pepeem Dojo</a></td>
+            <td><a href="#contactUs">Kuroi Pepeem Dojo</a></td>
             <td>
                 <div><strong>Mauricio Salazar</strong></div>
                 <p>
@@ -277,3 +277,10 @@
 
     </tbody>
 </table>
+
+<br />
+
+<h2>Contact Us</h2>
+<a id="contactUs" name="contactUs"></a>
+
+[contact-form to='thomasgroendal@hoshudojo.com' subject='Contact through hoshudojo.com'][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Topic' type='select' required='1' options=',Shindo Muso Ryu Jodo,Daito Ryu,Other'/][contact-field label='Location' type='select' required='1' options='Vancouver%26#x002c; Canada,Seattle%26#x002c; WA,Portland%26#x002c; OR,Cancun%26#x002c; Mexico,Oita%26#x002c; Japan,Okinawa%26#x002c; Japan,Other'/][contact-field label='Your Question' type='textarea' required='1'/][/contact-form]

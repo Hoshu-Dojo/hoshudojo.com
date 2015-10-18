@@ -155,8 +155,19 @@ $home__expected-mobile-logo-size: 79px;
 .t-home__instructor {
 
     @include media('>=desktop') {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+        h2 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            text-align: center;
+        }
+
         .c-overlay-card__image {
-            margin-top: -15%;
+            // margin-top: -15%;
             margin-bottom: -15%;
         }
     }
@@ -169,6 +180,11 @@ $home__expected-mobile-logo-size: 79px;
 .t-home__locations {
 
     @include media('>=desktop') {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
         .c-overlay-card__image {
             margin-top: -5%;
             margin-bottom: -5%;

@@ -14,7 +14,7 @@
 
             <div class="c-sheet">
                 <p class="c-h3">
-                    <span class="u-weight--light">Martial Arts, Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</span>
+                    <span class="u-weight--light">Martial Arts: Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</span>
                 </p>
             </div>
         </div>
@@ -72,7 +72,7 @@
                     <h2>Head Instructor</h2>
                 </header>
 
-                <p>Kei Goto Sensei, our head instructor is based in Beppu City, Japan, and holds the rank of Kyoju in Daito Ryu Aikijujutsu, and was a direct student of Takeda Tokimune Sensei, and holds a 7th dan Kyoshi in Jodo under the All Japan Kendo Federation, and was a direct student of Otofuji Ichizo sensei and Tsuneyuki Ihashi Sensei.</p>
+                <p>Kei Goto Sensei, our head instructor is based in Beppu City, Japan, and holds the rank of Menkyo in Daito Ryu Aikijujutsu, and was a direct student of Takeda Tokimune Sensei, and holds a 7th dan Kyoshi in Jodo under the All Japan Kendo Federation, and was a direct student of Otofuji Ichizo sensei and Tsuneyuki Ihashi Sensei.</p>
             </div>
         </div>
     </div>
@@ -88,17 +88,18 @@
                     <h2>Locations</h2>
                 </header>
 
-                <p>Hoshu Aikijodokai – Oita, Japan</p>
-                <p>Okinawa Dojo – Naha, Okinawa, Japan</p>
-                <p>Vancouver Dojo – Vancouver, British Columbia, Canada</p>
-                <p>Seattle Dojo – Bellevue, Washington, United States</p>
-                <p>Tombo Dojo – Silverdale, Washington, United States</p>
-                <p>Portland Dojo – Oregan, United States</p>
-                <p>Los Angeles Dojo – Los Angeles, California, United States</p>
-                <p>Cancun Dojo – Quintana Roo, Mexico</p>
+                <p>Hoshu Aikijodokai, Oita, Japan</p>
+                <!--p>Okinawa Dojo, Naha, Okinawa, Japan</p-->
+                <p>Vancouver Dojo, Vancouver, Canada</p>
+                <!--p>Seattle Dojo, Bellevue, Washington, United States</p-->
+                <!--p>Tonbo Dojo, Silverdale, Washington, United States</p-->
+                <p>Portland Dojo, Oregon, United States</p>
+                <!--p>Los Angeles Dojo, Los Angeles, California, United States</p-->
+                <p>Cancun Dojo, Quintana Roo, Mexico</p>
+                <p>And more!</p>
 
                 <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">See Locations</a>
+                    <a href="/locations" class="c-button">See All Locations</a>
                 </footer>
             </div>
         </div>
