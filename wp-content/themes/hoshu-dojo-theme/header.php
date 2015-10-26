@@ -3,8 +3,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <!--meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"-->
-    <title>Hoshu Dojo</title>
-    <meta name="description" content="Hoshu Dojo – Martials Arts, Shindo Muso Ryu and Daito Ryu Aikijujutsus">
+    <title>豊州合気杖道会</title>
+    <meta name="description" content="豊州合気杖道会 – 神道夢想流杖道・大東流合気武道">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,100,700,400' rel='stylesheet' type='text/css'/>

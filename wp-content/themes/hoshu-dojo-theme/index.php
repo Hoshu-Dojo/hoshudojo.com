@@ -14,7 +14,7 @@
 
             <div class="c-sheet">
                 <p class="c-h3">
-                    <span class="u-weight--light">Martial Arts: Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu</span>
+                    <span class="u-weight--light">神道夢想流杖道・大東流合気武道</span>
                 </p>
             </div>
         </div>
@@ -27,13 +27,13 @@
         <div class="c-frame">
             <ul class="c-nav-bar__inner">
                 <li class="c-nav-bar__item">
-                    <a href="/" class="c-nav-bar__link">Home</a>
+                    <a href="/" class="c-nav-bar__link">ホームページ</a>
                 </li>
                 <li class="c-nav-bar__item">
-                    <a href="/locations" class="c-nav-bar__link">Locations</a>
+                    <a href="/locations" class="c-nav-bar__link">ロケーション</a>
                 </li>
                 <li class="c-nav-bar__item">
-                    <a href="/events" class="c-nav-bar__link">Events</a>
+                    <a href="/events" class="c-nav-bar__link">イベント</a>
                 </li>
             </ul>
         </div>
@@ -44,18 +44,18 @@
     <div class="c-sheet u-text-content">
         <h2 class="u-visually-hidden">About Hoshu Dojo</h2>
 
-        <p class="c-h2 u-weight--light">Practice Moving Zen – Experience Traditional Japanese Martial Arts</p>
+        <p class="c-h2 u-weight--light">一般部・少年部会員随時受付中　体験入門1ヶ月無料</p>
 
         <div class="t-home__about-left">
-            <h3>Shindo Muso Ryu Jodo</h3>
-            <p>Shindo Muso Ryu is the art of the short staff. In this art, we use a simple short staff against a sword-armed opponent.</p>
-            <p>In Jodo we rely on precision and the flexibility of the Jo to overcome the inherent advantages of a blade wielding opponent.</p>
+            <h3>神道夢想流杖道</h3>
+            <p>神道夢想流は「杖」の使い方を教える伝統的日本武術です。刀を持つ敵に４尺２寸の杖で対応します。</p>
+            <p>杖道家は杖の柔軟性と鋭く技を使う事でもともと刃物として有利である太刀を勝利する。</p>
         </div>
 
         <div class="t-home__about-right">
-            <h3>Daito Ryu Aikijujutsu</h3>
-            <p>Daito Ryu Aikijujutsu is the original “Aiki” art, an art of traditional Japanese jujutsu.</p>
-            <p>This art includes sophisticated throws, joint locks and strikes, offering a rich reserve of technical knowledge.</p>
+            <h3>大東流合気武道</h3>
+            <p>大東流は合気を使う日本の伝統的な柔術です。技には投げ、関節技、打撃も含まれています。</p>
+            <p>年齢・性別を問わず誰でもできる古武道です。</p>
         </div>
 
         <div class="u-clearfix"></div>
@@ -69,10 +69,10 @@
         <div class="c-overlay-card__content c--right">
             <div class="c-sheet">
                 <header class="c-sheet__header">
-                    <h2>Head Instructor</h2>
+                    <h2>指導者の紹介</h2>
                 </header>
 
-                <p>Kei Goto Sensei, our head instructor is based in Beppu City, Japan, and holds the rank of Menkyo in Daito Ryu Aikijujutsu, and was a direct student of Takeda Tokimune Sensei, and holds a 7th dan Kyoshi in Jodo under the All Japan Kendo Federation, and was a direct student of Otofuji Ichizo sensei and Tsuneyuki Ihashi Sensei.</p>
+                <p>豊州合気杖道会の指導者は後藤系と言います。大分県別府市に在住しています。大東流合気武道では教授を持ち、武田時宗先生の直弟子です。神道夢想流では全日本剣道連盟に所属し、七段教師をもち、乙藤市蔵先生及び伊橋典之先生の直弟子です。</p>
             </div>
         </div>
     </div>
@@ -85,21 +85,20 @@
         <div class="c-overlay-card__content c--left">
             <div class="c-sheet">
                 <header class="c-sheet__header">
-                    <h2>Locations</h2>
+                    <h2>ロケーション</h2>
                 </header>
 
-                <p>Hoshu Aikijodokai, Oita, Japan</p>
-                <!--p>Okinawa Dojo, Naha, Okinawa, Japan</p-->
-                <p>Vancouver Dojo, Vancouver, Canada</p>
-                <!--p>Seattle Dojo, Bellevue, Washington, United States</p-->
-                <!--p>Tonbo Dojo, Silverdale, Washington, United States</p-->
-                <p>Portland Dojo, Oregon, United States</p>
-                <!--p>Los Angeles Dojo, Los Angeles, California, United States</p-->
-                <p>Cancun Dojo, Quintana Roo, Mexico</p>
-                <p>And more!</p>
+                <p>大分県別府市　豊州合気杖道会（本部）</p>
+                <p>沖縄県那覇市　豊州合気杖道会（支部）</p>
+                <p>カナダ・バンクーバー　豊州バンクーバー道場</p>
+                <p>米国・べレビュー　豊州シアトル道場</p>
+                <p>米国・シルバデール　蜻蛉道場</p>
+                <p>米国・ポートランド市　豊州ポートランド道場（北米支部）</p>
+                <p>米国・ロスアンゼルス　豊州ロスアンゼルス道場</p>
+                <p>メキシコ・カンクン　ぺぺエム道場</p>
 
                 <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">See All Locations</a>
+                    <a href="/locations" class="c-button">傘下道場を見る</a>
                 </footer>
             </div>
         </div>
@@ -109,7 +108,7 @@
 <section class="t-home__events">
     <div class="c-sheet">
         <header class="c-sheet__header">
-            <h2>Upcoming Events</h2>
+            <h2>カレンダー</h2>
         </header>
 
         <div class="t-home__widget-area-1">
@@ -135,7 +134,7 @@
         ?>
 
         <footer class="c-sheet__footer">
-            <a href="/events" class="c-button">View All Events</a>
+            <a href="/events" class="c-button">全てを見る</a>
         </footer>
     </div>
 </section>
@@ -170,7 +169,7 @@
 
 <section class="t-home__contact">
     <div class="c-sheet">
-        <h2>Ask a Question</h2>
+        <h2>問い合わせ</h2>
 
         <div class="t-home__widget-area-2">
 			<?php dynamic_sidebar( 'sidebar-2' ) ?>

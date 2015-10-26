@@ -23,9 +23,9 @@
 
                 <h3 class="u-visually-hidden">Navigation</h3>
                 <ul class="c-footer__nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/locations">Locations</a></li>
-                    <li><a href="/events">Events</a></li>
+                    <li><a href="/">ホームページ</a></li>
+                    <li><a href="/locations">ロケーション</a></li>
+                    <li><a href="/events">イベント</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +33,7 @@
         <div class="c-footer__info" role="contentinfo">
             <div class="c-text-content c--padded">
                 <div class="c-frame">
-                    <p class="c-h6">We teach All Japan Kendo Federation Jodo in association with the All United States Kendo Federation and the Canadian Kendo Federation</p>
+                    <p class="c-h6">全日本剣道連盟に所属しています。</p>
                     <p class="c-h6">© Copyright 2012 – 2015</p>
                 </div>
             </div>
