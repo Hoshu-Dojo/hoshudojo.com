@@ -197,11 +197,6 @@ $home__expected-mobile-logo-size: 79px;
             text-align: center;
         }
 
-        .c-overlay-card__image {
-            margin-top: -5%;
-            margin-bottom: -5%;
-        }
-
         .c-sheet__footer {
             display: flex;
             justify-content: center;
@@ -219,6 +214,11 @@ $home__expected-mobile-logo-size: 79px;
 
             font-size: 5rem;
             line-height: 6rem;
+        }
+
+        .c-overlay-card__image {
+            margin-top: -5%;
+            margin-bottom: -5%;
         }
     }
 }
