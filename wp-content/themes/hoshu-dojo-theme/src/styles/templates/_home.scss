@@ -187,10 +187,6 @@ $home__expected-mobile-logo-size: 79px;
         // font-size: 1.7rem;
         // line-height: 2.5rem;
 
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        text-align: center;
-
         h2 {
             padding-bottom: 6rem;
 
@@ -203,6 +199,15 @@ $home__expected-mobile-logo-size: 79px;
             margin-top: -5%;
             margin-bottom: -5%;
         }
+
+        .c-sheet__footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .c-button {
+            width: 50%;
+        }
     }
 }
 
@@ -210,6 +215,10 @@ $home__expected-mobile-logo-size: 79px;
     @include media('>=desktop') {
         columns: 2;
         column-gap: 2rem;
+
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        text-align: center;
     }
 }
 
