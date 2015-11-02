@@ -170,7 +170,7 @@ $home__expected-mobile-logo-size: 79px;
         }
     }
 
-    @include media('>=tablet') {
+    @include media('>=desktop') {
         font-size: 2.5rem;
         line-height: 3.5rem;
 
@@ -224,7 +224,7 @@ $home__expected-mobile-logo-size: 79px;
 }
 
 .t-home__locations-columns {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         padding-bottom: 3rem;
 
         columns: 2;
