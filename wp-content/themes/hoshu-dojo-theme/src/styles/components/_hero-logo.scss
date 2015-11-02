@@ -19,7 +19,7 @@ $logo__desktop-size: 240px;
 .c-hero-logo__inner {
     position: relative; // 1
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -48,7 +48,7 @@ $logo__desktop-size: 240px;
         text-align: center;
     }
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         margin-left: 2rem; // 2
 
         font-size: 6rem;
@@ -64,7 +64,7 @@ $logo__desktop-size: 240px;
 
 .c-hero-logo__title {
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         margin-top: 2rem;
     }
 }
@@ -89,7 +89,7 @@ $logo__desktop-size: 240px;
         width: $logo__mobile-size;
     }
 
-    @include media ('>=desktop') {
+    @include media ('>=tablet') {
         height: $logo__desktop-size;
         width: $logo__desktop-size;
     }

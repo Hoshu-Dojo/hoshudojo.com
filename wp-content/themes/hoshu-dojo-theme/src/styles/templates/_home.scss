@@ -37,7 +37,7 @@ $home__expected-mobile-logo-size: 79px;
         top: -100%; // 2
     }
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         .c-splash-card__banner {
             position: relative;
 
@@ -87,7 +87,7 @@ $home__expected-mobile-logo-size: 79px;
         }
     }
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         background: black url($images-path + '/about-banner-desktop.jpg') no-repeat 0 0;
         background-size: cover;
 
@@ -125,7 +125,7 @@ $home__expected-mobile-logo-size: 79px;
 
 .t-home__about-right,
 .t-home__about-left {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         float: left;
 
         width: 50%;
@@ -137,13 +137,13 @@ $home__expected-mobile-logo-size: 79px;
 }
 
 .t-home__about-right {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         padding-right: 8rem;
     }
 }
 
 .t-home__about-left {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         padding-left: 8rem;
     }
 }
@@ -154,7 +154,7 @@ $home__expected-mobile-logo-size: 79px;
 
 .t-home__instructor {
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         font-size: 2.5rem;
         line-height: 3.5rem;
         text-align: center;
@@ -183,7 +183,7 @@ $home__expected-mobile-logo-size: 79px;
 
 .t-home__locations {
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         // font-size: 1.7rem;
         // line-height: 2.5rem;
 
@@ -212,7 +212,9 @@ $home__expected-mobile-logo-size: 79px;
 }
 
 .t-home__locations-columns {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
+        padding-bottom: 3rem;
+
         columns: 2;
         column-gap: 2rem;
 
@@ -227,7 +229,7 @@ $home__expected-mobile-logo-size: 79px;
 // ---
 
 .t-home__events {
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         float: left;
 
         width: (100% / 2);
@@ -243,7 +245,7 @@ $home__expected-mobile-logo-size: 79px;
 // ---
 //
 // .t-home__blog {
-//     @include media('>=desktop') {
+//     @include media('>=tablet') {
 //         float: left;
 //
 //         width: (100% / 3);
@@ -260,7 +262,7 @@ $home__expected-mobile-logo-size: 79px;
         width: 100%;
     }
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         float: left;
 
         width: (100% / 2);

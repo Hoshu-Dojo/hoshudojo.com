@@ -22,7 +22,7 @@
     font-size: 1.1rem;
     line-height: 1.5rem;
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         padding-left: 2rem;
 
         font-size: 1.7rem;
@@ -37,7 +37,7 @@
     height: 3rem;
     width: 3rem;
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         height: 4rem;
         width: 4rem;
     }

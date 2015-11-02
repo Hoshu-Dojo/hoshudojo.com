@@ -16,7 +16,7 @@
 
     background: #f2f2f2;
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         display: flex;
         justify-content: center;
     }
@@ -29,7 +29,7 @@
 .c-footer__inner {
     text-align: center;
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         max-width: 400px;
     }
 }
@@ -113,7 +113,7 @@
         padding: 0.5rem 0;
     }
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         li {
             padding-right: 1rem;
             padding-left: 1rem;
