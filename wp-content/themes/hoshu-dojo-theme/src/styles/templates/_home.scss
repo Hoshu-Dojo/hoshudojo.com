@@ -229,7 +229,9 @@ $home__expected-mobile-logo-size: 79px;
 
         columns: 2;
         column-gap: 2rem;
+    }
 
+    @include media('>=desktop') {
         font-size: 2.5rem;
         line-height: 3.5rem;
         text-align: center;
