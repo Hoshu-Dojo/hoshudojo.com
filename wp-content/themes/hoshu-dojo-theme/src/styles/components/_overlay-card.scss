@@ -42,7 +42,9 @@
     position: relative; // 1
     z-index: $stage-layer; // 1
 
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.6);
+
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
 
     @include media('>=desktop') {
         position: absolute;
@@ -53,21 +55,5 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-
-        // background: rgba(255, 255, 255, 0.1);
-
-        // color: white;
-
-        // &.c--right {
-        //     right: 5%;
-        // }
-        //
-        // &.c--left {
-        //     left: 5%;
-        // }
-
-        // a {
-        //     color: white;
-        // }
     }
 }

@@ -88,18 +88,19 @@
                     <h2>Locations</h2>
                 </header>
 
-                <p>Hoshu Aikijodokai, Oita, Japan</p>
-                <p>Okinawa Dojo, Naha, Okinawa, Japan</p>
-                <p>Portland Dojo, Oregon, United States</p>
-                <p>Vancouver Dojo, Vancouver, Canada</p>
-                <p>Seattle Dojo, Bellevue, Washington, United States</p>
-                <p>Tonbo Dojo, Silverdale, Washington, United States</p>
-                <p>Pasadena Dojo, Los Angeles, California, United States</p>
-                <p>Cancun Dojo, Quintana Roo, Mexico</p>
-                <p>And more!</p>
+                <div class="t-home__locations-columns">
+                    <p>Hoshu Aikijodokai, Oita, Japan</p>
+                    <p>Okinawa Dojo, Naha, Okinawa, Japan</p>
+                    <p>Portland Dojo, Oregon, United States</p>
+                    <p>Vancouver Dojo, Vancouver, Canada</p>
+                    <p>Seattle Dojo, Bellevue, Washington, United States</p>
+                    <p>Tonbo Dojo, Silverdale, Washington, United States</p>
+                    <p>Pasadena Dojo, Los Angeles, California, United States</p>
+                    <p>Cancun Dojo, Quintana Roo, Mexico</p>
+                </div>
 
                 <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">See All Locations</a>
+                    <a href="/locations" class="c-button">See More Details</a>
                 </footer>
             </div>
         </div>
