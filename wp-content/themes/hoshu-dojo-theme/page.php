@@ -16,13 +16,13 @@ while ( have_posts() ) : the_post();
                     <div class="c-nav-bar">
                         <ul class="c-nav-bar__inner">
                             <li class="c-nav-bar__item c--hide-on-mobile">
-                                <a href="/" class="c-nav-bar__link">Home</a>
+                                <a href="/" class="c-nav-bar__link">ホームページ</a>
                             </li>
                             <li class="c-nav-bar__item">
-                                <a href="/ロケーション" class="c-nav-bar__link">Locations</a>
+                                <a href="/ロケーション" class="c-nav-bar__link">ロケーション</a>
                             </li>
                             <li class="c-nav-bar__item">
-                                <a href="/イベント" class="c-nav-bar__link">Events</a>
+                                <a href="/イベント" class="c-nav-bar__link">イベント</a>
                             </li>
                         </ul>
                     </div>
