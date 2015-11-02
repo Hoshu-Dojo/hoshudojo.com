@@ -89,12 +89,12 @@
                 </header>
 
                 <p>Hoshu Aikijodokai, Oita, Japan</p>
-                <!--p>Okinawa Dojo, Naha, Okinawa, Japan</p-->
-                <p>Vancouver Dojo, Vancouver, Canada</p>
-                <!--p>Seattle Dojo, Bellevue, Washington, United States</p-->
-                <!--p>Tonbo Dojo, Silverdale, Washington, United States</p-->
+                <p>Okinawa Dojo, Naha, Okinawa, Japan</p>
                 <p>Portland Dojo, Oregon, United States</p>
-                <!--p>Los Angeles Dojo, Los Angeles, California, United States</p-->
+                <p>Vancouver Dojo, Vancouver, Canada</p>
+                <p>Seattle Dojo, Bellevue, Washington, United States</p>
+                <p>Tonbo Dojo, Silverdale, Washington, United States</p>
+                <p>Pasadena Dojo, Los Angeles, California, United States</p>
                 <p>Cancun Dojo, Quintana Roo, Mexico</p>
                 <p>And more!</p>
 
