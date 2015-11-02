@@ -155,15 +155,9 @@ $home__expected-mobile-logo-size: 79px;
 .t-home__instructor {
 
     @include media('>=tablet') {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
         text-align: center;
 
         h2 {
-            padding-bottom: 6rem;
-
-            font-size: 5rem;
-            line-height: 6rem;
             text-align: center;
         }
 
@@ -175,6 +169,18 @@ $home__expected-mobile-logo-size: 79px;
             margin-bottom: -25%;
         }
     }
+
+    @include media('>=tablet') {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+
+        h2 {
+            padding-bottom: 6rem;
+
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+    }
 }
 
 
@@ -184,14 +190,10 @@ $home__expected-mobile-logo-size: 79px;
 .t-home__locations {
 
     @include media('>=tablet') {
-        // font-size: 1.7rem;
-        // line-height: 2.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
 
         h2 {
-            padding-bottom: 6rem;
-
-            font-size: 5rem;
-            line-height: 6rem;
             text-align: center;
         }
 
@@ -209,10 +211,20 @@ $home__expected-mobile-logo-size: 79px;
             width: 50%;
         }
     }
+
+    @include media('>=desktop') {
+
+        h2 {
+            padding-bottom: 6rem;
+
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+    }
 }
 
 .t-home__locations-columns {
-    @include media('>=tablet') {
+    @include media('>=desktop') {
         padding-bottom: 3rem;
 
         columns: 2;
