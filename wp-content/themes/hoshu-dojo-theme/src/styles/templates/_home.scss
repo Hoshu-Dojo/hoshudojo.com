@@ -163,8 +163,13 @@ $home__expected-mobile-logo-size: 79px;
         text-align: center;
 
         h2 {
-            font-size: 2rem;
-            line-height: 2.5rem;
+            // font-size: 2rem;
+            // line-height: 2.5rem;
+
+            padding-bottom: 6rem;
+
+            font-size: 5rem;
+            line-height: 6rem;
             text-align: center;
         }
 
@@ -187,6 +192,14 @@ $home__expected-mobile-logo-size: 79px;
         font-size: 2.5rem;
         line-height: 3.5rem;
         text-align: center;
+
+        h2 {
+            padding-bottom: 6rem;
+
+            font-size: 5rem;
+            line-height: 6rem;
+            text-align: center;
+        }
 
         .c-overlay-card__image {
             margin-top: -5%;

@@ -52,19 +52,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 100%;
 
         // background: rgba(255, 255, 255, 0.1);
 
         // color: white;
 
-        &.c--right {
-            right: 5%;
-        }
-
-        &.c--left {
-            left: 5%;
-        }
+        // &.c--right {
+        //     right: 5%;
+        // }
+        //
+        // &.c--left {
+        //     left: 5%;
+        // }
 
         // a {
         //     color: white;

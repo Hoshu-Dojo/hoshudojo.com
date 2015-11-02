@@ -66,7 +66,7 @@
     <div class="c-overlay-card">
         <img src="<?php getImgDirectory(); ?>/head-instructor-banner.jpg" class="c-overlay-card__image" alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" />
 
-        <div class="c-overlay-card__content c--right">
+        <div class="c-overlay-card__content">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>Head Instructor</h2>
@@ -82,7 +82,7 @@
     <div class="c-overlay-card">
         <img src="<?php getImgDirectory(); ?>/location-banner.jpg" class="c-overlay-card__image" alt="Photo of a classroom with students throughout" />
 
-        <div class="c-overlay-card__content c--left">
+        <div class="c-overlay-card__content">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>Locations</h2>
