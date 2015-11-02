@@ -16,7 +16,7 @@
     .c-location-table {
         width: 100%;
 
-        @include media('<desktop') {
+        @include media('<tablet') {
             > tbody,
             > thead > tr,
             > tbody > tr,

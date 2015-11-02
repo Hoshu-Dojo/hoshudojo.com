@@ -79,7 +79,7 @@ $home__expected-mobile-logo-size: 79px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     }
 
-    @include media('<desktop') {
+    @include media('<tablet') {
         .c-h2,
         .t-home__about-left,
         .t-home__about-right { // "learn more" button
