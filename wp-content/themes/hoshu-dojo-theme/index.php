@@ -30,10 +30,10 @@
                     <a href="/" class="c-nav-bar__link">ホームページ</a>
                 </li>
                 <li class="c-nav-bar__item">
-                    <a href="/locations" class="c-nav-bar__link">ロケーション</a>
+                    <a href="/ロケーション" class="c-nav-bar__link">ロケーション</a>
                 </li>
                 <li class="c-nav-bar__item">
-                    <a href="/events" class="c-nav-bar__link">イベント</a>
+                    <a href="/イベント" class="c-nav-bar__link">イベント</a>
                 </li>
             </ul>
         </div>
@@ -98,7 +98,7 @@
                 <p>メキシコ・カンクン　ぺぺエム道場</p>
 
                 <footer class="c-sheet__footer">
-                    <a href="/locations" class="c-button">傘下道場を見る</a>
+                    <a href="/ロケーション" class="c-button">傘下道場を見る</a>
                 </footer>
             </div>
         </div>
@@ -134,7 +134,7 @@
         ?>
 
         <footer class="c-sheet__footer">
-            <a href="/events" class="c-button">全てを見る</a>
+            <a href="/イベント" class="c-button">全てを見る</a>
         </footer>
     </div>
 </section>

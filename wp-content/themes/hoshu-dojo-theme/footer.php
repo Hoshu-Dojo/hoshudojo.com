@@ -24,8 +24,8 @@
                 <h3 class="u-visually-hidden">Navigation</h3>
                 <ul class="c-footer__nav">
                     <li><a href="/">ホームページ</a></li>
-                    <li><a href="/locations">ロケーション</a></li>
-                    <li><a href="/events">イベント</a></li>
+                    <li><a href="/ロケーション">ロケーション</a></li>
+                    <li><a href="/イベント">イベント</a></li>
                 </ul>
             </div>
         </nav>

@@ -19,10 +19,10 @@ while ( have_posts() ) : the_post();
                                 <a href="/" class="c-nav-bar__link">Home</a>
                             </li>
                             <li class="c-nav-bar__item">
-                                <a href="/locations" class="c-nav-bar__link">Locations</a>
+                                <a href="/ロケーション" class="c-nav-bar__link">Locations</a>
                             </li>
                             <li class="c-nav-bar__item">
-                                <a href="/events" class="c-nav-bar__link">Events</a>
+                                <a href="/イベント" class="c-nav-bar__link">Events</a>
                             </li>
                         </ul>
                     </div>
