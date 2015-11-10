@@ -7,6 +7,8 @@
 // 1. Remove white-space from the elements inside the .c-field-row
 
 .c-field-row {
+    display: flex;
+    align-items: flex-start;
 
     > * {
         line-height: 0; // 1
@@ -14,6 +16,18 @@
 
     ~ .c-field-row {
         margin-top: 1.5rem; // why the magic number?
+    }
+
+    .c-field {
+        flex: 1 1 auto;
+
+        &.c--shrink {
+            flex: 0 0 auto;
+        }
+
+        + .c-field {
+            margin-left: 1rem;
+        }
     }
 
     // This creates a larger space bellow all `.c--fieldset` instances

@@ -17,7 +17,12 @@
 .c-field {
     position: relative; // 1
 
-    label {
+    :only-child:not(.c-label) {
+        margin-top: 1.5rem + 0.5rem;
+    }
+
+    label,
+    .c-label {
         display: inline-block;
 
         font-size: 1.1rem;
@@ -34,7 +39,8 @@
         display: inline-block;
     }
 
-    label span {
+    label span,
+    .c-label span {
         color: $required-color;
         font-weight: bold;
     }

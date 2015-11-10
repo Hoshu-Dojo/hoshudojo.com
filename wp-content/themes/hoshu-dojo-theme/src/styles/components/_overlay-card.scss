@@ -9,7 +9,7 @@
     padding-top: 10rem; // 2
     overflow: hidden;
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         padding-top: 0;
     }
 }
@@ -25,7 +25,7 @@
     top: 0;
     z-index: $backdrop-layer; // 1
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         position: static;
 
         width: 100%;
@@ -44,30 +44,22 @@
 
     background: rgba(255, 255, 255, 0.7);
 
-    @include media('>=desktop') {
+    @include media('>=tablet') {
         position: absolute;
-        top: 0;
-        bottom: 0;
+        top: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        left: 2rem;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
+    }
 
-        background: rgba(255, 255, 255, 0.1);
-
-        color: white;
-
-        &.c--right {
-            right: 5%;
-        }
-
-        &.c--left {
-            left: 5%;
-        }
-
-        a {
-            color: white;
-        }
+    @include media('>=desktop') {
+        top: 4rem;
+        right: 4rem;
+        bottom: 4rem;
+        left: 4rem;
     }
 }

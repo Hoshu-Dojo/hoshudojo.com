@@ -66,7 +66,7 @@
     <div class="c-overlay-card">
         <img src="<?php getImgDirectory(); ?>/head-instructor-banner.jpg" class="c-overlay-card__image" alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" />
 
-        <div class="c-overlay-card__content c--right">
+        <div class="c-overlay-card__content">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>指導者の紹介</h2>
@@ -82,20 +82,22 @@
     <div class="c-overlay-card">
         <img src="<?php getImgDirectory(); ?>/location-banner.jpg" class="c-overlay-card__image" alt="Photo of a classroom with students throughout" />
 
-        <div class="c-overlay-card__content c--left">
+        <div class="c-overlay-card__content">
             <div class="c-sheet">
                 <header class="c-sheet__header">
                     <h2>ロケーション</h2>
                 </header>
 
-                <p>大分県別府市　豊州合気杖道会（本部）</p>
-                <p>沖縄県那覇市　豊州合気杖道会（支部）</p>
-                <p>カナダ・バンクーバー　豊州バンクーバー道場</p>
-                <p>米国・べレビュー　豊州シアトル道場</p>
-                <p>米国・シルバデール　蜻蛉道場</p>
-                <p>米国・ポートランド市　豊州ポートランド道場（北米支部）</p>
-                <p>米国・ロスアンゼルス　豊州ロスアンゼルス道場</p>
-                <p>メキシコ・カンクン　ぺぺエム道場</p>
+                <div class="t-home__locations-columns">
+                    <p>大分県別府市　豊州合気杖道会（本部）</p>
+                    <p>沖縄県那覇市　豊州合気杖道会（支部）</p>
+                    <p>カナダ・バンクーバー　豊州バンクーバー道場</p>
+                    <p>米国・べレビュー　豊州シアトル道場</p>
+                    <p>米国・シルバデール　蜻蛉道場</p>
+                    <p>米国・ポートランド市　豊州ポートランド道場（北米支部）</p>
+                    <p>米国・ロスアンゼルス　豊州ロスアンゼルス道場</p>
+                    <p>メキシコ・カンクン　ぺぺエム道場</p>
+                </div>
 
                 <footer class="c-sheet__footer">
                     <a href="/ロケーション" class="c-button">傘下道場を見る</a>
