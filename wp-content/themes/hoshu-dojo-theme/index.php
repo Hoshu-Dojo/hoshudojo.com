@@ -1,5 +1,114 @@
 <?php get_header(); ?>
 
+<script>
+    function setCookie(name,value,days) {
+        var expires = "";
+
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        document.cookie = name+'=; Max-Age=-99999999;';
+    }
+</script>
+
+<!-- Begin MailChimp Signup Form -->
+<!--link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"-->
+<div id="mc_embed_signup" class="t-home__visor">
+    <form action="//hoshudojo.us9.list-manage.com/subscribe/post?u=932de532d91ec18ef1f144adf&amp;id=f13bddc5a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h2 class="c-h3">Find out about Hoshu Dojo Events in your area:</h2>
+
+        <div class="c-field-row">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_932de532d91ec18ef1f144adf_f13bddc5a9" tabindex="-1" value=""></div>
+
+            <div class="c-field mc-field-group">
+                <label style="position: absolute; left: -5000px;" for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+            </div>
+
+            <div class="c-field mc-field-group x-first-name">
+                <label style="position: absolute; left: -5000px;" for="mce-FNAME">First Name </label>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+            </div>
+
+            <div class="c-field mc-field-group x-last-name">
+                <label style="position: absolute; left: -5000px;" for="mce-LNAME">Last Name </label>
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+            </div>
+
+            <div class="c-field c--shrink clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button c-button">
+                <div><!-- this is hidden on purpose, so submit doesn't have top margin --></div>
+            </div>
+
+            <div class="c-field c--shrink clear">
+                <button type="button" value="remove" class="button c-button t-home__no-thanks">
+                    No thanks
+                </button>
+            </div>
+        </div>
+
+        <div class="c-field-row">
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+<div class="js-visor-trigger"></div>
+
+<script>
+    // Visor Visibility
+    // ===
+    var visor = document.querySelector('.t-home__visor')
+    var HIDE_FORM = 'hoshu-dojo-hide-form'
+    var VISIBLE = 't--visible'
+    var isVisorHidden = getCookie(HIDE_FORM)
+
+    var hideVisor = function() { visor.classList.remove(VISIBLE) }
+    var showVisor = function() {
+        if (isVisorHidden && isVisorHidden.length) {
+            return
+        }
+
+        visor.classList.add(VISIBLE)
+    }
+    showVisor()
+
+
+    // No Thanks Button
+    // ===
+    var button = document.querySelector('.t-home__no-thanks')
+    var noThanks = function() {
+        setCookie(HIDE_FORM, 'true', 30)
+        hideVisor()
+        isVisorHidden = getCookie(HIDE_FORM)
+    }
+    button.addEventListener('click', noThanks)
+</script>
+
 <header class="t-home__hero">
     <div class="c-splash-card">
         <aside class="c-splash-card__banner">
