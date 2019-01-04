@@ -1737,6 +1737,16 @@ div.jGrowl div.jGrowl-closer {
     margin-left: 1rem;
 }
 
+.c-field.jp-recaptcha-contain .jp-recaptcha,
+.c-field.jp-recaptcha-contain div[style*="width"][style*="height"],
+.c-field.jp-recaptcha-contain iframe:not(.c-label) {
+    margin-top: 0;
+}
+
+.c-field.jp-recaptcha-contain .jp-recaptcha-message {
+    line-height: 20px;
+}
+
 .c-footer {
     clear: both;
 }
