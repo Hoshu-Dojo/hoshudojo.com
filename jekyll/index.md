@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "English Site"
 ---
 
-## You're ready to go!
+<p>This page should redirect you. If not, then choose your destination instead:</p>
 
-Start developing your Jekyll website.
+<p><a href="/en">Hoshu Dojo (English)</a></p>
+
+<p><a href="/jp">Hoshu Dojo (日本語)</a></p>
