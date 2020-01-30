@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en-US" }}">
+<html lang="{{ page.lang }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400italic,100,700,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   </head>
   <body>
-    {{ content}}
+    <a class="skip-link u-visually-hidden" href="#content">Skip to content</a>
+    {{ content}} {% include footer.html %}
   </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "English Site"
 permalink: "/en"
 lang: "en"
