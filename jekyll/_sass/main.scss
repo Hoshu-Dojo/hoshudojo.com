@@ -2374,8 +2374,8 @@ div.jGrowl div.jGrowl-closer {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
-  src: url("../hoshu-dojo-theme/src/fonts/icons.woff") format("woff"),
-    url("../hoshu-dojo-theme/src/fonts/icons.ttf") format("truetype");
+  src: url("../fonts/icons.woff") format("woff"),
+    url("../fonts/icons.ttf") format("truetype");
 }
 
 .c-icon {
@@ -2922,9 +2922,8 @@ div.jGrowl div.jGrowl-closer {
 }
 
 .t-home__about {
-  background: #000
-    url("/wp-content/themes/hoshu-dojo-theme/src/img/about-banner-mobile.jpg")
-    no-repeat top center;
+  background: #000 url("/assets/img/about-banner-mobile.jpg") no-repeat top
+    center;
   background-size: 470px;
   color: white;
 }
@@ -2943,9 +2942,7 @@ div.jGrowl div.jGrowl-closer {
 
 @media (min-width: 600px) {
   .t-home__about {
-    background: #000
-      url("/wp-content/themes/hoshu-dojo-theme/src/img/about-banner-desktop.jpg")
-      no-repeat 0 0;
+    background: #000 url("/assets/img/about-banner-desktop.jpg") no-repeat 0 0;
     background-size: cover;
   }
 

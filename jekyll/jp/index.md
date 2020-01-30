@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "Japanese Site"
 permalink: "/jp"
 lang: "ja"
