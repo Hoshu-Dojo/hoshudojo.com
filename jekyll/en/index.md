@@ -1,8 +1,6 @@
 ---
 layout: home
-title: "English Site"
+title: "Home"
 permalink: "/en"
 lang: "en"
 ---
-
-This is the English site

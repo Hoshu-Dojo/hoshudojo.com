@@ -14,7 +14,7 @@
 
     <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | relative_url }}"/>
   </head>
-  <body>
+  <body class="{{ page.layout }}">
     <a class="skip-link u-visually-hidden" href="#content">Skip to content</a>
     {{ content}}
     {% include footer.html %}
