@@ -1,0 +1,31 @@
+// Splash Card
+// ===
+//
+// A UI card that contains a banner and center aligned content.
+
+.c-splash-card {
+}
+
+
+// Banner
+// ---
+
+.c-splash-card__banner {
+    line-height: 0;
+}
+
+
+// Image
+// ---
+
+.c-splash-card__image {
+    width: 100%;
+}
+
+
+// Content
+// ---
+
+.c-splash-card__content {
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+// Page Header
+// ===
+
+.c-page-header {
+    padding: 0 2rem;
+
+    background: black;
+
+    color: white;
+}
+
+
+// Inner
+// ---
+
+.c-page-header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// Logo
+// ---
+
+.c-page-header__logo {
+    flex: 0 0 auto;
+    padding: 0.5rem 0;
+}
+
+
+// Nav
+
+.c-page-header__nav {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    // padding: 0 2rem;
+}

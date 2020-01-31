@@ -1,0 +1,37 @@
+// Text Content
+// ===
+//
+// Text content opt-in. Also helps control some basic margin and padding
+// relationships (i.e. removing bottom margin from last paragraphs)
+
+.c-text-content {
+
+    &.c--padded {
+        padding: 3rem 2rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Blog List Item
+// ===
+
+.c-blog-list-item {
+    @extend %c-link-box;
+
+    padding: 3rem 2rem;
+}

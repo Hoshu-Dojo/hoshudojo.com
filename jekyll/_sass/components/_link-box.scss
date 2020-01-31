@@ -1,0 +1,11 @@
+// Link Box
+// ===
+//
+// Styles for a solid, backgrounded clickable link box!
+
+.c-link-box,
+%c-link-box {
+    border: 1px solid $anchor-color;
+
+    background: #f2f2f2;
+}

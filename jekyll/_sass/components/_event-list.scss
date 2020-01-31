@@ -1,0 +1,22 @@
+// Event List
+// ===
+
+.c-event-list {
+
+    .c-event-list-item {
+        @extend %c-event-list__list-item;
+    }
+
+    .c-event-list-item:last-child {
+        @extend %c-event-list__list-item--last-child;
+    }
+}
+
+
+%c-event-list__list-item {
+    margin-bottom: 3rem;
+}
+
+%c-event-list__list-item--last-child {
+    margin-bottom: 1rem;
+}

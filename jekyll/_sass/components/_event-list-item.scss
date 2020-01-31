@@ -1,0 +1,84 @@
+// Event List Item
+// ===
+//
+// 1. Absolutely position `.c-event-list-item__date` relative to the parent
+//   `.c-event-list-item` container
+
+$event-list-item-date-size: 6rem;
+
+.c-event-list-item,
+%c-event-list-item {
+    position: relative; // 1
+}
+
+
+// Content
+// ---
+//
+// 1. Padding is to prevent content from overflowing beneath/overtop of the date
+// 2. Fix layout due to uneditable event plugin markup
+
+.c-event-list-item__content,
+%c-event-list-item__content {
+    display: flex; // 2
+    flex-direction: column-reverse; // 2
+    padding-left: $event-list-item-date-size + 2rem; // 1
+
+    p {
+        margin-bottom: 0;
+    }
+
+    // fix for event plugin
+    span {
+        display: block;
+
+        // Target the date
+        &:nth-of-type(2) {
+            color: $anchor-color;
+        }
+    }
+}
+
+
+// Date
+// ---
+//
+// 1. Remove date from the content flow. Allow it to just stick to the top
+//    left of the `.c-event-list-item` container
+
+.c-event-list-item__date,
+%c-event-list-item__date {
+    position: absolute; // 1
+}
+
+
+// Link
+// ---
+
+.c-event-list-item__link,
+%c-event-list-item__link {
+    @extend %c-link-box;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $event-list-item-date-size;
+    padding: 1rem;
+
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+// Month
+// ---
+
+.c-event-list-item__month {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
