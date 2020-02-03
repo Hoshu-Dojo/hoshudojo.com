@@ -2,21 +2,21 @@
 layout: default
 ---
 
-{% include pop-form.html %} {% include hero.html %}
+{% include pop-form.html %}
+{% include hero.html %}
 
 <nav role="navigation">
   <h2 class="u-visually-hidden">Main Navigation</h2>
   <div class="c-nav-bar">
     <div class="c-frame">
       <ul class="c-nav-bar__inner">
-        <li class="c-nav-bar__item">
-          <a class="c-nav-bar__link" href="/{{ page.lang }}">Home</a>
-        </li>
-        <li class="c-nav-bar__item">
-          <a class="c-nav-bar__link" href="/{{ page.lang }}/locations"
-            >Locations</a
-          >
-        </li>
+        {% for item in site.nav %}
+          <li class="c-nav-bar__item">
+            <a class="c-nav-bar__link" href="{{ item.href }}">
+              {{ item.description }}
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
@@ -46,11 +46,7 @@ layout: default
 
 <section class="t-home__locations">
   <div class="c-overlay-card">
-    <img
-      alt="Photo of a classroom with students throughout"
-      class="c-overlay-card__image"
-      src="/assets/img//location-banner.jpg"
-    />
+    <img alt="Photo of a classroom with students throughout" class="c-overlay-card__image" src="/assets/img//location-banner.jpg"/>
 
     <div class="c-overlay-card__content">
       <div class="c-sheet">
@@ -59,20 +55,13 @@ layout: default
         </header>
 
         <div class="t-home__locations-columns">
-          <p>{{ page.locations.list[0] }}</p>
-          <p>{{ page.locations.list[1] }}</p>
-          <p>{{ page.locations.list[2] }}</p>
-          <p>{{ page.locations.list[3] }}</p>
-          <p>{{ page.locations.list[4] }}</p>
-          <p>{{ page.locations.list[5] }}</p>
-          <p>{{ page.locations.list[6] }}</p>
-          <p>{{ page.locations.list[7] }}</p>
+          {% for item in page.locations.list %}
+            <p>{{ item }}</p>
+          {% endfor %}
         </div>
 
         <footer class="c-sheet__footer">
-          <a class="c-button" href="/{{ page.lang }}/locations"
-            >{{ page.locations.button }}</a
-          >
+          <a class="c-button" href="/locations">{{ page.locations.button }}</a>
         </footer>
       </div>
     </div>
@@ -81,11 +70,7 @@ layout: default
 
 <section class="t-home__instructor">
   <div class="c-overlay-card">
-    <img
-      alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata"
-      class="c-overlay-card__image"
-      src="/assets/img//head-instructor-banner.jpg"
-    />
+    <img alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" class="c-overlay-card__image" src="/assets/img//head-instructor-banner.jpg"/>
 
     <div class="c-overlay-card__content">
       <div class="c-sheet">

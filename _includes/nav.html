@@ -8,12 +8,11 @@
       <div class="c-page-header__nav">
         <div class="c-nav-bar">
           <ul class="c-nav-bar__inner">
-            <li class="c-nav-bar__item c--hide-on-mobile">
-              <a class="c-nav-bar__link" href="/{{ page.lang }}/">Home</a>
-            </li>
-            <li class="c-nav-bar__item">
-              <a class="c-nav-bar__link" href="/{{ page.lang }}/locations">Locations</a>
-            </li>
+            {% for item in site.nav %}
+              <li class="c-nav-bar__item c--hide-on-mobile">
+                <a class="c-nav-bar__link" href="{{ item.href }}">{{ item.description }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>

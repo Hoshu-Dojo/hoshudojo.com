@@ -1,3 +1,8 @@
 url: "http://www.hoshudojo.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Hoshu Dojo - Shindo Muso Ryu Jo and Daito Ryu Aikijujutsu" # the name of your site, e.g. ACME Corp.
+nav:
+  - description: "Home"
+    href: "/"
+  - description: "Locations"
+    href: "/locations"
