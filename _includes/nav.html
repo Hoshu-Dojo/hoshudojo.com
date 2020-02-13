@@ -9,8 +9,10 @@
         <div class="c-nav-bar">
           <ul class="c-nav-bar__inner">
             {% for item in site.nav %}
-              <li class="c-nav-bar__item c--hide-on-mobile">
-                <a class="c-nav-bar__link" href="{{ item.href }}">{{ item.description }}</a>
+              <li class="c-nav-bar__item {% if item.id == 'home' %} c--hide-on-mobile {% endif %}">
+                <a class="c-nav-bar__link" href="{{ item.href }}" {{ item.props }}>
+                  {{ item.description }}
+                </a>
               </li>
             {% endfor %}
           </ul>

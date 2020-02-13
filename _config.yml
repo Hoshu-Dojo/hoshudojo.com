@@ -3,6 +3,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Hoshu Dojo - Shindo Muso Ryu Jo and Daito Ryu Aikijujutsu" # the name of your site, e.g. ACME Corp.
 nav:
   - description: "Home"
+    id: 'home'
     href: "/"
+    props: ''
   - description: "Locations"
+    id: 'locations'
     href: "/locations"
+    props: ''
+  - description: "Contact Us"
+    id: 'contact'
+    href: "https://forms.gle/5cHDnQ5cwZo2mukP6"
+    props: 'target="_blank"'

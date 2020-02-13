@@ -2,9 +2,6 @@
 layout: home
 title: "Home"
 lang: "en"
-nav:
-  home: "Home"
-  locations: "Locations"
 splash: "Martial Arts: Shindo Muso Ryu Jodo, and Daito Ryu Aikijujutsu"
 pitch: "Practice Moving Zen – Experience Traditional Japanese Martial Arts"
 jodo:
@@ -30,7 +27,5 @@ locations:
 instructor:
   title: "Head Instructor"
   description: "Kei Goto Sensei, our head instructor is based in Beppu City, Japan, and holds the rank of Menkyo in Daito Ryu Aikijujutsu, and was a direct student of Takeda Tokimune Sensei, and holds a 7th dan Kyoshi in Jodo under the All Japan Kendo Federation, and was a direct student of Otofuji Ichizo sensei and Tsuneyuki Ihashi Sensei."
-contact:
-  title: "Ask a Question"
 disclaimer: "We teach All Japan Kendo Federation Jodo in association with the All United States Kendo Federation and the Canadian Kendo Federation"
 ---

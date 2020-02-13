@@ -41,7 +41,11 @@
       <h3 class="u-visually-hidden">Navigation</h3>
       <ul class="c-footer__nav">
         {% for item in site.nav %}
-        <li><a href="{{ item.href }}">{{ item.description }}</a></li>
+          <li>
+            <a href="{{ item.href }}" {{ item.props }}>
+              {{ item.description }}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>

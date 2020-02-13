@@ -12,7 +12,7 @@ layout: default
       <ul class="c-nav-bar__inner">
         {% for item in site.nav %}
           <li class="c-nav-bar__item">
-            <a class="c-nav-bar__link" href="{{ item.href }}">
+            <a class="c-nav-bar__link" href="{{ item.href }}" {{ item.props }}>
               {{ item.description }}
             </a>
           </li>
@@ -80,16 +80,6 @@ layout: default
 
         <p>{{ page.instructor.description }}</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="t-home__contact">
-  <div class="c-sheet">
-    <h2>{{ page.contact.title }}</h2>
-
-    <div class="t-home__widget-area-2">
-      (INSERT NEW FORM)
     </div>
   </div>
 </section>
