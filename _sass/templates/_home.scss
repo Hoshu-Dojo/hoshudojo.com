@@ -1,0 +1,378 @@
+// Home
+// ===
+
+$home__expected-logo-size: 122px;
+$home__expected-mobile-logo-size: 79px;
+
+// @TODO: get `t-` namespace infront of page class names
+.home {
+  .c-footer::before {
+    content: "";
+
+    display: block;
+    clear: both;
+  }
+}
+
+// Hero
+// ---
+//
+// 1. we set an explicit height here so as to enable us to do a fake -50% top
+//    margin effect on `c-logo__inner`. These height values are set to half the
+//    logo height, which allows us to let the content below "flow up" as if the
+//    logo were moved upwards with a -50% top margin.
+// 2. this represents the "negative margin" that positions the logo overtop top
+//    the hero banner
+
+.t-home__hero {
+  .c-hero-logo {
+    height: $home__expected-mobile-logo-size; // 1
+  }
+
+  .c-hero-logo__inner {
+    position: relative;
+    top: -100%; // 2
+  }
+
+  @media #{$desktop} {
+    .c-splash-card__banner {
+      position: relative;
+
+      padding-bottom: 37%;
+      overflow: hidden;
+
+      picture {
+        position: absolute;
+        top: -5%;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    .c-hero-logo {
+      height: $home__expected-logo-size; // 1
+    }
+
+    .c-h3 {
+      font-size: 3.4rem;
+      line-height: 4.5rem;
+    }
+  }
+}
+
+// About Section
+// ---
+//
+// 1. At desktop sizes, the left/right inner divs are floated. Clear fix them!
+
+.t-home__about {
+  background: black url($images-path+"/about-banner-mobile.jpg") no-repeat top
+    center;
+  background-size: 470px;
+
+  color: white;
+
+  .u-weight--light {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  @media #{$mobile} {
+    .c-h2,
+    .t-home__about-left,
+    .t-home__about-right {
+      // "learn more" button
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media #{$desktop} {
+    background: black url($images-path+"/about-banner-desktop.jpg") no-repeat 0
+      0;
+    background-size: cover;
+
+    &,
+    h3 {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      text-align: center;
+    }
+
+    .c-h2 {
+      padding-bottom: 6rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    .c-sheet {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+      overflow: hidden; // 1
+    }
+
+    .u-clearfix + p {
+      padding-top: 7rem;
+    }
+
+    .c-button {
+      // "learn more" button
+      width: 50%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+.t-home__about-right,
+.t-home__about-left {
+  @media #{$large-desktop} {
+    float: left;
+
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    font-weight: 300;
+  }
+}
+
+.t-home__about-right {
+  @media #{$desktop} {
+    padding-top: 3rem;
+  }
+
+  @media #{$large-desktop} {
+    padding-top: 0;
+    padding-right: 8rem;
+  }
+}
+
+.t-home__about-left {
+  @media #{$large-desktop} {
+    padding-left: 8rem;
+  }
+}
+
+// Instructor Section
+// ---
+
+.t-home__instructor {
+  @media #{$desktop} {
+    text-align: center;
+    font-weight: 300;
+
+    h2 {
+      text-align: center;
+    }
+
+    .c-overlay-card__content {
+      padding: 6rem 10rem;
+    }
+
+    .c-overlay-card__image {
+      margin-bottom: -25%;
+    }
+  }
+
+  @media #{$large-desktop} {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+
+    h2 {
+      padding-bottom: 3rem;
+
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+  }
+}
+
+// Location Section
+// ---
+
+.t-home__locations {
+  @media #{$desktop} {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .c-sheet__footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .c-button {
+      width: 50%;
+    }
+  }
+
+  @media #{$large-desktop} {
+    h2 {
+      padding-bottom: 3rem;
+
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    .c-overlay-card__image {
+      margin-top: -5%;
+      margin-bottom: -5%;
+    }
+  }
+}
+
+.t-home__locations-columns {
+  @media #{$desktop} {
+    padding-bottom: 3rem;
+
+    columns: 2;
+    column-gap: 2rem;
+
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  @media #{$large-desktop} {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
+
+// Events Section
+// ---
+
+.t-home__events {
+  @media #{$desktop} {
+    float: left;
+
+    width: (100% / 2);
+  }
+
+  @media #{$extreme-desktop} {
+    padding-left: 5%;
+  }
+}
+
+// Blog Section
+// ---
+//
+// .t-home__blog {
+//     @media #{$desktop} {
+//         float: left;
+//
+//         width: (100% / 3);
+//     }
+// }
+
+// Contact Section
+// ---
+
+.t-home__contact {
+  [type="submit"] {
+    width: 100%;
+  }
+
+  @media #{$desktop} {
+    float: left;
+
+    width: (100% / 2);
+  }
+
+  @media #{$extreme-desktop} {
+    padding-right: 5%;
+  }
+}
+
+// Visor Form
+// ---
+
+.t-home__visor {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  margin-top: -16rem;
+  padding: 1.5rem 1rem 0;
+
+  background: #000;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+
+  color: #fff;
+
+  transition: margin-top 0.5s ease-out;
+}
+
+.t-home__visor.t--visible {
+  margin-top: 0;
+}
+
+.t-home__visor form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.t-home__visor ~ .t-home__hero {
+  margin-top: 0;
+
+  transition: margin-top 0.25s ease-out;
+}
+
+.t-home__visor.t--visible ~ .t-home__hero {
+  margin-top: 98px;
+}
+
+.t-home__visor .c-field-row ~ .c-field-row {
+  margin-top: 1rem;
+}
+
+.t-home__visor [type="email"],
+.t-home__visor [type="text"] {
+  color: initial;
+}
+
+.t-home__visor [type="submit"] {
+  border: 1px solid #ccc;
+
+  font-weight: bold;
+}
+
+.t-home__visor .c-field button.c-button {
+  margin-top: 0.5rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.t-home__visor#mc_embed_signup .mce_inline_error {
+  margin-bottom: 0;
+
+  line-height: 1;
+}
+
+.t-home__visor .response {
+  margin-bottom: 1rem;
+
+  line-height: 2rem;
+}
+
+.t-home__visor .x-first-name,
+.t-home__visor .x-last-name {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .t-home__visor {
+    padding: 1.5rem 2rem 0.5rem;
+  }
+
+  .t-home__visor .x-first-name,
+  .t-home__visor .x-last-name {
+    display: initial;
+  }
+}

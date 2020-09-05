@@ -1,0 +1,81 @@
+// Variables
+// ===
+
+// Colors
+// ---
+
+// Base Colors
+$blue: #1982d1;
+
+// Specific Colors
+$anchor-color: $blue;
+$required-color: red;
+
+// Paths
+// ---
+
+$images-path: "/assets/img";
+
+// Icons Settings
+// ---
+//
+// These variables are used to add your icon font file to your CSS, and also to
+// help generate your icon component classes.
+
+// Name the iconset you would like to use
+$icon-font: "icons";
+
+// Set the path to the icon font files. Notice there is no slash at the end!
+$icon-font-path: "../fonts";
+
+// List of icons made available your $icon-font file. Use this icon list to
+// generate your icon component classes.
+$icon-list: (
+  facebook: "\e000",
+  twitter: "\e001",
+  google: "\e002",
+  youtube: "\e003",
+  tumblr: "\e004"
+);
+
+// Font formats is used in the web-font mixin to build out a list of source
+// urls for each format.
+$font-formats: (
+  "woff": "woff",
+  "ttf": "truetype"
+);
+
+// Layers and `z-index`
+// ---
+//
+// Organizes z-index usage by providing a set of named layers. Values can be
+// incremented/decremented slightly as necessary. eg. $stage-layer + 1;
+//
+// 1. “backdrop” should be used for purposefully placing an item behind a staged item. Likely
+//    a background for an element.
+// 2. "stage" should be your first choice for moving an item in front of others. Likely an icon or
+//    an interface element.
+// 3. "orchestra" should be used to explicitly place content in front of the stage.
+//    Likely a modal shield.
+// 4. "frontrow" is your last resort for moving content forward. Likely a
+//    modal dialog.
+
+$backdrop-layer: 1; // 1
+$stage-layer: 10; // 2
+$orchestra-layer: 100; // 3
+$frontrow-layer: 1000; // 4
+
+// Breakpoints
+// ---
+
+$breakpoints: (
+  phone: 320px,
+  tablet: 600px,
+  desktop: 900px,
+  extreme: 1024px
+);
+
+$mobile: "screen and (max-width : 599px)";
+$desktop: "screen and (min-width : 600px)";
+$large-desktop: "screen and (min-width : 900px)";
+$extreme-desktop: "screen and (min-width : 900px)";

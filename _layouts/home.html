@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% include pop-form.html %}
+{% include hero.html %}
+
+<nav role="navigation">
+  <h2 class="u-visually-hidden">Main Navigation</h2>
+  <div class="c-nav-bar">
+    <div class="c-frame">
+      <ul class="c-nav-bar__inner">
+        {% for item in site.nav %}
+          <li class="c-nav-bar__item">
+            <a class="c-nav-bar__link" href="{{ item.href }}" {{ item.props }}>
+              {{ item.description }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="t-home__about">
+  <div class="c-sheet u-text-content">
+    <h2 class="c-h2 u-weight--light">
+      {{ page.pitch }}
+    </h2>
+
+    <div class="t-home__about-left">
+      <h3>{{ page.jodo.title }}</h3>
+      <p>{{ page.jodo.part1 }}</p>
+      <p>{{ page.jodo.part2 }}</p>
+    </div>
+
+    <div class="t-home__about-right">
+      <h3>{{ page.daitoryu.title }}</h3>
+      <p>{{ page.daitoryu.part1 }}</p>
+      <p>{{ page.daitoryu.part2 }}</p>
+    </div>
+
+    <div class="u-clearfix"></div>
+  </div>
+</section>
+
+<section class="t-home__locations">
+  <div class="c-overlay-card">
+    <img alt="Photo of a classroom with students throughout" class="c-overlay-card__image" src="/assets/img//location-banner.jpg"/>
+
+    <div class="c-overlay-card__content">
+      <div class="c-sheet">
+        <header class="c-sheet__header">
+          <h2>{{ page.locations.title }}</h2>
+        </header>
+
+        <div class="t-home__locations-columns">
+          {% for item in page.locations.list %}
+            <p>{{ item }}</p>
+          {% endfor %}
+        </div>
+
+        <footer class="c-sheet__footer">
+          <a class="c-button" href="/locations">{{ page.locations.button }}</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="t-home__instructor">
+  <div class="c-overlay-card">
+    <img alt="Photo of Hoshu Dojo head instructor Goto Sensei performing kata" class="c-overlay-card__image" src="/assets/img//head-instructor-banner.jpg"/>
+
+    <div class="c-overlay-card__content">
+      <div class="c-sheet">
+        <header class="c-sheet__header">
+          <h2>{{ page.instructor.title }}</h2>
+        </header>
+
+        <p>{{ page.instructor.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
