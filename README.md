@@ -1,1 +1,7 @@
-This is a temporary file, while I migrate Hoshu Dojo to Jekyll, and away from Wordpress.
+This site uses Jekyll (https://jekyllrb.com/docs/).
+
+Run from the root with the following:
+
+```
+bundle exec jekyll serve
+```
