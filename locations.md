@@ -249,6 +249,3 @@ lang: "en"
 </tbody>
 </table>
 <p>&nbsp;</p>
-
-<h2>Contact Us</h2>
-(INSERT NEW CONTACT FORM)
