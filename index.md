@@ -22,7 +22,6 @@ locations:
     - Seattle Dojo, Bellevue, Washington, United States
     - Tonbo Dojo, Silverdale, Washington, United States
     - Pasadena Dojo, Los Angeles, California, United States
-    - Cancun Dojo, Quintana Roo, Mexico
   button: "See More Details"
 instructor:
   title: "Head Instructor"
