@@ -20,7 +20,7 @@ lang: "en"
    <tbody>
       <tr>
          <td><a href="#contactUs">Hoshu Aikijodokai</a></td>
-         <td><strong>Kei Goto</strong> Jodo, 7 dan Kyoshi Daito Ryu, Menkyo</td>
+         <td><strong>Kei Goto</strong> Jodo, 7 dan Kyoshi; Daito Ryu, Menkyo</td>
          <td>
             <table>
                <tbody>
@@ -72,14 +72,14 @@ lang: "en"
       </tr>
       <tr>
          <td><a href="#contactUs">Okinawa Dojo</a></td>
-         <td><strong>Taisuke Yonamine</strong> Jodo, 4th dan</td>
+         <td><strong>Taisuke Yonamine</strong> Jodo, 5th dan; Daito Ryu 3rd dan</td>
          <td>Contact for Details</td>
          <td>Contact for Details</td>
          <td>Naha, Okinawa, Japan Contact for Details</td>
       </tr>
       <tr>
          <td><a href="#contactUs">Portland Dojo</a></td>
-         <td><strong>Thomas Groendal</strong> Jodo, 6th dan Daito Ryu, 3rd dan</td>
+         <td><strong>Thomas Groendal</strong> Jodo, 6th dan renshi; Daito Ryu, 4th dan</td>
          <td>
             <table>
                <tbody>
@@ -146,11 +146,6 @@ lang: "en"
             <table>
                <tbody>
                   <tr>
-                     <td>Tuesday (Jodo)</td>
-                     <td>6:00pm – 7:15pm</td>
-                     <td>North Bellevue Community Center</td>
-                  </tr>
-                  <tr>
                      <td>Saturday (Jodo)</td>
                      <td>10:00am – 12:00pm</td>
                      <td>Mitchell Activity Center, Seattle Central College</td>
@@ -169,11 +164,6 @@ lang: "en"
             </form>
          </td>
          <td>
-            <div>
-               <a href="https://www.google.co.jp/maps/place/4063+148th+Ave+NE,+Bellevue,+WA+98009,+USA/data=!4m2!3m1!1s0x54906d6b250f6d75:0x958575e40e2a19ca?sa=X&amp;ved=0CBwQ8gEwAGoVChMIj9q9gv30yAIVF-RjCh13lQMb">North Bellevue Community Center</a><br>
-               (Craft Room)
-            </div>
-            <p>        4063 148th Ave NE Bellevue, WA 98009, United States</p>
             <div>
                <a href="https://www.google.co.jp/maps/place/Mitchell+Activity+Center/@47.6169992,-122.3225553,17z/data=!3m1!4b1!4m5!3m4!1s0x54906acd2615ba87:0x219d8fe390d08fc4!8m2!3d47.6169956!4d-122.3203666">Mitchell Activity Center</a><br>
                (Dance Studio), Seattle Central College
@@ -216,8 +206,7 @@ lang: "en"
       <tr>
          <td><a href="#contactUs">Pasadena Dojo</a></td>
          <td>
-            <strong>Narbeh Bagdasarian</strong> Jodo, 1st Dan Iaido, 3rd Dan Kyudo,<br>
-            1st Dan<strong>Levon Sukiassyan</strong> Jodo, 1st Dan Iaido, 2nd Dan<br>
+            <strong>Levon Sukiassyan</strong> Jodo, 3rd Dan; Iaido, 2nd Dan<br>
             Kendo, 2nd Dan
          </td>
          <td>
