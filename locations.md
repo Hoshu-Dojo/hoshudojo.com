@@ -106,7 +106,7 @@ lang: "en"
          </td>
          <td>
             <a href="https://www.google.co.jp/maps/place/Fulton+Park+Community+Center/@45.4709182,-122.6789167,15z/data=!4m2!3m1!1s0x0:0xeb68d6fc5505a607">Fulton Park Community Center </a>68 SW Miles St, Portland, OR 97219, United States<br>
-            <a href="https://www.google.com/maps/place/AS+IS+Church/@45.4899477,-122.5954312,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a175e6f09bab:0xcaf81b35d1b8fc1b!8m2!3d45.490117!4d-122.5932399">AS IS Church</a>, 6828 SE Holgate Blvd, Portland, OR 97206, United States
+            <a href="https://www.google.com/maps/place/AS+IS+Church/@45.4899477,-122.5954312,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a175e6f09bab:0xcaf81b35d1b8fc1b!8m2!3d45.490117!4d-122.5932399">AS IS Church</a>, 6828 SE Holgate Blvd, Portland, OR 97206, United States <strong>(Please contact us before visiting.)</strong>
          </td>
       </tr>
       <tr>
