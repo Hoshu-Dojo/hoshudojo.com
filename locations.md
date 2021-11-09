@@ -96,14 +96,7 @@ lang: "en"
                </tbody>
             </table>
          </td>
-         <td>
-            $50 per month inclusive
-            <p></p>
-            <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=AXVY4CKK895N8" method="post" target="_top"><br>
-               <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=AXVY4CKK895N8" target="_blank"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" type="image"></a><br>
-               <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" scale="0"><br>
-            </form>
-         </td>
+         <td>$50 per month inclusive</td>
          <td>
             <a href="https://www.google.co.jp/maps/place/Fulton+Park+Community+Center/@45.4709182,-122.6789167,15z/data=!4m2!3m1!1s0x0:0xeb68d6fc5505a607">Fulton Park Community Center </a>68 SW Miles St, Portland, OR 97219, United States<br>
             <a href="https://www.google.com/maps/place/AS+IS+Church/@45.4899477,-122.5954312,17z/data=!3m1!4b1!4m5!3m4!1s0x5495a175e6f09bab:0xcaf81b35d1b8fc1b!8m2!3d45.490117!4d-122.5932399">AS IS Church</a>, 6828 SE Holgate Blvd, Portland, OR 97206, United States <strong>(Please contact us before visiting.)</strong>
@@ -111,7 +104,7 @@ lang: "en"
       </tr>
       <tr>
          <td><a href="#contactUs">Vancouver Dojo</a></td>
-         <td><strong>Ben Lew</strong> Jodo, 3rd dan</td>
+         <td><strong>Jeff Kamo</strong> Jodo, 3rd dan</td>
          <td>
             <table>
                <tbody>
@@ -153,16 +146,7 @@ lang: "en"
                </tbody>
             </table>
          </td>
-         <td>
-            $50/month, $15 drop-in
-            <p></p>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-               <input type="hidden" name="cmd" value="_s-xclick"><br>
-               <input type="hidden" name="hosted_button_id" value="YV9RE5XFAN6KS"><br>
-               <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><br>
-               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" scale="0"><br>
-            </form>
-         </td>
+         <td>$50/month, $15 drop-in</td>
          <td>
             <div>
                <a href="https://www.google.co.jp/maps/place/Mitchell+Activity+Center/@47.6169992,-122.3225553,17z/data=!3m1!4b1!4m5!3m4!1s0x54906acd2615ba87:0x219d8fe390d08fc4!8m2!3d47.6169956!4d-122.3203666">Mitchell Activity Center</a><br>
