@@ -121,7 +121,7 @@ lang: "en"
                </tbody>
             </table>
          </td>
-         <td>Jodo fees are $15 drop in; $100 per 2 month session</td>
+         <td>Jodo fees are $10 drop in; $50/month session</td>
          <td>
             Jodo practice is at<br>
             <a href="https://www.google.co.jp/maps/place/Creekside+Community+Recreation+Centre/@49.2716855,-123.1054382,15z/data=!4m2!3m1!1s0x0:0xb9cf1a82159f6593">Creekside Community Centre</a><br>
