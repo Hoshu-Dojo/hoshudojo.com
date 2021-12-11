@@ -9,11 +9,11 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400italic,100,700,400" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
     <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | relative_url }}"/>
-    {% include google-analytics.html %}
+    {% include google-analytics %}
   </head>
   <body class="{{ page.layout }}">
     <a class="skip-link u-visually-hidden" href="#content">Skip to content</a>
     {{ content}}
-    {% include footer.html %}
+    {% include footer %}
   </body>
 </html>
