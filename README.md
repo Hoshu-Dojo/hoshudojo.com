@@ -1,7 +1,7 @@
-This site uses Jekyll (https://jekyllrb.com/docs/).
+This site was built using the static site generator, 11ty (Eleventy).
 
-Run from the root with the following:
+To run locally, use...
 
 ```
-bundle exec jekyll serve
+npm start
 ```
