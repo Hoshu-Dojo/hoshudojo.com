@@ -2,6 +2,7 @@ const fs = require("fs");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/**/*");
+  eleventyConfig.addPassthroughCopy("src/favicon.png");
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
