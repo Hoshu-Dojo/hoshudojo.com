@@ -25,19 +25,19 @@ layout: default
 <section class="t-home__about">
   <div class="c-sheet u-text-content">
     <h2 class="c-h2 u-weight--light">
-      {{ page.pitch }}
+      {{ pitch }}
     </h2>
 
     <div class="t-home__about-left">
-      <h3>{{ page.jodo.title }}</h3>
-      <p>{{ page.jodo.part1 }}</p>
-      <p>{{ page.jodo.part2 }}</p>
+      <h3>{{ jodo.title }}</h3>
+      <p>{{ jodo.part1 }}</p>
+      <p>{{ jodo.part2 }}</p>
     </div>
 
     <div class="t-home__about-right">
-      <h3>{{ page.daitoryu.title }}</h3>
-      <p>{{ page.daitoryu.part1 }}</p>
-      <p>{{ page.daitoryu.part2 }}</p>
+      <h3>{{ daitoryu.title }}</h3>
+      <p>{{ daitoryu.part1 }}</p>
+      <p>{{ daitoryu.part2 }}</p>
     </div>
 
     <div class="u-clearfix"></div>
@@ -51,17 +51,17 @@ layout: default
     <div class="c-overlay-card__content">
       <div class="c-sheet">
         <header class="c-sheet__header">
-          <h2>{{ page.locations.title }}</h2>
+          <h2>{{ locations.title }}</h2>
         </header>
 
         <div class="t-home__locations-columns">
-          {% for item in page.locations.list %}
+          {% for item in locations.list %}
             <p>{{ item }}</p>
           {% endfor %}
         </div>
 
         <footer class="c-sheet__footer">
-          <a class="c-button" href="/locations">{{ page.locations.button }}</a>
+          <a class="c-button" href="/locations">{{ locations.button }}</a>
         </footer>
       </div>
     </div>
@@ -75,10 +75,10 @@ layout: default
     <div class="c-overlay-card__content">
       <div class="c-sheet">
         <header class="c-sheet__header">
-          <h2>{{ page.instructor.title }}</h2>
+          <h2>{{ instructor.title }}</h2>
         </header>
 
-        <p>{{ page.instructor.description }}</p>
+        <p>{{ instructor.description }}</p>
       </div>
     </div>
   </div>
