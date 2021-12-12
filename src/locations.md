@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Locations"
-permalink: "/locations"
+permalink: "/locations/"
 lang: "en"
 ---
 
