@@ -1,9 +1,0 @@
-// Clearfix
-// ===
-
-.u-clearfix::before,
-.u-clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
