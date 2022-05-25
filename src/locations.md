@@ -104,7 +104,7 @@ lang: "en"
       </tr>
       <tr>
          <td><a href="#contactUs">Vancouver Dojo</a></td>
-         <td><strong>Jeff Kamo</strong> Jodo, 3rd dan</td>
+         <td><strong>Jeff Kamo</strong> Jodo, 4th dan</td>
          <td>
             <table>
                <tbody>
@@ -190,7 +190,7 @@ lang: "en"
       <tr>
          <td><a href="#contactUs">Pasadena Dojo</a></td>
          <td>
-            <strong>Levon Sukiassyan</strong> Jodo, 3rd Dan; Iaido, 2nd Dan<br>
+            <strong>Levon Sukiassyan</strong> Jodo, 4th Dan; Iaido, 2nd Dan<br>
             Kendo, 2nd Dan
          </td>
          <td>
