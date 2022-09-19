@@ -84,14 +84,19 @@ lang: "en"
             <table>
                <tbody>
                   <tr>
+                     <td>Monday (Daito Ryu)</td>
+                     <td>7:30 – 9:30pm</td>
+                     <td>AS IS Church</td>
+                  </tr>
+                  <tr>
                      <td>Wednesday (Jodo)</td>
                      <td>7:00 – 9:00pm</td>
                      <td>Fulton Park Community Center</td>
                   </tr>
                   <tr>
-                     <td>Monday (Daito Ryu)</td>
-                     <td>7:30 – 9:30pm</td>
-                     <td>AS IS Church</td>
+                     <td>Sunday (Jodo)</td>
+                     <td>4:00 – 5:30pm</td>
+                     <td>Fulton Park Community Center</td>
                   </tr>
                </tbody>
             </table>
