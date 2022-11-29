@@ -137,7 +137,7 @@ lang: "en"
          <td><a href="#contactUs">Seattle Dojo</a></td>
          <td>
             <div><strong>Marcus Phung</strong></div>
-            <p>        Jodo, 4th dan
+            <p>        Jodo, 5th dan
             </p>
          </td>
          <td>
