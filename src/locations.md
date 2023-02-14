@@ -233,6 +233,39 @@ lang: "en"
             </p>
          </td>
       </tr>
+      <tr>
+         <td><a href="#contactUs">Mexico City Dojo (Coyoacan, Mexico City)</a></td>
+         <td>
+            <strong>Genaro Luis</strong> Aikido, 5th Dan; Iaido, 5th Dan; Jodo, 3rd Dan
+         </td>
+         <td>
+            <table>
+               <tbody>
+                  <tr>
+                     <td>Thursday (Jodo)</td>
+                     <td>8:00 – 9:30 PM</td>
+                     <td>México Asia Budokan Coyoacan</td>
+                  </tr>
+                  <tr>
+                     <td>Sunday (Jodo)</td>
+                     <td>11:00 – 12:30 AM</td>
+                     <td>México Asia Budokan Coyoacan</td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            $40/month
+         </td>
+         <td>
+            <div>
+               <a href="https://mexicoasia.com.mx/">México Asia Budokan Coyoacan</a>
+            </div>
+            <p>
+               Belisario Domínguez 161, Coyoacan, México City, 04330, Mexico
+            </p>
+         </td>
+      </tr>
    </tbody>
 </table>
 
