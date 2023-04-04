@@ -1,6 +1,7 @@
-/dest
+**.DS_Store
+*.jekyll-cache
+/.idea/
 /_site
+/dest
 /legacy/_site
 /node_modules
-*.jekyll-cache
-**.DS_Store

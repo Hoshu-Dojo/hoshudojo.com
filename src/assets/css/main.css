@@ -2648,16 +2648,19 @@ div.jGrowl div.jGrowl-closer {
   }
 }
 
-@media screen and (min-width: 600px) {
-  .t-home__events {
-      float:left;
-      width: 50%
-  }
+.t-home__events {
+  display: grid;
+  justify-content: center;
 }
 
-@media screen and (min-width: 900px) {
-  .t-home__events {
-      padding-left:5%
+.t-home__events p {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .t-home__events .c-button {
+    width: 50%;
+    margin: auto;
   }
 }
 

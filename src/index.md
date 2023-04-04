@@ -12,6 +12,9 @@ daitoryu:
   title: "Daito Ryu Aikijujutsu"
   part1: "Daito Ryu Aikijujutsu is the original “Aiki” art, an art of traditional Japanese jujutsu."
   part2: "This art includes sophisticated throws, joint locks and strikes, offering a rich reserve of technical knowledge."
+seminar:
+  title: "Registration for the 2023 Jodo Seminar is now open!"
+  button: "See More Details"
 locations:
   title: "Locations"
   list:
