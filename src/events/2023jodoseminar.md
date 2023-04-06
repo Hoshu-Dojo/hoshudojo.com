@@ -151,7 +151,7 @@ lang: "en"
     Center and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join
     the group!</p>
 
-  <p>A meal plan is included in the accommodation packages, and is also available even if you're not staying at Seattle
+  <p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you're not staying at Seattle
     University.</p>
 
   <ul class="list">
@@ -161,6 +161,7 @@ lang: "en"
     <li>Deluxe Double with meal plan, <b>$297</b> per person</li>
     <li>Meal plan but no accommodation, <b>$90</b> per person</li>
   </ul>
+
 
 <h3>About the accommodation</h3>
 
@@ -172,9 +173,9 @@ lang: "en"
     Single rooms available, so get in quick!</p>
 
   <p>All accommodation options are for 3 nights, checking in on Thursday and checking out on Sunday. You will need to check-in
-    when you arrive to collect your room key and information. Thursday check-in is between 1pm and 10pm; Sunday check-out is
-    any time before 10am, and Luggage storage is available for the remainder of the seminar on Sunday. More information on what to
-    expect when checking in and out will be provided closer to the date.</p>
+    when you arrive to collect your room key and information. Thursday check-in is between 1pm and 10pm; Sunday check-out is any
+    time before 10am. Luggage storage is available for the remainder of the seminar on Sunday, and if you arrive earlier than 1pm
+    on Thursday. More information on what to expect when checking in and out will be provided closer to the date.</p>
 
   <ul>
     <li><b>Chardin Hall</b>: <a href="https://goo.gl/maps/6gdJY84x5AWaDzUH9" target="_blank">1020 East Jefferson, Seattle, WA
@@ -188,8 +189,9 @@ lang: "en"
 
 <h3>About the meal plan</h3>
 
- <p>A meal plan is available to everyone attending the seminar, even if you're not staying at Seattle University. Meals will be
-  served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
+ <p>A meal plan is available to everyone attending the seminar, even if you're not staying at Seattle University. If you
+  <em>are</em> staying at Seattle University, it's included in your accommodation package (required by Seattle University). Meals
+  will be served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
 
   <ul class="list">
     <li>Friday breakfast, lunch, and dinner</li>
