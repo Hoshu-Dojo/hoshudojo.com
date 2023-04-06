@@ -67,11 +67,20 @@ lang: "en"
   <p><a class="c-button registration"
         href="https://docs.google.com/forms/d/e/1FAIpQLScAEBHP5Z_UEyR4qcUPEaxPzPXljhoJwsyzIooRw4cVCvXNAg/viewform"
         target="_blank"> Click
-    here to
-    register</a></p>
+    here to register</a></p>
 
-  <p>Since this year's camp involves coordination with Seattle University, deadlines for registration and payment are
-    <b>Sunday April 30th</b> for Early Bird pricing, and <b>Friday June 9th</b> for regular pricing.</p>
+  <p>Deadlines for registration are</p>
+  <ol class="list">
+    <li><b>Sunday April 30th</b> for Early Bird pricing</li>
+    <li><b>Friday June 9th</b> for regular pricing</li>
+  </ol>
+
+  <p>The total due will be calculated from your choices for</p>
+  <ol class="list">
+    <li>The seminar fee</li>
+    <li>Accommodation and Meal plan</li>
+    <li>Parking</li>
+  </ol>
 
   <p>We will reach out to you via email after you have submitted your registration to confirm everything, sign a waiver, provide
     payment totals and instructions, and let you know what to expect when you arrive. Please reach out to us at <a
@@ -255,4 +264,10 @@ lang: "en"
 
   <p>Smoking, vaping, and tobacco in any form are strictly prohibited everywhere on campus. Please find a public street off-campus
     to smoke, vape, chew tobacco, etc.</p>
+</section>
+<section>
+  <p><a class="c-button registration"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScAEBHP5Z_UEyR4qcUPEaxPzPXljhoJwsyzIooRw4cVCvXNAg/viewform"
+        target="_blank"> Click
+    here to register</a></p>
 </section>
