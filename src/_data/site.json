@@ -10,6 +10,12 @@
       "props": ""
     },
     {
+      "description": "2023 Jodo Seminar",
+      "id": "2023jodoseminar",
+      "href": "/events/2023jodoseminar",
+      "props": ""
+    },
+    {
       "description": "Locations",
       "id": "locations",
       "href": "/locations",

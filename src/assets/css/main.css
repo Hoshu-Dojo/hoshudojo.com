@@ -375,10 +375,6 @@ abbr[title] {
   float: none
 }
 
-#branding {
-  z-index: inherit
-}
-
 .fc-event-disabled {
   opacity: 0.3;
   cursor: not-allowed !important
@@ -1173,18 +1169,6 @@ html .fc,.fc table {
   margin-right: 0
 }
 
-.fc-header .fc-state-hover,.fc-header .ui-state-hover {
-  z-index: 2
-}
-
-.fc-header .fc-state-down {
-  z-index: 3
-}
-
-.fc-header .fc-state-active,.fc-header .ui-state-active {
-  z-index: 4
-}
-
 .fc-content {
   clear: both
 }
@@ -1315,7 +1299,6 @@ html .fc,.fc table {
   line-height: 50%;
   overflow: hidden;
   position: absolute;
-  z-index: 99999
 }
 
 .fc-corner-left {
@@ -1497,7 +1480,6 @@ table.fc-border-separate {
   overflow: hidden;
   position: relative;
   width: 100%;
-  z-index: 2
 }
 
 .fc-event-vert .fc-event-time {
@@ -1514,7 +1496,6 @@ table.fc-border-separate {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1
 }
 
 .fc .ui-draggable-dragging .fc-event-bg,.fc-select-helper .fc-event-bg {
@@ -1545,7 +1526,6 @@ div.time-picker {
   overflow: auto;
   position: absolute;
   width: 6em;
-  z-index: 10002
 }
 
 div.time-picker-12hours {
@@ -1575,7 +1555,6 @@ div.jGrowl {
   font-size: 12px;
   padding: 10px;
   position: absolute;
-  z-index: 10003
 }
 
 div.jGrowl {
@@ -1649,7 +1628,6 @@ div.jGrowl div.jGrowl-notification div.jGrowl-close {
   float: right;
   font-size: 1em;
   font-weight: 700;
-  z-index: 9999
 }
 
 div.jGrowl div.jGrowl-closer {
@@ -1684,7 +1662,6 @@ div.jGrowl div.jGrowl-closer {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
-  z-index: 999999
 }
 
 .miniColors-selector.black {
@@ -2181,7 +2158,6 @@ div.jGrowl div.jGrowl-closer {
 }
 
 .c-logo {
-  display: block;
   display: inline-flex;
   align-item: center;
   flex-direction: row-reverse;
@@ -2217,36 +2193,104 @@ div.jGrowl div.jGrowl-closer {
   }
 }
 
-.c-nav-bar {
-  background: #000
+.c-home-nav-bar {
+  background: #000;
+  display: flex;
+  justify-content: center;
 }
-
-.c-nav-bar__inner {
+.c-home-nav-bar__inner {
+  width: 800px;
   display: flex;
   padding: 1rem 0
 }
 
-.c-nav-bar__item {
-  flex: 1 1 auto;
-  text-align: center
+.c-home-nav-bar li {
+  flex: 1 0 auto;
+  text-align: center;
 }
 
-@media screen and (max-width: 599px) {
-  .c-nav-bar__item.c--hide-on-mobile {
-      display:none
-  }
-}
-
-.c-nav-bar__item+.c-nav-bar__item {
-  padding-left: 2rem
-}
-
-.c-nav-bar__link {
+.c-nav-bar a,
+.c-home-nav-bar a {
   display: block;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem
+}
+
+.c-nav-bar {
+  display: grid;
+  justify-content: right;
+}
+
+.c-nav-bar__menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  background-color: #000;
+}
+
+.c-nav-bar__menu__item {
+  text-align: right;
+  padding: 7px 20px;
+}
+
+/*
+  Once Firefox implements support for the `:has()`
+  selector, this can be rewritten as:
+
+    .c-nav-bar:has([aria-expanded="false"]) .c-nav-bar__menu {
+      display: none;
+    }
+
+  And the `data-expanded` attribute on c-nav-bar can be removed
+  along with the JS to set it (but continue to set `aria-expanded`).
+*/
+.c-nav-bar[data-expanded="false"] .c-nav-bar__menu {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .c-nav-bar[data-expanded] .c-nav-bar__menu {
+    position: relative;
+    display: flex;
+    top: auto;
+    align-items: center;
+  }
+  .c-nav-bar__menu__item {
+    flex-shrink: 0;
+    padding: 1rem;
+  }
+  .c-nav-bar__menu__item a {
+  }
+  .c-nav-bar__menu_button {
+    display: none;
+  }
+}
+
+.c-nav-bar__menu_button {
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  right: -20px;
+}
+
+.c-nav-bar__menu_button div,
+.c-nav-bar__menu_button div::before,
+.c-nav-bar__menu_button div::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  width: 20px;
+  border-radius: 3px;
+}
+.c-nav-bar__menu_button div::before {
+  transform: translateY(-6px);
+}
+.c-nav-bar__menu_button div::after {
+  transform: translateY(3px);
 }
 
 .c-overlay-card {
@@ -2264,7 +2308,6 @@ div.jGrowl div.jGrowl-closer {
 .c-overlay-card__image {
   position: absolute;
   top: 0;
-  z-index: 1
 }
 
 @media screen and (min-width: 600px) {
@@ -2276,7 +2319,6 @@ div.jGrowl div.jGrowl-closer {
 
 .c-overlay-card__content {
   position: relative;
-  z-index: 10;
   background: rgba(255,255,255,0.7)
 }
 
@@ -2310,7 +2352,7 @@ div.jGrowl div.jGrowl-closer {
 
 .c-page-header__inner {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .c-page-header__logo {
@@ -2686,7 +2728,6 @@ div.jGrowl div.jGrowl-closer {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
   margin-top: -16rem;
   padding: 1.5rem 1rem 0;
   background: #000;

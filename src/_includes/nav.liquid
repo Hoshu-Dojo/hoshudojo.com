@@ -5,19 +5,23 @@
         {% include logo %}
       </div>
 
-      <div class="c-page-header__nav">
-        <div class="c-nav-bar">
-          <ul class="c-nav-bar__inner">
-            {% for item in site.nav %}
-              <li class="c-nav-bar__item {% if item.id == 'home' %} c--hide-on-mobile {% endif %}">
-                <a class="c-nav-bar__link" href="{{ item.href }}" {{ item.props }}>
-                  {{ item.description }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+      <nav class="c-nav-bar" data-expanded="false">
+        <button class="c-nav-bar__menu_button" aria-controls="primary-navigation" aria-expanded="false"
+                onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true');
+                this.parentElement.setAttribute('data-expanded', this.getAttribute('aria-expanded'))">
+          <span class="u-visually-hidden">Main Navigation</span>
+          <div></div>
+        </button>
+        <ul class="c-nav-bar__menu" id="primary-navigation">
+          {% for item in site.nav %}
+            <li class="c-nav-bar__menu__item">
+              <a href="{{ item.href }}" {{ item.props }}>
+                {{ item.description }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
