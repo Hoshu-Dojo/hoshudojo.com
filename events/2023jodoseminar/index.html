@@ -39,31 +39,41 @@
 
       </div>
 
-      <div class="c-page-header__nav">
-        <div class="c-nav-bar">
-          <ul class="c-nav-bar__inner">
-            
-              <li class="c-nav-bar__item  c--hide-on-mobile ">
-                <a class="c-nav-bar__link" href="/" >
-                  Home
-                </a>
-              </li>
-            
-              <li class="c-nav-bar__item ">
-                <a class="c-nav-bar__link" href="/locations" >
-                  Locations
-                </a>
-              </li>
-            
-              <li class="c-nav-bar__item ">
-                <a class="c-nav-bar__link" href="https://forms.gle/5cHDnQ5cwZo2mukP6" target='_blank'>
-                  Contact Us
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      </div>
+      <nav class="c-nav-bar" data-expanded="false">
+        <button class="c-nav-bar__menu_button" aria-controls="primary-navigation" aria-expanded="false"
+                onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true');
+                this.parentElement.setAttribute('data-expanded', this.getAttribute('aria-expanded'))">
+          <span class="u-visually-hidden">Main Navigation</span>
+          <div></div>
+        </button>
+        <ul class="c-nav-bar__menu" id="primary-navigation">
+          
+            <li class="c-nav-bar__menu__item">
+              <a href="/" >
+                Home
+              </a>
+            </li>
+          
+            <li class="c-nav-bar__menu__item">
+              <a href="/events/2023jodoseminar" >
+                2023 Jodo Seminar
+              </a>
+            </li>
+          
+            <li class="c-nav-bar__menu__item">
+              <a href="/locations" >
+                Locations
+              </a>
+            </li>
+          
+            <li class="c-nav-bar__menu__item">
+              <a href="https://forms.gle/5cHDnQ5cwZo2mukP6" target='_blank'>
+                Contact Us
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
@@ -337,6 +347,12 @@
           <li>
             <a href="/" >
               Home
+            </a>
+          </li>
+        
+          <li>
+            <a href="/events/2023jodoseminar" >
+              2023 Jodo Seminar
             </a>
           </li>
         
