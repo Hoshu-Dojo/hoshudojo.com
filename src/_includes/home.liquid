@@ -7,18 +7,14 @@ layout: default
 
 <nav role="navigation">
   <h2 class="u-visually-hidden">Main Navigation</h2>
-  <div class="c-nav-bar">
-    <div class="c-frame">
-      <ul class="c-nav-bar__inner">
-        {% for item in site.nav %}
-          <li class="c-nav-bar__item">
-            <a class="c-nav-bar__link" href="{{ item.href }}" {{ item.props }}>
-              {{ item.description }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+  <div class="c-home-nav-bar">
+    <ul class="c-home-nav-bar__inner">
+      {% for item in site.nav %}
+        {% if item.id != 'home' %}
+          <li><a href="{{ item.href }}" {{ item.props }}>{{ item.description }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
 </nav>
 
