@@ -178,8 +178,9 @@ lang: "en"
     campus buildings. All beds are single-person beds.</p>
 
   <p>The "Deluxe" units are in Chardin Hall, and each unit comes with its own private bathroom. The "Standard" units are in
-    Bellarmine Hall, with each unit sharing common bathrooms with the other units on the same floor. There are only 10 Deluxe
-    Single rooms available, so get in quick!</p>
+    Bellarmine Hall, with each unit sharing common bathrooms with the other units on the same floor. <del>There are only 10 Deluxe
+    Single rooms available, so get in quick!</del> All Deluxe Single rooms are taken; the following are still available: are
+    Standard Single, Standard Double, and Deluxe Double units.</p>
 
   <p>All accommodation options are for 3 nights, checking in on Thursday and checking out on Sunday. You will need to check-in
     when you arrive to collect your room key and information. Thursday check-in is between 1pm and 10pm; Sunday check-out is any
