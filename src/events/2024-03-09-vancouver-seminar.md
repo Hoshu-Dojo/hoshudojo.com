@@ -79,10 +79,10 @@ lang: "en"
 
   <h2>Guest Instructors</h2>
 
-  <p><strong>Eric Tribe</strong>, 7-dan Renshi</p>
-  <p><strong>Thomas Groendal</strong>, 6-dan Renshi</p>
+  <p><strong>Eric Tribe</strong>, Renshi Jodo 7-dan, Renshi Iaido 7-dan</p>
+  <p><strong>Thomas Groendal</strong>, Renshi 6-dan</p>
   <p><strong>Pamela Morgan</strong>, 5-dan</p>
-  <p><strong>Alexander Cook</strong>, 5-dan</p>
+  <p><strong>Marcus Phung</strong>, 5-dan</p>
 </section>
 
 <section>
