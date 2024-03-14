@@ -50,16 +50,11 @@ lang: "en"
 <section>
   <h2>Welcome to registration for the 2024 Hoshu Dojo Jodo Camp!</h2>
 
-  <p>This year will be Goto-Sensei's 10th trip to the Americas, and to honour the special anniversary we will be doing a
-    gasshuku-style event - an all-inclusive camp where we train, stay, eat, and socialize together.</p>
+  <p>This year will be Goto-Sensei's 11th trip to the Americas. Following the success of last year, we will be doing a gasshuku-style event - an all-inclusive camp where we train, stay, eat, and socialize together.</p>
 
-  <p>This year's camp will be held at Seattle University in Seattle, WA, from Thursday July 6th through Sunday July 9th, with
-    training across two and a half days from Friday through Sunday. Both room and board will also be provided by Seattle U,
-    with the exception of the "formal" camp dinner on Saturday night held at Olmstead Restaurant. There will be several options of
-    rooms available with differing price ranges. While staying at Seattle U is not required, it is highly encouraged. Food is
-    available at the university even if you are not staying there - but will need to be pre-registered.</p>
+  <p>This year's camp will be held again at Seattle University in Seattle, WA, from Friday July 5th through Monday July 8th, with training across two and a half days from Saturday through Monday. Both room and board will also be provided by Seattle U,  with the exception of the "formal" camp dinner on Saturday night held at Olmstead Restaurant. There will be several options of rooms available with differing price ranges. While staying at Seattle U is not required, it is highly encouraged. Food is available at the university even if you are not staying there - but will need to be pre-registered.</p>
 
-  <p>Read on for more information about the camp, including the seminar schedule, accommodiation, meals, and parking.</p>
+  <p>Read on for more information about the camp, including the seminar schedule, accommodation, meals, and parking.</p>
 
   <p>We look forward to seeing you in July!</p>
 </section>
@@ -72,8 +67,8 @@ lang: "en"
 
   <p>Deadlines for registration are</p>
   <ol class="list">
-    <li><b>Sunday April 30th</b> for Early Bird pricing</li>
-    <li><b>Friday June 9th</b> for regular pricing</li>
+    <li><b>Tuesday April 30th</b> for Early Bird pricing</li>
+    <li><b>Friday June 7th</b> for regular pricing</li>
   </ol>
 
   <p>The total due will be calculated from your choices for</p>
@@ -83,10 +78,7 @@ lang: "en"
     <li>Parking</li>
   </ol>
 
-  <p>We will reach out to you via email after you have submitted your registration to confirm everything, sign a waiver, provide
-    payment totals and instructions, and let you know what to expect when you arrive. Please reach out to us at <a
-    href="mailto:seminar2023@hoshudojo.com" target="_blank">seminar2023@hoshudojo.com</a> if you have any questions, if
-    you anticipate you cannot make the deadlines, or if the provided options don't work for you.</p>
+  <p>We will reach out to you via email after you have submitted your registration to confirm everything, sign a waiver, provide payment totals and instructions, and let you know what to expect when you arrive. Please reach out to us at summer-camp@hoshudojo.com if you have any questions, if you anticipate you cannot make the deadlines, or if the provided options don't work for you.</p>
 
 </section>
 
@@ -95,55 +87,52 @@ lang: "en"
 
   <ol class="schedule">
     <li>
-      <span>Thursday, July 6th</span>
+      <span>Friday, July 5th</span>
       <ol>
         <li>1 pm to 10 pm: Accommodation Check-in</li>
       </ol>
     </li>
     <li>
-      <span>Friday, July 7th</span>
+      <span>Saturday, July 6th</span>
       <ol>
-        <li>TBD: Breakfast</li>
-        <li>9 am to 12 noon: Morning Seminar</li>
-        <li>12 noon to 1 pm: Lunch</li>
-        <li>1 pm to 5 pm: Afternoon Seminar</li>
-        <li>TBD: Dinner</li>
+        <li>7:30 am - 8:15 am: Breakfast</li>
+        <li>9 am to 12 noon: Morning Seminar at Redhawk Activity Court</li>
+        <li>12 noon to 12:45 pm: Lunch</li>
+        <li>1 pm to 4 pm: Afternoon Seminar at Redhawk Activity Court</li>
+        <li>6:30 pm until late: Camp Dinner at Olmstead</li>
       </ol>
     </li>
     <li>
-      <span>Saturday, July 8th</span>
+      <span>Sunday, July 7th</span>
       <ol>
-        <li>TBD: Breakfast</li>
-        <li>9 am to 12 noon: Morning Seminar</li>
-        <li>12 noon to 1 pm: Lunch</li>
-        <li>1 pm to 5 pm: Afternoon Seminar</li>
-        <li>TBD (likely 6:30 or 7 pm): Camp Dinner at Olmstead</li>
+        <li>7:30 am to 8:15 am: Breakfast</li>
+        <li>9 am to 12 noon: Morning Seminar at Redhawk Activity Court</li>
+        <li>12 noon to 12:45 pm: Lunch</li>
+        <li>1 pm to 4 pm: Afternoon Seminar at Redhawk Activity Court</li>
+        <li>5pm - 5:45 pm: Dinner</li>
       </ol>
     </li>
     <li>
-      <span>Sunday, July 9th</span>
+      <span>Monday, July 8th</span>
       <ol>
-        <li>TBD: Breakfast</li>
+        <li>7:30 am to 8:15 am: Breakfast</li>
         <li>Before 10 am: Check-out</li>
-        <li>9 am to 12 noon: Morning Seminar</li>
+        <li>9 am to 12 noon: Morning Seminar at Mitchell Activity Center</li>
       </ol>
     </li>
   </ol>
 
-  <p>The exact times may change as we get closer to the event. We will send updates when things change, but please check here
-    for updates!</p>
+  <p>The exact times may change as we get closer to the event. We will send updates when things change, but please check here for updates!</p>
 </section>
 
 <section>
   <h2>Seminar</h2>
 
-  <p>The seminar will be held in Seattle University's <b>Redhawk Center Fitness Room (Studio 1)</b>. The Seminar fee covers the
-    cost of the facility and contributes to airfare for Goto Sensei and Yuka. Costs for lodging, meal plans and parking are not
-    included - more on those below.</p>
+  <p>The seminar will be held in <strong>Seattle University's Redhawk Activity Court on Saturday and Sunday, and Seattle Central College’s Mitchell Activity Center on Monday.</strong> The Seminar fee covers the cost of the facility and contributes to airfare for Goto Sensei and Yuka. Costs for lodging, meal plans and parking are not included - more on those below.</p>
 
   <ul class="list">
-    <li><b>Early Bird</b> pricing for the seminar is $250 per person<br />
-      Registration and payment must be received on or before <b>Sunday April 30th</b> to be eligible.</li>
+    <li><b>Early Bird</b> pricing for the seminar is $250 per person.<br />
+      Registration and payment must be received on or before <b>Tuesday April 30th</b> to be eligible.</li>
     <li><b>Regular pricing</b> from May 1st is $300 per person</li>
   </ul>
 
@@ -152,17 +141,17 @@ lang: "en"
 
   <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9676822307533!2d-122.31579468360036!3d47.607318079184836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac5df623887%3A0x73c2e01c0cdb6c47!2sRedhawk%20Center!5e0!3m2!1sen!2sus!4v1680636688119!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+  <p><b>Mitchell Activity Center: <a href="https://maps.app.goo.gl/yDM4QvN39cHaDfSf6" target="_blank">1718 Broadway, Seattle, WA 98122</a>.</p>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.469943233879!2d-122.32294152360635!3d47.61699557119073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acd2615ba87%3A0x219d8fe390d08fc4!2sMitchell%20Activity%20Center!5e0!3m2!1sen!2sus!4v1708207063154!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <section>
   <h2>Accommodation and Meals</h2>
 
-  <p>Accommodation is available in Seattle University's Chardin Hall and Bellarmine Hall, each a short walk to the Redhawk
-    Center and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join
-    the group!</p>
+  <p>Accommodation is available in Seattle University's Chardin Hall and Bellarmine Hall, each a short walk to the Redhawk Center and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join the group!</p>
 
-  <p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you're not staying at Seattle
-    University.</p>
+  <p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you're not staying at Seattle University.</p>
 
   <ul class="list">
     <li>Standard Single with meal plan, <b>$287</b> per person</li>
@@ -182,10 +171,7 @@ lang: "en"
     Bellarmine Hall, with each unit sharing common bathrooms with the other units on the same floor. There are only 10 Deluxe
     Single rooms available, so get in quick!</p>
 
-  <p>All accommodation options are for 3 nights, checking in on Thursday and checking out on Sunday. You will need to check-in
-    when you arrive to collect your room key and information. Thursday check-in is between 1pm and 10pm; Sunday check-out is any
-    time before 10am. Luggage storage is available for the remainder of the seminar on Sunday, and if you arrive earlier than 1pm
-    on Thursday. More information on what to expect when checking in and out will be provided closer to the date.</p>
+  <p>All accommodation options are for 3 nights, checking in on Friday and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
 
   <ul>
     <li><b>Chardin Hall</b>: <a href="https://goo.gl/maps/6gdJY84x5AWaDzUH9" target="_blank">1020 East Jefferson, Seattle, WA
@@ -204,9 +190,9 @@ lang: "en"
   will be served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
 
   <ul class="list">
-    <li>Friday breakfast, lunch, and dinner</li>
-    <li>Saturday breakfast, and lunch</li>
-    <li>Sunday breakfast</li>
+    <li>Saturday breakfast, lunch</li>
+    <li>Sunday breakfast, and lunch, and dinner</li>
+    <li>Monday breakfast</li>
   </ul>
 
   <p>More info on the meals will be provided closer to the date. Vegan options are also available - please let us know in the
@@ -242,7 +228,7 @@ lang: "en"
   <h2>Dietary and Special Accommodations</h2>
 
   <p>Please let us know in the "Dietary and Special Accommodations" section of the registration form if you require any
-    special accommodation fully participate in the seminar. Hoshu Dojo is responsible for notifying the University of any requests
+    special accommodation to fully participate in the seminar. Hoshu Dojo is responsible for notifying the University of any requests
     by seminar participants with disabilities for reasonable accommodation that would require modification of University
     facilities. Such notification must be made sufficiently in advance of the seminar for the University to consider the request,
     determine whether the requested modification constitutes a reasonable accommodation or creates an undue hardship, and enter a
@@ -252,7 +238,7 @@ lang: "en"
 
   <p>Please also note that Seattle University dining hall kitchens and the venue for Saturday night's dinner are not kosher or
     gluten free. Seattle University does have a station that avoids gluten but the kitchen still works with gluten in other areas.
-    This may be okay for people avoiding gluten for dietary or philosophical reasons, but might cause problem for people with
+    This may be okay for people avoiding gluten for dietary or philosophical reasons, but might cause problems for people with
     Celiac disease.</p>
 
   <p>Please let us know in the "Dietary and Special Accommodations" section of the registration form if any of this affects you so
