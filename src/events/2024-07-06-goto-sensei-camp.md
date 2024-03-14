@@ -1,4 +1,4 @@
-Œ---
+---
 layout: page
 title: "2024 Annual Goto Sensei Camp"
 permalink: "/events/2024-07-06-goto-sensei-camp/"
