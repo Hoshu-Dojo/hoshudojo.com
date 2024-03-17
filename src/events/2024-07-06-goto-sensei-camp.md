@@ -45,6 +45,8 @@ lang: "en"
 
 </style>
 
+<img alt="Group shot of all the teachers and students in a row, with guest dog Oscar photo-bombing" src="/assets/img/events/2024/seminar-group-shot-for-event-hero-big.jpg" />
+
 <h1>2024 Jodo Seminar</h1>
 
 <section>
