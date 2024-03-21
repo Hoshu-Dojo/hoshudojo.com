@@ -156,11 +156,11 @@ lang: "en"
   <p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you're not staying at Seattle University.</p>
 
   <ul class="list">
-    <li>Standard Single with meal plan, <b>$287</b> per person</li>
-    <li>Standard Double with meal plan, <b>$228</b> per person</li>
-    <li>Deluxe Single with meal plan, <b>$369</b> per person</li>
-    <li>Deluxe Double with meal plan, <b>$297</b> per person</li>
-    <li>Meal plan but no accommodation, <b>$90</b> per person</li>
+    <li>Standard Single with meal plan, <b>$307</b> per person</li>
+    <li>Standard Double with meal plan, <b>$243</b> per person</li>
+    <li>Deluxe Single with meal plan, <b>$393</b> per person</li>
+    <li>Deluxe Double with meal plan, <b>$316</b> per person</li>
+    <li>Meal plan but no accommodation, <b>$94</b> per person</li>
   </ul>
 
 
