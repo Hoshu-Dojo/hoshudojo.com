@@ -80,7 +80,7 @@ lang: "en"
     <li>Parking</li>
   </ol>
 
-  <p>We will reach out to you via email after you have submitted your registration to confirm everything, sign a waiver, provide payment totals and instructions, and let you know what to expect when you arrive. Please reach out to us at summer-camp@hoshudojo.com if you have any questions, if you anticipate you cannot make the deadlines, or if the provided options don't work for you.</p>
+  <p>We will reach out to you via email after you have submitted your registration to confirm everything, sign a waiver, provide payment totals and instructions, and let you know what to expect when you arrive. Please reach out to us at <a href="mailto:summer-camp@hoshudojo.com">summer-camp@hoshudojo.com</a> if you have any questions, if you anticipate you cannot make the deadlines, or if the provided options don't work for you.</p>
 
 </section>
 
@@ -145,7 +145,7 @@ lang: "en"
 
   <p><b>Mitchell Activity Center:</b> <a href="https://maps.app.goo.gl/yDM4QvN39cHaDfSf6" target="_blank">1718 Broadway, Seattle, WA 98122</a>.</p>
 
-  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.469943233879!2d-122.32294152360635!3d47.61699557119073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acd2615ba87%3A0x219d8fe390d08fc4!2sMitchell%20Activity%20Center!5e0!3m2!1sen!2sus!4v1708207063154!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.469943233879!2d-122.32294152360635!3d47.61699557119073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acd2615ba87%3A0x219d8fe390d08fc4!2sMitchell%20Activity%20Center!5e0!3m2!1sen!2sus!4v1708207063154!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <section>
@@ -173,7 +173,7 @@ lang: "en"
     Bellarmine Hall, with each unit sharing common bathrooms with the other units on the same floor. There are only 10 Deluxe
     Single rooms available, so get in quick!</p>
 
-  <p>All accommodation options are for 3 nights, checking in on Friday and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
+  <p>All accommodation options are for 3 nights, checking in on Friday and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and also if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
 
   <ul>
     <li><b>Chardin Hall</b>: <a href="https://goo.gl/maps/6gdJY84x5AWaDzUH9" target="_blank">1020 East Jefferson, Seattle, WA
@@ -192,7 +192,7 @@ lang: "en"
   will be served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
 
   <ul class="list">
-    <li>Saturday breakfast, lunch</li>
+    <li>Saturday breakfast, and lunch</li>
     <li>Sunday breakfast, and lunch, and dinner</li>
     <li>Monday breakfast</li>
   </ul>
