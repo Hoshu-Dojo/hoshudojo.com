@@ -98,9 +98,9 @@ lang: "en"
       <span>Saturday, July 6th</span>
       <ol>
         <li>7:30 am - 8:15 am: Breakfast</li>
-        <li>9 am to 12 noon: Morning Seminar at Redhawk Activity Court</li>
+        <li>9 am to 12 noon: Morning Seminar at William F. Eisiminger Fitness Center</li>
         <li>12 noon to 12:45 pm: Lunch</li>
-        <li>1 pm to 4 pm: Afternoon Seminar at Redhawk Activity Court</li>
+        <li>1 pm to 4 pm: Afternoon Seminar at William F. Eisiminger Fitness Center</li>
         <li>6:30 pm until late: Camp Dinner at Olmstead</li>
       </ol>
     </li>
@@ -108,9 +108,9 @@ lang: "en"
       <span>Sunday, July 7th</span>
       <ol>
         <li>7:30 am to 8:15 am: Breakfast</li>
-        <li>9 am to 12 noon: Morning Seminar at Redhawk Activity Court</li>
+        <li>9 am to 12 noon: Morning Seminar at William F. Eisiminger Fitness Center</li>
         <li>12 noon to 12:45 pm: Lunch</li>
-        <li>1 pm to 4 pm: Afternoon Seminar at Redhawk Activity Court</li>
+        <li>1 pm to 4 pm: Afternoon Seminar at William F. Eisiminger Fitness Center</li>
         <li>5pm - 5:45 pm: Dinner</li>
       </ol>
     </li>
@@ -130,7 +130,7 @@ lang: "en"
 <section>
   <h2>Seminar</h2>
 
-  <p>The seminar will be held in <strong>Seattle University's Redhawk Activity Court on Saturday and Sunday, and Seattle Central College’s Mitchell Activity Center on Monday.</strong> The Seminar fee covers the cost of the facility and contributes to airfare for Goto Sensei and Yuka. Costs for lodging, meal plans and parking are not included - more on those below.</p>
+  <p>The seminar will be held in <strong>Seattle University's William F. Eisiminger Fitness Center on Saturday and Sunday, and Seattle Central College’s Mitchell Activity Center on Monday.</strong> The Seminar fee covers the cost of the facility and contributes to airfare for Goto Sensei and Yuka. Costs for lodging, meal plans and parking are not included - more on those below.</p>
 
   <ul class="list">
     <li><b>Early Bird</b> pricing for the seminar is $250 per person.<br />
@@ -138,10 +138,9 @@ lang: "en"
     <li><b>Regular pricing</b> from May 1st is $300 per person</li>
   </ul>
 
-  <p><b>Redhawk Center</b>: <a href="https://goo.gl/maps/cRx3md5mSbecGUcD7" target="_blank">550 14th Ave, Seattle, WA 98112</a>.
-    The Redhawk Center is also known as the William F. Eisiminger Fitness Center.</p>
+  <p><b>William F. Eisiminger Fitness Center</b> (within the Redhawk Center complex): <a href="https://maps.app.goo.gl/iTMGm238yZrauWM48" target="_blank">550 14th Ave, Seattle, WA 98112</a>.</p>
 
-  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9676822307533!2d-122.31579468360036!3d47.607318079184836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac5df623887%3A0x73c2e01c0cdb6c47!2sRedhawk%20Center!5e0!3m2!1sen!2sus!4v1680636688119!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1363.7575511491304!2d-122.31415062512305!3d47.60737199738551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac67671105b%3A0xff729b42340548ed!2sWilliam%20F.%20Eisiminger%20Fitness%20Center!5e0!3m2!1sen!2sus!4v1711342516472!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <p><b>Mitchell Activity Center:</b> <a href="https://maps.app.goo.gl/yDM4QvN39cHaDfSf6" target="_blank">1718 Broadway, Seattle, WA 98122</a>.</p>
 
@@ -151,7 +150,7 @@ lang: "en"
 <section>
   <h2>Accommodation and Meals</h2>
 
-  <p>Accommodation is available in Seattle University's Chardin Hall and Bellarmine Hall, each a short walk to the Redhawk Center and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join the group!</p>
+  <p>Accommodation is available in Seattle University's Chardin Hall and Campion Hall, each a short walk to the William F. Eisiminger Fitness Center and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join the group!</p>
 
   <p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you're not staying at Seattle University.</p>
 
@@ -170,7 +169,7 @@ lang: "en"
     campus buildings. All beds are single-person beds.</p>
 
   <p>The "Deluxe" units are in Chardin Hall, and each unit comes with its own private bathroom. The "Standard" units are in
-    Bellarmine Hall, with each unit sharing common bathrooms with the other units on the same floor. There are only 10 Deluxe
+    Campion Hall, with each unit sharing common bathrooms with the other units on the same floor. There are only 10 Deluxe
     Single rooms available, so get in quick!</p>
 
   <p>All accommodation options are for 3 nights, checking in on Friday and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and also if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
@@ -178,12 +177,12 @@ lang: "en"
   <ul>
     <li><b>Chardin Hall</b>: <a href="https://goo.gl/maps/6gdJY84x5AWaDzUH9" target="_blank">1020 East Jefferson, Seattle, WA
       98122</a></li>
-    <li><b>Bellarmine Hall</b>: <a href="https://goo.gl/maps/Jhc4BMp6WULccv9X8" target="_blank">1111 East Columbia Street,
-      Seattle, WA 98122</a></li>
+    <li><b>Campion Hall</b>: <a href="https://maps.app.goo.gl/oPLfguwhWb6SkNgH9" target="_blank">914 E Jefferson St, Seattle, WA
+      98122</a></li>
   </ul>
 
   <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9951028153646!2d-122.31859469999999!3d47.6067849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac7d0f0c9cb%3A0x45ab2858bb9bbbc1!2sChardin%20Hall%2C%201020%20E%20Jefferson%20St%2C%20Seattle%2C%20WA%2098122!5e0!3m2!1sen!2sus!4v1680639151793!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.8956802067846!2d-122.31737109999999!3d47.6087181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac8c8aac53b%3A0x4f98229b7e69c647!2sBellarmine%20Hall!5e0!3m2!1sen!2sus!4v1680639172220!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d766.500608499644!2d-122.3197207080549!3d47.60658528380051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906be6535ac98b%3A0x99c785813b386e60!2sCampion%20Hall%2C%20Seattle%20University!5e0!3m2!1sen!2sca!4v1711342269591!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <h3>About the meal plan</h3>
 
@@ -217,7 +216,7 @@ lang: "en"
   <h2>Parking</h2>
 
   <p>Parking is available through Seattle University. You can register now for a discounted price, or pay a higher fee if you
-    decide when you arrive. The standard rate for parking is $18 per calendar day if you don't pre-pay. Either way, we do not need
+    decide when you arrive. The standard rate for parking is $24 per calendar day if you don't pre-pay. Either way, we do not need
     your car's registration information until you arrive.</p>
 
   <p>Street parking in the area is very limited. We strongly recommend parking with Seattle University if you are driving.</p>
