@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "2024 Annual Goto Sensei Camp"
+title: "2024 PNKF Jodo Shinsa"
 permalink: "/events/2024-06-15-pnkf-jodo-shinsa/"
 lang: "en"
 ---
@@ -71,7 +71,7 @@ Online registration opens May 10th 2024. Registration deadline June 3rd 2024
 
 <strong>Location:</strong> 1419 NW Raleigh St, Portland, OR 97209
 
-</strong>Testing Ranks:</strong> PNKF Shinsa up to 1-Dan
+<strong>Testing Ranks:</strong> Up to 1-Dan
 
 ### Requirements 
 
@@ -121,7 +121,7 @@ Submit early to ensure there are no problems with your application.
 
 ### Cancellations and Refunds 
 
-Requests for shinsa cancellations, without exception, must be received no later than June 6th. Cancellations after this date will have only the certificate fee returned. Please note that if an applicant does not pass the examination, only the certificate fee will be returned. If an applicant does not attend the shinsa for any reason including illness, the shinsa fee is forfeited and only the certificate fee is returned. If special circumstances occur, please notify the Event Coordinator (David Zambrano, dmzz89@gmail.com) as soon as possible. 
+Requests for shinsa cancellations, without exception, must be received no later than June 6th. Cancellations after this date will have only the certificate fee returned. Please note that if an applicant does not pass the examination, only the certificate fee will be returned. If an applicant does not attend the shinsa for any reason including illness, the shinsa fee is forfeited and only the certificate fee is returned. If special circumstances occur, please notify the Event Coordinator (David Zambrano, <a href="mailto:dmzz89@gmail.com">dmzz89@gmail.com</a>) as soon as possible. 
 
 ## PNKF Jodo Shinsa Requirements 
 
