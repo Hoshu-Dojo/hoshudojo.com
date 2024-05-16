@@ -111,7 +111,7 @@ Candidates must be current members of the AUSKF or obtain written permission fro
 
 1. If special considerations need to be made, such as injury or medical limitations, please include a note of explanation so that this information may be given to the Examination Board. Doctor’s notes are not required.
 2. <strong>AUSKF members outside of the PNKF for the PNK Shinsa:</strong> <a href="https://drive.google.com/open?id=12GYFnjFNlfYaaHXQ0QqgD_lC2n2WXzB6">Request for Kendo/Iaido/Jodo Examination by an Affiliate Organization of the AUSKF</a> signed by the member federation president and a copy of menjo (certificate)
-3. <strong>FIK members outside of the AUSKF:</strong> Approval letter from the AUSKF VP of Promotions obtained by submitting <a href="https://www.auskf.org/forms/promotion-exams/foreign-examinee-request-form">Application Request Form for Promotion Examination from FIK affiliated organizations</a> and a copy of menjo (certificate)
+3. <strong>FIK members outside of the AUSKF:</strong> Your FIK federation's application form for examination in a foreign country and a copy of menjo (certificate), please submit these via email to the Event Coordinator (David Zambrano, <a href="mailto:dmzz89@gmail.com">dmzz89@gmail.com</a>), e.g. Canadian Kendo Federation's <a href="https://kendo-canada.com/wp-content/uploads/2017/12/ForeignApplicationForm.pdf">Application Form for Kyu/Dan Examination in a Foreign Country</a>
 
 ### Application Deadlines 
 
