@@ -58,8 +58,8 @@ lang: "en"
 # 2024 PNKF Jodo Shinsa 
 
 <address>
-    Portland Aikikai<br />
-    1419 NW Raleigh St, Portland, OR 97209
+    Black Wolf Academy<br />
+    5484 SE International Way, Milwaukie, OR 97222
 </address>
 <br />
 <p><date>June 15th 2024</date></p>
@@ -70,7 +70,7 @@ Online registration opens May 10th 2024. Registration deadline June 3rd 2024
 
 <strong>Test Date:</strong> Saturday, June 15th 2024, 2:00pm
 
-<strong>Location:</strong> 1419 NW Raleigh St, Portland, OR 97209
+<strong>Location:</strong> <a href="https://maps.app.goo.gl/nnmKTvHjDChvZBnr6">5484 SE International Way, Milwaukie, OR 97222</a>
 
 <strong>Testing Ranks:</strong> Up to 1-Dan
 
