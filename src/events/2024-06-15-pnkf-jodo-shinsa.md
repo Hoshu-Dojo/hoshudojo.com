@@ -59,18 +59,19 @@ lang: "en"
 
 <address>
     Black Wolf Academy<br />
-    5484 SE International Way, Milwaukie, OR 97222
+    5484 SE International Way, Milwaukie, Oregon, 97222
 </address>
 <br />
-<p><date>June 15th 2024</date></p>
+<p><date>June 15-16th 2024</date></p>
 
 Online registration opens May 10th 2024. Registration deadline June 3rd 2024
 
 ## Shinsa Information
 
-<strong>Test Date:</strong> Saturday, June 15th 2024, 2:00pm
+<strong>Seminar Day 1:</strong> Saturday, June 15th 2024, 12:00PM-6:00PM (Test at 2:00pm)
+<strong>Seminar Day 2:</strong> Sunday, June 16th 2024, 8:00AM-11:00AM
 
-<strong>Location:</strong> <a href="https://maps.app.goo.gl/nnmKTvHjDChvZBnr6">5484 SE International Way, Milwaukie, OR 97222</a>
+<strong>Location:</strong> <a href="https://maps.app.goo.gl/nnmKTvHjDChvZBnr6">Black Wolf Academy - 5484 SE International Way, Milwaukie, Oregon, 97222</a>
 
 <strong>Testing Ranks:</strong> Up to 1-Dan
 
