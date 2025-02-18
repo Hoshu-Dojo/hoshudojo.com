@@ -1,0 +1,17 @@
+/* partials */
+@import './partials/reset';
+@import './partials/variables';
+@import './partials/colours';
+@import './partials/mixins';
+@import './partials/global';
+
+/* sections */
+@import './sections/header';
+@import './sections/hero';
+@import './sections/benefits';
+@import './sections/arts';
+@import './sections/photo-feed';
+@import './sections/leadership';
+@import './sections/locations';
+@import './sections/contact';
+@import './sections/footer';

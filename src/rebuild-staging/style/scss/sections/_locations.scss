@@ -1,0 +1,107 @@
+.locations {
+    background: var(--secondary-bg);
+    color: var(--inverse-text);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    >article {
+        @include flex($direction: column, $gap: 2rem);
+    }
+
+    a {
+        color: var(--link-secondary);
+    }
+}
+
+.locations__map {
+    width: 100%;
+    position: relative;
+
+    >picture img {
+        width: 100%;
+        height: auto;
+        @include tint(palatinate_blue);
+    }
+}
+
+.locations__map-pin {
+    position: absolute;
+    @include flex();
+    transform: translate(-50%, -50%);
+
+    &:has(.map-pop-up[data-open="true"]) {
+        z-index: 100;
+    }
+}
+
+// TODO: fix positioning for relative window size :/
+.locations__map-pin--vancouver {
+    top: 29.875%;
+    left: 13%;
+}
+
+.locations__map-pin--seattle {
+    top: 32.5%;
+    left: 13.75%;
+}
+
+.locations__map-pin--portland {
+    top: 35%;
+    left: 13.625%;
+}
+
+.map-pin {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 0;
+    background: $bokuto_brown;
+    box-shadow: var(--shadow-elevation-low);
+    position: relative;
+    z-index: 10;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+        z-index: 20;
+    }
+}
+
+.map-pop-up {
+    &[data-open="true"] {
+        display: block;
+    }
+
+    &[data-open="false"] {
+        display: none;
+    }
+
+    width: 16rem;
+    max-width: min(calc(100vh - 2rem), $max_content_width);
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid $bokuto_brown;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.locations__links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    >p {
+        grid-column: span 4;
+    }
+}
+
+.locations__country-list {
+    text-align: center;
+}
