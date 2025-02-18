@@ -1,0 +1,25 @@
+@mixin flex($justify: center, $align: center, $gap: 1rem, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin tint($target) {
+
+    // tint to $parchment
+    @if $target ==parchment {
+        filter: invert(94%) sepia(14%) saturate(249%) hue-rotate(5deg) brightness(96%) contrast(96%);
+    }
+
+    // tint to $bokuto_brown
+    @if $target ==bokuto_brown {
+        filter: invert(73%) sepia(6%) saturate(3439%) hue-rotate(335deg) brightness(79%) contrast(83%);
+    }
+
+    // tint to $palatinate_blue
+    @if $target ==palatinate_blue {
+        filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+    }
+}
