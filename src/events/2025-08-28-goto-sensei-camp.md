@@ -132,7 +132,7 @@ lang: "en"
     <li><b>Regular pricing</b> from July 1st is $300 per person</li>
   </ul>
 
-  <p><strong>Redhawk Center:</strong> <a href="https://goo.gl/maps/cRx3md5mSbecGUcD7" target="_blank">550 14th Ave, Seattle, WA 98112</a>. Access to the Redhawk Activity Court is through the William F. Eisiminger Fitness Center.</p>
+  <p><strong>Redhawk Center:</strong> <a href="https://goo.gl/maps/cRx3md5mSbecGUcD7" target="_blank">550 14th Ave, Seattle, WA 98112</a>. Access to the Redhawk Activity Court is through the parking lot entrance.</p>
 
   <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9676822307533!2d-122.31579468360036!3d47.607318079184836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac5df623887%3A0x73c2e01c0cdb6c47!2sRedhawk%20Center!5e0!3m2!1sen!2sus!4v1680636688119!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
