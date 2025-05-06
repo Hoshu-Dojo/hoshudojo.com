@@ -1,6 +1,11 @@
 // grab .slide-fade-in elements
 const slideFaders = document.querySelectorAll(".slide-fade-in");
 
+// first, apply hidden class to all slideFaders once we know JS is enabled
+for (const slider of slideFaders) {
+	slider.classList.add("slide-fade-in--hidden");
+}
+
 // define observer
 const slideFadeObserver = new IntersectionObserver(
 	(entries, slideFadeObserver) => {

@@ -22,6 +22,7 @@
             {% comment %} sort 'em so we can assign a logical keyboard focus order {% endcomment %}
             {%- assign sortedDojos = sortedDojos | sort: "mapOrder" -%}
             {%- for dojo in sortedDojos -%}
+                <!-- TODO: design pop-up, location thumbnail? -->
                 <div id="pin-{{ dojo.slug }}" class="locations__map-pin locations__map-pin--{{ dojo.slug }}">
                     <button class="map-pin" aria-hidden="true" title="{{ dojo.location }}"></button>
                     <div class="map-pop-up" data-open="false">
