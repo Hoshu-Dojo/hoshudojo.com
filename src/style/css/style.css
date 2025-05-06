@@ -82,6 +82,12 @@ h6 {
   opacity: 0;
   transform: translateY(1rem);
 }
+@media (prefers-reduced-motion) {
+  .slide-fade-in--hidden {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fade-hero-image {
   0% {
