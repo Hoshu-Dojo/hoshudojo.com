@@ -1,0 +1,19 @@
+<article class="location-summary__bio content-wrapper">
+    <h2 class="vis-hidden">About</h2>
+    <div>
+        {{ content }}
+        <div class="separator"></div>
+        <!-- last para for all locations -->
+        <p>
+            A uniform and weapons are not required for the first few lessons. However, it is appreciated if you can contact us ahead of your first class so that spare weapons can be arranged.
+        </p>
+    </div>
+    <div class="photos">
+        {% for image in images %}
+            <picture class="photo">
+                <source srcset="{{ image.srcset }}" />
+                <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" />
+            </picture>
+        {% endfor %}
+    </div>
+</article>

@@ -1,0 +1,16 @@
+// layout constraints
+$fixed_header_height: 5rem;
+$max_hero_height: 1200px;
+$max_location_hero_height: 400px;
+$max_page_width: 1900px;
+$max_content_width: min(calc(100vw - (2.5rem * 2)), 85ch);
+$max_content_width_wide: min(calc(100vw - (2.5rem * 2)), 120ch);
+
+// media widths
+$media_mobile_small: 320px;
+$media_mobile_medium: 375px;
+$media_mobile_large: 425px;
+$media_tablet_small: 540px;
+$media_tablet_medium: 768px;
+$media_tablet_large: 1024px;
+$media_desktop_medium: 1440px;

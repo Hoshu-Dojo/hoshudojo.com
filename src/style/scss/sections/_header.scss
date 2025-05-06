@@ -1,0 +1,41 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+
+.nav-header {
+    background: colours.$keikogi_blue_darker;
+    color: var(--inverse-text);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: variables.$fixed_header_height;
+
+    .page-wrapper {
+        @include mixins.flex($justify: space-between);
+    }
+}
+
+.nav-header__logo {
+    @include mixins.flex($gap: 0.625rem);
+}
+
+.nav-header__text {
+    @media(max-width: variables.$media_tablet_small) {
+        @include mixins.visually-hidden();
+    }
+}
+
+.nav-header__title {
+    @include mixins.heading(h6);
+    line-height: 1;
+}
+
+.nav-header__subtitle {
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-top: 0.25em
+}

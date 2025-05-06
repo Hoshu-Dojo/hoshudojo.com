@@ -1,17 +1,18 @@
 {
-  "name": "hoshudojo.com",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve --input ./src --output ./dest",
-    "build": "eleventy --input ./src --output ./dest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  }
+	"name": "hoshudojo.com",
+	"version": "2.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "eleventy --serve --input ./src --output ./dest",
+		"build": "eleventy --input ./src --output ./dest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0"
+	},
+	"type": "module"
 }

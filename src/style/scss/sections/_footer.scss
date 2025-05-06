@@ -1,0 +1,56 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+
+.page-footer {
+    background: colours.$keikogi_blue_darker;
+    color: var(--inverse-text);
+
+    .page-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-areas:
+            "socials"
+            "orgs"
+            "credits";
+        gap: 1rem;
+
+        @media(min-width: variables.$media_tablet_small) {
+            grid-template-areas:
+                "socials orgs"
+                "socials credits";
+        }
+    }
+
+    a {
+        color: var(--link-secondary);
+    }
+}
+
+.page-footer__socials {
+    grid-area: socials;
+
+    ul {
+        @include mixins.flex($justify: flex-start, $gap: 0.75rem);
+        margin-top: 0.25rem;
+    }
+}
+
+.page-footer__orgs {
+    grid-area: orgs;
+    text-align: left;
+
+    @media(min-width: variables.$media_tablet_small) {
+        text-align: right;
+    }
+}
+
+.page-footer__credits {
+    grid-area: credits;
+    text-align: left;
+
+    @media(min-width: variables.$media_tablet_small) {
+        text-align: right;
+    }
+}

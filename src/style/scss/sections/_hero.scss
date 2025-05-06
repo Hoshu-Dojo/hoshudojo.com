@@ -1,0 +1,68 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+@use '../partials/animations';
+
+.hero {
+    article {
+        width: 100%;
+        height: min(calc(100vh - variables.$fixed_header_height), variables.$max_hero_height);
+        background-color: colours.$keikogi_blue;
+        color: var(--inverse-text);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            --hero-image-jpg: url("../../assets/img/hero_01.jpg");
+            --hero-image-webp: url("../../assets/img/hero_01.webp");
+
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: var(--hero-image-jpg);
+            background-repeat: no-repeat;
+            background-position: center 30.5%;
+            background-size: cover;
+            z-index: -1;
+            animation: fade-hero-image 32s ease 0s infinite;
+            opacity: 1;
+
+            @supports (background-image: var(--hero-image-webp)) {
+                background-image: var(--hero-image-webp);
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: color-mix(in srgb, var(--secondary-bg) 60%, transparent);
+            z-index: -1;
+        }
+    }
+
+    .content-wrapper {
+        @include mixins.flex($gap: 2rem, $direction: column, $align: center);
+        text-align: center;
+
+        @media(min-width: variables.$media_tablet_medium) {
+            flex-direction: row;
+            align-content: flex-start;
+            text-align: left;
+        }
+    }
+
+    h1 {
+        font-size: 3.25rem;
+
+        @media(min-width: variables.$media_tablet_large) {
+            font-size: 4rem;
+        }
+    }
+}

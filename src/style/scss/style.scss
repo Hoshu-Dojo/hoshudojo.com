@@ -1,0 +1,18 @@
+/* partials */
+@use './partials/reset';
+@use './partials/variables';
+@use './partials/colours';
+@use './partials/mixins';
+@use './partials/animations';
+@use './partials/global';
+
+/* sections */
+@use './sections/header';
+@use './sections/hero';
+@use './sections/benefits';
+@use './sections/arts';
+@use './sections/photo-feed';
+@use './sections/leadership';
+@use './sections/locations';
+@use './sections/contact';
+@use './sections/footer';

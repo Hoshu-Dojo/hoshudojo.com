@@ -1,0 +1,118 @@
+// classes
+.slide-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.375s ease-in, transform 0.5s ease;
+}
+
+.slide-fade-in--hidden {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+// keyframes
+@keyframes fade-hero-image {
+    0% {
+        opacity: 1;
+    }
+
+    19% {
+        opacity: 1;
+    }
+
+    21% {
+        opacity: 0;
+        --hero-image-jpg: url("../../assets/img/hero_01.jpg");
+        --hero-image-webp: url("../../assets/img/hero_01.webp");
+        background-position: center 30.5%;
+    }
+
+    22% {
+        --hero-image-jpg: url("../../assets/img/hero_02.jpg");
+        --hero-image-webp: url("../../assets/img/hero_02.webp");
+        background-position: center;
+    }
+
+    23% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 1;
+    }
+
+    46% {
+        opacity: 0;
+        --hero-image-jpg: url("../../assets/img/hero_02.jpg");
+        --hero-image-webp: url("../../assets/img/hero_02.webp");
+        background-position: center;
+    }
+
+    47% {
+        --hero-image-jpg: url("../../assets/img/hero_03.jpg");
+        --hero-image-webp: url("../../assets/img/hero_03.webp");
+        background-position: center;
+    }
+
+    48% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    69% {
+        opacity: 1;
+    }
+
+    71% {
+        opacity: 0;
+        --hero-image-jpg: url("../../assets/img/hero_03.jpg");
+        --hero-image-webp: url("../../assets/img/hero_03.webp");
+        background-position: center;
+    }
+
+    72% {
+        --hero-image-jpg: url("../../assets/img/hero_04.jpg");
+        --hero-image-webp: url("../../assets/img/hero_04.webp");
+        background-position: center;
+    }
+
+    73% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    94% {
+        opacity: 1;
+    }
+
+    96% {
+        opacity: 0;
+        --hero-image-jpg: url("../../assets/img/hero_04.jpg");
+        --hero-image-webp: url("../../assets/img/hero_04.webp");
+        background-position: center;
+    }
+
+    97% {
+        --hero-image-jpg: url("../../assets/img/hero_01.jpg");
+        --hero-image-webp: url("../../assets/img/hero_01.webp");
+        background-position: center 30.5%;
+    }
+
+    98% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

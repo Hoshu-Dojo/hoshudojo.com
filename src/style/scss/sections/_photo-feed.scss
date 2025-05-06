@@ -1,0 +1,50 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+
+.photo-feed {
+    background: var(--tertiary-bg);
+    // min-height: min(66rem, calc(100vh - variables.$fixed_header_height));
+
+    .content-wrapper {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        @include mixins.flex($align: flex-end, $direction: column, $gap: 1.5rem);
+    }
+
+    a {
+        color: var(--link-secondary);
+        @include mixins.flex($gap: 0.25rem);
+
+        .icon {
+            @include mixins.tint(bokuto_brown);
+        }
+    }
+}
+
+.photo-feed__photo-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media(min-width: variables.$media_tablet_small) {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media(min-width: variables.$media_tablet_medium) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+
+        --shadow-colour: #{colours.$zambrano_blue_hsl};
+        box-shadow: var(--shadow-elevation-medium);
+    }
+}

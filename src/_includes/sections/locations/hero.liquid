@@ -1,0 +1,9 @@
+<!-- SECTION: location hero -->
+{%- assign slug = permalink | split: "/" | last -%}
+<section class="location-hero location-hero--{{slug}}">
+    <article class="content-wrapper">
+        <div class="location-hero__text">
+            <h1>{{ locationName }}</h1>
+        </div>
+    </article>
+</section>

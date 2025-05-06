@@ -1,0 +1,61 @@
+@mixin heading($size: h2) {
+    @if $size ==h1 {
+        font-size: 3.25rem;
+    }
+
+    @if $size ==h2 {
+        font-size: 2.125rem;
+    }
+
+    @if $size ==h3 {
+        font-size: 1.5rem;
+    }
+
+    @if $size ==h4 {
+        font-size: 1.375rem;
+    }
+
+    @if $size ==h5 {
+        font-size: 1.25rem;
+    }
+
+    @if $size ==h6 {
+        font-size: 0.9375rem;
+    }
+}
+
+@mixin visually-hidden() {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@mixin flex($justify: center, $align: center, $gap: 1rem, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin tint($target) {
+
+    // tint to $parchment
+    @if $target ==parchment {
+        filter: invert(94%) sepia(14%) saturate(249%) hue-rotate(5deg) brightness(96%) contrast(96%);
+    }
+
+    // tint to $bokuto_brown
+    @if $target ==bokuto_brown {
+        filter: invert(73%) sepia(6%) saturate(3439%) hue-rotate(335deg) brightness(79%) contrast(83%);
+    }
+
+    // tint to $palatinate_blue
+    @if $target ==palatinate_blue {
+        filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+    }
+}

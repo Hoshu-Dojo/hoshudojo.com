@@ -1,0 +1,71 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+
+.benefits {
+    background: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.benefit {
+    width: 100%;
+    @include mixins.flex($gap: 2rem, $direction: column);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.benefit__photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4.5 / 3;
+    flex-shrink: 0;
+    border-radius: 0.125rem;
+
+    --shadow-colour: #{colours.$palatinate_blue_hsl};
+    box-shadow: var(--shadow-elevation-medium);
+
+    // transform-style: preserve-3d;
+
+    @media(min-width: variables.$media_tablet_medium) {
+        width: 45%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.benefit--photo-left {
+    @media(min-width: variables.$media_tablet_medium) {
+        flex-direction: row;
+    }
+
+    // .benefit__photo {
+    //     transform: perspective(10rem) rotateY(3deg);
+    // }
+}
+
+.benefit--photo-right {
+    @media(min-width: variables.$media_tablet_medium) {
+        flex-direction: row-reverse;
+    }
+
+    // .benefit__photo {
+    //     transform: perspective(10rem) rotateY(-3deg);
+    // }
+}
+
+.benefit__text {
+    width: 100%;
+}
+
+.benefit__title {
+    color: colours.$zambrano_blue;
+
+    @media(max-width: variables.$media_mobile_large) {
+        @include mixins.heading(h3);
+    }
+}

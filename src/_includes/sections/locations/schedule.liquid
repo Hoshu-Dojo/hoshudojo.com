@@ -1,0 +1,61 @@
+<div class="schedule">
+	{% if schedule.jodo %}
+		<div class="schedule__art">
+			<h2 class="vis-hidden">
+				{% if schedule["daito-ryu"] %}
+					Jodo 
+				{% endif %}
+				Class Schedule
+			</h2>
+			<div class="schedule__week">
+				{% for day in week %}
+					<div class="schedule__day">
+						<h3>
+							<abbr title="{{ day.full }}">{{ day.short }}</abbr>
+						</h3>
+						{% if schedule["daito-ryu"] %}
+							<h4 class="h6 schedule__art">Jodo</h4>
+						{% endif %}
+						{% if schedule.jodo[day.slug] == null %}
+							<p class="no-class">No class</p>
+						{% else %}
+							<p>{{ schedule.jodo[day.slug] }}</p>
+						{% endif %}
+						{% if schedule["daito-ryu"] %}
+							<h4 class="h6 schedule__art">Daito Ryu</h4>
+							{% if schedule.jodo[day.slug] == null %}
+								<p class="no-class">No class</p>
+							{% else %}
+								<p>{{ schedule.jodo[day.slug] }}</p>
+							{% endif %}
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+	{% comment %} {% if schedule["daito-ryu"] %}
+		<div class="schedule__art">
+			<h2 class="vis-hidden">
+				{% if schedule.jodo %}
+					Daito Ryu 
+				{% endif %}
+				Class Schedule
+			</h2>
+			<div class="schedule__week">
+				{% for day in week %}
+					<div class="schedule__day">
+						<h3>
+							<abbr title="{{ day.full }}">{{ day.short }}</abbr>
+						</h3>
+						{% if schedule["daito-ryu"][day.slug] == null %}
+							<p class="no-class">No class</p>
+						{% else %}
+							<p>{{ schedule["daito-ryu"][day.slug] }}</p>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %} {% endcomment %}
+</div>

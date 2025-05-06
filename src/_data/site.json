@@ -1,25 +1,230 @@
 {
-  "url": "http://www.hoshudojo.com",
-  "baseurl": "",
-  "title": "Hoshu Dojo - Shindo Muso Ryu Jo and Daito Ryu Aikijujutsu",
-  "nav": [
-    {
-      "description": "Home",
-      "id": "home",
-      "href": "/",
-      "props": ""
-    },
-    {
-      "description": "Locations",
-      "id": "locations",
-      "href": "/locations",
-      "props": ""
-    },
-    {
-      "description": "Contact Us",
-      "id": "contact",
-      "href": "https://forms.gle/5cHDnQ5cwZo2mukP6",
-      "props": "target='_blank'"
-    }
-  ]
+	"title": "Hoshu Dojo &ndash; Shindo Muso Ryu Jojutsu (Jodo) and Daito Ryu Aikijujutsu",
+	"lang": "en",
+	"photoFeedPlaceholders": [
+		{
+			"srcset": "/assets/img/insta-placeholder_01.webp",
+			"src": "/assets/img/insta-placeholder_01.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_02.webp",
+			"src": "/assets/img/insta-placeholder_02.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_03.webp",
+			"src": "/assets/img/insta-placeholder_03.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_04.webp",
+			"src": "/assets/img/insta-placeholder_04.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_05.webp",
+			"src": "/assets/img/insta-placeholder_05.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_06.webp",
+			"src": "/assets/img/insta-placeholder_06.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_07.webp",
+			"src": "/assets/img/insta-placeholder_07.jpg"
+		},
+		{
+			"srcset": "/assets/img/insta-placeholder_08.webp",
+			"src": "/assets/img/insta-placeholder_08.jpg"
+		}
+	],
+	"leadership": [
+		{
+			"name": "Kei Goto",
+			"ranks": "7th dan Kyoshi (Jodo), Menkyo (Daito Ryu)",
+			"location": "Oita, Japan",
+			"isHeadSensei": true,
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/200/200"
+			}
+		},
+		{
+			"name": "Thomas Groendal",
+			"ranks": "7th dan Renshi (Jodo), 4th dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"isSecondarySensei": true,
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/150/150"
+			}
+		},
+		{
+			"name": "Marcus Phung",
+			"ranks": "5th dan (Jodo)",
+			"location": "Seattle, Washington",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		},
+		{
+			"name": "Jeff Kamo",
+			"ranks": "4th dan (Jodo)",
+			"location": "Vancouver, BC",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		},
+		{
+			"name": "Michael Park",
+			"ranks": "4th dan (Jodo), ??? dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		},
+		{
+			"name": "Chris Dowling",
+			"ranks": "4th dan (Jodo)",
+			"location": "Seattle, Washington",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		},
+		{
+			"name": "Dave Zambrano",
+			"ranks": "3rd dan (Jodo), ??? dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		},
+		{
+			"name": "Jess Hilliam",
+			"ranks": "4th dan (Jodo)",
+			"location": "Vancouver, BC",
+			"photo": {
+				"srcset": "",
+				"src": "https://placedog.net/120/120"
+			}
+		}
+	],
+	"locations": [
+		{
+			"country": "United States",
+			"dojos": [
+				{
+					"slug": "portland",
+					"location": "Portland, Oregon",
+					"instructor": "Thomas Groendal",
+					"schedule": "Tues, Thurs, Sun",
+					"mapOrder": 3
+				},
+				{
+					"slug": "seattle",
+					"location": "Seattle, Washington",
+					"instructor": "Marcus Phung",
+					"schedule": "Sat",
+					"mapOrder": 2
+				},
+				{
+					"slug": "pasadena",
+					"location": "Pasadena, California",
+					"instructor": "Levon Sukiassyan",
+					"schedule": "Mon, Tues",
+					"mapOrder": 4
+				},
+				{
+					"slug": "atlanta",
+					"location": "Atlanta, Georgia",
+					"instructor": "???",
+					"schedule": "???",
+					"mapOrder": 6
+				}
+			]
+		},
+		{
+			"country": "Canada",
+			"dojos": [
+				{
+					"slug": "vancouver",
+					"location": "Vancouver, BC",
+					"instructor": "Jeff Kamo",
+					"schedule": "Thurs, Sun",
+					"mapOrder": 1
+				},
+				{
+					"slug": "toronto",
+					"location": "Toronto, Ontario",
+					"instructor": "Alan Wu",
+					"schedule": "???",
+					"mapOrder": 5
+				}
+			]
+		},
+		{
+			"country": "Mexico",
+			"dojos": [
+				{
+					"slug": "coyoacan",
+					"location": "Coyoacan, Mexico City",
+					"instructor": "Genaro Luis",
+					"schedule": "Thurs, Sun",
+					"mapOrder": 7
+				}
+			]
+		},
+		{
+			"country": "Japan",
+			"dojos": [
+				{
+					"slug": "oita",
+					"location": "Oita Prefecture",
+					"instructor": "Kei Goto",
+					"schedule": "Mon, Tues, Fri, Sat",
+					"mapOrder": 8
+				},
+				{
+					"slug": "naha",
+					"location": "Naha, Okinawa",
+					"instructor": "Taisuke Yonamine",
+					"schedule": "???",
+					"mapOrder": 9
+				}
+			]
+		}
+	],
+	"socials": [
+		{
+			"name": "Facebook",
+			"link": "https://www.facebook.com/HoshuDojo",
+			"icon": "/assets/icons/facebook.svg"
+		},
+		{
+			"name": "Instagram",
+			"link": "https://www.instagram.com/hoshudojo",
+			"icon": "/assets/icons/instagram.svg"
+		},
+		{
+			"name": "YouTube",
+			"link": "https://youtube.com/@hoshudojo?si=kpZaQUkZUB5pbLdp",
+			"icon": "/assets/icons/youtube.svg"
+		}
+	],
+	"organizations": [
+		{
+			"name": "All United States Kendo Federation",
+			"link": "https://www.auskf.org/"
+		},
+		{
+			"name": "Canadian Kendo Federation",
+			"link": "https://kendo-canada.com/"
+		},
+		{
+			"name": "Jodo Canada",
+			"link": "https://www.jodo-canada.ca/"
+		}
+	]
 }

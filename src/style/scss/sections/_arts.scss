@@ -1,0 +1,49 @@
+@use '../partials/colours';
+@use '../partials/mixins';
+
+.arts {
+    background: var(--secondary-bg);
+    color: var(--inverse-text);
+
+    a {
+        color: var(--link-secondary);
+    }
+
+    .banner {
+        height: 250px;
+        background-color: colours.$keikogi_blue;
+        background-image: url("../../assets/img/banner-arts.jpg");
+        background-repeat: no-repeat;
+        background-position: center 23%;
+        background-size: cover;
+        color: var(--inverse-text);
+        @include mixins.flex($justify: flex-start);
+        position: relative;
+        z-index: 1;
+
+        @supports (background-image: url("../../assets/img/banner-arts.webp")) {
+            background-image: url("../../assets/img/banner-arts.webp");
+        }
+
+        &::after {
+            content: "";
+            // width: 100vw;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: color-mix(in srgb, var(--secondary-bg) 60%, transparent);
+            z-index: -1;
+
+            // @media(min-width: $max_page_width) {
+            //     left: calc(((100vw - $max_page_width) / 2) * -1);
+            // }
+        }
+    }
+
+    .content-wrapper {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}

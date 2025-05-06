@@ -1,0 +1,21 @@
+<article class="location-summary__seniors content-wrapper">
+    <h2>
+        <img src="/assets/icons/team.svg" alt="" class="icon" aria-hidden="true" loading="lazy">
+        Instructors and Senior Students
+    </h2>
+    <ul class="list list--unstyled seniors">
+        {% for senior in seniors %}
+            <li class="senior">
+                <picture>
+                    <source srcset="{{ senior.image.srcset }}" />
+                    <img class="headshot" src="{{ senior.image.src }}" alt="Headshot: {{ senior.name }}" />
+                </picture>
+                <div class="no-margin">
+                    <p class="heading h5">{{ senior.name }}</p>
+                    <p class="h6">{{ senior.rank }}</p>
+                </div>
+                <p>{{ senior.bio }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</article>

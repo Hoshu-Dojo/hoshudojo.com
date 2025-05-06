@@ -1,0 +1,24 @@
+<div class="cost-disciplines">
+	<div>
+		<h2>
+			<img src="/assets/icons/dollar.svg" alt="" class="icon" aria-hidden="true" loading="lazy">
+			Cost
+		</h2>
+		<ul class="list list--unstyled">
+			{% for costLine in cost %}
+				<li>{{ costLine }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div>
+		<h2>
+			<img src="/assets/icons/read.svg" alt="" class="icon" aria-hidden="true" loading="lazy">
+			Disciplines
+		</h2>
+		<ul class="list list--unstyled">
+		{% for art in arts %}
+			<li>{{ art }}</li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>

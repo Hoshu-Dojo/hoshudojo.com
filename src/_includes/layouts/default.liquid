@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if title %}
+            {{ title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    <meta name="description"
+        content="Hoshu Dojo is a martial arts school following Kei Goto sensei's teachings in Shindo Muso Ryu Jojutsu, or Jodo, and Daito Ryu Aikijujutsu, a predecessor to Aikido.">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="/assets/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/assets/logos/logo_black.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <!-- TODO: head tags for socials sharing -->
+
+    <!-- FIXME: for testing purposes only, prevent page from being indexed -->
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/css/style.css">
+    {% for style in styles %}
+        <link rel="stylesheet" href="{{ style }}">
+    {% endfor %}
+
+    {% include "sections/google-analytics" %}
+</head>
+
+<body>
+    {% include "sections/header" %}
+    <main id="content">{{ content }}</main>
+    {% include "sections/footer" %}
+</body>
+</html>
