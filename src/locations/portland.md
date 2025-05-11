@@ -7,7 +7,11 @@ locationName: Hoshu Dojo Portland
 instructor: {
     name: Thomas Groendal,
     rank: "7th Dan Jodo Renshi, 4th Dan Daito Ryu (Shibucho)",
-    image: "https://placedog.net/250/250"
+    image: {
+        srcset: "https://placedog.net/250/250",
+        src: "https://placedog.net/250/250"
+    },
+    bio: "Born in Muskegon, MI, Tom started his martial arts career practicing Aikido in his hometown in 1994 and spent some time practicing other arts, including ZNKR Iaido, before encountering Goto sensei at one of the Friday Jo practices in Oita in 2002. He now lives in Portland, OR, with his family and works with CACI as a Product Manager with the DarkBlue Intelligence Suite. Tom enjoys culinary pursuits, good whisky and watching Sumo. He is also the ranking instructor for Jodo in the All United States Kendo Federation."
 }
 address: [
     Portland Aikikai,
@@ -51,15 +55,6 @@ images: [
     },
 ]
 seniors: [
-    {
-        name: Thomas Groendal,
-        rank: "7th Dan Jodo Renshi, 4th Dan Daito Ryu (Shibucho)",
-        image: {
-            srcset: "https://placedog.net/120/120",
-            src: "https://placedog.net/120/120"
-        },
-        bio: "Born in Muskegon, MI, Tom started his martial arts career practicing Aikido in his hometown in 1994 and spent some time practicing other arts, including ZNKR Iaido, before encountering Goto sensei at one of the Friday Jo practices in Oita in 2002. He now lives in Portland, OR, with his family and works with CACI as a Product Manager with the DarkBlue Intelligence Suite. Tom enjoys culinary pursuits, good whisky and watching Sumo. He is also the ranking instructor for Jodo in the All United States Kendo Federation."
-    },
     {
         name: Michael Park,
         rank: 4th Dan Jodo,

@@ -40,11 +40,10 @@ week: [
 ]
 ---
 
+<!-- TODO: responsive layout -->
 {% include "sections/locations/hero" %}
 <section class="location-summary page-wrapper">
     {% include "sections/locations/summary" %}
 	{% include "sections/locations/location-bio" %}
-	{% if seniors %}
-		{% include "sections/locations/seniors" %}
-	{% endif %}
+	{% include "sections/locations/seniors" %}
 </section>

@@ -1,6 +1,6 @@
 <div class="schedule">
 	{% if schedule.jodo %}
-		<div class="schedule__art">
+		<div>
 			<h2 class="vis-hidden">
 				{% if schedule["daito-ryu"] %}
 					Jodo 
@@ -14,7 +14,7 @@
 							<abbr title="{{ day.full }}">{{ day.short }}</abbr>
 						</h3>
 						{% if schedule["daito-ryu"] %}
-							<h4 class="h6 schedule__art">Jodo</h4>
+							<h4 class="h6">Jodo</h4>
 						{% endif %}
 						{% if schedule.jodo[day.slug] == null %}
 							<p class="no-class">No class</p>
@@ -22,11 +22,11 @@
 							<p>{{ schedule.jodo[day.slug] }}</p>
 						{% endif %}
 						{% if schedule["daito-ryu"] %}
-							<h4 class="h6 schedule__art">Daito Ryu</h4>
-							{% if schedule.jodo[day.slug] == null %}
+							<h4 class="h6">Daito Ryu</h4>
+							{% if schedule["daito-ryu"][day.slug] == null %}
 								<p class="no-class">No class</p>
 							{% else %}
-								<p>{{ schedule.jodo[day.slug] }}</p>
+								<p>{{ schedule["daito-ryu"][day.slug] }}</p>
 							{% endif %}
 						{% endif %}
 					</div>
@@ -35,7 +35,7 @@
 		</div>
 	{% endif %}
 	{% comment %} {% if schedule["daito-ryu"] %}
-		<div class="schedule__art">
+		<div class=">
 			<h2 class="vis-hidden">
 				{% if schedule.jodo %}
 					Daito Ryu 

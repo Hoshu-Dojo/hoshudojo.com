@@ -121,3 +121,29 @@
         opacity: 1;
     }
 }
+
+@keyframes pulse-map-pin {
+    0% {
+        opacity: 1;
+        transform: scale(0.75);
+        border-width: 1.5px;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+        border-width: 1px;
+    }
+}
+
+@keyframes scale-in-map-pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0.125) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(-1rem);
+    }
+}

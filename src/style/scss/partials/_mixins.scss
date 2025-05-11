@@ -24,6 +24,12 @@
     }
 }
 
+@mixin tiny-heading() {
+    color: color-mix(in srgb, var(--primary-text) 60%, transparent);
+    font-size: 0.625rem;
+    margin-top: 0.5rem;
+}
+
 @mixin visually-hidden() {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -57,5 +63,10 @@
     // tint to $palatinate_blue
     @if $target ==palatinate_blue {
         filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+    }
+
+    // tint to $keikogi_blue_darker
+    @if $target ==keikogi_blue_darker {
+        filter: invert(4%) sepia(31%) saturate(1212%) hue-rotate(199deg) brightness(104%) contrast(103%);
     }
 }

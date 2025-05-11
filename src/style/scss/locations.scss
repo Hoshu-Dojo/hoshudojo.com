@@ -96,6 +96,7 @@
 
         .icon {
             height: 1.25em;
+            @include mixins.tint(keikogi_blue_darker);
         }
     }
 }
@@ -121,18 +122,11 @@
     }
 }
 
-// .location-summary__instructor {
-//     @include mixins.heading(h2);
-//     line-height: 1;
-// }
-
 .schedule {
     width: 100%;
 
     h4 {
-        color: color-mix(in srgb, var(--primary-text) 60%, transparent);
-        font-size: 0.625rem;
-        margin-top: 0.5rem;
+        @include mixins.tiny-heading();
     }
 }
 

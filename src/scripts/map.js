@@ -53,3 +53,29 @@ const handleBodyClick = (e) => {
 };
 
 document.addEventListener("click", handleBodyClick);
+
+// --------------
+
+// get location list links
+const locationLinks = document.querySelectorAll("[data-dojo-link]");
+
+// add attribute to the related pin
+const handleMouseEnter = (mapPin) => {
+	mapPin.setAttribute("data-link-hovered", "true");
+};
+
+// remove attribute to the related pin
+const handleMouseLeave = (mapPin) => {
+	mapPin.removeAttribute("data-link-hovered");
+};
+
+for (const link of locationLinks) {
+	const slug = link.getAttribute("data-dojo-link");
+	const matchingPin = document.querySelector(
+		`.locations__map-pin--${slug} button`,
+	);
+
+	// listen to mouse events for links
+	link.addEventListener("mouseenter", (_e) => handleMouseEnter(matchingPin));
+	link.addEventListener("mouseleave", (_e) => handleMouseLeave(matchingPin));
+}

@@ -4,6 +4,17 @@
         Instructors and Senior Students
     </h2>
     <ul class="list list--unstyled seniors">
+        <li class="senior">
+            <picture>
+                <source srcset="{{ instructor.image.srcset }}">
+                <img src="{{ instructor.image.src }}" alt="Headshot: {{ instructor.name }}" class="headshot" />
+            </picture>
+            <div class="no-margin">
+                <p class="heading h5">{{ instructor.name }}</p>
+                <p class="h6">{{ instructor.rank }}</p>
+            </div>
+            <p>{{ instructor.bio }}</p>
+        </li>
         {% for senior in seniors %}
             <li class="senior">
                 <picture>

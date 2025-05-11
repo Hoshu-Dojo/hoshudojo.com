@@ -2,7 +2,6 @@
 <section id="locations" class="locations">
     <article class="page-wrapper">
         <h2 class="vis-hidden">Locations</h2>
-        <!-- TODO: visual map with interactive markers -->
         <div class="locations__map" aria-hidden="true">
             <picture>
                 <source
@@ -22,13 +21,22 @@
             {% comment %} sort 'em so we can assign a logical keyboard focus order {% endcomment %}
             {%- assign sortedDojos = sortedDojos | sort: "mapOrder" -%}
             {%- for dojo in sortedDojos -%}
-                <!-- TODO: design pop-up, location thumbnail? -->
                 <div id="pin-{{ dojo.slug }}" class="locations__map-pin locations__map-pin--{{ dojo.slug }}">
-                    <button class="map-pin" aria-hidden="true" title="{{ dojo.location }}"></button>
-                    <div class="map-pop-up" data-open="false">
-                        <p>{{ dojo.location }}</p>
-                        <p>Instructor: {{ dojo.instructor }}</p>
-                        <p>Schedule: {{ dojo.schedule }}</p>
+                    <button class="map-pin" aria-hidden="true" title="{{ dojo.location }}">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="map-pop-up map-pop-up--{{ dojo.popUpPosition }}" data-open="false">
+                        <img src="{{ dojo.thumbnail }}" alt="" class="map-pop-up__thumbnail" loading="lazy">
+                        <div class="map-pop-up__text no-margin">
+                            <h3 class="h6">{{ dojo.location }}</p>
+                            <h4>Instructor</h4>
+                            <p>{{ dojo.instructor }}</p>
+                            <h4>Schedule</h4>
+                            <p>{{ dojo.schedule }}</p>
+                            <a href="/locations/{{ dojo.slug }}">Class info for {{ dojo.location | split: ',' | first }} <img src="/assets/icons/arrow-right.svg" alt="" class="icon" loading="lazy" /></a>
+                        </div>
                     </div>
                 </div>
             {%- endfor -%}
@@ -45,7 +53,7 @@
                     <ul class="list list--unstyled">
                         {%- for dojo in location.dojos -%}
                             <li>
-                                <a href="/locations/{{ dojo.slug }}/">
+                                <a href="/locations/{{ dojo.slug }}/" data-dojo-link="{{ dojo.slug }}">
                                     {{ dojo.location }}
                                 </a>
                             </li>

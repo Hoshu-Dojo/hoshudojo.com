@@ -93,6 +93,7 @@ h6 {
       Times,
       serif;
   --form-border-width: 1.5px;
+  --form-asterisk-colour: #4242C3;
   --shadow-colour: 240deg 90% 0%;
   --shadow-elevation-low: 0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.36),
       0px 1.2px 1.3px -1.2px hsl(var(--shadow-colour) / 0.36),
@@ -111,6 +112,9 @@ h6 {
       -0.2px 36.1px 40.6px -1.9px hsl(var(--shadow-colour) / 0.31),
       -0.3px 51.8px 58.3px -2.2px hsl(var(--shadow-colour) / 0.31),
       -0.4px 72.6px 81.7px -2.5px hsl(var(--shadow-colour) / 0.31);
+  --drop-shadow-elevation-low: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 1.2px 1.3px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 2.8px 3.1px hsl(var(--shadow-colour) / 0.36));
+  --drop-shadow-elevation-medium: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 1.8px 2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 3.6px 4.1px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 7.3px 8.2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(-0.1px 14.2px 16px hsl(var(--shadow-colour) / 0.3));
+  --drop-shadow-elevation-high: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 3.8px 4.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 6.9px 7.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 10.8px 12.2px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 16.4px 18.5px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 24.6px 27.7px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 36.1px 40.6px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.3px 51.8px 58.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.4px 72.6px 81.7px hsl(var(--shadow-colour) / 0.31));
 }
 
 html {
@@ -444,6 +448,15 @@ label:has(input[type=checkbox]) input[type=checkbox]:checked::before {
   transform: scale(1);
 }
 
+.asterisk {
+  color: var(--form-asterisk-colour);
+}
+
+label:has(+ input[required])::after {
+  content: " *";
+  color: var(--form-asterisk-colour);
+}
+
 textarea {
   resize: vertical;
 }
@@ -571,6 +584,7 @@ textarea {
 }
 .location-summary h2 .icon {
   height: 1.25em;
+  filter: invert(4%) sepia(31%) saturate(1212%) hue-rotate(199deg) brightness(104%) contrast(103%);
 }
 
 .location-summary__summary {

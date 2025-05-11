@@ -1,5 +1,8 @@
 <div class="location-summary__instructor-location">
-    <img class="headshot headshot--instructor" src="{{ instructor.image }}" alt="Headshot: {{ instructor.name }}" />
+    <picture>
+        <source srcset="{{ instructor.image.srcset }}">
+        <img class="headshot headshot--instructor" src="{{ instructor.image.src }}" alt="Headshot: {{ instructor.name }}" />
+    </picture>
     <div class="no-margin">
         <h2>
             <img src="/assets/icons/idcard.svg" alt="" class="icon" aria-hidden="true" loading="lazy">

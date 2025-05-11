@@ -120,28 +120,34 @@
 					"location": "Portland, Oregon",
 					"instructor": "Thomas Groendal",
 					"schedule": "Tues, Thurs, Sun",
-					"mapOrder": 3
+					"mapOrder": 3,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_portland.jpg"
 				},
 				{
 					"slug": "seattle",
 					"location": "Seattle, Washington",
 					"instructor": "Marcus Phung",
 					"schedule": "Sat",
-					"mapOrder": 2
+					"mapOrder": 2,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_seattle.jpg"
 				},
 				{
 					"slug": "pasadena",
 					"location": "Pasadena, California",
 					"instructor": "Levon Sukiassyan",
 					"schedule": "Mon, Tues",
-					"mapOrder": 4
+					"mapOrder": 4,
+					"popUpPosition": "right"
 				},
 				{
 					"slug": "atlanta",
 					"location": "Atlanta, Georgia",
 					"instructor": "???",
 					"schedule": "???",
-					"mapOrder": 6
+					"mapOrder": 6,
+					"popUpPosition": "right"
 				}
 			]
 		},
@@ -153,14 +159,17 @@
 					"location": "Vancouver, BC",
 					"instructor": "Jeff Kamo",
 					"schedule": "Thurs, Sun",
-					"mapOrder": 1
+					"mapOrder": 1,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_vancouver.jpg"
 				},
 				{
 					"slug": "toronto",
 					"location": "Toronto, Ontario",
 					"instructor": "Alan Wu",
 					"schedule": "???",
-					"mapOrder": 5
+					"mapOrder": 5,
+					"popUpPosition": "right"
 				}
 			]
 		},
@@ -172,7 +181,8 @@
 					"location": "Coyoacan, Mexico City",
 					"instructor": "Genaro Luis",
 					"schedule": "Thurs, Sun",
-					"mapOrder": 7
+					"mapOrder": 7,
+					"popUpPosition": "right"
 				}
 			]
 		},
@@ -184,14 +194,16 @@
 					"location": "Oita Prefecture",
 					"instructor": "Kei Goto",
 					"schedule": "Mon, Tues, Fri, Sat",
-					"mapOrder": 8
+					"mapOrder": 8,
+					"popUpPosition": "left"
 				},
 				{
 					"slug": "naha",
 					"location": "Naha, Okinawa",
 					"instructor": "Taisuke Yonamine",
 					"schedule": "???",
-					"mapOrder": 9
+					"mapOrder": 9,
+					"popUpPosition": "left"
 				}
 			]
 		}
