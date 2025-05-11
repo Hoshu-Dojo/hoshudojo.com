@@ -12,28 +12,28 @@
         position: relative;
         z-index: 1;
 
-        &::before {
-            --hero-image-jpg: url("../../assets/img/hero_01.jpg");
-            --hero-image-webp: url("../../assets/img/hero_01.webp");
+        // &::before {
+        //     --hero-image-jpg: url("../../assets/img/hero_01.jpg");
+        //     --hero-image-webp: url("../../assets/img/hero_01.webp");
 
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: var(--hero-image-jpg);
-            background-repeat: no-repeat;
-            background-position: center 30.5%;
-            background-size: cover;
-            z-index: -1;
-            animation: fade-hero-image 32s ease 0s infinite;
-            opacity: 1;
+        //     content: "";
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     background-image: var(--hero-image-jpg);
+        //     background-repeat: no-repeat;
+        //     background-position: center 30.5%;
+        //     background-size: cover;
+        //     z-index: -1;
+        //     animation: transition-hero-image 32s ease 0s infinite;
+        //     opacity: 1;
 
-            @supports (background-image: var(--hero-image-webp)) {
-                background-image: var(--hero-image-webp);
-            }
-        }
+        //     @supports (background-image: var(--hero-image-webp)) {
+        //         background-image: var(--hero-image-webp);
+        //     }
+        // }
 
         &::after {
             content: "";
@@ -63,6 +63,95 @@
 
         @media(min-width: variables.$media_tablet_large) {
             font-size: 4rem;
+        }
+    }
+}
+
+.hero__image {
+    --fade-duration: 120s;
+    // 8 = number of images / number of iterations per loop
+    // (see diagram in _animations.scss)
+    --fade-delay-overlap: calc(var(--fade-duration) / 8);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: var(--hero-image-jpg);
+    background-repeat: no-repeat;
+    background-position: center 30.5%;
+    background-size: cover;
+    z-index: -1;
+    animation-name: fade-hero-image;
+    animation-duration: var(--fade-duration);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    // start first hero image fully visible, no fade in
+    opacity: 1;
+
+    // hide others until animation triggers
+    &:not(:nth-of-type(4)) {
+        opacity: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+        opacity: 1;
+        animation: none;
+
+        &:not(:nth-of-type(4)) {
+            opacity: 0;
+        }
+    }
+
+    @supports (background-image: var(--hero-image-webp)) {
+        background-image: var(--hero-image-webp);
+    }
+
+    // first image in sequence, top of the stock
+    &:nth-of-type(4) {
+        background-image: url("../../assets/img/hero_01.jpg");
+        background-position: center 30.5%;
+        // two animation calculations, to handle first load and trigger infinite loop
+        animation-name: fade-hero-image, fade-hero-image;
+        animation-delay: 0s, calc(var(--fade-delay-overlap) * 4);
+        animation-iteration-count: 1, infinite;
+
+        @supports (background-image: url("../../assets/img/hero_01.webp")) {
+            background-image: url("../../assets/img/hero_01.webp");
+        }
+    }
+
+    // second in sequence
+    &:nth-of-type(3) {
+        background-image: url("../../assets/img/hero_02.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 1);
+
+        @supports (background-image: url("../../assets/img/hero_02.webp")) {
+            background-image: url("../../assets/img/hero_02.webp");
+        }
+    }
+
+    // third in sequence
+    &:nth-of-type(2) {
+        background-image: url("../../assets/img/hero_03.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 2);
+
+        @supports (background-image: url("../../assets/img/hero_03.webp")) {
+            background-image: url("../../assets/img/hero_03.webp");
+        }
+    }
+
+    // fourth in sequence
+    &:nth-of-type(1) {
+        background-image: url("../../assets/img/hero_04.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 3);
+
+        @supports (background-image: url("../../assets/img/hero_04.webp")) {
+            background-image: url("../../assets/img/hero_04.webp");
         }
     }
 }

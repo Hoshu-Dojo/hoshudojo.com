@@ -76,6 +76,6 @@ for (const link of locationLinks) {
 	);
 
 	// listen to mouse events for links
-	link.addEventListener("mouseenter", (_e) => handleMouseEnter(matchingPin));
-	link.addEventListener("mouseleave", (_e) => handleMouseLeave(matchingPin));
+	link.addEventListener("mouseenter", () => handleMouseEnter(matchingPin));
+	link.addEventListener("mouseleave", () => handleMouseLeave(matchingPin));
 }

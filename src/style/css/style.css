@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* partials */
 /**
  * from joshwcomeau.com
@@ -89,7 +90,7 @@ h6 {
   }
 }
 
-@keyframes fade-hero-image {
+@keyframes transition-hero-image {
   0% {
     opacity: 1;
   }
@@ -172,6 +173,52 @@ h6 {
   }
   100% {
     opacity: 1;
+  }
+}
+/**
+ the math on this was reeeeeaaaaallllyyy challenging to get the
+ overlap delay right, please don't get rid of this diagram:
+
+ 0 = visible
+ . = invisible
+
+ two header rows reflect 0–100%, every 2%
+
+ x 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8
+ x 0 ~ ~ ~ ~ 1 ~ ~ ~ ~ 2 ~ ~ ~ ~ 3 ~ ~ ~ ~ 4 ~ ~ ~ ~ 5 ~ ~ ~ ~ 6 ~ ~ ~ ~ 7 ~ ~ ~ ~ 8 ~ ~ ~ ~ 9 ~ ~ ~ ~
+ 1 . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . .
+ 2 . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . .
+ 3 . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . .
+ 4 O O O . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O
+
+ */
+@keyframes fade-hero-image {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0;
+  }
+  52% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes pulse-map-pin {
@@ -681,28 +728,6 @@ textarea {
   position: relative;
   z-index: 1;
 }
-.hero article::before {
-  --hero-image-jpg: url("../../assets/img/hero_01.jpg");
-  --hero-image-webp: url("../../assets/img/hero_01.webp");
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: var(--hero-image-jpg);
-  background-repeat: no-repeat;
-  background-position: center 30.5%;
-  background-size: cover;
-  z-index: -1;
-  animation: fade-hero-image 32s ease 0s infinite;
-  opacity: 1;
-}
-@supports (background-image: var(--hero-image-webp)) {
-  .hero article::before {
-    background-image: var(--hero-image-webp);
-  }
-}
 .hero article::after {
   content: "";
   width: 100%;
@@ -734,6 +759,85 @@ textarea {
 @media (min-width: 1024px) {
   .hero h1 {
     font-size: 4rem;
+  }
+}
+
+.hero__image {
+  --fade-duration: 120s;
+  --fade-delay-overlap: calc(var(--fade-duration) / 8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: var(--hero-image-jpg);
+  background-repeat: no-repeat;
+  background-position: center 30.5%;
+  background-size: cover;
+  z-index: -1;
+  animation-name: fade-hero-image;
+  animation-duration: var(--fade-duration);
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+.hero__image:not(:nth-of-type(4)) {
+  opacity: 0;
+}
+@media (prefers-reduced-motion) {
+  .hero__image {
+    opacity: 1;
+    animation: none;
+  }
+  .hero__image:not(:nth-of-type(4)) {
+    opacity: 0;
+  }
+}
+@supports (background-image: var(--hero-image-webp)) {
+  .hero__image {
+    background-image: var(--hero-image-webp);
+  }
+}
+.hero__image:nth-of-type(4) {
+  background-image: url("../../assets/img/hero_01.jpg");
+  background-position: center 30.5%;
+  animation-name: fade-hero-image, fade-hero-image;
+  animation-delay: 0s, calc(var(--fade-delay-overlap) * 4);
+  animation-iteration-count: 1, infinite;
+}
+@supports (background-image: url("../../assets/img/hero_01.webp")) {
+  .hero__image:nth-of-type(4) {
+    background-image: url("../../assets/img/hero_01.webp");
+  }
+}
+.hero__image:nth-of-type(3) {
+  background-image: url("../../assets/img/hero_02.jpg");
+  background-position: center;
+  animation-delay: calc(var(--fade-delay-overlap) * 1);
+}
+@supports (background-image: url("../../assets/img/hero_02.webp")) {
+  .hero__image:nth-of-type(3) {
+    background-image: url("../../assets/img/hero_02.webp");
+  }
+}
+.hero__image:nth-of-type(2) {
+  background-image: url("../../assets/img/hero_03.jpg");
+  background-position: center;
+  animation-delay: calc(var(--fade-delay-overlap) * 2);
+}
+@supports (background-image: url("../../assets/img/hero_03.webp")) {
+  .hero__image:nth-of-type(2) {
+    background-image: url("../../assets/img/hero_03.webp");
+  }
+}
+.hero__image:nth-of-type(1) {
+  background-image: url("../../assets/img/hero_04.jpg");
+  background-position: center;
+  animation-delay: calc(var(--fade-delay-overlap) * 3);
+}
+@supports (background-image: url("../../assets/img/hero_04.webp")) {
+  .hero__image:nth-of-type(1) {
+    background-image: url("../../assets/img/hero_04.webp");
   }
 }
 

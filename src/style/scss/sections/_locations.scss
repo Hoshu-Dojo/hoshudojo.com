@@ -140,7 +140,7 @@
         animation-delay: 2s;
     }
 
-    // TODO: possible to animate corresponding map pin when location link is hovered?
+    // animates the pin when pop-up is opened, or when corresponding link in list is hovered
     &:has(+ .map-pop-up[data-open="true"]),
     &[data-link-hovered="true"] {
         span {
@@ -157,6 +157,20 @@
 }
 
 .map-pop-up {
+    width: max-content;
+    max-width: min(calc(100vh - 2rem), variables.$max_page_width);
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-1rem);
+    filter: var(--drop-shadow-elevation-low);
+
     &[data-open="true"] {
         display: grid;
         grid-template-columns: 6rem 1fr;
@@ -171,20 +185,6 @@
     &[data-open="false"] {
         display: none;
     }
-
-    width: max-content;
-    max-width: min(calc(100vh - 2rem), variables.$max_page_width);
-    background: var(--primary-bg);
-    color: var(--primary-text);
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    transform: translateY(-1rem);
-    filter: var(--drop-shadow-elevation-low);
 
     &::before {
         content: "";
