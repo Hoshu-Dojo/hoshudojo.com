@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/vancouver/"
-title: Hoshu Dojo Vancouver &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jojutsu (Jodo) and Daito Ryu Aikijujutsu
+title: Hoshu Dojo Vancouver &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 
 locationName: Hoshu Dojo Vancouver
 instructor: {

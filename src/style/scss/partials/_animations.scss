@@ -204,3 +204,19 @@
         transform: scale(1) translateY(-1rem);
     }
 }
+
+@keyframes slide-up-hero-logo {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

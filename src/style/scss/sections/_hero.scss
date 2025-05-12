@@ -12,29 +12,6 @@
         position: relative;
         z-index: 1;
 
-        // &::before {
-        //     --hero-image-jpg: url("../../assets/img/hero_01.jpg");
-        //     --hero-image-webp: url("../../assets/img/hero_01.webp");
-
-        //     content: "";
-        //     width: 100%;
-        //     height: 100%;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     background-image: var(--hero-image-jpg);
-        //     background-repeat: no-repeat;
-        //     background-position: center 30.5%;
-        //     background-size: cover;
-        //     z-index: -1;
-        //     animation: transition-hero-image 32s ease 0s infinite;
-        //     opacity: 1;
-
-        //     @supports (background-image: var(--hero-image-webp)) {
-        //         background-image: var(--hero-image-webp);
-        //     }
-        // }
-
         &::after {
             content: "";
             width: 100%;
@@ -60,10 +37,39 @@
 
     h1 {
         font-size: 3.25rem;
+        animation-delay: 0.75s;
 
         @media(min-width: variables.$media_tablet_large) {
             font-size: 4rem;
         }
+    }
+
+    // animate
+    .logo,
+    h1,
+    li {
+        opacity: 0;
+        animation-name: slide-up-hero-logo;
+        animation-duration: 0.9375s;
+        animation-timing-function: cubic-bezier(.48, -0.04, .2, 1.1);
+        animation-fill-mode: forwards;
+
+        @media (prefers-reduced-motion) {
+            opacity: 1;
+            animation: none;
+        }
+    }
+
+    .logo {
+        animation-delay: 0.5s;
+    }
+
+    li:first-of-type {
+        animation-delay: 1s;
+    }
+
+    li:last-of-type {
+        animation-delay: 1.25s;
     }
 }
 

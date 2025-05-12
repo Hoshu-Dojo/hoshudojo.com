@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/portland/"
-title: Hoshu Dojo Portland &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jojutsu (Jodo) and Daito Ryu Aikijujutsu
+title: Hoshu Dojo Portland &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 
 locationName: Hoshu Dojo Portland
 instructor: {

@@ -243,6 +243,19 @@ h6 {
     transform: scale(1) translateY(-1rem);
   }
 }
+@keyframes slide-up-hero-logo {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 :root {
   --primary-text: #0A0A2B;
   --subtle-text: #22226B;
@@ -755,11 +768,38 @@ textarea {
 }
 .hero h1 {
   font-size: 3.25rem;
+  animation-delay: 0.75s;
 }
 @media (min-width: 1024px) {
   .hero h1 {
     font-size: 4rem;
   }
+}
+.hero .logo,
+.hero h1,
+.hero li {
+  opacity: 0;
+  animation-name: slide-up-hero-logo;
+  animation-duration: 0.9375s;
+  animation-timing-function: cubic-bezier(0.48, -0.04, 0.2, 1.1);
+  animation-fill-mode: forwards;
+}
+@media (prefers-reduced-motion) {
+  .hero .logo,
+  .hero h1,
+  .hero li {
+    opacity: 1;
+    animation: none;
+  }
+}
+.hero .logo {
+  animation-delay: 0.5s;
+}
+.hero li:first-of-type {
+  animation-delay: 1s;
+}
+.hero li:last-of-type {
+  animation-delay: 1.25s;
 }
 
 .hero__image {
