@@ -66,6 +66,7 @@ html,
 body {
     background: var(--page-bg);
     color: var(--primary-text);
+    // overflow-x: hidden;
 }
 
 body {
@@ -302,6 +303,15 @@ button,
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+// assume column layout as default
+.flex-wrapper {
+    @include mixins.flex($direction: column, $align: flex-start, $justify: flex-start);
+}
+
+.flex-wrapper--row {
+    flex-direction: row;
 }
 
 .logo {

@@ -139,7 +139,8 @@
 					"instructor": "Levon Sukiassyan",
 					"schedule": "Mon, Tues",
 					"mapOrder": 4,
-					"popUpPosition": "right"
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_pasadena.jpg"
 				},
 				{
 					"slug": "atlanta",
@@ -147,7 +148,8 @@
 					"instructor": "???",
 					"schedule": "???",
 					"mapOrder": 6,
-					"popUpPosition": "right"
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_atlanta.jpg"
 				}
 			]
 		},
@@ -167,9 +169,10 @@
 					"slug": "toronto",
 					"location": "Toronto, Ontario",
 					"instructor": "Alan Wu",
-					"schedule": "???",
+					"schedule": "Fri",
 					"mapOrder": 5,
-					"popUpPosition": "right"
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_toronto.jpg"
 				}
 			]
 		},
@@ -182,7 +185,8 @@
 					"instructor": "Genaro Luis",
 					"schedule": "Thurs, Sun",
 					"mapOrder": 7,
-					"popUpPosition": "right"
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations_coyoacan.jpg"
 				}
 			]
 		},
@@ -195,15 +199,17 @@
 					"instructor": "Kei Goto",
 					"schedule": "Mon, Tues, Fri, Sat",
 					"mapOrder": 8,
-					"popUpPosition": "left"
+					"popUpPosition": "left",
+					"thumbnail": "../assets/img/locations_oita.jpg"
 				},
 				{
 					"slug": "naha",
 					"location": "Naha, Okinawa",
 					"instructor": "Taisuke Yonamine",
-					"schedule": "???",
+					"schedule": "Contact for details",
 					"mapOrder": 9,
-					"popUpPosition": "left"
+					"popUpPosition": "left",
+					"thumbnail": "../assets/img/locations_naha.jpg"
 				}
 			]
 		}

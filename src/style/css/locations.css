@@ -364,6 +364,18 @@ button:hover,
   margin-right: auto;
 }
 
+.flex-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-wrapper--row {
+  flex-direction: row;
+}
+
 .logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -550,6 +562,30 @@ textarea {
   background-image: url("../../assets/img/locations_portland.jpg");
 }
 
+.location-hero--oita::before {
+  background-image: url("../../assets/img/locations_oita.jpg");
+}
+
+.location-hero--naha::before {
+  background-image: url("../../assets/img/locations_naha.jpg");
+}
+
+.location-hero--toronto::before {
+  background-image: url("../../assets/img/locations_toronto.jpg");
+}
+
+.location-hero--atlanta::before {
+  background-image: url("../../assets/img/locations_atlanta.jpg");
+}
+
+.location-hero--coyoacan::before {
+  background-image: url("../../assets/img/locations_coyoacan.jpg");
+}
+
+.location-hero--pasadena::before {
+  background-image: url("../../assets/img/locations_pasadena.jpg");
+}
+
 .location-hero__text h1 {
   text-align: right;
   font-weight: 900;
@@ -673,6 +709,7 @@ textarea {
 }
 
 .location-summary__seniors {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

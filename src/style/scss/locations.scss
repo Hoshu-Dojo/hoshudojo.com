@@ -64,7 +64,41 @@
     }
 }
 
-// TODO: other location hero images
+.location-hero--oita {
+    &::before {
+        background-image: url("../../assets/img/locations_oita.jpg");
+    }
+}
+
+.location-hero--naha {
+    &::before {
+        background-image: url("../../assets/img/locations_naha.jpg");
+    }
+}
+
+.location-hero--toronto {
+    &::before {
+        background-image: url("../../assets/img/locations_toronto.jpg");
+    }
+}
+
+.location-hero--atlanta {
+    &::before {
+        background-image: url("../../assets/img/locations_atlanta.jpg");
+    }
+}
+
+.location-hero--coyoacan {
+    &::before {
+        background-image: url("../../assets/img/locations_coyoacan.jpg");
+    }
+}
+
+.location-hero--pasadena {
+    &::before {
+        background-image: url("../../assets/img/locations_pasadena.jpg");
+    }
+}
 
 .location-hero__text {
     h1 {
@@ -185,6 +219,7 @@
 }
 
 .location-summary__seniors {
+    width: 100%;
     @include mixins.flex($direction: column, $align: flex-start, $justify: flex-start);
 }
 

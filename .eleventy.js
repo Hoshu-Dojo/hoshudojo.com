@@ -23,4 +23,10 @@ export default function (eleventyConfig) {
 	// 		},
 	// 	},
 	// });
+
+	// for WSL hot reload fix, see https://www.11ty.dev/docs/watch-serve/#advanced-chokidar-configuration
+	eleventyConfig.setChokidarConfig({
+		usePolling: true,
+		interval: 500
+	})
 }
