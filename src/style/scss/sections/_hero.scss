@@ -25,22 +25,33 @@
     }
 
     .content-wrapper {
-        @include mixins.flex($gap: 2rem, $direction: column, $align: center);
+        @include mixins.flex($gap: 1rem, $direction: column, $align: center);
         text-align: center;
 
         @media(min-width: variables.$media_tablet_medium) {
             flex-direction: row;
             align-content: flex-start;
             text-align: left;
+            gap: 2rem;
         }
     }
 
     h1 {
-        font-size: 3.25rem;
+        font-size: 2.5rem;
         animation-delay: 0.75s;
+
+        @media(min-width: variables.$media_tablet_small) {
+            font-size: 3.25rem;
+        }
 
         @media(min-width: variables.$media_tablet_large) {
             font-size: 4rem;
+        }
+    }
+
+    .h4 {
+        @media(max-width: variables.$media_tablet_small) {
+            font-size: 1.125rem;
         }
     }
 

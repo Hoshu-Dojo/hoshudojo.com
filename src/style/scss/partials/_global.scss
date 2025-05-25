@@ -328,9 +328,14 @@ button,
 }
 
 .logo--hero {
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     @include mixins.tint(parchment);
+
+    @media (min-width: variables.$media_tablet_small) {
+        width: 12rem;
+        height: 12rem;
+    }
 }
 
 .icon {
