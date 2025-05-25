@@ -1,3 +1,7 @@
+/**
+ * SLIDE-IN ELEMENTS
+ */
+
 // grab .slide-fade-in elements
 const slideFaders = document.querySelectorAll(".slide-fade-in");
 
@@ -28,4 +32,73 @@ const slideFadeObserver = new IntersectionObserver(
 // observe all .slide-fade-in elements
 for (const slider of slideFaders) {
 	slideFadeObserver.observe(slider);
+}
+
+/**
+ * MOBILE NAV
+ */
+
+const mobileNavLauncher = document.querySelector("#mobile-nav > button");
+const mobileNavMenu = document.querySelector("#mobile-nav nav");
+const mobileNavLinks = document.querySelectorAll("#mobile-nav a");
+const svg = document.getElementById("menu-icon");
+const menuToHam = document.getElementById("x-to-ham");
+const menuToClose = document.getElementById("ham-to-x");
+
+const toggleHamburgerAnimate = (isOpen) => {
+	if (!isOpen) {
+		menuToClose.beginElement();
+		mobileNavLauncher.setAttribute("aria-label", "Close menu");
+	}
+
+	if (isOpen) {
+		menuToHam.beginElement();
+		mobileNavLauncher.setAttribute("aria-label", "Open menu");
+	}
+};
+
+const stopBubbling = (e) => {
+	e.stopPropagation();
+};
+
+const openNav = () => {
+	mobileNavMenu.setAttribute("data-open", "true");
+
+	// trap focus to header elements
+	const nonHeaderItems = document.querySelectorAll("body > :not(header)");
+
+	for (const item of nonHeaderItems) {
+		item.setAttribute("inert", "true");
+	}
+};
+
+const closeNav = () => {
+	mobileNavMenu.setAttribute("data-open", "false");
+
+	// remove focus trapping
+	const nonHeaderItems = document.querySelectorAll("body > :not(header)");
+
+	for (const item of nonHeaderItems) {
+		item.removeAttribute("inert");
+	}
+};
+
+const toggleMenu = () => {
+	const isOpen = mobileNavMenu.getAttribute("data-open") === "true";
+
+	toggleHamburgerAnimate(isOpen);
+
+	if (isOpen) {
+		closeNav();
+	}
+
+	if (!isOpen) {
+		openNav();
+	}
+};
+
+mobileNavLauncher.addEventListener("click", toggleMenu);
+
+for (const link of mobileNavLinks) {
+	link.addEventListener("click", toggleMenu);
 }

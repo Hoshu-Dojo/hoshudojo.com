@@ -17,6 +17,14 @@
     .page-wrapper {
         @include mixins.flex($justify: space-between);
     }
+
+    .button--desktop {
+        display: none;
+
+        @media(min-width: variables.$media_tablet_small) {
+            display: block;
+        }
+    }
 }
 
 .nav-header__logo {
@@ -38,4 +46,68 @@
     font-size: 0.875rem;
     line-height: 1;
     margin-top: 0.25em
+}
+
+.nav-header__mobile-nav {
+    @include mixins.flex();
+
+    nav {
+        position: absolute;
+        top: variables.$fixed_header_height;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - variables.$fixed_header_height);
+        background: color-mix(in srgb, colours.$keikogi-blue_darker 80%, transparent);
+        backdrop-filter: blur(8px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+
+        &[data-open='false'] {
+            display: none;
+        }
+
+        .button {
+            width: 100%;
+            text-align: center;
+            padding-top: 0.375rem;
+            padding-bottom: 0.375rem;
+        }
+    }
+
+    ul,
+    li,
+    .graphic-link {
+        width: 100%;
+    }
+
+    .graphic-link {
+        display: block;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    >.button {
+        // transform to account for svg padding
+        transform: translateX(25%);
+    }
+
+    .icon {
+        height: 2.5rem;
+
+        path {
+            stroke: colours.$parchment;
+            stroke-width: 0.25rem;
+            stroke-linecap: round;
+        }
+    }
+
+    @media(min-width: variables.$media_tablet_small) {
+        display: none;
+    }
+}
+
+.nav-header__mobile-nav-wrapper {
+    min-height: calc(100vh - variables.$fixed_header_height + 1px);
+    padding: 2.5rem;
+    @include mixins.flex($gap: 2rem, $direction: column, $align: flex-start, $justify: flex-start);
 }

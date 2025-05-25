@@ -145,7 +145,7 @@
 				{
 					"slug": "atlanta",
 					"location": "Atlanta, Georgia",
-					"instructor": "???",
+					"instructor": "Adam Sandor",
 					"schedule": "???",
 					"mapOrder": 6,
 					"popUpPosition": "right",
@@ -197,7 +197,7 @@
 					"slug": "oita",
 					"location": "Oita Prefecture",
 					"instructor": "Kei Goto",
-					"schedule": "Mon, Tues, Fri, Sat",
+					"schedule": "Mon, Tues, Fri, Sun",
 					"mapOrder": 8,
 					"popUpPosition": "left",
 					"thumbnail": "../assets/img/locations_oita.jpg"

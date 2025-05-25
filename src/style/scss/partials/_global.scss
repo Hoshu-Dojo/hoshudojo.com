@@ -261,6 +261,16 @@ button,
     color: var(--inverse-text);
 }
 
+.button--unstyled {
+    background: none;
+    padding: 0;
+    border: none;
+
+    &:hover {
+        background: none;
+    }
+}
+
 .button--icon {
     width: 2.5rem;
     height: 2.5rem;

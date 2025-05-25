@@ -17,6 +17,7 @@
 .benefit__photo {
     width: 100%;
     height: auto;
+    max-width: 26rem;
     aspect-ratio: 4.5 / 3;
     flex-shrink: 0;
     border-radius: 0.125rem;
@@ -28,6 +29,7 @@
 
     @media(min-width: variables.$media_tablet_medium) {
         width: 45%;
+        max-width: initial;
     }
 
     img {
