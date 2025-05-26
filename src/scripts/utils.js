@@ -98,6 +98,13 @@ const toggleMenu = () => {
 };
 
 mobileNavLauncher.addEventListener("click", toggleMenu);
+document.addEventListener("keydown", (e) => {
+	const navIsOpen = mobileNavMenu.getAttribute("data-open") === "true";
+
+	if (navIsOpen && e.key === "Escape") {
+		toggleMenu();
+	}
+});
 
 for (const link of mobileNavLinks) {
 	link.addEventListener("click", toggleMenu);
