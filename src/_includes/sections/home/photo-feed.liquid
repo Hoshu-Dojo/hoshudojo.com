@@ -5,7 +5,7 @@
             <!-- TODO: hook up instagram feed -->
             {%- for placeholder in site.photoFeedPlaceholders -%}
                 <picture>
-                    <source src="{{ placeholder.srcset }}" />
+                    <source srcset="{{ placeholder.srcset }}" />
                     <img src="{{ placeholder.src }}" alt="" loading="lazy">
                 </picture>
             {%- endfor -%}

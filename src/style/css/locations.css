@@ -330,6 +330,10 @@ button:disabled,
   color: var(--inverse-text);
 }
 
+.button--secondary {
+  --button-bg: var(--link-secondary);
+}
+
 .button--unstyled {
   background: none;
   padding: 0;
