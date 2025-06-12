@@ -16,6 +16,8 @@
     --link-primary: #{colours.$palatinate_blue};
     --link-secondary: #{colours.$bokuto_brown};
     --borders: #{colours.$subtle};
+    --error: #{colours.$error};
+    --success: #{colours.$palatinate_blue};
 
     --font-body: Inter, Arial, Helvetica, sans-serif;
     --font-title: Cormorant,
@@ -90,6 +92,10 @@ main,
 footer {
     position: relative;
     top: variables.$fixed_header_height;
+}
+
+.hidden {
+    display: none;
 }
 
 .vis-hidden {
@@ -248,11 +254,16 @@ button,
     transition: all 0.2s ease;
     flex-shrink: 0;
 
-    &:hover {
+    &:hover:not(:disabled) {
         // --button-border-colour: var(--link-primary);
 
         background: color-mix(in srgb, var(--button-bg) 80%, transparent);
         // border-color: var(--button-border-colour);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
     }
 }
 
@@ -434,6 +445,24 @@ textarea {
     input,
     textarea {
         width: 100%;
+    }
+}
+
+.field label .icon,
+fieldset legend .icon {
+    display: none;
+}
+
+.field.error label,
+fieldset.error legend {
+    color: var(--error);
+    @include mixins.flex($gap: 0);
+
+    .icon {
+        @include mixins.tint(error);
+        display: block;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
     }
 }
 

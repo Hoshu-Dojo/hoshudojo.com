@@ -69,4 +69,14 @@
     @if $target ==keikogi_blue_darker {
         filter: invert(4%) sepia(31%) saturate(1212%) hue-rotate(199deg) brightness(104%) contrast(103%);
     }
+
+    // tint to $error
+    @if $target ==error {
+        filter: invert(29%) sepia(92%) saturate(5946%) hue-rotate(353deg) brightness(89%) contrast(102%);
+    }
+
+    // tint to $success
+    @if $target ==success {
+        filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+    }
 }

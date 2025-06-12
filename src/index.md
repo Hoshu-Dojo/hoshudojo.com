@@ -1,6 +1,6 @@
 ---
 layout: layouts/default
-scripts: ["./scripts/utils.js", "./scripts/map.js"]
+scripts: ["./scripts/utils.js", "./scripts/map.js", "./scripts/contact-form.js"]
 ---
 
 {% include "sections/home/hero" %}

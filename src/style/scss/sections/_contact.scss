@@ -20,20 +20,40 @@
 
         max-width: 40rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        align-items: flex-start;
+
+        @media(min-width: variables.$media_tablet_small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .form-disclaimer {
+            font-style: italic;
+            width: 100%;
+        }
+
+        .form-disclaimer,
+        .field:has(textarea),
+        fieldset,
+        .flex-wrapper {
+            @media (min-width: variables.$media_tablet_small) {
+                grid-column: span 2;
+            }
+        }
     }
 
-    .form-disclaimer {
-        font-style: italic;
-        width: 100%;
+    .flex-wrapper {
+        @media(min-width: variables.$media_tablet_small) {
+            align-items: flex-end;
+        }
     }
 
-    .form-disclaimer,
-    .field:has(textarea),
-    fieldset,
-    button {
-        grid-column: span 2;
+    .flex-wrapper:has(> .form-errors) {
+        align-items: flex-start;
+    }
+
+    .h-captcha {
+        @include mixins.flex();
     }
 
     button {
@@ -88,17 +108,75 @@
         --borders: #{colours.$parchment};
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         column-gap: 1.25rem;
         row-gap: 0.75rem;
 
         .field:has(input[id=mailing-email]),
         button {
-            grid-column: span 2;
+            @media(min-width: variables.$media_tablet_medium) {
+                grid-column: span 2;
+            }
         }
 
         button {
             margin-top: 1rem;
         }
+
+        @media(min-width: variables.$media_tablet_medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.form-errors,
+.form-success {
+    --form-feedback-border-color: var(--borders);
+
+    font-size: 0.875rem;
+    margin-left: auto;
+
+    .icon {
+        margin-right: 0.375em;
+        margin-top: 0.25em;
+    }
+
+    p:has(.icon) {
+        @include mixins.flex($gap: 0, $align: flex-start);
+    }
+
+    &:not(:empty) {
+        background: var(--subtle-bg);
+        border-radius: 0.25rem;
+        border: 2px solid var(--form-feedback-border-color);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-inline: 0.625rem;
+    }
+
+}
+
+.form-errors {
+    --form-feedback-border-color: var(--error);
+
+    color: var(--error);
+
+    .icon {
+        @include mixins.tint(error);
+    }
+}
+
+.form-success {
+    --form-feedback-border-color: var(--success);
+
+    .icon {
+        @include mixins.tint(success);
+    }
+}
+
+.flex-wrapper--row:has(> .form-errors) {
+    flex-direction: column;
+
+    @media(min-width: variables.$media_tablet_small) {
+        flex-direction: row;
     }
 }

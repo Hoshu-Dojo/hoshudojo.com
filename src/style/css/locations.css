@@ -76,7 +76,7 @@ h6 {
   --primary-text: #0A0A2B;
   --subtle-text: #22226B;
   --inverse-text: #EFE8D2;
-  --extra-subtle-text: rgb(152, 152, 152);
+  --extra-subtle-text: #989898;
   --pop-text: #4242C3;
   --page-bg: #060614;
   --primary-bg: #EFE8D2;
@@ -85,7 +85,9 @@ h6 {
   --subtle-bg: #FFFFFF;
   --link-primary: #4242C3;
   --link-secondary: #BE855E;
-  --borders: rgb(202, 201, 205);
+  --borders: #CAC9CD;
+  --error: #E41010;
+  --success: #4242C3;
   --font-body: Inter, Arial, Helvetica, sans-serif;
   --font-title: Cormorant,
       Georgia,
@@ -158,6 +160,10 @@ main,
 footer {
   position: relative;
   top: 5rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .vis-hidden {
@@ -309,9 +315,14 @@ button,
   transition: all 0.2s ease;
   flex-shrink: 0;
 }
-button:hover,
-.button:hover {
+button:hover:not(:disabled),
+.button:hover:not(:disabled) {
   background: color-mix(in srgb, var(--button-bg) 80%, transparent);
+}
+button:disabled,
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .button--primary {
@@ -498,6 +509,28 @@ textarea {
 .field input,
 .field textarea {
   width: 100%;
+}
+
+.field label .icon,
+fieldset legend .icon {
+  display: none;
+}
+
+.field.error label,
+fieldset.error legend {
+  color: var(--error);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.field.error label .icon,
+fieldset.error legend .icon {
+  filter: invert(29%) sepia(92%) saturate(5946%) hue-rotate(353deg) brightness(89%) contrast(102%);
+  display: block;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 input[type=text],
