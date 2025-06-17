@@ -111,15 +111,16 @@
         column-gap: 1.25rem;
         row-gap: 0.75rem;
 
-        .field:has(input[id=mailing-email]),
+        .field:has(input[id=mce-EMAIL]),
         button {
             @media(min-width: variables.$media_tablet_medium) {
                 grid-column: span 2;
             }
         }
 
-        button {
-            margin-top: 1rem;
+        >.flex-wrapper {
+            grid-column: span 2;
+            margin-top: 0.25rem;
         }
 
         @media(min-width: variables.$media_tablet_medium) {

@@ -254,3 +254,10 @@
         transform: translateY(0);
     }
 }
+
+@keyframes spinner {
+    to {
+        // maintain centred positioning
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

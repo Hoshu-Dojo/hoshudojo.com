@@ -21,7 +21,7 @@
             {%- assign sortedDojos = sortedDojos | sort: "mapOrder" -%}
             {%- for dojo in sortedDojos -%}
                 <div id="pin-{{ dojo.slug }}" class="locations__map-pin locations__map-pin--{{ dojo.slug }}">
-                    <button class="button button--secondary map-pin" aria-hidden="true" title="{{ dojo.location }}">
+                    <button class="button button--map-pin map-pin" aria-hidden="true" title="{{ dojo.location }}">
                         <span></span>
                         <span></span>
                         <span></span>

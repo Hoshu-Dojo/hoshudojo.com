@@ -176,6 +176,17 @@ footer {
   width: 1px;
 }
 
+.no-access {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  left: -5000px;
+}
+
 h1,
 h2,
 h3,
@@ -296,6 +307,7 @@ a:hover {
 button,
 .button {
   --button-bg: white;
+  --button-colour: var(--primary-text);
   --button-border-colour: var(--button-bg);
   --button-border-radius: 0.125rem;
   cursor: pointer;
@@ -304,7 +316,7 @@ button,
   padding-top: 0.0625rem;
   padding-bottom: 0.0625rem;
   background: var(--button-bg);
-  color: var(--primary-text);
+  color: var(--button-colour);
   border-width: 4px;
   border-style: solid;
   border-color: var(--button-border-colour);
@@ -327,11 +339,14 @@ button:disabled,
 
 .button--primary {
   --button-bg: var(--link-primary);
-  color: var(--inverse-text);
+  --button-colour: var(--inverse-text);
 }
 
-.button--secondary {
+.button--map-pin {
   --button-bg: var(--link-secondary);
+}
+.button--map-pin:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--button-bg) 90%, black);
 }
 
 .button--unstyled {
@@ -362,6 +377,28 @@ button:disabled,
   left: 50%;
   transform: translate(-50%, -50%);
   filter: invert(94%) sepia(14%) saturate(249%) hue-rotate(5deg) brightness(96%) contrast(96%);
+}
+
+.button--loading {
+  position: relative;
+  color: transparent;
+}
+.button--loading::after {
+  content: "";
+  aspect-ratio: 1/1;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3.5px solid var(--button-colour);
+  border-radius: 50%;
+  mask: conic-gradient(from 180deg, transparent 10%, black 85%);
+  transform-origin: center;
+  animation-name: spinner;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .list {
@@ -513,6 +550,10 @@ textarea {
 .field input,
 .field textarea {
   width: 100%;
+}
+
+.field--required-alt {
+  --form-asterisk-colour: #EFE8D2;
 }
 
 .field label .icon,

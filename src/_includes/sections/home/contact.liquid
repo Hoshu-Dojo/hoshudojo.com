@@ -1,17 +1,16 @@
 <section id="contact" class="contact content-wrapper">
     <h2 class="vis-hidden">Contact Us</h2>
     <h3 class="h2">Interested? Get In Touch.</h3>
-    <!-- TODO: event handling -->
     <form id="contact-form" aria-label="Contact form">
         <p class="form-disclaimer"><span class="asterisk">*</span> denotes a required field</p>
         <input type="hidden" class="hidden" name="access_key" value="{{ site.CONTACT_FORM_ACCESS_KEY }}" />
         <div class="field">
             <label for="contact-name">Name <img src="/assets/icons/exclamation-circle.svg" alt="" class="icon" aria-hidden="true" loading="lazy" /></label>
-            <input type="text" id="contact-name" name="name" required placeholder="Muso Gonnosuke" />
+            <input type="text" id="contact-name" name="name" required placeholder="Muso Gonnosuke" autocomplete="contact name" />
         </div>
         <div class="field">
             <label for="contact-email">Email <img src="/assets/icons/exclamation-circle.svg" alt="" class="icon" aria-hidden="true" loading="lazy" /></label>
-            <input type="email" id="contact-email" name="email" required placeholder="gonnosuke@me.com" />
+            <input type="email" id="contact-email" name="email" required placeholder="gonnosuke@me.com" autocomplete="contact username" />
         </div>
         <fieldset>
             <legend>Area(s) of Interest</legend>
@@ -63,26 +62,37 @@
     </form>
     <article class="contact__mailing-list slide-fade-in">
         <picture>
-            <source srcset="./assets/img/mailing-list.webp" />
-            <img src="./assets/img/mailing-list.jpg" alt="" loading="lazy" />
+            <source srcset="/assets/img/mailing-list.webp" />
+            <img src="/assets/img/mailing-list.jpg" alt="" loading="lazy" />
         </picture>
         <div class="contact__mailing-list-form">
             <h4>Want to hear about our upcoming events? Sign up for our mailing list!</h4>
             <!-- TODO: event handling -->
-            <form id="mailing-list-form" aria-label="Mailing list form">
-                <div class="field">
-                    <label for="mailing-email">Email</label>
-                    <input type="email" id="mailing-email" name="email" required placeholder="gonnosuke@me.com" />
+            <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" aria-label="Mailing list form" action="//hoshudojo.us9.list-manage.com/subscribe/post?u=932de532d91ec18ef1f144adf&amp;id=f13bddc5a9" method="post" target="_blank">
+                <input class="no-access" name="b_932de532d91ec18ef1f144adf_f13bddc5a9" tabindex="-1" type="text" value="" />
+                <div class="field field--required-alt">
+                    <label for="mce-EMAIL">Email</label>
+                    <input type="email" id="mce-EMAIL" name="EMAIL" required placeholder="gonnosuke@me.com" autocomplete="mailing-list username" />
                 </div>
                 <div class="field">
-                    <label for="mailing-first-name">First Name</label>
-                    <input type="text" id="mailing-first-name" name="firstName" placeholder="Gonnosuke" />
+                    <label for="mce-FNAME">First Name</label>
+                    <input type="text" id="mce-FNAME" name="FNAME" placeholder="Gonnosuke" autocomplete="mailing-list given-name" />
                 </div>
                 <div class="field">
-                    <label for="mailing-last-name">Last Name</label>
-                    <input type="text" id="mailing-last-name" name="lastName" placeholder="Muso" />
+                    <label for="mce-LNAME">Last Name</label>
+                    <input type="text" id="mce-LNAME" name="LNAME" placeholder="Muso" autocomplete="mailing-list family-name" />
                 </div>
-                <button type="submit">Subscribe</button>
+                <div class="flex-wrapper">
+                    <div>
+                        <div id="mce-error-response" class="form-errors" role="alert" aria-live="assertive" tabindex="-1">
+                        {%- comment %} insert errors via JS {% endcomment -%}
+                        </div>
+                        <div id="mce-success-response" class="form-success" role="alert" aria-live="polite" tabindex="-1">
+                        {%- comment %} insert notices via JS {% endcomment -%}
+                        </div>
+                    </div>
+                    <button id="mc-embedded-subscribe" type="submit">Subscribe</button>
+                </div>
             </form>
         </div>
     </article>

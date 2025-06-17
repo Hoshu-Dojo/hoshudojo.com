@@ -1,88 +1,75 @@
 const contactForm = document.getElementById("contact-form");
-const submitButton = contactForm.querySelector("button[type=submit]");
-const formErrors = contactForm.querySelector(".form-errors");
-const formSuccess = contactForm.querySelector(".form-success");
+const contactFormSubmitButton = contactForm.querySelector(
+	"button[type=submit]",
+);
+const contactFormErrors = contactForm.querySelector(".form-errors");
+const contactFormSuccess = contactForm.querySelector(".form-success");
 
 // errors as array of fields, eg. ['name', 'email', 'captcha']
-const buildFormErrorsElement = (errors) => {
+const buildContactFormErrorsElement = (errors) => {
 	if (!errors.length) {
 		return;
 	}
 
 	const pTag = document.createElement("p");
-	const exclaimIcon = document.createElement("img");
-	exclaimIcon.src = "/assets/icons/exclamation-circle.svg";
-	exclaimIcon.alt = "";
-	exclaimIcon.ariaHidden = "true";
-	exclaimIcon.classList.add("icon");
+	const exclaimIcon = createIconElement("exclaim");
 
 	pTag.appendChild(exclaimIcon);
 	pTag.append("Please correct the following errors and re-submit:");
 
 	const errorList = document.createElement("ul");
 
-	const nameError = document.createElement("li");
-	nameError.innerText = "Name is required";
-
-	const emailError = document.createElement("li");
-	emailError.innerText = "Email is required";
-
-	const captchaError = document.createElement("li");
-	captchaError.innerText = "Please verify the captcha";
-
 	if (errors.includes("name")) {
+		const nameError = document.createElement("li");
+		nameError.innerText = "Name is required";
 		errorList.appendChild(nameError);
 	}
 
 	if (errors.includes("email")) {
+		const emailError = document.createElement("li");
+		emailError.innerText = "Email is required";
 		errorList.appendChild(emailError);
 	}
 
 	if (errors.includes("captcha")) {
+		const captchaError = document.createElement("li");
+		captchaError.innerText = "Please verify the captcha";
 		errorList.appendChild(captchaError);
 	}
 
-	formErrors.appendChild(pTag);
-	formErrors.appendChild(errorList);
-	formErrors.focus();
+	contactFormErrors.appendChild(pTag);
+	contactFormErrors.appendChild(errorList);
+	contactFormErrors.focus();
 };
 
-const buildFormSubmitErrorElement = () => {
+const buildContactFormSubmitErrorElement = () => {
 	const pTag = document.createElement("p");
-	const exclaimIcon = document.createElement("img");
-	exclaimIcon.src = "/assets/icons/exclamation-circle.svg";
-	exclaimIcon.alt = "";
-	exclaimIcon.ariaHidden = "true";
-	exclaimIcon.classList.add("icon");
+	const exclaimIcon = createIconElement("exclaim");
 
 	pTag.appendChild(exclaimIcon);
 	pTag.append(
 		"Something went wrong, your request could not be submitted. Please try again later.",
 	);
 
-	formErrors.appendChild(pTag);
-	formErrors.focus();
+	contactFormErrors.appendChild(pTag);
+	contactFormErrors.focus();
 };
 
-const buildFormSuccessMessage = () => {
+const buildContactFormSuccessMessage = () => {
 	const pTag = document.createElement("p");
-	const checkIcon = document.createElement("img");
-	checkIcon.src = "/assets/icons/check-circle.svg";
-	checkIcon.alt = "";
-	checkIcon.ariaHidden = "true";
-	checkIcon.classList.add("icon");
+	const checkIcon = createIconElement("check");
 
 	pTag.appendChild(checkIcon);
 	pTag.append("Your request has been submitted! Thank you for reaching out.");
 
-	formSuccess.appendChild(pTag);
-	formSuccess.focus();
+	contactFormSuccess.appendChild(pTag);
+	contactFormSuccess.focus();
 };
 
-const markErrorFields = (errors) => {
+const markContactFormErrorFields = (errors) => {
 	const nameField = contactForm.querySelector(".field:has(input#contact-name)");
 	const emailField = contactForm.querySelector(
-		".field:has(input#contact-email",
+		".field:has(input#contact-email)",
 	);
 
 	if (errors.includes("name")) {
@@ -94,12 +81,7 @@ const markErrorFields = (errors) => {
 	}
 };
 
-const resetFormErrors = () => {
-	const formErrors = contactForm.querySelector(".form-errors");
-	formErrors.replaceChildren();
-};
-
-const validate = (formDataObject) => {
+const validateContactForm = (formDataObject) => {
 	const validationErrors = [];
 
 	if (!formDataObject.name.trim()) {
@@ -115,20 +97,20 @@ const validate = (formDataObject) => {
 	}
 
 	if (validationErrors.length) {
-		markErrorFields(validationErrors);
-		buildFormErrorsElement(validationErrors);
+		markContactFormErrorFields(validationErrors);
+		buildContactFormErrorsElement(validationErrors);
 		return false;
 	}
 
 	return true;
 };
 
-const handleSubmit = async (e) => {
+const handleContactFormSubmit = async (e) => {
 	e.preventDefault();
-	resetFormErrors();
+	resetFormFeedback(contactFormErrors, contactFormSuccess);
 
 	// put button in loading state
-	submitButton.setAttribute("disabled", "true");
+	toggleButtonLoadingState(contactFormSubmitButton, true);
 
 	const remappedInterests = {
 		jodo: "Jodo",
@@ -152,19 +134,28 @@ const handleSubmit = async (e) => {
 		formData.entries(),
 	);
 
-	const formDataObject = {
-		...fields,
-		"interest(s)": areasOfInterest.length
-			? areasOfInterest.map((val) => remappedInterests[val]).join("\n")
-			: "None specified",
-		"location(s)": locations.length
-			? locations.map((val) => remappedLocations[val]).join("\n")
-			: "None specified",
-		questions: fields.questions || "None specified",
-	};
-
 	try {
-		const isValid = validate(formDataObject);
+		const formDataObject = {
+			...Object.fromEntries(
+				Object.entries(fields).map(([fieldKey, fieldValue]) => [
+					encodeURIComponent(fieldKey),
+					encodeURIComponent(fieldValue),
+				]),
+			),
+			"interest(s)": areasOfInterest.length
+				? areasOfInterest
+						.map((val) => encodeURIComponent(remappedInterests[val]))
+						.join("\n")
+				: "None specified",
+			"location(s)": locations.length
+				? locations
+						.map((val) => encodeURIComponent(remappedLocations[val]))
+						.join("\n")
+				: "None specified",
+			questions: encodeURIComponent(fields.questions) || "None specified",
+		};
+
+		const isValid = validateContactForm(formDataObject);
 
 		if (!isValid) {
 			return;
@@ -185,15 +176,15 @@ const handleSubmit = async (e) => {
 		}
 
 		// render success message
-		buildFormSuccessMessage();
+		buildContactFormSuccessMessage();
 
 		contactForm.reset();
 	} catch {
 		// render on screen message
-		buildFormSubmitErrorElement();
+		buildContactFormSubmitErrorElement();
 	} finally {
-		submitButton.removeAttribute("disabled");
+		toggleButtonLoadingState(contactFormSubmitButton, false);
 	}
 };
 
-contactForm.addEventListener("submit", handleSubmit);
+contactForm.addEventListener("submit", handleContactFormSubmit);

@@ -109,3 +109,46 @@ document.addEventListener("keydown", (e) => {
 for (const link of mobileNavLinks) {
 	link.addEventListener("click", toggleMenu);
 }
+
+/**
+ * GENERAL FORM INTERACTIONS
+ */
+
+const toggleButtonLoadingState = (buttonEl, isLoading) => {
+	if (isLoading) {
+		buttonEl.setAttribute("disabled", "true");
+		buttonEl.classList.add("button--loading");
+	}
+
+	if (!isLoading) {
+		buttonEl.removeAttribute("disabled");
+		buttonEl.classList.remove("button--loading");
+	}
+};
+
+// options: 'exclaim' | 'check', or a manual file path
+const createIconElement = (icon) => {
+	const iconEl = document.createElement("img");
+	iconEl.alt = "";
+	iconEl.ariaHidden = "true";
+	iconEl.classList.add("icon");
+
+	switch (icon) {
+		case "exclaim":
+			iconEl.src = "/assets/icons/exclamation-circle.svg";
+			break;
+		case "check":
+			iconEl.src = "/assets/icons/check-circle.svg";
+			break;
+		default:
+			iconEl.src = icon;
+			break;
+	}
+
+	return iconEl;
+};
+
+const resetFormFeedback = (formErrorsEl, formSuccessEl) => {
+	formErrorsEl.replaceChildren();
+	formSuccessEl.replaceChildren();
+};
