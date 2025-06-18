@@ -48,13 +48,17 @@
         </div>
         <input type="checkbox" class="hidden" name="botcheck" />
         <div class="flex-wrapper">
-            <div class="h-captcha" data-captcha="true"></div>
+            <div>
+                <div class="h-captcha" data-captcha="true"></div>
+            </div>
             <div class="flex-wrapper flex-wrapper--row">
-                <div class="form-errors" role="alert" aria-live="assertive" tabindex="-1">
-                    {%- comment %} insert errors via JS {% endcomment -%}
-                </div>
-                <div class="form-success" role="alert" aria-live="polite" tabindex="-1">
-                    {%- comment %} insert notices via JS {% endcomment -%}
+                <div>
+                    <div class="form-errors" role="alert" aria-live="assertive" tabindex="-1">
+                        {%- comment %} insert errors via JS {% endcomment -%}
+                    </div>
+                    <div class="form-success" role="alert" aria-live="polite" tabindex="-1">
+                        {%- comment %} insert notices via JS {% endcomment -%}
+                    </div>
                 </div>
                 <button class="button button--primary" type="submit">Send</button>
             </div>

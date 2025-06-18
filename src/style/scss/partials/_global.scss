@@ -74,7 +74,7 @@ body {
 body {
     font-family: var(--font-body);
     font-weight: 400;
-    width: 100vw;
+    // width: 100vw; // causing horizontal scroll when accounting for scrollbar in Chrome
     min-height: calc(100vh - variables.$fixed_header_height);
     @include mixins.flex($direction: column, $gap: 0, $justify: flex-start)
 }
@@ -292,7 +292,7 @@ button,
     padding: 0;
     border: none;
 
-    &:hover {
+    &:hover:not(:disabled) {
         background: none;
     }
 }

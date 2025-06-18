@@ -355,7 +355,6 @@ body {
 body {
   font-family: var(--font-body);
   font-weight: 400;
-  width: 100vw;
   min-height: calc(100vh - 5rem);
   display: flex;
   justify-content: flex-start;
@@ -571,7 +570,7 @@ button:disabled,
   padding: 0;
   border: none;
 }
-.button--unstyled:hover {
+.button--unstyled:hover:not(:disabled) {
   background: none;
 }
 
@@ -1693,7 +1692,7 @@ textarea {
 }
 .contact > form {
   --borders: #BE855E;
-  max-width: 40rem;
+  max-width: min(40rem, 100%);
   display: grid;
   gap: 2rem;
   align-items: flex-start;
@@ -1715,12 +1714,18 @@ textarea {
     grid-column: span 2;
   }
 }
+@media (max-width: 425px) {
+  .contact > form > * {
+    max-width: calc(100vw - 5rem);
+  }
+}
 @media (min-width: 540px) {
   .contact .flex-wrapper {
     align-items: flex-end;
   }
 }
 .contact .flex-wrapper:has(> .form-errors) {
+  width: 100%;
   align-items: flex-start;
 }
 .contact .h-captcha {
@@ -1730,9 +1735,29 @@ textarea {
   flex-direction: row;
   gap: 1rem;
 }
+@media (max-width: 375px) {
+  .contact .h-captcha {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+}
+.contact div:has(> .h-captcha) {
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 375px) {
+  .contact div:has(> .h-captcha) {
+    width: fit-content;
+  }
+}
 .contact button {
-  width: fit-content;
+  width: 100%;
   margin-left: auto;
+}
+@media (min-width: 540px) {
+  .contact button {
+    width: fit-content;
+  }
 }
 
 .contact__mailing-list {
@@ -1793,8 +1818,12 @@ textarea {
   }
 }
 .contact__mailing-list-form > form > .flex-wrapper {
-  grid-column: span 2;
   margin-top: 0.25rem;
+}
+@media (min-width: 768px) {
+  .contact__mailing-list-form > form > .flex-wrapper {
+    grid-column: span 2;
+  }
 }
 @media (min-width: 768px) {
   .contact__mailing-list-form > form {
@@ -1846,13 +1875,17 @@ textarea {
   filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
 }
 
-.flex-wrapper--row:has(> .form-errors) {
+.flex-wrapper--row:has(> div .form-errors) {
   flex-direction: column;
 }
 @media (min-width: 540px) {
-  .flex-wrapper--row:has(> .form-errors) {
+  .flex-wrapper--row:has(> div .form-errors) {
     flex-direction: row;
   }
+}
+
+div:has(.form-errors) {
+  width: 100%;
 }
 
 .page-footer {

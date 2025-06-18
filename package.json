@@ -6,13 +6,16 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "eleventy --serve --input ./src --output ./dest",
-		"build": "eleventy --input ./src --output ./dest"
+		"build": "eleventy --input ./src --output ./dest",
+		"sass:watch": "sass --watch src/style/scss/style.scss:src/style/css/style.css src/style/scss/locations.scss:src/style/css/locations.css",
+		"sass:compile": "sass src/style/scss/style.scss:src/style/css/style.css src/style/scss/locations.scss:src/style/css/locations.css"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0"
+		"@11ty/eleventy": "^3.0.0",
+		"sass": "^1.89.2"
 	},
 	"type": "module"
 }
