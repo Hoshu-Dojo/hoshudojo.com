@@ -8,8 +8,8 @@ instructor: {
     name: Marcus Phung,
     rank: 5th Dan Jodo,
     image: {
-        srcset: "https://placedog.net/250/250",
-        src: "https://placedog.net/250/250"
+        srcset: "/assets/img/headshots/marcus_2x.jpg 2x, /assets/img/headshots/marcus_1x.jpg 1x",
+        src: "/assets/img/headshots/marcus_2x.jpg"
     },
     bio: "Born in Petaling Jaya, Malaysia, and raised in Perth, Western Australia, Marcus dabbled in Chinese martial arts from a young age before committing to studying ZNKR (Zen Nippon Kendo Renmei) Iaido and ZNKR Jodo in 2004. In 2007, Marcus moved to Seattle, Washington and continued to practice both arts. In 2012 Marcus met Thomas Groendal during the Jodo workshop at the AUSKF Iaido Nationals. He began training in ZNKR Jodo with Tom shortly after, and with Tom&apos;s guidance and encouragement, started the Seattle branch of Hoshu Dojo in late 2012. He began instruction in Shindo Muso Ryu Jojutsu under Goto-Sensei in 2013, and stopped practicing Iaido that same year to focus his efforts on Jodo and Shindo Muso Ryu."
 }
@@ -31,20 +31,20 @@ schedule: {
     }
 }
 cost: [
-    "$50 per month, or",
-    "$15 per drop-in"
+    "$50 USD per month, or",
+    "$15 USD per drop-in"
 ]
 arts: [Jodo]
 images: [
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        srcset: "/assets/img/locations/feature_seattle_01.jpg",
+        src: "/assets/img/locations/feature_seattle_01.jpg",
+        alt: "Marcus Phung and Thomas Groendal perform an advanced koryu technique using a jitte, on a colourfully-lit stage at Seattle's Cherry Blossom Festival. Marcus is fervently striking to Thomas' head to finish the technique."
     },
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        srcset: "/assets/img/locations/feature_seattle_02.jpg",
+        src: "/assets/img/locations/feature_seattle_02.jpg",
+        alt: "A wide-angle shot during a seminar showing many pairs of students practicing at Seatte's Mitchell Activity Center."
     },
 ]
 seniors: [
@@ -52,10 +52,10 @@ seniors: [
         name: Chris Dowling,
         rank: 4th Dan Jodo,
         image: {
-            srcset: "https://placedog.net/120/120",
-            src: "https://placedog.net/120/120"
+            srcset: "/assets/img/headshots/chris_2x.jpg 2x, /assets/img/headshots/chris_1x.jpg 1x",
+            src: "/assets/img/headshots/chris_2x.jpg"
         },
-        bio: "Some stuff about Chris Dowling"
+        bio: "Chris was born in Perth, Western Australia. After exploring several martial arts, he began training in ZNKR Iaido and ZNKR Jodo around the same time as Marcus, continuing until an unrelated injury in 2007 forced him to stop. In 2013, he relocated to Seattle, Washington, and resumed Jodo practice in 2018 at the Seattle branch under Marcus&apos;s instruction."
     },
 ]
 ---

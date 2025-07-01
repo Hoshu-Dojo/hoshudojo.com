@@ -108,6 +108,14 @@ footer {
     left: -5000px;
 }
 
+.base-heading {
+    // font-family: var(--font-title);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    line-height: 1.2;
+}
+
 h1,
 h2,
 h3,
@@ -115,11 +123,7 @@ h4,
 h5,
 h6,
 .heading {
-    // font-family: var(--font-title);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.125em;
-    line-height: 1.2;
+    @extend .base-heading;
 }
 
 h1,

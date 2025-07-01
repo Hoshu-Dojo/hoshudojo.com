@@ -8,8 +8,8 @@ instructor: {
     name: Kei Goto,
     rank: "7th dan Jodo Kyoshi, Daito Ryu Menkyo",
     image: {
-        srcset: "https://placedog.net/250/250",
-        src: "https://placedog.net/250/250"
+        srcset: "/assets/img/headshots/goto_2x.jpg 2x, /assets/img/headshots/goto_1x.jpg 1x",
+        src: "/assets/img/headshots/goto_2x.jpg"
     },
 }
 address: [
@@ -36,8 +36,8 @@ schedule: {
     }
 }
 cost: [
-    "5,000 yen per month (both arts)",
-    "3,000 yen per month (one art)"
+    "¥5,000 per month (both arts)",
+    "¥3,000 per month (one art)"
 ]
 arts: [Jodo, Daito Ryu]
 images: [

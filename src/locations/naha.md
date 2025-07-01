@@ -3,7 +3,7 @@ layout: layouts/locations
 permalink: "/locations/naha/"
 title: Hoshu Dojo Naha &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 
-locationName: Hoshu Dojo Naha (Japan)
+locationName: Hoshu Dojo Naha
 instructor: {
     name: Taisuke Yonamine,
     rank: "5th Dan Jodo, 3rd Dan Daito Ryu",
@@ -36,12 +36,12 @@ images: [
         src: "",
         alt: "TODO: image"
     },
-    {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
-    },
+    # {
+    #     srcset: "",
+    #     src: "",
+    #     alt: "TODO: image"
+    # },
 ]
 ---
 
-<p>Practice in Naha is more flexible than other locations. Please <a href="/#contact">contact us</a> for more details.</p>
+<p>Practice in Naha is more flexible than other locations. Please <a href="/#contact">contact us</a> for more details regarding locations and costs.</p>

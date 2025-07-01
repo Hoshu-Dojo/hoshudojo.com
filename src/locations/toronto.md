@@ -8,8 +8,8 @@ instructor: {
     name: Alan Wu,
     rank: 4th Dan Jodo,
     image: {
-        srcset: "https://placedog.net/250/250",
-        src: "https://placedog.net/250/250"
+        srcset: "/assets/img/headshots/alan_2x.jpg 2x, /assets/img/headshots/alan_1x.jpg 1x",
+        src: "/assets/img/headshots/alan_2x.jpg"
     },
     bio: "Alan has been practising Aikido since 2000 and Jodo since 2010."
 }
@@ -30,19 +30,30 @@ schedule: {
     }
 }
 cost: [
-    "$20 per class"
+    "$20 CAD per class"
 ]
 arts: [Jodo]
 images: [
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        srcset: "/assets/img/locations/feature_toronto_01.jpg",
+        src: "/assets/img/locations/feature_toronto_01.jpg",
+        alt: "A view over Uchi Tachi's shoulder where Shi Jo is preventing them from trying to cut by pointing the jo forward between the eyes. Both students are in a low squat."
     },
+    # {
+    #     srcset: "",
+    #     src: "",
+    #     alt: "TODO: image"
+    # },
+]
+seniors: [
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        name: Cindy Petlock,
+        rank: 3rd Dan Jodo,
+        image: {
+            srcset: "/assets/img/headshots/cindy_2x.jpg 2x, /assets/img/headshots/cindy_1x.jpg 1x",
+            src: "/assets/img/headshots/cindy_2x.jpg"
+        },
+        bio: "Some stuff about Cindy Petlock"
     },
 ]
 ---

@@ -1,15 +1,15 @@
 ---
 layout: layouts/locations
 permalink: "/locations/pasadena/"
-title: Hoshu Dojo Pasadena &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Pasadena Iaido/Jodo Dojo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 
-locationName: Hoshu Dojo Pasadena
+locationName: Pasadena Iaido/Jodo Dojo
 instructor: {
-    name: Levon Sukiasyan,
-    rank: 4th Dan Jodo,
+    name: Levon Sukiassyan,
+    rank: "4th Dan Jodo, 5th Dan Iaido",
     image: {
-        srcset: "https://placedog.net/250/250",
-        src: "https://placedog.net/250/250"
+        srcset: "/assets/img/headshots/levon_2x.jpg 2x, /assets/img/headshots/levon_1x.jpg 1x",
+        src: "/assets/img/headshots/levon_2x.jpg"
     },
 }
 address: [
@@ -19,7 +19,7 @@ schedule: {
     jodo: {
         sun: null,
         mon: null,
-        tues: 8:30pm&ndash;10:00pm,
+        tues: 7:00pm&ndash;10:00pm,
         wed: null,
         thur: null,
         fri: null,
@@ -27,9 +27,9 @@ schedule: {
     }
 }
 cost: [
-    TBD
+    Contact for details
 ]
-arts: [Jodo]
+arts: [Jodo, Iaido]
 images: [
     {
         srcset: "",
@@ -51,10 +51,21 @@ images: [
             <h3 class="h6">Tuesdays</h3>
             <address class="no-margin">
                 <p>Pasadena Japanese Cultural Institute</p>
-                <p>595 Lincoln Ave # 201</p>
+                <p>595 Lincoln Ave #201</p>
                 <p>Pasadena, CA</p>
                 <p>91103</p>
             </address>        
+            <p class="">Iaido practice 7:00pm&ndash;8:30pm, Jodo practice 8:30pm&ndash;10:00pm</p>
+        </li>
+        <li>
+            <h3 class="h6">Saturdays</h3>
+            <address class="no-margin">
+                <p>Venice Japanese Cultural Center</p>
+                <p>12448 Braddock Dr</p>
+                <p>Los Angeles, CA</p>
+                <p>90066</p>
+            </address>        
         </li>
     </ul>
+    <p>For information regarding membership and fees, please <a href="mailto:levonsa61@yahoo.com">contact the head instructor for details</a>.</p>
 </div>

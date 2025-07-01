@@ -186,7 +186,9 @@ footer {
   left: -5000px;
 }
 
-h1,
+.base-heading, .location-summary h2,
+.location-summary h3,
+.location-summary .h3, h1,
 h2,
 h3,
 h4,
@@ -643,39 +645,39 @@ textarea {
 }
 
 .location-hero--vancouver::before {
-  background-image: url("../../assets/img/locations_vancouver.jpg");
+  background-image: url("../../assets/img/locations/locations_vancouver.jpg");
 }
 
 .location-hero--seattle::before {
-  background-image: url("../../assets/img/locations_seattle.jpg");
+  background-image: url("../../assets/img/locations/locations_seattle.jpg");
 }
 
 .location-hero--portland::before {
-  background-image: url("../../assets/img/locations_portland.jpg");
+  background-image: url("../../assets/img/locations/locations_portland.jpg");
 }
 
 .location-hero--oita::before {
-  background-image: url("../../assets/img/locations_oita.jpg");
+  background-image: url("../../assets/img/locations/locations_oita.jpg");
 }
 
 .location-hero--naha::before {
-  background-image: url("../../assets/img/locations_naha.jpg");
+  background-image: url("../../assets/img/locations/locations_naha.jpg");
 }
 
 .location-hero--toronto::before {
-  background-image: url("../../assets/img/locations_toronto.jpg");
+  background-image: url("../../assets/img/locations/locations_toronto.jpg");
 }
 
 .location-hero--atlanta::before {
-  background-image: url("../../assets/img/locations_atlanta.jpg");
+  background-image: url("../../assets/img/locations/locations_atlanta.jpg");
 }
 
 .location-hero--coyoacan::before {
-  background-image: url("../../assets/img/locations_coyoacan.jpg");
+  background-image: url("../../assets/img/locations/locations_coyoacan.jpg");
 }
 
 .location-hero--pasadena::before {
-  background-image: url("../../assets/img/locations_pasadena.jpg");
+  background-image: url("../../assets/img/locations/locations_pasadena.jpg");
 }
 
 .location-hero__text h1 {
@@ -708,7 +710,8 @@ textarea {
   padding-bottom: 2.5rem;
 }
 .location-summary h2,
-.location-summary h3 {
+.location-summary h3,
+.location-summary .h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -758,7 +761,7 @@ textarea {
 .schedule {
   width: 100%;
 }
-.schedule h4 {
+.schedule .h6 {
   color: color-mix(in srgb, var(--primary-text) 60%, transparent);
   font-size: 0.625rem;
   margin-top: 0.5rem;
@@ -782,6 +785,30 @@ textarea {
   .schedule__week {
     grid-template-columns: repeat(7, 1fr);
   }
+  .location-hero--vancouver + .location-summary .schedule__week {
+    grid-template-columns: auto 1fr 1fr 1fr auto 1fr 1fr;
+  }
+  .location-hero--seattle + .location-summary .schedule__week {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  }
+  .location-hero--portland + .location-summary .schedule__week {
+    grid-template-columns: auto 1fr auto 1fr auto 1fr 1fr;
+  }
+  .location-hero--pasadena + .location-summary .schedule__week {
+    grid-template-columns: 1fr 1fr auto 1fr 1fr 1fr auto;
+  }
+  .location-hero--atlanta + .location-summary .schedule__week {
+    grid-template-columns: auto 1fr auto 1fr 1fr 1fr 1fr;
+  }
+  .location-hero--toronto + .location-summary .schedule__week {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto 1fr;
+  }
+  .location-hero--coyoacan + .location-summary .schedule__week {
+    grid-template-columns: 1fr 1fr auto 1fr auto 1fr auto;
+  }
+  .location-hero--oita + .location-summary .schedule__week {
+    grid-template-columns: auto auto auto 1fr 1fr auto 1fr;
+  }
 }
 @media (min-width: 1024px) {
   .schedule__week {
@@ -789,12 +816,22 @@ textarea {
   }
 }
 
+.schedule__day {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+}
 .schedule__day p {
   color: var(--pop-text);
 }
 .schedule__day p.no-class {
   color: var(--extra-subtle-text);
   font-style: italic;
+}
+.schedule__day .spacer {
+  margin: auto 0;
 }
 
 .cost-disciplines {

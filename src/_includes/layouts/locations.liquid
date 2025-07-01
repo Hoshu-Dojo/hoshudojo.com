@@ -45,5 +45,7 @@ week: [
 <section class="location-summary page-wrapper">
     {% include "sections/locations/summary" %}
 	{% include "sections/locations/location-bio" %}
-	{% include "sections/locations/seniors" %}
+	{%- if instructor.bio or seniors.length > 0 -%}
+		{% include "sections/locations/seniors" %}
+	{%- endif %}
 </section>

@@ -3,36 +3,36 @@
 	"lang": "en",
 	"photoFeedPlaceholders": [
 		{
-			"srcset": "/assets/img/insta-placeholder_01.webp",
-			"src": "/assets/img/insta-placeholder_01.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_01.webp",
+			"src": "/assets/img/insta/insta-placeholder_01.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_02.webp",
-			"src": "/assets/img/insta-placeholder_02.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_02.webp",
+			"src": "/assets/img/insta/insta-placeholder_02.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_03.webp",
-			"src": "/assets/img/insta-placeholder_03.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_03.webp",
+			"src": "/assets/img/insta/insta-placeholder_03.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_04.webp",
-			"src": "/assets/img/insta-placeholder_04.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_04.webp",
+			"src": "/assets/img/insta/insta-placeholder_04.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_05.webp",
-			"src": "/assets/img/insta-placeholder_05.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_05.webp",
+			"src": "/assets/img/insta/insta-placeholder_05.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_06.webp",
-			"src": "/assets/img/insta-placeholder_06.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_06.webp",
+			"src": "/assets/img/insta/insta-placeholder_06.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_07.webp",
-			"src": "/assets/img/insta-placeholder_07.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_07.webp",
+			"src": "/assets/img/insta/insta-placeholder_07.jpg"
 		},
 		{
-			"srcset": "/assets/img/insta-placeholder_08.webp",
-			"src": "/assets/img/insta-placeholder_08.jpg"
+			"srcset": "/assets/img/insta/insta-placeholder_08.webp",
+			"src": "/assets/img/insta/insta-placeholder_08.jpg"
 		}
 	],
 	"leadership": [
@@ -42,8 +42,8 @@
 			"location": "Oita, Japan",
 			"isHeadSensei": true,
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/200/200"
+				"srcset": "/assets/img/headshots/goto_2x.jpg 2x, /assets/img/headshots/goto_1x.jpg 1x",
+				"src": "/assets/img/headshots/goto_2x.jpg"
 			}
 		},
 		{
@@ -52,8 +52,8 @@
 			"location": "Portland, Oregon",
 			"isSecondarySensei": true,
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/150/150"
+				"srcset": "/assets/img/headshots/tom_2x.jpg 2x, /assets/img/headshots/tom_1x.jpg 1x",
+				"src": "/assets/img/headshots/tom_2x.jpg"
 			}
 		},
 		{
@@ -61,8 +61,8 @@
 			"ranks": "5th dan (Jodo)",
 			"location": "Seattle, Washington",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/marcus_2x.jpg 2x, /assets/img/headshots/marcus_1x.jpg 1x",
+				"src": "/assets/img/headshots/marcus_2x.jpg"
 			}
 		},
 		{
@@ -70,17 +70,17 @@
 			"ranks": "4th dan (Jodo)",
 			"location": "Vancouver, BC",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/jeff_2x.jpg 2x, /assets/img/headshots/jeff_1x.jpg 1x",
+				"src": "/assets/img/headshots/jeff_2x.jpg"
 			}
 		},
 		{
 			"name": "Michael Park",
-			"ranks": "4th dan (Jodo), ??? dan (Daito Ryu)",
+			"ranks": "4th dan (Jodo), 2nd dan (Daito Ryu)",
 			"location": "Portland, Oregon",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/michael_2x.jpg 2x, /assets/img/headshots/michael_1x.jpg 1x",
+				"src": "/assets/img/headshots/michael_2x.jpg"
 			}
 		},
 		{
@@ -88,17 +88,17 @@
 			"ranks": "4th dan (Jodo)",
 			"location": "Seattle, Washington",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/chris_2x.jpg 2x, /assets/img/headshots/chris_1x.jpg 1x",
+				"src": "/assets/img/headshots/chris_2x.jpg"
 			}
 		},
 		{
 			"name": "Dave Zambrano",
-			"ranks": "3rd dan (Jodo), ??? dan (Daito Ryu)",
+			"ranks": "3rd dan (Jodo), 1st dan (Daito Ryu)",
 			"location": "Portland, Oregon",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
+				"src": "/assets/img/headshots/dave_2x.jpg"
 			}
 		},
 		{
@@ -106,8 +106,8 @@
 			"ranks": "4th dan (Jodo)",
 			"location": "Vancouver, BC",
 			"photo": {
-				"srcset": "",
-				"src": "https://placedog.net/120/120"
+				"srcset": "/assets/img/headshots/jess_2x.jpg 2x, /assets/img/headshots/jess_1x.jpg 1x",
+				"src": "/assets/img/headshots/jess_2x.jpg"
 			}
 		}
 	],
@@ -119,10 +119,10 @@
 					"slug": "portland",
 					"location": "Portland, Oregon",
 					"instructor": "Thomas Groendal",
-					"schedule": "Tues, Thurs, Sun",
+					"schedule": "Sun, Tues, Thurs",
 					"mapOrder": 3,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_portland.jpg"
+					"thumbnail": "../assets/img/locations/locations_portland.jpg"
 				},
 				{
 					"slug": "seattle",
@@ -131,25 +131,25 @@
 					"schedule": "Sat",
 					"mapOrder": 2,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_seattle.jpg"
+					"thumbnail": "../assets/img/locations/locations_seattle.jpg"
 				},
 				{
 					"slug": "pasadena",
 					"location": "Pasadena, California",
 					"instructor": "Levon Sukiassyan",
-					"schedule": "Mon, Tues",
+					"schedule": "Sun, Tues",
 					"mapOrder": 4,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_pasadena.jpg"
+					"thumbnail": "../assets/img/locations/locations_pasadena.jpg"
 				},
 				{
 					"slug": "atlanta",
 					"location": "Atlanta, Georgia",
 					"instructor": "Adam Sandor",
-					"schedule": "???",
+					"schedule": "Sun, Tues",
 					"mapOrder": 6,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_atlanta.jpg"
+					"thumbnail": "../assets/img/locations/locations_atlanta.jpg"
 				}
 			]
 		},
@@ -160,10 +160,10 @@
 					"slug": "vancouver",
 					"location": "Vancouver, BC",
 					"instructor": "Jeff Kamo",
-					"schedule": "Thurs, Sun",
+					"schedule": "Sun, Thurs",
 					"mapOrder": 1,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_vancouver.jpg"
+					"thumbnail": "../assets/img/locations/locations_vancouver.jpg"
 				},
 				{
 					"slug": "toronto",
@@ -172,7 +172,7 @@
 					"schedule": "Fri",
 					"mapOrder": 5,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_toronto.jpg"
+					"thumbnail": "../assets/img/locations/locations_toronto.jpg"
 				}
 			]
 		},
@@ -183,10 +183,10 @@
 					"slug": "coyoacan",
 					"location": "Coyoacan, Mexico City",
 					"instructor": "Genaro Luis",
-					"schedule": "Thurs, Sun",
+					"schedule": "Tues, Thurs, Sat",
 					"mapOrder": 7,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations_coyoacan.jpg"
+					"thumbnail": "../assets/img/locations/locations_coyoacan.jpg"
 				}
 			]
 		},
@@ -197,10 +197,10 @@
 					"slug": "oita",
 					"location": "Oita Prefecture",
 					"instructor": "Kei Goto",
-					"schedule": "Mon, Tues, Fri, Sun",
+					"schedule": "Sun, Mon, Tues, Fri",
 					"mapOrder": 8,
 					"popUpPosition": "left",
-					"thumbnail": "../assets/img/locations_oita.jpg"
+					"thumbnail": "../assets/img/locations/locations_oita.jpg"
 				},
 				{
 					"slug": "naha",
@@ -209,7 +209,7 @@
 					"schedule": "Contact for details",
 					"mapOrder": 9,
 					"popUpPosition": "left",
-					"thumbnail": "../assets/img/locations_naha.jpg"
+					"thumbnail": "../assets/img/locations/locations_naha.jpg"
 				}
 			]
 		}
@@ -245,5 +245,7 @@
 			"link": "https://www.jodo-canada.ca/"
 		}
 	],
-	"CONTACT_FORM_ACCESS_KEY": "101fcc30-1373-4089-9422-b44ddc4e3af9"
+	"vars": {
+		"CONTACT_FORM_ACCESS_KEY": "101fcc30-1373-4089-9422-b44ddc4e3af9"
+	}
 }
