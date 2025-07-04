@@ -2,52 +2,8 @@
 	{% if schedule.jodo %}
 		<div>
 			<h2 class="vis-hidden">
-				{% comment %} {% if schedule["daito-ryu"] %}
-					Jodo 
-				{% endif %} {% endcomment %}
 				Class Schedule
 			</h2>
-			{% comment %} <table>
-				<tr class="schedule__week">
-					{% for day in week %}
-						<th class="h3">
-							<abbr title="{{ day.full }}">
-								<span aria-hidden="true">{{ day.short }}</span>
-								<span class="vis-hidden">{{ day.full }}</span>
-							</abbr>
-						</th>
-					{% endfor %}
-				</tr>
-				<tr class="schedule__week">
-					{% for day in week %}
-						<td class="schedule__day">
-							{% if schedule["daito-ryu"] %}
-								<h3 class="h6">Jodo</h3>
-							{% endif %}
-							{% if schedule.jodo[day.slug] == null %}
-								<p class="no-class">No class</p>
-							{% else %}
-								<p>{{ schedule.jodo[day.slug] }}</p>
-							{% endif %}
-						</td>
-					{% endfor %}
-				</tr>
-				{% if schedule["daito-ryu"] %}
-					<tr class="schedule__week">
-						{% for day in week %}
-							<td class="schedule__day">
-								<h3 class="h6">Daito Ryu</h3>
-								{% if schedule["daito-ryu"][day.slug] == null %}
-									<p class="no-class">No class</p>
-								{% else %}
-									<p>{{ schedule["daito-ryu"][day.slug] }}</p>
-								{% endif %}
-							</td>
-						{% endfor %}
-					</tr>
-				{% endif %}
-			</table> {% endcomment %}
-
 			<div class="schedule__week">
 				{% for day in week %}
 					<div class="schedule__day">
@@ -81,28 +37,4 @@
 			</div>
 		</div>
 	{% endif %}
-	{% comment %} {% if schedule["daito-ryu"] %}
-		<div class=">
-			<h2 class="vis-hidden">
-				{% if schedule.jodo %}
-					Daito Ryu 
-				{% endif %}
-				Class Schedule
-			</h2>
-			<div class="schedule__week">
-				{% for day in week %}
-					<div class="schedule__day">
-						<h3>
-							<abbr title="{{ day.full }}">{{ day.short }}</abbr>
-						</h3>
-						{% if schedule["daito-ryu"][day.slug] == null %}
-							<p class="no-class">No class</p>
-						{% else %}
-							<p>{{ schedule["daito-ryu"][day.slug] }}</p>
-						{% endif %}
-					</div>
-				{% endfor %}
-			</div>
-		</div>
-	{% endif %} {% endcomment %}
 </div>

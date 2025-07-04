@@ -23,7 +23,7 @@ schedule: {
         wed: null,
         thur: null,
         fri: null,
-        sat: 3:30pm&ndash;5:00pm
+        sat: 1:00pm&ndash;5:00pm
     }
 }
 cost: [
@@ -32,14 +32,14 @@ cost: [
 arts: [Jodo, Iaido]
 images: [
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        srcset: "/assets/img/locations/feature_pasadena_01.jpg",
+        src: "/assets/img/locations/feature_pasadena_01.jpg",
+        alt: "Two students perform a kata next to a mirror, where the reflection of several other pairs can be seen practicing different techniques. Of the frontmost pair, Shi Jo holds the jo away from their body in order to block a cut aimed at their side."
     },
     {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
+        srcset: "/assets/img/locations/feature_pasadena_02.jpg",
+        src: "/assets/img/locations/feature_pasadena_02.jpg",
+        alt: "Two pairs perform kata side-by-side; in the foreground, Shi Jo has stepped off the center line to pin Uchi Tachi at hibara (the hip) to stop their cut short."
     },
 ]
 ---
@@ -65,6 +65,7 @@ images: [
                 <p>Los Angeles, CA</p>
                 <p>90066</p>
             </address>        
+            <p class="">Iaido practice 1:00pm&ndash;3:30pm, Jodo practice 3:30pm&ndash;5:00pm</p>
         </li>
     </ul>
     <p>For information regarding membership and fees, please <a href="mailto:levonsa61@yahoo.com">contact the head instructor for details</a>.</p>

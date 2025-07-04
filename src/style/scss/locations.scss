@@ -351,3 +351,23 @@
         width: 14rem;
     }
 }
+
+.location-hero--naha {
+
+    // hide extra content for Naha until we get more info from Taisuke
+    +.location-summary {
+
+        .schedule,
+        .headshot--instructor,
+        .photos {
+            display: none;
+        }
+    }
+
+    // minor layout adjustments per above
+    +.location-summary .location-summary__instructor-location {
+        @media(min-width: variables.$media_tablet_small) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

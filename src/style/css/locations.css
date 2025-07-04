@@ -944,4 +944,15 @@ textarea {
   }
 }
 
+.location-hero--naha + .location-summary .schedule,
+.location-hero--naha + .location-summary .headshot--instructor,
+.location-hero--naha + .location-summary .photos {
+  display: none;
+}
+@media (min-width: 540px) {
+  .location-hero--naha + .location-summary .location-summary__instructor-location {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /*# sourceMappingURL=locations.css.map */

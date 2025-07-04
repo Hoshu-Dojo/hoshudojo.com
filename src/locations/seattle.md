@@ -14,9 +14,8 @@ instructor: {
     bio: "Born in Petaling Jaya, Malaysia, and raised in Perth, Western Australia, Marcus dabbled in Chinese martial arts from a young age before committing to studying ZNKR (Zen Nippon Kendo Renmei) Iaido and ZNKR Jodo in 2004. In 2007, Marcus moved to Seattle, Washington and continued to practice both arts. In 2012 Marcus met Thomas Groendal during the Jodo workshop at the AUSKF Iaido Nationals. He began training in ZNKR Jodo with Tom shortly after, and with Tom&apos;s guidance and encouragement, started the Seattle branch of Hoshu Dojo in late 2012. He began instruction in Shindo Muso Ryu Jojutsu under Goto-Sensei in 2013, and stopped practicing Iaido that same year to focus his efforts on Jodo and Shindo Muso Ryu."
 }
 address: [
-    Mitchell Activity Center (Dance Studio),
-    Seattle Central College
-    1718 Broadway,
+    Nisei Veterans Committee Memorial Hall,
+    1212 S King St,
     "Seattle, WA"
 ]
 schedule: {
@@ -60,4 +59,5 @@ seniors: [
 ]
 ---
 
-<p>The Seattle Dojo practices out of the Mitchell Activity Center, aka the MAC, part of Seattle Central College, located in the Capitol Hill neighbourhood of Seattle. The most convenient area for parking if nearby street parking is full can be found nearby in Cal Anderson Park, a less than five-minute walk away from the MAC.</p>
+<p>The Seattle Dojo practices out of the Nisei Veterans Committee Memorial Hall, aka the NVC Memorial Hall, located in the Little Saigon neighbourhood of Seattle. The NVC Memorial Hall has a long history with martial arts, originally built in 1938 as a kendo dojo. Ownership was transferred to the NVC in 1961, where it has since served as the NVC clubhouse and local community center.</p>
+<p>Secure parking is available at the NVC Memorial Hall, please contact us ahead of time to arrange for access.</p>
