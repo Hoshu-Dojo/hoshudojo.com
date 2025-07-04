@@ -61,9 +61,6 @@
         backdrop-filter: blur(8px);
         overflow-y: auto;
         overscroll-behavior: contain;
-        display: none;
-        opacity: 0;
-        transform: translateX(100%);
 
         &[data-open='true'] {
             animation-name: slide-in-mobile-nav;

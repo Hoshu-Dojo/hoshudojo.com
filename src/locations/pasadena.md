@@ -55,7 +55,7 @@ images: [
                 <p>Pasadena, CA</p>
                 <p>91103</p>
             </address>        
-            <p class="">Iaido practice 7:00pm&ndash;8:30pm, Jodo practice 8:30pm&ndash;10:00pm</p>
+            <p>Iaido practice 7:00pm&ndash;8:30pm, Jodo practice 8:30pm&ndash;10:00pm</p>
         </li>
         <li>
             <h3 class="h6">Saturdays</h3>
@@ -65,7 +65,7 @@ images: [
                 <p>Los Angeles, CA</p>
                 <p>90066</p>
             </address>        
-            <p class="">Iaido practice 1:00pm&ndash;3:30pm, Jodo practice 3:30pm&ndash;5:00pm</p>
+            <p>Iaido practice 1:00pm&ndash;3:30pm, Jodo practice 3:30pm&ndash;5:00pm</p>
         </li>
     </ul>
     <p>For information regarding membership and fees, please <a href="mailto:levonsa61@yahoo.com">contact the head instructor for details</a>.</p>
