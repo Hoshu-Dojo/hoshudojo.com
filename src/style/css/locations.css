@@ -944,6 +944,10 @@ textarea {
   }
 }
 
+.location-hero--oita + .location-summary .photos {
+  display: none;
+}
+
 .location-hero--naha + .location-summary .schedule,
 .location-hero--naha + .location-summary .headshot--instructor,
 .location-hero--naha + .location-summary .photos {

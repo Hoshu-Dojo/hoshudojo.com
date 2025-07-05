@@ -57,10 +57,6 @@ const toggleHamburgerAnimate = (isOpen) => {
 	}
 };
 
-const stopBubbling = (e) => {
-	e.stopPropagation();
-};
-
 const openNav = () => {
 	mobileNavMenu.setAttribute("data-open", "true");
 

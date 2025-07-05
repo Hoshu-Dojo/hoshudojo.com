@@ -1,40 +1,68 @@
 {
 	"title": "Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu",
 	"lang": "en",
-	"photoFeedPlaceholders": [
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_01.webp",
-			"src": "/assets/img/insta/insta-placeholder_01.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_02.webp",
-			"src": "/assets/img/insta/insta-placeholder_02.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_03.webp",
-			"src": "/assets/img/insta/insta-placeholder_03.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_04.webp",
-			"src": "/assets/img/insta/insta-placeholder_04.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_05.webp",
-			"src": "/assets/img/insta/insta-placeholder_05.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_06.webp",
-			"src": "/assets/img/insta/insta-placeholder_06.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_07.webp",
-			"src": "/assets/img/insta/insta-placeholder_07.jpg"
-		},
-		{
-			"srcset": "/assets/img/insta/insta-placeholder_08.webp",
-			"src": "/assets/img/insta/insta-placeholder_08.jpg"
-		}
-	],
+	"photoFeed": {
+		"featured": [
+			"20250628_01",
+			"20250625_04",
+			"20250625_03",
+			"20250625_02",
+			"20250625_01",
+			"20250607_01",
+			"20250601_02",
+			"20250601_01",
+			"20250530_01",
+			"20250413_02",
+			"20250413_01",
+			"20250223_01",
+			"20250123_01",
+			"20250111_01",
+			"20241221_01",
+			"20241215_01",
+			"20241212_01",
+			"20241116_01",
+			"20240715_01",
+			"20240711_01",
+			"20240706_01",
+			"20240705_01",
+			"20240616_01",
+			"20240407_01"
+		],
+		"placeholders": [
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_01.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_01.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_02.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_02.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_03.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_03.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_04.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_04.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_05.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_05.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_06.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_06.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_07.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_07.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_08.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_08.jpg"
+			}
+		]
+	},
 	"leadership": [
 		{
 			"name": "Kei Goto",

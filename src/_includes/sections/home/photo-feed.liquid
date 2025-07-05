@@ -3,7 +3,7 @@
         <div id="photo-feed" class="photo-feed__photo-grid">
             <!-- TODO: placeholder images? -->
             <!-- TODO: hook up instagram feed -->
-            {%- for placeholder in site.photoFeedPlaceholders -%}
+            {%- for placeholder in site.photoFeed.placeholders -%}
                 <picture>
                     <source srcset="{{ placeholder.srcset }}" />
                     <img src="{{ placeholder.src }}" alt="" loading="lazy">

@@ -352,6 +352,17 @@
     }
 }
 
+.location-hero--oita {
+
+    // hide extra content for Oita until we get some good class photos
+    +.location-summary {
+
+        .photos {
+            display: none;
+        }
+    }
+}
+
 .location-hero--naha {
 
     // hide extra content for Naha until we get more info from Taisuke

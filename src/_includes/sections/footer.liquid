@@ -30,6 +30,13 @@
     </div>
 </footer>
 
+{% comment %} NOTE: NOT FOR DISPLAY PURPOSES! need to print to the DOM so JS can access Liquid vars {% endcomment %}
+<div id="photo-feed-vars" class="vis-hidden" aria-hidden="true">
+    {%- for file in site.photoFeed.featured -%}
+        <div data-filename="{{ file }}"></div>
+    {%- endfor -%}
+</div>
+
 <!-- scripts -->
 {%- for script in scripts -%}
     <script src="{{ script }}" type="text/javascript"></script>
