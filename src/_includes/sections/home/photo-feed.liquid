@@ -1,8 +1,6 @@
 <section class="photo-feed">
     <article class="content-wrapper">
         <div id="photo-feed" class="photo-feed__photo-grid">
-            <!-- TODO: placeholder images? -->
-            <!-- TODO: hook up instagram feed -->
             {%- for placeholder in site.photoFeed.placeholders -%}
                 <picture>
                     <source srcset="{{ placeholder.srcset }}" />

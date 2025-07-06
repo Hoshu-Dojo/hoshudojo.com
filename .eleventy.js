@@ -4,9 +4,9 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets/**/*");
 	eleventyConfig.addPassthroughCopy("src/style/**/*.css*");
 	eleventyConfig.addPassthroughCopy("src/scripts/**/*");
-	// eleventyConfig.addPassthroughCopy("src/favicon.png");
-	// FIXME: temp for testing
-	// eleventyConfig.addPassthroughCopy("src/rebuild-staging/**/*");
+
+	eleventyConfig.addPassthroughCopy("src/manifest.webmanifest");
+
 	// eleventyConfig.setBrowserSyncConfig({
 	// 	callbacks: {
 	// 		ready: (_err, browserSync) => {
