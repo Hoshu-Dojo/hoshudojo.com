@@ -2,6 +2,14 @@
 layout: layouts/locations
 permalink: "/locations/pasadena/"
 title: Pasadena Iaido/Jodo Dojo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/levon_2x.jpg",
+        "/assets/img/headshots/levon_1x.jpg",
+        "/assets/img/locations/feature_pasadena_01.jpg",
+        "/assets/img/locations/feature_pasadena_02.jpg",
+    ]
+}
 
 locationName: Pasadena Iaido/Jodo Dojo
 instructor: {

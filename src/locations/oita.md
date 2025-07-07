@@ -2,6 +2,12 @@
 layout: layouts/locations
 permalink: "/locations/oita/"
 title: Hoshu Aikijodokai (Oita) &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/goto_2x.jpg",
+        "/assets/img/headshots/goto_1x.jpg",
+    ]
+}
 
 locationName: Hoshu Aikijodokai (Oita)
 instructor: {

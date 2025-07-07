@@ -2,6 +2,14 @@
 layout: layouts/locations
 permalink: "/locations/portland/"
 title: Hoshu Dojo Portland &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/tom_2x.jpg",
+        "/assets/img/headshots/tom_1x.jpg",
+        "/assets/img/locations/feature_portland_01.jpg",
+        "/assets/img/locations/feature_portland_02.jpg",
+    ]
+}
 
 locationName: Hoshu Dojo Portland
 instructor: {
@@ -62,7 +70,7 @@ seniors: [
             srcset: "/assets/img/headshots/michael_2x.jpg 2x, /assets/img/headshots/michael_1x.jpg 1x",
             src: "/assets/img/headshots/michael_2x.jpg"
         },
-        bio: "Some stuff about Michael Park"
+        bio: "Michael Park was born and raised in Portland Oregon and has studied under Tom Groendal for over a decade in both Daito Ryu Aikijujutsu and Jodo. He has studied various martial arts since college ranging from Tai Chi to Boxing. He currently trains under Sensei Groendal at his Tuesday Jodo Class (19:30&ndash;21:00) and Thursday Daito Ryu Class (19:30&ndash;21:00) and leads a second Jodo class on Sundays (16:00&ndash;17:30)."
     },
     {
         name: Dave Zambrano,

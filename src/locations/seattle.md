@@ -2,6 +2,14 @@
 layout: layouts/locations
 permalink: "/locations/seattle/"
 title: Hoshu Dojo Seattle &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/marcus_2x.jpg",
+        "/assets/img/headshots/marcus_1x.jpg",
+        "/assets/img/locations/feature_seattle_01.jpg",
+        "/assets/img/locations/feature_seattle_02.jpg",
+    ]
+}
 
 locationName: Hoshu Dojo Seattle
 instructor: {

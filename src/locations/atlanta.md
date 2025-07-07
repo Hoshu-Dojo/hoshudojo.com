@@ -1,9 +1,15 @@
 ---
 layout: layouts/locations
 permalink: "/locations/atlanta/"
-title: Hoshu Dojo Atlanta &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Atlanta Jodo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/adam_2x.jpg",
+        "/assets/img/headshots/adam_1x.jpg",
+    ]
+}
 
-locationName: Hoshu Dojo Atlanta
+locationName: Atlanta Jodo
 instructor: {
     name: Adam Sandor,
     rank: 4th Dan Jodo,
