@@ -2,6 +2,12 @@
 layout: layouts/locations
 permalink: "/locations/coyoacan/"
 title: México Asia Budokan Coyoacan &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/genaro_2x.jpg",
+        "/assets/img/headshots/genaro_1x.jpg",
+    ]
+}
 
 locationName: México Asia Budokan Coyoacan
 instructor: {

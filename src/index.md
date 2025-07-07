@@ -7,6 +7,12 @@ scripts: [
     "./scripts/mailing-list-form.js",
     "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
 ]
+preload: {
+    images: [
+        "/assets/img/hero_01.webp",
+        "/assets/img/hero_01.jpg"
+    ]
+}
 ---
 
 {% include "sections/home/hero" %}

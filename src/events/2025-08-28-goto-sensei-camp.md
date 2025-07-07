@@ -2,11 +2,17 @@
 layout: layouts/events
 title: "2025 Jodo Seminar"
 permalink: "/events/2025-08-28-goto-sensei-camp/"
+preload: {
+	images: [
+		"/assets/img/events/2025-annual-camp-hero.webp",
+		"/assets/img/events/2025-annual-camp-hero.jpg"
+	]
+}
 ---
 
 <section class="event-hero event-hero--2025-annual-camp">
 	<picture>
-		<source src="/assets/img/events/2025-annual-camp-hero.webp">
+		<source srcset="/assets/img/events/2025-annual-camp-hero.webp">
 		<img src="/assets/img/events/2025-annual-camp-hero.jpg" alt="" />
 	</picture>
 	<article class="content-wrapper">

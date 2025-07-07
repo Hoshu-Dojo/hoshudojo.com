@@ -2,6 +2,13 @@
 layout: layouts/locations
 permalink: "/locations/toronto/"
 title: Toronto Jodo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+preload: {
+    images: [
+        "/assets/img/headshots/alan_2x.jpg",
+        "/assets/img/headshots/alan_1x.jpg",
+        "/assets/img/locations/feature_toronto_01.jpg",
+    ]
+}
 
 locationName: Toronto Jodo
 instructor: {

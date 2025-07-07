@@ -17,6 +17,7 @@
     <link rel="icon" href="/assets/favicon.ico" sizes="32x32">
     <link rel="icon" href="/assets/logos/logo.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
     <!-- TODO: head tags for socials sharing -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +26,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-    {% if permalink == "/" %}
-        <!-- preload first hero image -->
-        {% comment %} TODO: can define these dynamically per page? {% endcomment %}
-        <link rel="preload" as="image" href="/assets/img/hero_01.webp">
-        <link rel="preload" as="image" href="/assets/img/hero_01.jpg">
-    {% endif %}
+    {% comment %} preload above-the-fold assets {% endcomment %}
+    {% for image in preload.images %}
+        <link rel="preload" as="image" href="{{ image }}">
+    {% endfor %}
 
     <link rel="stylesheet" href="/style/css/style.css">
     {% for style in styles %}
