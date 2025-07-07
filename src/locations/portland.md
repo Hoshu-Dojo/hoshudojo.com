@@ -62,7 +62,7 @@ seniors: [
             srcset: "/assets/img/headshots/michael_2x.jpg 2x, /assets/img/headshots/michael_1x.jpg 1x",
             src: "/assets/img/headshots/michael_2x.jpg"
         },
-        bio: "Some stuff about Michael Park"
+        bio: "Michael Park was born and raised in Portland Oregon and has studied under Tom Groendal for over a decade in both Daito Ryu Aikijujutsu and Jodo. He has studied various martial arts since college ranging from Tai Chi to Boxing. He currently trains under Sensei Groendal at his Tuesday Jodo Class (19:30&ndash;21:00) and Thursday Daito Ryu Class (19:30&ndash;21:00) and leads a second Jodo class on Sundays (16:00&ndash;17:30)."
     },
     {
         name: Dave Zambrano,

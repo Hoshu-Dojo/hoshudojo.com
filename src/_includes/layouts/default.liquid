@@ -25,9 +25,12 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- preload first hero image -->
-    <link rel="preload" as="image" href="/assets/img/hero_01.webp">
-    <link rel="preload" as="image" href="/assets/img/hero_01.jpg">
+    {% if permalink == "/" %}
+        <!-- preload first hero image -->
+        {% comment %} TODO: can define these dynamically per page? {% endcomment %}
+        <link rel="preload" as="image" href="/assets/img/hero_01.webp">
+        <link rel="preload" as="image" href="/assets/img/hero_01.jpg">
+    {% endif %}
 
     <link rel="stylesheet" href="/style/css/style.css">
     {% for style in styles %}
@@ -39,6 +42,11 @@
     <meta http-equiv="Strict-Transport-Security" content="max-age=7776000; includeSubDomains" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.google.com/ 'unsafe-inline' http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js 'unsafe-inline' https://web3forms.com 'unsafe-inline' https://fonts.googleapis.com 'unsafe-inline' https://fonts.gstatic.com 'unsafe-inline' https://js.hcaptcha.com/1/api.js 'unsafe-inline' https://newassets.hcaptcha.com 'unsafe-inline' https://www.googletagmanager.com 'unsafe-inline' https://www.google-analytics.com 'unsafe-inline' https://www.google.com/ccm/collect 'unsafe-inline' https://googleads.g.doubleclick.net 'unsafe-inline' https://td.doubleclick.net 'unsafe-inline' https://www.google.com/pagead/1p-user-list/16676903394/ 'unsafe-inline' https://www.google.ca/pagead/1p-user-list/16676903394/ 'unsafe-inline'" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    {% comment %} hide from search engine results (where respected) {% endcomment %}
+    {% if isHiddenFromSearch %}
+        <meta name="robots" content="noindex" />
+    {% endif %}
 
     {% include "sections/google-analytics" %}
 </head>

@@ -1,9 +1,9 @@
 ---
 layout: layouts/locations
 permalink: "/locations/toronto/"
-title: Toronto &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Toronto Jodo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 
-locationName: Toronto
+locationName: Toronto Jodo
 instructor: {
     name: Alan Wu,
     rank: 4th Dan Jodo,

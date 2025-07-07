@@ -24,7 +24,7 @@ permalink: "/events/2025-08-28-goto-sensei-camp/"
 		<p>We look forward to seeing you in August!</p>
 	</article>
 	<article class="content-wrapper">
-		<a class="button button--primary button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
+		<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
 	</article>
 	<article class="content-wrapper">
 		<p>Deadlines for registration are</p>
@@ -149,6 +149,6 @@ permalink: "/events/2025-08-28-goto-sensei-camp/"
 		<p>Smoking, vaping, and tobacco in any form are strictly prohibited everywhere on campus. Please find a public street off-campus to smoke, vape, chew tobacco, etc.</p>
 	</article>
 	<article class="content-wrapper">
-		<a class="button button--primary button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
+		<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
 	</article>
 </section>
