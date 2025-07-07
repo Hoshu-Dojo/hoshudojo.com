@@ -1,0 +1,174 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+@use '../partials/animations';
+
+.hero {
+    article {
+        width: 100%;
+        height: min(calc(100vh - variables.$fixed_header_height), variables.$max_hero_height);
+        background-color: colours.$keikogi_blue;
+        color: var(--inverse-text);
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: color-mix(in srgb, var(--secondary-bg) 60%, transparent);
+            z-index: -1;
+        }
+    }
+
+    .content-wrapper {
+        @include mixins.flex($gap: 1rem, $direction: column, $align: center);
+        text-align: center;
+
+        @media(min-width: variables.$media_tablet_medium) {
+            flex-direction: row;
+            align-content: flex-start;
+            text-align: left;
+            gap: 2rem;
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        animation-delay: 0.75s;
+
+        @media(min-width: variables.$media_tablet_small) {
+            font-size: 3.25rem;
+        }
+
+        @media(min-width: variables.$media_tablet_large) {
+            font-size: 4rem;
+        }
+    }
+
+    .h4 {
+        @media(max-width: variables.$media_tablet_small) {
+            font-size: 1.125rem;
+        }
+    }
+
+    // animate
+    .logo,
+    h1,
+    li {
+        opacity: 0;
+        animation-name: slide-up-hero-logo;
+        animation-duration: 0.9375s;
+        animation-timing-function: cubic-bezier(.48, -0.04, .2, 1.1);
+        animation-fill-mode: forwards;
+
+        @media (prefers-reduced-motion) {
+            opacity: 1;
+            animation: none;
+        }
+    }
+
+    .logo {
+        animation-delay: 0.5s;
+    }
+
+    li:first-of-type {
+        animation-delay: 1s;
+    }
+
+    li:last-of-type {
+        animation-delay: 1.25s;
+    }
+}
+
+.hero__image {
+    --fade-duration: 120s;
+    // 8 = number of images / number of iterations per loop
+    // (see diagram in _animations.scss)
+    --fade-delay-overlap: calc(var(--fade-duration) / 8);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: var(--hero-image-jpg);
+    background-repeat: no-repeat;
+    background-position: center 30.5%;
+    background-size: cover;
+    z-index: -1;
+    animation-name: fade-hero-image;
+    animation-duration: var(--fade-duration);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    // start first hero image fully visible, no fade in
+    opacity: 1;
+
+    // hide others until animation triggers
+    &:not(:nth-of-type(4)) {
+        opacity: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+        opacity: 1;
+        animation: none;
+
+        &:not(:nth-of-type(4)) {
+            opacity: 0;
+        }
+    }
+
+    @supports (background-image: var(--hero-image-webp)) {
+        background-image: var(--hero-image-webp);
+    }
+
+    // first image in sequence, top of the stock
+    &:nth-of-type(4) {
+        background-image: url("../../assets/img/hero_01.jpg");
+        background-position: center 30.5%;
+        // two animation calculations, to handle first load and trigger infinite loop
+        animation-name: fade-hero-image, fade-hero-image;
+        animation-delay: 0s, calc(var(--fade-delay-overlap) * 4);
+        animation-iteration-count: 1, infinite;
+
+        @supports (background-image: url("../../assets/img/hero_01.webp")) {
+            background-image: url("../../assets/img/hero_01.webp");
+        }
+    }
+
+    // second in sequence
+    &:nth-of-type(3) {
+        background-image: url("../../assets/img/hero_02.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 1);
+
+        @supports (background-image: url("../../assets/img/hero_02.webp")) {
+            background-image: url("../../assets/img/hero_02.webp");
+        }
+    }
+
+    // third in sequence
+    &:nth-of-type(2) {
+        background-image: url("../../assets/img/hero_03.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 2);
+
+        @supports (background-image: url("../../assets/img/hero_03.webp")) {
+            background-image: url("../../assets/img/hero_03.webp");
+        }
+    }
+
+    // fourth in sequence
+    &:nth-of-type(1) {
+        background-image: url("../../assets/img/hero_04.jpg");
+        background-position: center;
+        animation-delay: calc(var(--fade-delay-overlap) * 3);
+
+        @supports (background-image: url("../../assets/img/hero_04.webp")) {
+            background-image: url("../../assets/img/hero_04.webp");
+        }
+    }
+}

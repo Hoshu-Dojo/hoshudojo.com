@@ -1,0 +1,3 @@
+Contact: mailto:security@hoshudojo.com
+Expires: 2030-07-01T07:00:00.000Z
+Preferred-Languages: en

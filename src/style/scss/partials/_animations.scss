@@ -1,0 +1,156 @@
+// classes
+.slide-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.375s ease-in, transform 0.5s ease;
+}
+
+.slide-fade-in--hidden {
+    opacity: 0;
+    transform: translateY(1rem);
+
+    @media (prefers-reduced-motion) {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// keyframes
+/**
+ the math on this was reeeeeaaaaallllyyy challenging to get the
+ overlap delay right, please don't get rid of this diagram:
+
+ 0 = visible
+ . = invisible
+
+ two header rows reflect 0–100%, every 2%
+
+ x 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8
+ x 0 ~ ~ ~ ~ 1 ~ ~ ~ ~ 2 ~ ~ ~ ~ 3 ~ ~ ~ ~ 4 ~ ~ ~ ~ 5 ~ ~ ~ ~ 6 ~ ~ ~ ~ 7 ~ ~ ~ ~ 8 ~ ~ ~ ~ 9 ~ ~ ~ ~
+ 1 . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . .
+ 2 . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . .
+ 3 . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O O O O . . .
+ 4 O O O . . . . . . . . . . . . . . . . O O O O O O O O . . . . . . . . . . . . . . . . . . O O O O O
+
+ */
+@keyframes fade-hero-image {
+    0% {
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0;
+    }
+
+    52% {
+        opacity: 0;
+    }
+
+    54% {
+        opacity: 1;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes pulse-map-pin {
+    0% {
+        opacity: 1;
+        transform: scale(0.75);
+        border-width: 1.5px;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(3);
+        border-width: 1px;
+    }
+}
+
+@keyframes scale-in-map-pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0.125) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(-1rem);
+    }
+}
+
+@keyframes slide-up-hero-logo {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-mobile-nav {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-up-nav-link {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spinner {
+    to {
+        // maintain centred positioning
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

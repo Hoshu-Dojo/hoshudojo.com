@@ -1,0 +1,45 @@
+<footer class="page-footer">
+    <div class="page-wrapper">
+        <div class="page-footer__socials">
+            <p>Follow us on social media:</p>
+            <ul class="list list--unstyled">
+                {%- for social in site.socials -%}
+                    <li>
+                        <a href="{{ social.link }}" target="_blank" class="button button--primary button--icon">
+                            <img src="{{ social.icon }}" alt="{{ social.name }}" loading="lazy" />
+                        </a>
+                    </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        <div class="page-footer__orgs">
+            <p>Member of:</p>
+            <ul class="list list--unstyled">
+                {%- for org in site.organizations -%}
+                    <li>
+                        <a href="{{ org.link }}" target="_blank">
+                            {{ org.name }}
+                        </a>
+                    </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        <div class="page-footer__credits">
+            <p>Photo Credits: <a href="https://www.instagram.com/iiiiportraits/" target="_blank">Four Eyes Portraits</a></p>
+        </div>
+    </div>
+</footer>
+
+{% comment %} NOTE: NOT FOR DISPLAY PURPOSES! need to print to the DOM so JS can access Liquid vars {% endcomment %}
+<div id="photo-feed-vars" class="vis-hidden" aria-hidden="true">
+    {%- for file in site.photoFeed.featured -%}
+        <div data-filename="{{ file }}"></div>
+    {%- endfor -%}
+</div>
+
+<!-- scripts -->
+<script src="/scripts/utils.js" type="text/javascript"></script>
+{%- for script in scripts -%}
+    <script src="{{ script }}" type="text/javascript"></script>
+{%- endfor -%}
+<script src="https://web3forms.com/client/script.js" async defer></script>

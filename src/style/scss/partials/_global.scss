@@ -1,0 +1,538 @@
+@use './colours';
+@use './variables';
+@use './mixins';
+
+:root {
+    --primary-text: #{colours.$keikogi_blue};
+    --subtle-text: #{colours.$zambrano_blue};
+    --inverse-text: #{colours.$parchment};
+    --extra-subtle-text: #{colours.$subtle_readable};
+    --pop-text: #{colours.$palatinate_blue};
+    --page-bg: #{colours.$keikogi-blue_darker};
+    --primary-bg: #{colours.$parchment};
+    --secondary-bg: #{colours.$keikogi_blue};
+    --tertiary-bg: #{colours.$zambrano_blue};
+    --subtle-bg: #FFFFFF;
+    --link-primary: #{colours.$palatinate_blue};
+    --link-secondary: #{colours.$bokuto_brown};
+    --borders: #{colours.$subtle};
+    --error: #{colours.$error};
+    --success: #{colours.$palatinate_blue};
+
+    --font-body: Inter, Arial, Helvetica, sans-serif;
+    --font-title: Cormorant,
+        Georgia,
+        'Times New Roman',
+        Times,
+        serif;
+
+    --form-border-width: 1.5px;
+    --form-asterisk-colour: #{colours.$palatinate_blue};
+
+    // generated @ https: //www.joshwcomeau.com/shadow-palette/
+    --shadow-colour: 240deg 100% 2%;
+    --shadow-elevation-low:
+        0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.34),
+        0px 1.4px 1.6px -1.2px hsl(var(--shadow-colour) / 0.34),
+        0px 3.3px 3.7px -2.5px hsl(var(--shadow-colour) / 0.34);
+    --shadow-elevation-medium:
+        0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.36),
+        0px 2.7px 3px -0.8px hsl(var(--shadow-colour) / 0.36),
+        0px 6.8px 7.7px -1.7px hsl(var(--shadow-colour) / 0.36),
+        0px 16.5px 18.6px -2.5px hsl(var(--shadow-colour) / 0.36);
+    --shadow-elevation-high:
+        0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.34),
+        0px 4.8px 5.4px -0.4px hsl(var(--shadow-colour) / 0.34),
+        0px 9px 10.1px -0.7px hsl(var(--shadow-colour) / 0.34),
+        0px 14.8px 16.7px -1.1px hsl(var(--shadow-colour) / 0.34),
+        0px 23.6px 26.6px -1.4px hsl(var(--shadow-colour) / 0.34),
+        0px 36.9px 41.5px -1.8px hsl(var(--shadow-colour) / 0.34),
+        0px 56.1px 63.1px -2.1px hsl(var(--shadow-colour) / 0.34),
+        0px 82.6px 92.9px -2.5px hsl(var(--shadow-colour) / 0.34);
+
+    // converted from generated values above, with fourth value dropped
+    --drop-shadow-elevation-low: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 1.2px 1.3px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 2.8px 3.1px hsl(var(--shadow-colour) / 0.36));
+    --drop-shadow-elevation-medium: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 1.8px 2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 3.6px 4.1px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 7.3px 8.2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(-0.1px 14.2px 16px hsl(var(--shadow-colour) / 0.3));
+    --drop-shadow-elevation-high: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 3.8px 4.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 6.9px 7.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 10.8px 12.2px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 16.4px 18.5px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 24.6px 27.7px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 36.1px 40.6px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.3px 51.8px 58.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.4px 72.6px 81.7px hsl(var(--shadow-colour) / 0.31));
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: variables.$fixed_header_height;
+
+    @media (prefers-reduced-motion) {
+        scroll-behavior: initial;
+    }
+}
+
+html,
+body {
+    background: var(--page-bg);
+    color: var(--primary-text);
+    // overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    // width: 100vw; // causing horizontal scroll when accounting for scrollbar in Chrome
+    min-height: calc(100vh - variables.$fixed_header_height);
+    @include mixins.flex($direction: column, $gap: 0, $justify: flex-start)
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+main {
+    background: var(--primary-bg);
+    flex-grow: 1;
+}
+
+main,
+footer {
+    position: relative;
+    top: variables.$fixed_header_height;
+}
+
+.hidden {
+    display: none;
+}
+
+.vis-hidden {
+    @include mixins.visually-hidden;
+}
+
+// bots-only form elements
+.no-access {
+    @include mixins.visually-hidden;
+    left: -5000px;
+}
+
+.base-heading {
+    // font-family: var(--font-title);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    @extend .base-heading;
+}
+
+h1,
+.h1 {
+    @include mixins.heading(h1);
+}
+
+h2,
+.h2 {
+    @include mixins.heading(h2);
+}
+
+h3,
+.h3 {
+    @include mixins.heading(h3);
+}
+
+h4,
+.h4 {
+    @include mixins.heading(h4);
+}
+
+h5,
+.h5 {
+    @include mixins.heading(h5);
+}
+
+h6,
+.h6 {
+    @include mixins.heading(h6);
+}
+
+.title {
+    // font-family: var(--font-title);
+    font-weight: 900;
+}
+
+.title--no-caps {
+    text-transform: none;
+}
+
+.banner {
+    .title {
+        @include mixins.heading(h1);
+    }
+}
+
+p+p {
+    margin-top: 0.75em;
+}
+
+.no-margin {
+    p+p {
+        margin-top: 0;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+abbr {
+    text-decoration: none;
+    font-variant: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: var(--link-primary);
+    font-weight: 500;
+    text-underline-offset: 0.125em;
+    text-decoration-thickness: 1.5px;
+    transition: text-underline-offset 0.1875s ease-out;
+
+    &:hover {
+        text-underline-offset: 0.25em;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-right: auto;
+    margin-left: 0;
+    background: white;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.125s ease;
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+        opacity: 1;
+    }
+}
+
+.graphic-link {
+    text-decoration: none;
+    opacity: 1;
+    color: inherit;
+    transition: opacity 0.125s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+button,
+.button {
+    --button-bg: white;
+    --button-colour: var(--primary-text);
+    --button-border-colour: var(--button-bg);
+    --button-border-radius: 0.125rem;
+
+    cursor: pointer;
+    text-decoration: none;
+    padding-inline: 0.875rem;
+    padding-top: 0.0625rem;
+    padding-bottom: 0.0625rem;
+    background: var(--button-bg);
+    color: var(--button-colour);
+    // border: none;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--button-border-colour);
+    border-radius: var(--button-border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    font-weight: 900;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover:not(:disabled) {
+        // --button-border-colour: var(--link-primary);
+
+        background: color-mix(in srgb, var(--button-bg) 80%, transparent);
+        // border-color: var(--button-border-colour);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.button--primary {
+    --button-bg: var(--link-primary);
+    --button-colour: var(--inverse-text);
+}
+
+.button--map-pin {
+    --button-bg: var(--link-secondary);
+
+    &:hover:not(:disabled) {
+        background: color-mix(in srgb, var(--button-bg) 90%, black);
+    }
+}
+
+.button--unstyled {
+    background: none;
+    padding: 0;
+    border: none;
+
+    &:hover:not(:disabled) {
+        background: none;
+    }
+}
+
+.button--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    @include mixins.flex();
+    position: relative;
+
+    &.button--primary {
+        img {
+            width: 1.25rem;
+            height: 1.25rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include mixins.tint(parchment);
+        }
+    }
+}
+
+.button--loading {
+    position: relative;
+    color: transparent;
+
+    &::after {
+        content: "";
+        aspect-ratio: 1 / 1;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3.5px solid var(--button-colour);
+        border-radius: 50%;
+        mask: conic-gradient(from 180deg, transparent 10%, black 85%);
+        transform-origin: center;
+        animation-name: spinner;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list--unstyled {
+    list-style-type: none;
+}
+
+.page-wrapper {
+    max-width: variables.$max_page_width;
+    height: 100%;
+    padding-inline: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-wrapper {
+    max-width: variables.$max_content_width;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// assume column layout as default
+.flex-wrapper {
+    @include mixins.flex($direction: column, $align: flex-start, $justify: flex-start);
+}
+
+.flex-wrapper--row {
+    flex-direction: row;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo--inverse {
+    filter: invert(1)
+}
+
+.logo--nav-header {
+    @include mixins.tint(parchment);
+}
+
+.logo--hero {
+    width: 9rem;
+    height: 9rem;
+    @include mixins.tint(parchment);
+
+    @media (min-width: variables.$media_tablet_small) {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+.icon {
+    width: auto;
+    height: 1em;
+    aspect-ratio: 1 / 1;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    @include mixins.flex($direction: column, $justify: flex-start, $align: flex-start, $gap: 0);
+}
+
+label,
+legend {
+    font-weight: 600;
+    margin-bottom: 0.25em;
+}
+
+label:has(input[type=checkbox]) {
+    font-weight: 400;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    align-items: center;
+
+    input[type=checkbox] {
+        appearance: none;
+        background-color: #FFFFFF;
+        margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 1.15em;
+        height: 1.15em;
+        border-width: var(--form-border-width);
+        border-style: solid;
+        border-color: var(--borders);
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+        transition: 60ms all ease-in-out;
+        display: grid;
+        place-content: center;
+
+        &::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            transform: scale(0);
+            transform-origin: center;
+            transition: 120ms transform ease-in-out;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            box-shadow: inset 1em 1em #FFFFFF;
+        }
+
+        &:checked {
+            --borders: var(--link-primary);
+            background-color: var(--borders);
+
+            &::before {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.asterisk {
+    color: var(--form-asterisk-colour);
+}
+
+label:has(+input[required]) {
+    &::after {
+        content: " *";
+        color: var(--form-asterisk-colour);
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+.field {
+    @include mixins.flex($direction: column, $align: flex-start, $gap: 0);
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+.field--required-alt {
+    --form-asterisk-colour: #{colours.$parchment};
+}
+
+.field label .icon,
+fieldset legend .icon {
+    display: none;
+}
+
+.field.error label,
+fieldset.error legend {
+    color: var(--error);
+    @include mixins.flex($gap: 0);
+
+    .icon {
+        @include mixins.tint(error);
+        display: block;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=tel],
+textarea {
+    border-width: var(--form-border-width);
+    border-style: solid;
+    border-color: var(--borders);
+    border-radius: 0.1875rem;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+}
+
+.separator {
+    width: 100%;
+    height: 1.5px;
+    background: var(--borders);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

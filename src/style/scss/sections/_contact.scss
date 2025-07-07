@@ -1,0 +1,215 @@
+@use '../partials/colours';
+@use '../partials/variables';
+@use '../partials/mixins';
+
+.contact {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    @include mixins.flex($direction: column, $gap: 2.5rem);
+
+    h3 {
+        text-align: center;
+
+        @media(max-width: variables.$media_tablet_small) {
+            @include mixins.heading(h3);
+        }
+    }
+
+    >form {
+        --borders: #{colours.$bokuto-brown};
+
+        max-width: min(40rem, 100%);
+        display: grid;
+        gap: 2rem;
+        align-items: flex-start;
+
+        @media(min-width: variables.$media_tablet_small) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .form-disclaimer {
+            font-style: italic;
+            width: 100%;
+        }
+
+        .form-disclaimer,
+        .field:has(textarea),
+        fieldset,
+        .flex-wrapper {
+            @media (min-width: variables.$media_tablet_small) {
+                grid-column: span 2;
+            }
+        }
+
+        >* {
+            @media (max-width: variables.$media_mobile_large) {
+                max-width: calc(100vw - 2.5rem * 2);
+            }
+        }
+    }
+
+    .flex-wrapper {
+        @media (min-width: variables.$media_tablet_small) {
+            align-items: flex-end;
+        }
+    }
+
+    .flex-wrapper:has(> .form-errors) {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .h-captcha {
+        @include mixins.flex();
+
+        @media(max-width: variables.$media_mobile_medium) {
+            transform: scale(0.85);
+            transform-origin: center;
+        }
+    }
+
+    div:has(> .h-captcha) {
+        width: 100%;
+        max-width: 100%;
+
+        @media(min-width: variables.$media_mobile_medium) {
+            width: fit-content;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin-left: auto;
+
+        @media(min-width: variables.$media_tablet_small) {
+            width: fit-content;
+        }
+    }
+}
+
+.contact__mailing-list {
+    max-width: 38rem;
+    background: colours.$bokuto_brown;
+    // color: var(--inverse-text);
+    border: 2px solid colours.$bokuto_brown;
+    border-radius: 0.25rem;
+    display: grid;
+    overflow: hidden;
+
+    @media(min-width: variables.$media_tablet_small) {
+        grid-template-columns: 37% auto;
+    }
+
+    >picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 42% bottom;
+        transform: scale(1.15) translate(0, -5%);
+        overflow: hidden;
+
+        @media(min-width: variables.$media_tablet_small) {
+            transform: scale(1.15) translate(-7.5%, -5%);
+        }
+    }
+
+    h4 {
+        text-transform: none;
+        letter-spacing: initial;
+        line-height: initial;
+        font-weight: 500;
+        font-size: 1.125rem;
+    }
+}
+
+.contact__mailing-list-form {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    @include mixins.flex($gap: 1.5rem, $direction: column);
+
+    >form {
+        --borders: #{colours.$parchment};
+
+        display: grid;
+        column-gap: 1.25rem;
+        row-gap: 0.75rem;
+
+        .field:has(input[id=mce-EMAIL]),
+        button {
+            @media(min-width: variables.$media_tablet_medium) {
+                grid-column: span 2;
+            }
+        }
+
+        >.flex-wrapper {
+            margin-top: 0.25rem;
+
+            @media(min-width: variables.$media_tablet_medium) {
+                grid-column: span 2;
+            }
+        }
+
+        @media(min-width: variables.$media_tablet_medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.form-errors,
+.form-success {
+    --form-feedback-border-color: var(--borders);
+
+    font-size: 0.875rem;
+    margin-left: auto;
+
+    .icon {
+        margin-right: 0.375em;
+        margin-top: 0.25em;
+    }
+
+    p:has(.icon) {
+        @include mixins.flex($gap: 0, $align: flex-start);
+    }
+
+    &:not(:empty) {
+        background: var(--subtle-bg);
+        border-radius: 0.25rem;
+        border: 2px solid var(--form-feedback-border-color);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-inline: 0.625rem;
+    }
+
+}
+
+.form-errors {
+    --form-feedback-border-color: var(--error);
+
+    color: var(--error);
+
+    .icon {
+        @include mixins.tint(error);
+    }
+}
+
+.form-success {
+    --form-feedback-border-color: var(--success);
+
+    .icon {
+        @include mixins.tint(success);
+    }
+}
+
+.flex-wrapper--row:has(> div .form-errors) {
+    flex-direction: column;
+
+    @media(min-width: variables.$media_tablet_small) {
+        flex-direction: row;
+    }
+}
+
+div:has(.form-errors) {
+    width: 100%;
+}

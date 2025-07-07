@@ -1,25 +1,279 @@
 {
-  "url": "http://www.hoshudojo.com",
-  "baseurl": "",
-  "title": "Hoshu Dojo - Shindo Muso Ryu Jo and Daito Ryu Aikijujutsu",
-  "nav": [
-    {
-      "description": "Home",
-      "id": "home",
-      "href": "/",
-      "props": ""
-    },
-    {
-      "description": "Locations",
-      "id": "locations",
-      "href": "/locations",
-      "props": ""
-    },
-    {
-      "description": "Contact Us",
-      "id": "contact",
-      "href": "https://forms.gle/5cHDnQ5cwZo2mukP6",
-      "props": "target='_blank'"
-    }
-  ]
+	"title": "Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu",
+	"lang": "en",
+	"photoFeed": {
+		"featured": [
+			"20250628_01",
+			"20250625_04",
+			"20250625_03",
+			"20250625_02",
+			"20250625_01",
+			"20250607_01",
+			"20250601_02",
+			"20250601_01",
+			"20250530_01",
+			"20250413_02",
+			"20250413_01",
+			"20250223_01",
+			"20250123_01",
+			"20250111_01",
+			"20241221_01",
+			"20241215_01",
+			"20241212_01",
+			"20241116_01",
+			"20240715_01",
+			"20240711_01",
+			"20240706_01",
+			"20240705_01",
+			"20240616_01",
+			"20240407_01"
+		],
+		"placeholders": [
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_01.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_01.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_02.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_02.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_03.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_03.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_04.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_04.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_05.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_05.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_06.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_06.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_07.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_07.jpg"
+			},
+			{
+				"srcset": "/assets/img/insta/archive/insta-placeholder_08.webp",
+				"src": "/assets/img/insta/archive/insta-placeholder_08.jpg"
+			}
+		]
+	},
+	"leadership": [
+		{
+			"name": "Kei Goto",
+			"ranks": "7th dan Kyoshi (Jodo), Menkyo (Daito Ryu)",
+			"location": "Oita, Japan",
+			"isHeadSensei": true,
+			"photo": {
+				"srcset": "/assets/img/headshots/goto_2x.jpg 2x, /assets/img/headshots/goto_1x.jpg 1x",
+				"src": "/assets/img/headshots/goto_2x.jpg"
+			}
+		},
+		{
+			"name": "Thomas Groendal",
+			"ranks": "7th dan Renshi (Jodo), 4th dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"isSecondarySensei": true,
+			"photo": {
+				"srcset": "/assets/img/headshots/tom_2x.jpg 2x, /assets/img/headshots/tom_1x.jpg 1x",
+				"src": "/assets/img/headshots/tom_2x.jpg"
+			}
+		},
+		{
+			"name": "Marcus Phung",
+			"ranks": "5th dan (Jodo)",
+			"location": "Seattle, Washington",
+			"photo": {
+				"srcset": "/assets/img/headshots/marcus_2x.jpg 2x, /assets/img/headshots/marcus_1x.jpg 1x",
+				"src": "/assets/img/headshots/marcus_2x.jpg"
+			}
+		},
+		{
+			"name": "Jeff Kamo",
+			"ranks": "4th dan (Jodo)",
+			"location": "Vancouver, BC",
+			"photo": {
+				"srcset": "/assets/img/headshots/jeff_2x.jpg 2x, /assets/img/headshots/jeff_1x.jpg 1x",
+				"src": "/assets/img/headshots/jeff_2x.jpg"
+			}
+		},
+		{
+			"name": "Michael Park",
+			"ranks": "4th dan (Jodo), 2nd dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"photo": {
+				"srcset": "/assets/img/headshots/michael_2x.jpg 2x, /assets/img/headshots/michael_1x.jpg 1x",
+				"src": "/assets/img/headshots/michael_2x.jpg"
+			}
+		},
+		{
+			"name": "Chris Dowling",
+			"ranks": "4th dan (Jodo)",
+			"location": "Seattle, Washington",
+			"photo": {
+				"srcset": "/assets/img/headshots/chris_2x.jpg 2x, /assets/img/headshots/chris_1x.jpg 1x",
+				"src": "/assets/img/headshots/chris_2x.jpg"
+			}
+		},
+		{
+			"name": "Dave Zambrano",
+			"ranks": "3rd dan (Jodo), 1st dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"photo": {
+				"srcset": "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
+				"src": "/assets/img/headshots/dave_2x.jpg"
+			}
+		},
+		{
+			"name": "Jess Hilliam",
+			"ranks": "4th dan (Jodo)",
+			"location": "Vancouver, BC",
+			"photo": {
+				"srcset": "/assets/img/headshots/jess_2x.jpg 2x, /assets/img/headshots/jess_1x.jpg 1x",
+				"src": "/assets/img/headshots/jess_2x.jpg"
+			}
+		}
+	],
+	"locations": [
+		{
+			"country": "United States",
+			"dojos": [
+				{
+					"slug": "portland",
+					"location": "Portland, Oregon",
+					"instructor": "Thomas Groendal",
+					"schedule": "Sun, Tues, Thurs",
+					"mapOrder": 3,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_portland_thumbnail.jpg"
+				},
+				{
+					"slug": "seattle",
+					"location": "Seattle, Washington",
+					"instructor": "Marcus Phung",
+					"schedule": "Sat",
+					"mapOrder": 2,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_seattle_thumbnail.jpg"
+				},
+				{
+					"slug": "pasadena",
+					"location": "Pasadena, California",
+					"instructor": "Levon Sukiassyan",
+					"schedule": "Sun, Tues",
+					"mapOrder": 4,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_pasadena_thumbnail.jpg"
+				},
+				{
+					"slug": "atlanta",
+					"location": "Atlanta, Georgia",
+					"instructor": "Adam Sandor",
+					"schedule": "Sun, Tues",
+					"mapOrder": 6,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_atlanta_thumbnail.jpg"
+				}
+			]
+		},
+		{
+			"country": "Canada",
+			"dojos": [
+				{
+					"slug": "vancouver",
+					"location": "Vancouver, BC",
+					"instructor": "Jeff Kamo",
+					"schedule": "Sun, Thurs",
+					"mapOrder": 1,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_vancouver_thumbnail.jpg"
+				},
+				{
+					"slug": "toronto",
+					"location": "Toronto, Ontario",
+					"instructor": "Alan Wu",
+					"schedule": "Fri",
+					"mapOrder": 5,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_toronto_thumbnail.jpg"
+				}
+			]
+		},
+		{
+			"country": "Mexico",
+			"dojos": [
+				{
+					"slug": "coyoacan",
+					"location": "Coyoacan, Mexico City",
+					"instructor": "Genaro Luis",
+					"schedule": "Tues, Thurs, Sat",
+					"mapOrder": 7,
+					"popUpPosition": "right",
+					"thumbnail": "../assets/img/locations/locations_coyoacan_thumbnail.jpg"
+				}
+			]
+		},
+		{
+			"country": "Japan",
+			"dojos": [
+				{
+					"slug": "oita",
+					"location": "Oita Prefecture",
+					"instructor": "Kei Goto",
+					"schedule": "Sun, Mon, Tues, Fri",
+					"mapOrder": 8,
+					"popUpPosition": "left",
+					"thumbnail": "../assets/img/locations/locations_oita_thumbnail.jpg"
+				},
+				{
+					"slug": "naha",
+					"location": "Naha, Okinawa",
+					"instructor": "Taisuke Yonamine",
+					"schedule": "Contact for details",
+					"mapOrder": 9,
+					"popUpPosition": "left",
+					"thumbnail": "../assets/img/locations/locations_naha_thumbnail.jpg"
+				}
+			]
+		}
+	],
+	"socials": [
+		{
+			"name": "Facebook",
+			"link": "https://www.facebook.com/HoshuDojo",
+			"icon": "/assets/icons/facebook.svg"
+		},
+		{
+			"name": "Instagram",
+			"link": "https://www.instagram.com/hoshudojo",
+			"icon": "/assets/icons/instagram.svg"
+		},
+		{
+			"name": "YouTube",
+			"link": "https://youtube.com/@hoshudojo?si=kpZaQUkZUB5pbLdp",
+			"icon": "/assets/icons/youtube.svg"
+		}
+	],
+	"organizations": [
+		{
+			"name": "All United States Kendo Federation",
+			"link": "https://www.auskf.org/"
+		},
+		{
+			"name": "Canadian Kendo Federation",
+			"link": "https://kendo-canada.com/"
+		},
+		{
+			"name": "Jodo Canada",
+			"link": "https://www.jodo-canada.ca/"
+		}
+	],
+	"vars": {
+		"CONTACT_FORM_ACCESS_KEY": "101fcc30-1373-4089-9422-b44ddc4e3af9"
+	}
 }

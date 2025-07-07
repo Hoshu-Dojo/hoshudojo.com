@@ -1,0 +1,25 @@
+<div class="location-summary__instructor-location">
+    <picture class="headshot headshot--instructor">
+        <source srcset="{{ instructor.image.srcset }}">
+        <img src="{{ instructor.image.src }}" alt="Headshot: {{ instructor.name }}" />
+    </picture>
+    <div class="no-margin">
+        <h2>
+            <img src="/assets/icons/idcard.svg" alt="" class="icon" aria-hidden="true" loading="lazy">
+            Instructor
+        </h2>
+        <p class="heading h3">{{ instructor.name }}</p>
+        <p>{{ instructor.rank }}</p>
+    </div>
+    <div>
+        <h2>
+            <img src="/assets/icons/compass.svg" alt="" class="icon" aria-hidden="true" loading="lazy">
+            Location
+        </h2>
+        <address class="no-margin">
+            {% for addressLine in address %}
+                <p>{{ addressLine }}</p>
+            {% endfor %}
+        </address>
+    </div>
+</div>

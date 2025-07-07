@@ -1,0 +1,65 @@
+<section id="locations" class="locations">
+    <article class="page-wrapper">
+        <h2 class="vis-hidden">Locations</h2>
+        <div class="locations__map" aria-hidden="true">
+            <picture>
+                <source
+                    srcset="./assets/img/world-map_640.webp 640w, ./assets/img/world-map_1280.webp 1280w, ./assets/img/world-map_1920.webp 1920w"
+                    sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px" />
+                <img src="./assets/img/world-map_1920.png" alt=""
+                    srcset="./assets/img/world-map_640.png 640w, ./assets/img/world-map_1280.png 1280w, ./assets/img/world-map_1920.png 1920w"
+                    sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px" loading="lazy" />
+            </picture>
+            {% comment %} loop through locations list to flatten all dojos in one list {% endcomment %}
+            {%- assign sortedDojos = '' | split: '' -%}
+            {%- for location in site.locations -%}
+                {%- for dojo in location.dojos -%}
+                    {%- assign sortedDojos = sortedDojos | concat: dojo -%}
+                {%- endfor -%}
+            {%- endfor -%}
+            {% comment %} sort 'em so we can assign a logical keyboard focus order {% endcomment %}
+            {%- assign sortedDojos = sortedDojos | sort: "mapOrder" -%}
+            {%- for dojo in sortedDojos -%}
+                <div id="pin-{{ dojo.slug }}" class="locations__map-pin locations__map-pin--{{ dojo.slug }}">
+                    <button class="button button--map-pin map-pin" aria-hidden="true" title="{{ dojo.location }}">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="map-pop-up map-pop-up--{{ dojo.popUpPosition }}" data-open="false">
+                        <img src="{{ dojo.thumbnail }}" alt="" class="map-pop-up__thumbnail" loading="lazy">
+                        <div class="map-pop-up__text no-margin">
+                            <h3 class="h6">{{ dojo.location }}</p>
+                            <h4>Instructor</h4>
+                            <p>{{ dojo.instructor }}</p>
+                            <h4>Schedule</h4>
+                            <p>{{ dojo.schedule }}</p>
+                            <a href="/locations/{{ dojo.slug }}">Class info for {{ dojo.location | split: ',' | first }} <img src="/assets/icons/arrow-right.svg" alt="" class="icon" loading="lazy" /></a>
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+        <div class="locations__links content-wrapper">
+            <p>
+                Our primary destinations for weekly classes and regular seminar events are
+                in the Pacific Northwest. The Hoshu Dojo network continues to grow throughout North America,
+                and classes taught under our tradition can be found at any of the locations below.
+            </p>
+            {%- for location in site.locations -%}
+                <div class="locations__country-list">
+                    <h3 class="h5">{{ location.country }}</h3>
+                    <ul class="list list--unstyled">
+                        {%- for dojo in location.dojos -%}
+                            <li>
+                                <a href="/locations/{{ dojo.slug }}/" data-dojo-link="{{ dojo.slug }}">
+                                    {{ dojo.location }}
+                                </a>
+                            </li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+            {%- endfor -%}
+        </div>
+    </article>
+</section>

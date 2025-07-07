@@ -1,0 +1,50 @@
+---
+layout: layouts/default
+styles: ["/style/css/locations.css"]
+week: [
+	{
+		full: Sunday,
+		short: Sun,
+		slug: sun
+	},
+	{
+		full: Monday,
+		short: Mon,
+		slug: mon
+	},
+	{
+		full: Tuesday,
+		short: Tue,
+		slug: tues
+	},
+	{
+		full: Wednesday,
+		short: Wed,
+		slug: wed
+	},
+	{
+		full: Thursday,
+		short: Thur,
+		slug: thur
+	},
+	{
+		full: Friday,
+		short: Fri,
+		slug: fri
+	},
+	{
+		full: Saturday,
+		short: Sat,
+		slug: sat
+	}
+]
+---
+
+{% include "sections/locations/hero" %}
+<section class="location-summary page-wrapper">
+    {% include "sections/locations/summary" %}
+	{% include "sections/locations/location-bio" %}
+	{%- if instructor.bio or seniors.length > 0 -%}
+		{% include "sections/locations/seniors" %}
+	{%- endif %}
+</section>

@@ -1,0 +1,19 @@
+<section class="photo-feed">
+    <article class="content-wrapper">
+        <div id="photo-feed" class="photo-feed__photo-grid">
+            {%- for placeholder in site.photoFeed.placeholders -%}
+                <picture>
+                    <source srcset="{{ placeholder.srcset }}" />
+                    <img src="{{ placeholder.src }}" alt="" loading="lazy">
+                </picture>
+            {%- endfor -%}
+        </div>
+        <a href="https://www.instagram.com/hoshudojo" target="_blank">
+            <span>
+                Follow us on Instagram
+            </span>
+            <img src="/assets/icons/instagram.svg" alt="Instagram" class="icon" aria-hidden="true"
+                loading="lazy" />
+        </a>
+    </article>
+</section>
