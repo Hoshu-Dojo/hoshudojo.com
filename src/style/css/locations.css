@@ -412,6 +412,10 @@ button:disabled,
   list-style-type: none;
 }
 
+.list--indent {
+  padding-left: 3rem;
+}
+
 .page-wrapper {
   max-width: 1900px;
   height: 100%;

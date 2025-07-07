@@ -354,6 +354,10 @@ button,
     list-style-type: none;
 }
 
+.list--indent {
+    padding-left: 3rem;
+}
+
 .page-wrapper {
     max-width: variables.$max_page_width;
     height: 100%;
