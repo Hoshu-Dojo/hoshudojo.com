@@ -150,7 +150,7 @@
 					"schedule": "Sun, Tues, Thurs",
 					"mapOrder": 3,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_portland.jpg"
+					"thumbnail": "../assets/img/locations/locations_portland_thumbnail.jpg"
 				},
 				{
 					"slug": "seattle",
@@ -159,7 +159,7 @@
 					"schedule": "Sat",
 					"mapOrder": 2,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_seattle.jpg"
+					"thumbnail": "../assets/img/locations/locations_seattle_thumbnail.jpg"
 				},
 				{
 					"slug": "pasadena",
@@ -168,7 +168,7 @@
 					"schedule": "Sun, Tues",
 					"mapOrder": 4,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_pasadena.jpg"
+					"thumbnail": "../assets/img/locations/locations_pasadena_thumbnail.jpg"
 				},
 				{
 					"slug": "atlanta",
@@ -177,7 +177,7 @@
 					"schedule": "Sun, Tues",
 					"mapOrder": 6,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_atlanta.jpg"
+					"thumbnail": "../assets/img/locations/locations_atlanta_thumbnail.jpg"
 				}
 			]
 		},
@@ -191,7 +191,7 @@
 					"schedule": "Sun, Thurs",
 					"mapOrder": 1,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_vancouver.jpg"
+					"thumbnail": "../assets/img/locations/locations_vancouver_thumbnail.jpg"
 				},
 				{
 					"slug": "toronto",
@@ -200,7 +200,7 @@
 					"schedule": "Fri",
 					"mapOrder": 5,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_toronto.jpg"
+					"thumbnail": "../assets/img/locations/locations_toronto_thumbnail.jpg"
 				}
 			]
 		},
@@ -214,7 +214,7 @@
 					"schedule": "Tues, Thurs, Sat",
 					"mapOrder": 7,
 					"popUpPosition": "right",
-					"thumbnail": "../assets/img/locations/locations_coyoacan.jpg"
+					"thumbnail": "../assets/img/locations/locations_coyoacan_thumbnail.jpg"
 				}
 			]
 		},
@@ -228,7 +228,7 @@
 					"schedule": "Sun, Mon, Tues, Fri",
 					"mapOrder": 8,
 					"popUpPosition": "left",
-					"thumbnail": "../assets/img/locations/locations_oita.jpg"
+					"thumbnail": "../assets/img/locations/locations_oita_thumbnail.jpg"
 				},
 				{
 					"slug": "naha",
@@ -237,7 +237,7 @@
 					"schedule": "Contact for details",
 					"mapOrder": 9,
 					"popUpPosition": "left",
-					"thumbnail": "../assets/img/locations/locations_naha.jpg"
+					"thumbnail": "../assets/img/locations/locations_naha_thumbnail.jpg"
 				}
 			]
 		}

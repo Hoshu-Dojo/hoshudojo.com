@@ -96,24 +96,25 @@ h6 {
       serif;
   --form-border-width: 1.5px;
   --form-asterisk-colour: #4242C3;
-  --shadow-colour: 240deg 90% 0%;
-  --shadow-elevation-low: 0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.36),
-      0px 1.2px 1.3px -1.2px hsl(var(--shadow-colour) / 0.36),
-      0px 2.8px 3.1px -2.5px hsl(var(--shadow-colour) / 0.36);
-  --shadow-elevation-medium: 0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.3),
-      0px 1.8px 2px -0.6px hsl(var(--shadow-colour) / 0.3),
-      0px 3.6px 4.1px -1.2px hsl(var(--shadow-colour) / 0.3),
-      0px 7.3px 8.2px -1.9px hsl(var(--shadow-colour) / 0.3),
-      -0.1px 14.2px 16px -2.5px hsl(var(--shadow-colour) / 0.3);
-  --shadow-elevation-high: 0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.31),
-      0px 3.8px 4.3px -0.3px hsl(var(--shadow-colour) / 0.31),
-      0px 6.9px 7.8px -0.6px hsl(var(--shadow-colour) / 0.31),
-      -0.1px 10.8px 12.2px -0.9px hsl(var(--shadow-colour) / 0.31),
-      -0.1px 16.4px 18.5px -1.2px hsl(var(--shadow-colour) / 0.31),
-      -0.2px 24.6px 27.7px -1.6px hsl(var(--shadow-colour) / 0.31),
-      -0.2px 36.1px 40.6px -1.9px hsl(var(--shadow-colour) / 0.31),
-      -0.3px 51.8px 58.3px -2.2px hsl(var(--shadow-colour) / 0.31),
-      -0.4px 72.6px 81.7px -2.5px hsl(var(--shadow-colour) / 0.31);
+  --shadow-colour: 240deg 100% 2%;
+  --shadow-elevation-low:
+      0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.34),
+      0px 1.4px 1.6px -1.2px hsl(var(--shadow-colour) / 0.34),
+      0px 3.3px 3.7px -2.5px hsl(var(--shadow-colour) / 0.34);
+  --shadow-elevation-medium:
+      0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.36),
+      0px 2.7px 3px -0.8px hsl(var(--shadow-colour) / 0.36),
+      0px 6.8px 7.7px -1.7px hsl(var(--shadow-colour) / 0.36),
+      0px 16.5px 18.6px -2.5px hsl(var(--shadow-colour) / 0.36);
+  --shadow-elevation-high:
+      0px 0.8px 0.9px hsl(var(--shadow-colour) / 0.34),
+      0px 4.8px 5.4px -0.4px hsl(var(--shadow-colour) / 0.34),
+      0px 9px 10.1px -0.7px hsl(var(--shadow-colour) / 0.34),
+      0px 14.8px 16.7px -1.1px hsl(var(--shadow-colour) / 0.34),
+      0px 23.6px 26.6px -1.4px hsl(var(--shadow-colour) / 0.34),
+      0px 36.9px 41.5px -1.8px hsl(var(--shadow-colour) / 0.34),
+      0px 56.1px 63.1px -2.1px hsl(var(--shadow-colour) / 0.34),
+      0px 82.6px 92.9px -2.5px hsl(var(--shadow-colour) / 0.34);
   --drop-shadow-elevation-low: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 1.2px 1.3px hsl(var(--shadow-colour) / 0.36)) drop-shadow(0px 2.8px 3.1px hsl(var(--shadow-colour) / 0.36));
   --drop-shadow-elevation-medium: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 1.8px 2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 3.6px 4.1px hsl(var(--shadow-colour) / 0.3)) drop-shadow(0px 7.3px 8.2px hsl(var(--shadow-colour) / 0.3)) drop-shadow(-0.1px 14.2px 16px hsl(var(--shadow-colour) / 0.3));
   --drop-shadow-elevation-high: drop-shadow(0px 0.7px 0.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 3.8px 4.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(0px 6.9px 7.8px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 10.8px 12.2px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.1px 16.4px 18.5px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 24.6px 27.7px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.2px 36.1px 40.6px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.3px 51.8px 58.3px hsl(var(--shadow-colour) / 0.31)) drop-shadow(-0.4px 72.6px 81.7px hsl(var(--shadow-colour) / 0.31));
@@ -188,7 +189,7 @@ footer {
 
 .base-heading, .location-summary h2,
 .location-summary h3,
-.location-summary .h3, h1,
+.location-summary .h3:not(p), h1,
 h2,
 h3,
 h4,
@@ -711,7 +712,7 @@ textarea {
 }
 .location-summary h2,
 .location-summary h3,
-.location-summary .h3 {
+.location-summary .h3:not(p) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -855,6 +856,9 @@ textarea {
     grid-template-columns: 1fr auto;
   }
 }
+.location-summary__bio .separator:first-child {
+  display: none;
+}
 
 .photos {
   display: flex;
@@ -862,6 +866,9 @@ textarea {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+.photos:empty {
+  display: none;
 }
 
 .photo {
@@ -944,13 +951,8 @@ textarea {
   }
 }
 
-.location-hero--oita + .location-summary .photos {
-  display: none;
-}
-
 .location-hero--naha + .location-summary .schedule,
-.location-hero--naha + .location-summary .headshot--instructor,
-.location-hero--naha + .location-summary .photos {
+.location-hero--naha + .location-summary .headshot--instructor {
   display: none;
 }
 @media (min-width: 540px) {

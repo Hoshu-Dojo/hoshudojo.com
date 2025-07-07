@@ -31,16 +31,11 @@ cost: [
 ]
 arts: [Jodo, Daito Ryu]
 images: [
-    {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
-    },
     # {
     #     srcset: "",
     #     src: "",
     #     alt: "TODO: image"
-    # },
+    # }
 ]
 ---
 

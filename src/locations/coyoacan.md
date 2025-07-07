@@ -45,16 +45,11 @@ cost: [
 ]
 arts: [Jodo, Daito Ryu, Iaido, Aikido]
 images: [
-    {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
-    },
     # {
     #     srcset: "",
     #     src: "",
     #     alt: "TODO: image"
-    # },
+    # }
 ]
 ---
 

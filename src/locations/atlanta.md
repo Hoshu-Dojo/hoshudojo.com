@@ -34,16 +34,11 @@ cost: [
 ]
 arts: [Jodo]
 images: [
-    {
-        srcset: "",
-        src: "",
-        alt: "TODO: image"
-    },
     # {
     #     srcset: "",
     #     src: "",
     #     alt: "TODO: image"
-    # },
+    # }
 ]
 ---
 

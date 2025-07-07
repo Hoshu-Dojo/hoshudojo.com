@@ -128,7 +128,7 @@
 
     h2,
     h3,
-    .h3 {
+    .h3:not(p) {
         @extend .base-heading;
         @include mixins.flex($gap: 0.375rem, $justify: flex-start);
         @include mixins.heading(h6);
@@ -270,10 +270,18 @@
     @media(min-width: variables.$media_tablet_medium) {
         grid-template-columns: 1fr auto;
     }
+
+    & .separator:first-child {
+        display: none;
+    }
 }
 
 .photos {
     @include mixins.flex($direction: column, $justify: flex-start, $gap: 1rem);
+
+    &:empty {
+        display: none;
+    }
 }
 
 .photo {
@@ -352,33 +360,21 @@
     }
 }
 
-.location-hero--oita {
-
-    // hide extra content for Oita until we get some good class photos
-    +.location-summary {
-
-        .photos {
-            display: none;
-        }
-    }
-}
-
 .location-hero--naha {
 
     // hide extra content for Naha until we get more info from Taisuke
     +.location-summary {
 
         .schedule,
-        .headshot--instructor,
-        .photos {
+        .headshot--instructor {
             display: none;
         }
-    }
 
-    // minor layout adjustments per above
-    +.location-summary .location-summary__instructor-location {
-        @media(min-width: variables.$media_tablet_small) {
-            grid-template-columns: 1fr 1fr;
+        // minor layout adjustments per above
+        .location-summary__instructor-location {
+            @media(min-width: variables.$media_tablet_small) {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     }
 }

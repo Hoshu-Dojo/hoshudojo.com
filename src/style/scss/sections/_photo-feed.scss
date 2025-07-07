@@ -43,14 +43,14 @@
         aspect-ratio: 1 / 1;
         object-fit: cover;
         object-position: center;
-
-        --shadow-colour: #{colours.$zambrano_blue_hsl};
-        box-shadow: var(--shadow-elevation-medium);
     }
 }
 
 .photo-feed__photo-grid picture {
     position: relative;
+    @include mixins.generateBoxShadow($opacity: 0.2);
+    border-radius: 0.1875rem;
+    overflow: hidden;
 
     &::before {
         content: "";

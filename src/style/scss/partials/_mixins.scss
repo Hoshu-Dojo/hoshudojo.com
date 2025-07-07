@@ -1,3 +1,5 @@
+@use './colours';
+
 @mixin heading($size: h2) {
     @if $size ==h1 {
         font-size: 3.25rem;
@@ -78,5 +80,37 @@
     // tint to $success
     @if $target ==success {
         filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+    }
+}
+
+@mixin generateBoxShadow($hsl: colours.$keikogi_blue_hsl, $opacity: 0.34, $elevation: medium) {
+    --shadow-colour: #{$hsl};
+    --shadow-opacity: #{$opacity};
+
+    @if ($elevation ==low) {
+        box-shadow:
+            0px 0.8px 0.9px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 1.4px 1.6px -1.2px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 3.3px 3.7px -2.5px hsl(var(--shadow-colour) / var(--shadow-opacity));
+    }
+
+    @if ($elevation ==medium) {
+        box-shadow:
+            0px 0.8px 0.9px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 2.7px 3px -0.8px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 6.8px 7.7px -1.7px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 16.5px 18.6px -2.5px hsl(var(--shadow-colour) / var(--shadow-opacity));
+    }
+
+    @if ($elevation ==high) {
+        box-shadow:
+            0px 0.8px 0.9px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 4.8px 5.4px -0.4px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 9px 10.1px -0.7px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 14.8px 16.7px -1.1px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 23.6px 26.6px -1.4px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 36.9px 41.5px -1.8px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 56.1px 63.1px -2.1px hsl(var(--shadow-colour) / var(--shadow-opacity)),
+            0px 82.6px 92.9px -2.5px hsl(var(--shadow-colour) / var(--shadow-opacity));
     }
 }
