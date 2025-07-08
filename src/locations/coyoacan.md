@@ -51,12 +51,29 @@ cost: [
 ]
 arts: [Jodo, Daito Ryu, Iaido, Aikido]
 images: [
-    # {
-    #     srcset: "",
-    #     src: "",
-    #     alt: "TODO: image"
-    # }
+    {
+        srcset: "/assets/img/locations/feature_coyoacan_01.jpg",
+        src: "/assets/img/locations/feature_coyoacan_01.jpg",
+        alt: "Three pairs perform varying stages of an arm bar under Thomas Groendal's instruction. The pair in the middle has the aggressor pinned to the mat."
+    },
+    {
+        srcset: "/assets/img/locations/feature_coyoacan_02.jpg",
+        src: "/assets/img/locations/feature_coyoacan_02.jpg",
+        alt: "A group shot of nine practitioners after a healthy day of practice, under Thomas Groendal's instruction."
+    },
 ]
 ---
 
 <p>The Dojo is located in Coyoacan, a few steps from "Los Viveros" park. Membership is handled per art. Please note that Daito Ryu is part of the 2 classes per week Aikido program.</p>
+<p>More info at:</p>
+<ul class="list list--indent">
+    <li>
+        <a href="https://mexicoasia.com.mx/" target="_blank">MexicoAsia.com.mx</a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/Luis.Cervantes.Budoka" target="_blank">Facebook: México Asia Budokan Coyoacan</a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/genaro_luis_cervantes_budoka" target="_blank">Instagram: México Asia Budokan Coyoacan</a>
+    </li>
+</ul>
