@@ -97,21 +97,21 @@ const handleMailingListSubmit = async (e) => {
 
 	try {
 		const formDataObject = {
-			EMAIL: encodeURIComponent(EMAIL.trim()),
+			EMAIL: EMAIL.trim(),
 			...Object.fromEntries(
 				Object.entries(rest).map(([fieldKey, fieldValue]) => [
-					encodeURIComponent(fieldKey),
-					encodeURIComponent(fieldValue),
+					fieldKey,
+					fieldValue,
 				]),
 			),
 		};
 
 		if ((FNAME || "").trim()) {
-			formDataObject.FNAME = encodeURIComponent(FNAME.trim());
+			formDataObject.FNAME = FNAME.trim();
 		}
 
 		if ((LNAME || "").trim()) {
-			formDataObject.LNAME = encodeURIComponent(LNAME.trim());
+			formDataObject.LNAME = LNAME.trim();
 		}
 
 		const isValid = validateMailingListForm(formDataObject);
