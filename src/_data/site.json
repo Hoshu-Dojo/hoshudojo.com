@@ -121,21 +121,21 @@
 			}
 		},
 		{
-			"name": "Dave Zambrano",
-			"ranks": "3rd dan (Jodo), 1st dan (Daito Ryu)",
-			"location": "Portland, Oregon",
-			"photo": {
-				"srcset": "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
-				"src": "/assets/img/headshots/dave_2x.jpg"
-			}
-		},
-		{
 			"name": "Jess Hilliam",
 			"ranks": "4th dan (Jodo)",
 			"location": "Vancouver, BC",
 			"photo": {
 				"srcset": "/assets/img/headshots/jess_2x.jpg 2x, /assets/img/headshots/jess_1x.jpg 1x",
 				"src": "/assets/img/headshots/jess_2x.jpg"
+			}
+		},
+		{
+			"name": "Dave Zambrano",
+			"ranks": "3rd dan (Jodo), 1st dan (Daito Ryu)",
+			"location": "Portland, Oregon",
+			"photo": {
+				"srcset": "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
+				"src": "/assets/img/headshots/dave_2x.jpg"
 			}
 		}
 	],
