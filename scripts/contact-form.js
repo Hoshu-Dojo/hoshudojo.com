@@ -138,21 +138,17 @@ const handleContactFormSubmit = async (e) => {
 		const formDataObject = {
 			...Object.fromEntries(
 				Object.entries(fields).map(([fieldKey, fieldValue]) => [
-					encodeURIComponent(fieldKey),
-					encodeURIComponent(fieldValue),
+					fieldKey,
+					fieldValue,
 				]),
 			),
 			"interest(s)": areasOfInterest.length
-				? areasOfInterest
-						.map((val) => encodeURIComponent(remappedInterests[val]))
-						.join("\n")
+				? areasOfInterest.map((val) => remappedInterests[val]).join("\n")
 				: "None specified",
 			"location(s)": locations.length
-				? locations
-						.map((val) => encodeURIComponent(remappedLocations[val]))
-						.join("\n")
+				? locations.map((val) => remappedLocations[val]).join("\n")
 				: "None specified",
-			questions: encodeURIComponent(fields.questions) || "None specified",
+			questions: fields.questions || "None specified",
 		};
 
 		const isValid = validateContactForm(formDataObject);
