@@ -52,7 +52,7 @@ images: [
 ]
 ---
 
-<div class="flex-wrapper">
+<div class="flex-wrapper no-margin">
     <p>Practice is held across various locations:</p>
     <ul class="list list--unstyled flex-wrapper">
         <li>
@@ -77,4 +77,5 @@ images: [
         </li>
     </ul>
     <p>For information regarding membership and fees, please <a href="mailto:levonsa61@yahoo.com">contact the head instructor for details</a>.</p>
+    <p>Follow <a href="https://www.facebook.com/Venice.Iaido" target="_blank">Venice Dojo on Facebook</a>  for more info.</p>
 </div>

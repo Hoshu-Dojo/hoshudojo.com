@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/atlanta/"
-title: Atlanta Jodo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Jodo Atlanta &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
 preload: {
     images: [
         "/assets/img/headshots/adam_2x.jpg",
@@ -9,7 +9,7 @@ preload: {
     ]
 }
 
-locationName: Atlanta Jodo
+locationName: Jodo Atlanta
 instructor: {
     name: Adam Sandor,
     rank: 4th Dan Jodo,
@@ -49,3 +49,15 @@ images: [
 ---
 
 <p>Practice takes place at Emory University, where parking is free and plentiful. Please <a href="mailto:jodoatlanta@gmail.com">reach out to the head instructor</a> for any questions about attending class and where to specifically go for practice.</p>
+<p>More info at:</p>
+<ul class="list list--indent">
+    <li>
+        <a href="https://www.jodoatlanta.com/" target="_blank">JodoAtlanta.com</a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/JodoAtlanta" target="_blank">Facebook: Jodo Atlanta</a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/jodoatlanta/" target="_blank">Instagram: Jodo Atlanta</a>
+    </li>
+</ul>
