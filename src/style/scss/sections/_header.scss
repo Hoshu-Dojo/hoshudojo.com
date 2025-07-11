@@ -192,12 +192,10 @@
         }
 
         &[data-animate=false] {
-            // TODO: set nav to visible right away
             transform: scaleY(100%);
         }
 
         @media (prefers-reduced-motion: reduce) {
-            // TODO: set nav to visible right away
             transform: scaleY(100%);
             animation: none;
         }
