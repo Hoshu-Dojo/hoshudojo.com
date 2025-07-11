@@ -166,27 +166,39 @@
 
 .nav-header__desktop-nav {
     display: none;
-    position: relative;
-    z-index: -1;
-    background: color-mix(in srgb, colours.$keikogi-blue 85%, transparent);
-    backdrop-filter: blur(6px);
-    padding-inline: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    transform: scaleY(0%);
-    transform-origin: top;
 
     @media(min-width: variables.$media_tablet_small) {
         --desktop-nav-delay: 2.5s;
         --desktop-nav-duration: 1.2s;
 
         display: block;
+        position: relative;
         bottom: -1rem;
-        animation-name: slide-down-desktop-nav;
-        animation-duration: var(--desktop-nav-duration);
-        animation-timing-function: cubic-bezier(0.57, -0.04, 0.43, 0.99);
-        animation-fill-mode: forwards;
-        animation-delay: var(--desktop-nav-delay);
+        z-index: -1;
+        background: color-mix(in srgb, colours.$keikogi-blue 85%, transparent);
+        backdrop-filter: blur(6px);
+        padding-inline: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        transform: scaleY(0%);
+        transform-origin: top;
+
+        &[data-animate=true] {
+            animation-name: slide-down-desktop-nav;
+            animation-duration: var(--desktop-nav-duration);
+            animation-timing-function: cubic-bezier(0.57, -0.04, 0.43, 0.99);
+            animation-fill-mode: forwards;
+            animation-delay: var(--desktop-nav-delay);
+        }
+
+        &[data-animate=false] {
+            transform: scaleY(100%);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            transform: scaleY(100%);
+            animation: none;
+        }
     }
 
     nav {
@@ -198,12 +210,26 @@
             --delay-start: calc(.05s + var(--desktop-nav-delay) + var(--desktop-nav-duration));
             --delay-increment: .125s;
 
-            opacity: 0;
-            transform: translateY(1rem);
-            animation-name: slide-up-nav-link;
-            animation-duration: 0.3s;
-            animation-timing-function: cubic-bezier(0.57, -0.04, 0.43, 0.99);
-            animation-fill-mode: forwards;
+            .nav-header__desktop-nav[data-animate=true] & {
+                opacity: 0;
+                transform: translateY(1rem);
+                animation-name: slide-up-nav-link;
+                animation-duration: 0.3s;
+                animation-timing-function: cubic-bezier(0.57, -0.04, 0.43, 0.99);
+                animation-fill-mode: forwards;
+            }
+
+            .nav-header__desktop-nav[data-animate=false] & {
+                opacity: 1;
+                transform: translateY(0);
+                animation: none;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                opacity: 1;
+                transform: translateY(0);
+                animation: none;
+            }
         }
     }
 
