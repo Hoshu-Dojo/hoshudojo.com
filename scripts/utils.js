@@ -107,6 +107,29 @@ for (const link of mobileNavLinks) {
 }
 
 /**
+ * DESKTOP NAV
+ */
+
+const determineNavAnimation = (_e) => {
+	const desktopNavbar = document.getElementById("desktop-nav");
+	const currentPath = document.location.pathname;
+
+	const lastVisit = sessionStorage.getItem("lastVisit");
+	const lastVisitDate = new Date(lastVisit);
+
+	const oneWeekAgo = new Date(Date.now());
+	oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+	// animation is only a nice touch on first load, but shouldn't provide a poor UX
+	const isAnimating = currentPath === "/" && lastVisitDate < oneWeekAgo;
+
+	desktopNavbar.setAttribute("data-animate", isAnimating);
+	sessionStorage.setItem("lastVisit", new Date(Date.now()).toJSON());
+};
+
+determineNavAnimation();
+
+/**
  * GENERAL FORM INTERACTIONS
  */
 
