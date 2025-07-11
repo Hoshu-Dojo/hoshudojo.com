@@ -125,7 +125,7 @@
         background-image: var(--hero-image-webp);
     }
 
-    // first image in sequence, top of the stock
+    // first image in sequence, top of the stack
     &:nth-of-type(4) {
         background-image: url("../../assets/img/hero_01.jpg");
         background-position: center 30.5%;
@@ -136,6 +136,10 @@
 
         @supports (background-image: url("../../assets/img/hero_01.webp")) {
             background-image: url("../../assets/img/hero_01.webp");
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            animation: none;
         }
     }
 

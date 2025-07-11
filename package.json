@@ -7,8 +7,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "eleventy --serve --input ./src --output ./dest",
 		"build": "eleventy --input ./src --output ./dest",
-		"sass:watch": "sass --watch src/style/scss/style.scss:src/style/css/style.css src/style/scss/locations.scss:src/style/css/locations.css",
-		"sass:compile": "sass src/style/scss/style.scss:src/style/css/style.css src/style/scss/locations.scss:src/style/css/locations.css"
+		"sass:watch": "sass --watch src/style/scss:src/style/css",
+		"sass:compile": "sass src/style/scss:src/style/css"
 	},
 	"keywords": [],
 	"author": "",

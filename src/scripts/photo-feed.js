@@ -3,6 +3,10 @@ const pictureElements = document.querySelectorAll(
 	".photo-feed__photo-grid picture",
 );
 
+const reducedMotionPreference = window.matchMedia(
+	"(prefers-reduced-motion: reduce)",
+);
+
 const photoSources = document.querySelectorAll("#photo-feed-vars div");
 const photoSourceNames = [];
 
@@ -53,21 +57,27 @@ const getNewPhotoSource = (pictureElem) => {
 	return newSourceName;
 };
 
-for (const [index, elem] of Object.entries(pictureElements)) {
-	const delay = 150 * index;
-	const timeBetweenTransitionsInMS = 12000;
+// only animate for users who don't have reduced motion preferences
+if (
+	reducedMotionPreference === true ||
+	reducedMotionPreference.matches === true
+) {
+	for (const [index, elem] of Object.entries(pictureElements)) {
+		const delay = 150 * index;
+		const timeBetweenTransitionsInMS = 12000;
 
-	// initialize with updated image sources
-	changePhotoSources(elem, photoSourceNames[index]);
+		// initialize with updated image sources
+		changePhotoSources(elem, photoSourceNames[index]);
 
-	// set up recurring image transitions
-	setTimeout(
-		() => {
-			setInterval(() => {
-				const newPhotoSource = getNewPhotoSource(elem);
-				changePhotoSources(elem, newPhotoSource);
-			}, timeBetweenTransitionsInMS);
-		},
-		delay + timeBetweenTransitionsInMS / 2,
-	);
+		// set up recurring image transitions
+		setTimeout(
+			() => {
+				setInterval(() => {
+					const newPhotoSource = getNewPhotoSource(elem);
+					changePhotoSources(elem, newPhotoSource);
+				}, timeBetweenTransitionsInMS);
+			},
+			delay + timeBetweenTransitionsInMS / 2,
+		);
+	}
 }
