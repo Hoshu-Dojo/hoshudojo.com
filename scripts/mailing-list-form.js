@@ -14,7 +14,7 @@ const buildMailingListFormErrorsElement = (errors) => {
 	const exclaimIcon = createIconElement("exclaim");
 
 	pTag.appendChild(exclaimIcon);
-	pTag.appendChild("Please correct the following errors and re-submit:");
+	pTag.append("Please correct the following errors and re-submit:");
 
 	const errorList = document.createElement("ul");
 
@@ -67,6 +67,14 @@ const markMailingListFormErrorFields = (errors) => {
 	}
 };
 
+const resetMailingListFormErrorFields = () => {
+	const errorFields = mailingListForm.querySelectorAll(".field.error");
+
+	for (const field of errorFields) {
+		field.classList.remove("error");
+	}
+};
+
 const validateMailingListForm = (formDataObject) => {
 	const validationErrors = [];
 
@@ -86,6 +94,7 @@ const validateMailingListForm = (formDataObject) => {
 const handleMailingListSubmit = async (e) => {
 	e.preventDefault();
 	resetFormFeedback(mailingListFormErrors, mailingListFormSuccess);
+	resetMailingListFormErrorFields();
 
 	// put button in loading state
 	toggleButtonLoadingState(mailingListSubmitButton, true);
