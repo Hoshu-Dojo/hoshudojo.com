@@ -30,18 +30,18 @@ schedule: {
     jodo: {
         sun: 4:00pm&ndash;5:30pm,
         mon: null,
-        tues: null,
+        tues: 7:30pm&ndash;9:00pm,
         wed: null,
-        thur: 7:30pm&ndash;9:00pm,
+        thur: null,
         fri: null,
         sat: null
     },
     "daito-ryu": {
         sun: null,
         mon: null,
-        tues: 7:30pm&ndash;9:00pm,
+        tues: null,
         wed: null,
-        thur: null,
+        thur: 7:30pm&ndash;9:00pm,
         fri: null,
         sat: null
     }
@@ -74,7 +74,7 @@ seniors: [
     },
     {
         name: Dave Zambrano,
-        rank: "3rd Dan Jodo, 1st Dan Daito Ryu",
+        rank: "4th Dan Jodo, 1st Dan Daito Ryu",
         image: {
             srcset: "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
             src: "/assets/img/headshots/dave_2x.jpg"
