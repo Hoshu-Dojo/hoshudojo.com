@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/pasadena/"
-title: Pasadena Iaido/Jodo Dojo &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Pasadena Iaido/Jodo Dojo
 preload: {
     images: [
         "/assets/img/headshots/levon_2x.jpg",
@@ -12,14 +12,8 @@ preload: {
 }
 
 locationName: Pasadena Iaido/Jodo Dojo
-instructor: {
-    name: Levon Sukiassyan,
-    rank: "4th Dan Jodo, 5th Dan Iaido",
-    image: {
-        srcset: "/assets/img/headshots/levon_2x.jpg 2x, /assets/img/headshots/levon_1x.jpg 1x",
-        src: "/assets/img/headshots/levon_2x.jpg"
-    },
-}
+# NOTE: names must match name field in leadership.json
+instructor: Levon Sukiassyan
 address: [
     See below for locations
 ]

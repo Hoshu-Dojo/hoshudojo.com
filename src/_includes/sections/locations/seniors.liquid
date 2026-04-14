@@ -6,24 +6,24 @@
     <ul class="list list--unstyled seniors">
         <li class="senior">
             <picture class="headshot">
-                <source srcset="{{ instructor.image.srcset }}">
-                <img src="{{ instructor.image.src }}" alt="Headshot: {{ instructor.name }}" />
+                <source srcset="{{ instructor.photo.srcset }}">
+                <img src="{{ instructor.photo.src }}" alt="Headshot: {{ instructor.name }}" />
             </picture>
             <div class="no-margin">
                 <p class="heading h5">{{ instructor.name }}</p>
-                <p class="h6">{{ instructor.rank }}</p>
+                <p class="h6">{{ instructor.ranks }}</p>
             </div>
             <p>{{ instructor.bio }}</p>
         </li>
         {% for senior in seniors %}
             <li class="senior">
                 <picture class="headshot">
-                    <source srcset="{{ senior.image.srcset }}" />
-                    <img src="{{ senior.image.src }}" alt="Headshot: {{ senior.name }}" />
+                    <source srcset="{{ senior.photo.srcset }}" />
+                    <img src="{{ senior.photo.src }}" alt="Headshot: {{ senior.name }}" />
                 </picture>
                 <div class="no-margin">
                     <p class="heading h5">{{ senior.name }}</p>
-                    <p class="h6">{{ senior.rank }}</p>
+                    <p class="h6">{{ senior.ranks }}</p>
                 </div>
                 <p>{{ senior.bio }}</p>
             </li>

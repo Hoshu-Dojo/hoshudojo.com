@@ -40,11 +40,24 @@ week: [
 ]
 ---
 
-{% include "sections/locations/hero" %}
+{% comment %}
+NOTE: one source of truth for instructor/senior data in leadership.json
+assigning in front matter per {location}.md would be preferred, but haven't found a solution yet :'(
+{% endcomment %}
+{%- assign instructor = leadership | where: "name", instructor | first -%}
+{%- assign filteredSeniors = "" | split: "," -%}
+{%- for leader in leadership -%}
+	{%-  if seniors contains leader.name -%}
+		{%-  assign filteredSeniors = filteredSeniors | concat: leader -%}
+	{%-  endif -%}
+{%- endfor -%}
+{%- assign seniors = filteredSeniors -%}
+
+{%- include "sections/locations/hero" -%}
 <section class="location-summary page-wrapper">
-    {% include "sections/locations/summary" %}
-	{% include "sections/locations/location-bio" %}
+    {%- include "sections/locations/summary" -%}
+	{%- include "sections/locations/location-bio" =%}
 	{%- if instructor.bio or seniors.length > 0 -%}
-		{% include "sections/locations/seniors" %}
+		{%- include "sections/locations/seniors" -%}
 	{%- endif %}
 </section>
