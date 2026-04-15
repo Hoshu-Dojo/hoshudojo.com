@@ -1,0 +1,103 @@
+[
+    {
+        "country": "United States",
+        "dojos": [
+            {
+                "slug": "portland",
+                "location": "Portland, Oregon",
+                "instructor": "Thomas Groendal",
+                "schedule": "Sun, Tues, Thurs",
+                "mapOrder": 3,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_portland_thumbnail.jpg"
+            },
+            {
+                "slug": "seattle",
+                "location": "Seattle, Washington",
+                "instructor": "Marcus Phung",
+                "schedule": "Sat",
+                "mapOrder": 2,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_seattle_thumbnail.jpg"
+            },
+            {
+                "slug": "pasadena",
+                "location": "Pasadena, California",
+                "instructor": "Levon Sukiassyan",
+                "schedule": "Sun, Tues",
+                "mapOrder": 4,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_pasadena_thumbnail.jpg"
+            },
+            {
+                "slug": "atlanta",
+                "location": "Atlanta, Georgia",
+                "instructor": "Adam Sandor",
+                "schedule": "Sun, Tues",
+                "mapOrder": 6,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_atlanta_thumbnail.jpg"
+            }
+        ]
+    },
+    {
+        "country": "Canada",
+        "dojos": [
+            {
+                "slug": "vancouver",
+                "location": "Vancouver, BC",
+                "instructor": "Jeff Kamo",
+                "schedule": "Sun, Thurs",
+                "mapOrder": 1,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_vancouver_thumbnail.jpg"
+            },
+            {
+                "slug": "toronto",
+                "location": "Toronto, Ontario",
+                "instructor": "Alan Wu",
+                "schedule": "Fri",
+                "mapOrder": 5,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_toronto_thumbnail.jpg"
+            }
+        ]
+    },
+    {
+        "country": "Mexico",
+        "dojos": [
+            {
+                "slug": "coyoacan",
+                "location": "Coyoacan, Mexico City",
+                "instructor": "Genaro Luis Cervantes",
+                "schedule": "Tues, Thurs, Sat",
+                "mapOrder": 7,
+                "popUpPosition": "right",
+                "thumbnail": "../assets/img/locations/locations_coyoacan_thumbnail.jpg"
+            }
+        ]
+    },
+    {
+        "country": "Japan",
+        "dojos": [
+            {
+                "slug": "oita",
+                "location": "Oita Prefecture",
+                "instructor": "Kei Goto",
+                "schedule": "Sun, Mon, Tues, Fri",
+                "mapOrder": 8,
+                "popUpPosition": "left",
+                "thumbnail": "../assets/img/locations/locations_oita_thumbnail.jpg"
+            },
+            {
+                "slug": "naha",
+                "location": "Naha, Okinawa",
+                "instructor": "Taisuke Yonamine",
+                "schedule": "Contact for details",
+                "mapOrder": 9,
+                "popUpPosition": "left",
+                "thumbnail": "../assets/img/locations/locations_naha_thumbnail.jpg"
+            }
+        ]
+    }
+]

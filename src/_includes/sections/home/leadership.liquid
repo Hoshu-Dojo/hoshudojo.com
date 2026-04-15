@@ -2,7 +2,8 @@
     <article>
         <h2 class="vis-hidden">Leadership</h2>
         <ul class="list list--unstyled">
-            {%- for leader in site.leadership -%}
+            {%- for leader in leadership -%}
+                {%- unless leader.isMascot -%}
                 <li class="leader{% if leader.isHeadSensei %} leader--primary{% endif %}{% if leader.isSecondarySensei %} leader--secondary{% endif %}{% if leader.isHeadSensei != true and leader.isSecondarySensei != true %} leader--tertiary{% endif %}">
                     <picture class="leader__photo slide-fade-in">
                         <source srcset="{{ leader.photo.srcset }}">
@@ -14,6 +15,7 @@
                         <p class="leader__location">{{ leader.location }}</p>
                     </div>
                 </li>
+                {%- endunless -%}
             {%- endfor -%}
         </ul>
     </article>

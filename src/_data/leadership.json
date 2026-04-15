@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Kei Goto",
+        "ranks": "7th dan Kyoshi (Jodo), Menkyo (Daito Ryu)",
+        "location": "Oita, Japan",
+        "role": "instructor",
+        "isHeadSensei": true,
+        "photo": {
+            "srcset": "/assets/img/headshots/goto_2x.jpg 2x, /assets/img/headshots/goto_1x.jpg 1x",
+            "src": "/assets/img/headshots/goto_2x.jpg"
+        }
+    },
+    {
+        "name": "Thomas Groendal",
+        "ranks": "7th dan Renshi (Jodo), 4th dan (Daito Ryu)",
+        "location": "Portland, Oregon",
+        "role": "instructor",
+        "isSecondarySensei": true,
+        "photo": {
+            "srcset": "/assets/img/headshots/tom_2x.jpg 2x, /assets/img/headshots/tom_1x.jpg 1x",
+            "src": "/assets/img/headshots/tom_2x.jpg"
+        },
+        "bio": "Born in Muskegon, MI, Tom started his martial arts career practicing Aikido in his hometown in 1994 and spent some time practicing other arts, including ZNKR Iaido, before encountering Goto sensei at one of the Friday Jo practices in Oita in 2002. He now lives in Portland, OR, with his family and works with CACI as a Product Manager with the DarkBlue Intelligence Suite. Tom enjoys culinary pursuits, good whisky and watching Sumo. He is also the ranking instructor for Jodo in the All United States Kendo Federation."
+    },
+    {
+        "name": "Taisuke Yonamine",
+        "ranks": "5th Dan Jodo, 3rd Dan Daito Ryu",
+        "location": "Naha, Japan",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/taisuke_2x.jpg 2x, /assets/img/headshots/taisuke_1x.jpg 1x",
+            "src": "/assets/img/headshots/taisuke_2x.jpg"
+        }
+    },
+    {
+        "name": "Marcus Phung",
+        "ranks": "5th dan (Jodo)",
+        "location": "Seattle, Washington",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/marcus_2x.jpg 2x, /assets/img/headshots/marcus_1x.jpg 1x",
+            "src": "/assets/img/headshots/marcus_2x.jpg"
+        },
+        "bio": "Born in Petaling Jaya, Malaysia, and raised in Perth, Western Australia, Marcus dabbled in Chinese martial arts from a young age before committing to studying ZNKR (Zen Nippon Kendo Renmei) Iaido and ZNKR Jodo in 2004. In 2007, Marcus moved to Seattle, Washington and continued to practice both arts. In 2012 Marcus met Thomas Groendal during the Jodo workshop at the AUSKF Iaido Nationals. He began training in ZNKR Jodo with Tom shortly after, and with Tom&apos;s guidance and encouragement, started the Seattle branch of Hoshu Dojo in late 2012. He began instruction in Shindo Muso Ryu Jojutsu under Goto-Sensei in 2013, and stopped practicing Iaido that same year to focus his efforts on Jodo and Shindo Muso Ryu."
+    },
+    {
+        "name": "Chris Dowling",
+        "ranks": "4th dan (Jodo)",
+        "location": "Seattle, Washington",
+        "role": "senior",
+        "photo": {
+            "srcset": "/assets/img/headshots/chris_2x.jpg 2x, /assets/img/headshots/chris_1x.jpg 1x",
+            "src": "/assets/img/headshots/chris_2x.jpg"
+        },
+        "bio": "Chris was born in Perth, Western Australia. After exploring several martial arts, he began training in ZNKR Iaido and ZNKR Jodo around the same time as Marcus, continuing until an unrelated injury in 2007 forced him to stop. In 2013, he relocated to Seattle, Washington, and resumed Jodo practice in 2018 at the Seattle branch under Marcus&apos;s instruction."
+    },
+    {
+        "name": "Jeff Kamo",
+        "ranks": "4th dan (Jodo)",
+        "location": "Vancouver, BC",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/jeff_2x.jpg 2x, /assets/img/headshots/jeff_1x.jpg 1x",
+            "src": "/assets/img/headshots/jeff_2x.jpg"
+        },
+        "bio": "Born in Thunder Bay, Ontario, Jeff was first introduced to martial arts as a young boy in elementary school through Tae Kwon Do, continuing until high school where he connected with his heritage by discovering Japanese martial arts&mdash;specifically Aikido and Iaido. Several years after moving to Vancouver, Jeff encountered Jodo when he met Thomas Groendal at a seminar in 2013. Since then, Jeff has dedicated his martial arts journey exclusively to the way of the stick. When classes resumed following the pandemic in 2021, Jeff stepped up to lead the Vancouver Jodo community and has since become deeply involved in the broader Canadian scene. He currently serves as both Secretary of Jodo Canada and Jodo Western Examiner for the Canadian Kendo Federation, helping guide practitioners across western Canada. When he&apos;s not training, Jeff enjoys his career in software development and indulges in creative pursuits like running Dungeons & Dragons for friends, walking his dog Oscar, and sampling a good beer."
+    },
+    {
+        "name": "Jess Hilliam",
+        "ranks": "4th dan (Jodo)",
+        "location": "Vancouver, BC",
+        "role": "senior",
+        "photo": {
+            "srcset": "/assets/img/headshots/jess_2x.jpg 2x, /assets/img/headshots/jess_1x.jpg 1x",
+            "src": "/assets/img/headshots/jess_2x.jpg"
+        },
+        "bio": "Jess came to Jodo in early 2017, in pursuit of supplementing her Aikido which she started one year previous, both of which are her first forays into Japanese martial arts. She balanced both arts faithfully, even through a stint of teaching her own Aikido class, until mid-2019 when she opted to commit solely to Jodo. Along with partner and fellow student Jeff Kamo, Jess became a familiar face in the Hoshu Dojo network attending regular events south of the border, including training annually with Goto-sensei. Her other passions include: most varieties of gaming (board, video, and TTRPGs, to name a few), coding, and long, sunny walks with honorary dojo mascot and rescue dog, Oscar."
+    },
+    {
+        "name": "Michael Park",
+        "ranks": "4th dan (Jodo), 2nd dan (Daito Ryu)",
+        "location": "Portland, Oregon",
+        "role": "senior",
+        "photo": {
+            "srcset": "/assets/img/headshots/michael_2x.jpg 2x, /assets/img/headshots/michael_1x.jpg 1x",
+            "src": "/assets/img/headshots/michael_2x.jpg"
+        },
+        "bio": "Michael Park was born and raised in Portland Oregon and has studied under Tom Groendal for over a decade in both Daito Ryu Aikijujutsu and Jodo. He has studied various martial arts since college ranging from Tai Chi to Boxing. He currently trains under Sensei Groendal at his Tuesday Jodo Class (19:30&ndash;21:00) and Thursday Daito Ryu Class (19:30&ndash;21:00) and leads a second Jodo class on Sundays (16:00&ndash;17:30)."
+    },
+    {
+        "name": "Dave Zambrano",
+        "ranks": "4th dan (Jodo), 1st dan (Daito Ryu)",
+        "location": "Portland, Oregon",
+        "role": "senior",
+        "photo": {
+            "srcset": "/assets/img/headshots/dave_2x.jpg 2x, /assets/img/headshots/dave_1x.jpg 1x",
+            "src": "/assets/img/headshots/dave_2x.jpg"
+        },
+        "bio": "Dave is from Browns Mills, New Jersey and he started his training in 2002 at the Tiger Hawk Martial Arts Academy in Hainesport, New Jersey. He studied for six years in an American Taekwondo Federation fusion art that combined Taekwondo with Shaolin Kung Fu and Okinawan Karate. Moving to Portland, Oregon for college he met Michael Park at an on campus Aikido class and practiced for two years before moving to Meridian, Idaho after graduating. He lived there for two and a half years where he refined his Aikido skills with a fusion of Arnis and Filipino Kali, and studied Ip Man lineage Wing Chun. After moving back to Portland, he met up with his old friend Michael where he was introduced to Tom Groendal and to Goto Sensei at a seminar for Jodo and Daito Ryu Aikijujutsu. He has been studying under them for the past eight years."
+    },
+    {
+        "name": "Levon Sukiassyan",
+        "ranks": "4th Dan Jodo, 5th Dan Iaido",
+        "location": "Pasadena, California",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/levon_2x.jpg 2x, /assets/img/headshots/levon_1x.jpg 1x",
+            "src": "/assets/img/headshots/levon_2x.jpg"
+        }
+    },
+    {
+        "name": "Alan Wu",
+        "ranks": "4th dan (Jodo)",
+        "location": "Toronto, Ontario",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/alan_2x.jpg 2x, /assets/img/headshots/alan_1x.jpg 1x",
+            "src": "/assets/img/headshots/alan_2x.jpg"
+        },
+        "bio": "Alan has been practising Aikido since 2000 and Jodo since 2010."
+    },
+    {
+        "name": "Genaro Luis Cervantes",
+        "ranks": "4th Dan Jodo, 5th Dan Iaido, 5th Dan Aikido",
+        "location": "Coyoacan, Mexico",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/genaro_2x.jpg 2x, /assets/img/headshots/genaro_1x.jpg 1x",
+            "src": "/assets/img/headshots/genaro_2x.jpg"
+        },
+        "bio": "Genaro began practicing Aikido in 1992 at the age of 17. He later joined Iaido in 2006, and his first contact with Jodo was in 2013. He currently practices and teaches ZNKR Iaido and Muso Shinden Ryu, as well as Seitei Jodo and Aikido. With the support of Thomas Groendal-sensei, Genaro began practicing Shindo Muso Ryu Jodo and also Daito Ryu Aikijujutsu. He is the ranking instructor for Iaido and Jodo in the Mexican Kendo Federation."
+    },
+    {
+        "name": "Adam Sandor",
+        "ranks": "4th dan (Jodo)",
+        "location": "Atlanta, Georgia",
+        "role": "instructor",
+        "photo": {
+            "srcset": "/assets/img/headshots/adam_2x.jpg 2x, /assets/img/headshots/adam_1x.jpg 1x",
+            "src": "/assets/img/headshots/adam_2x.jpg"
+        },
+        "bio": "Adam has been practicing martial arts since he was 6 years old and needed to develop self-confidence. After an impromptu first official lesson in Jodo during an Iaido seminar in 2017, Adam got hooked on the jo. Moving across the country strained his ability to practice, but Adam is now a student under Thomas Groendal and practices both Seitei and Shindo Muso Ryu Jodo. There is a stereotypical phrase in martial arts, &ldquo;You’ve done it once, now do it 10,000 more times&rdquo;. Adam believes that patience and diligence is the best path to improving. He may describe a technique, but showing and doing is the most important aspect of training. Adam has a well-developed palette of martial arts and has trained in several: Jodo (current), HEMA Longsword + Dussack (current), Kendo, Aikido, Iaido, and Tae Kwon Do."
+    },
+    {
+        "name": "Oscar",
+        "ranks": "Dojo Mascot",
+        "location": "Vancouver, BC",
+        "role": "senior",
+        "isMascot": true,
+        "photo": {
+            "srcset": "/assets/img/headshots/oscar_2x.jpg 2x, /assets/img/headshots/oscar_1x.jpg 1x",
+            "src": "/assets/img/headshots/oscar_2x.jpg"
+        },
+        "bio": "Oscar &ldquo;joined&rdquo; Jodo in 2021 a few months after his adoption by humans Jeff and Jess, and served as a stoic and watchful presense during class as a means to cope with some separation anxiety while he adjusted to his new life. He&apos;s even traveled for a few Hoshu Dojo events, and his good behaviour and silent charm have earned him the title of Dojo Mascot. These days, Oscar likely won&apos;t be found in the dojo as he learns to manage his anxiety, though he makes the occasional social appearance at certain gatherings."
+    }
+]

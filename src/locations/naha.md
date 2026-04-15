@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/naha/"
-title: Hoshu Dojo Naha &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Hoshu Dojo Naha
 
 locationName: Hoshu Dojo Naha
 instructor: {

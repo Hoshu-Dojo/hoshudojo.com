@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/oita/"
-title: Hoshu Aikijodokai (Oita) &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: Hoshu Aikijodokai (Oita)
 preload: {
     images: [
         "/assets/img/headshots/goto_2x.jpg",
@@ -10,14 +10,8 @@ preload: {
 }
 
 locationName: Hoshu Aikijodokai (Oita)
-instructor: {
-    name: Kei Goto,
-    rank: "7th dan Jodo Kyoshi, Daito Ryu Menkyo",
-    image: {
-        srcset: "/assets/img/headshots/goto_2x.jpg 2x, /assets/img/headshots/goto_1x.jpg 1x",
-        src: "/assets/img/headshots/goto_2x.jpg"
-    },
-}
+# NOTE: names must match name field in leadership.json
+instructor: Kei Goto
 address: [
     See below for locations
 ]

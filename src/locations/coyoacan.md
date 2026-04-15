@@ -1,7 +1,7 @@
 ---
 layout: layouts/locations
 permalink: "/locations/coyoacan/"
-title: México Asia Budokan Coyoacan &ndash; Hoshu Dojo &ndash; Shindo Muso Ryu Jodo and Daito Ryu Aikijujutsu
+title: México Asia Budokan Coyoacan
 preload: {
     images: [
         "/assets/img/headshots/genaro_2x.jpg",
@@ -10,15 +10,8 @@ preload: {
 }
 
 locationName: México Asia Budokan Coyoacan
-instructor: {
-    name: Genaro Luis Cervantes,
-    rank: "4th Dan Jodo, 5th Dan Iaido, 5th Dan Aikido",
-    image: {
-        srcset: "/assets/img/headshots/genaro_2x.jpg 2x, /assets/img/headshots/genaro_1x.jpg 1x",
-        src: "/assets/img/headshots/genaro_2x.jpg"
-    },
-    bio: "Genaro began practicing Aikido in 1992 at the age of 17. He later joined Iaido in 2006, and his first contact with Jodo was in 2013. He currently practices and teaches ZNKR Iaido and Muso Shinden Ryu, as well as Seitei Jodo and Aikido. With the support of Thomas Groendal-sensei, Genaro began practicing Shindo Muso Ryu Jodo and also Daito Ryu Aikijujutsu. He is the ranking instructor for Iaido and Jodo in the Mexican Kendo Federation."
-}
+# NOTE: names must match name field in leadership.json
+instructor: Genaro Luis Cervantes
 address: [
     México Asia Budokan Coyoacan,
     Belisario Domínguez 161,

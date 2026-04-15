@@ -1,7 +1,7 @@
 <div class="location-summary__instructor-location">
     <picture class="headshot headshot--instructor">
-        <source srcset="{{ instructor.image.srcset }}">
-        <img src="{{ instructor.image.src }}" alt="Headshot: {{ instructor.name }}" />
+        <source srcset="{{ instructor.photo.srcset }}">
+        <img src="{{ instructor.photo.src }}" alt="Headshot: {{ instructor.name }}" />
     </picture>
     <div class="no-margin">
         <h2>
@@ -9,7 +9,7 @@
             Instructor
         </h2>
         <p class="heading h3">{{ instructor.name }}</p>
-        <p>{{ instructor.rank }}</p>
+        <p>{{ instructor.ranks }}</p>
     </div>
     <div>
         <h2>
