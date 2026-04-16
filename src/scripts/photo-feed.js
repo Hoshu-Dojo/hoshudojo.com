@@ -22,15 +22,52 @@ const changePhotoSources = (pictureEl, newSourceName) => {
 	// fade out
 	pictureEl.classList.add("fade-out");
 
+	// NOTE: delay is tied to animation transition on picture::before element
 	// wait 0.4 seconds for animation to finish
 	setTimeout(() => {
 		sourceEl.setAttribute("srcset", `/assets/img/insta/${newSourceName}.webp`);
 		imgEl.setAttribute("src", `/assets/img/insta/${newSourceName}.jpg`);
 
-		// fade in
-		pictureEl.classList.remove("fade-out");
-		pictureEl.removeAttribute("class");
-	}, 405);
+		waitForImageRender(imgEl, () => {
+			// fade in
+			pictureEl.classList.remove("fade-out");
+			pictureEl.removeAttribute("class");
+		});
+	}, 400);
+};
+
+const waitForImageRender = (imgEl, callback) => {
+	let completeInterval = null;
+	let renderedInterval = null;
+	let count = 0;
+	const maxIterations = 200;
+
+	completeInterval = setInterval(() => {
+		++count;
+
+		// cancel check if already complete, or hasn't loaded fast enough
+		if (imgEl.complete || count > maxIterations) {
+			clearInterval(completeInterval);
+			completeInterval = null;
+			count = 0;
+
+			if (count > maxIterations) {
+				console.error(`ERROR: photo feed failed to load image ${imgEl.src}`);
+				return;
+			}
+
+			// since imgEl.complete = true, we need to check the natural width/height
+			renderedInterval = setInterval(() => {
+				if (imgEl.naturalWidth > 0 && imgEl.naturalHeight > 0) {
+					clearInterval(renderedInterval);
+					renderedInterval = null;
+
+					// if we have the natural width/height, we can proceed!
+					callback();
+				}
+			});
+		}
+	});
 };
 
 const getNewPhotoSource = (pictureElem) => {
@@ -59,8 +96,8 @@ const getNewPhotoSource = (pictureElem) => {
 
 // only animate for users who don't have reduced motion preferences
 if (
-	reducedMotionPreference === true ||
-	reducedMotionPreference.matches === true
+	reducedMotionPreference !== true &&
+	reducedMotionPreference.matches !== true
 ) {
 	for (const [index, elem] of Object.entries(pictureElements)) {
 		const delay = 150 * index;

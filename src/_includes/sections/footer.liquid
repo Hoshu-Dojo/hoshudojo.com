@@ -32,7 +32,7 @@
 
 {% comment %} NOTE: NOT FOR DISPLAY PURPOSES! need to print to the DOM so JS can access Liquid vars {% endcomment %}
 <div id="photo-feed-vars" class="vis-hidden" aria-hidden="true">
-    {%- for file in site.photoFeed.featured -%}
+    {%- for file in photoFeed.featured -%}
         <div data-filename="{{ file }}"></div>
     {%- endfor -%}
 </div>
