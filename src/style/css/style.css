@@ -1614,6 +1614,7 @@ main:has(.not-found-wrapper)::after {
 }
 .map-pin:hover, .map-pin:focus {
   background: #BE855E;
+  transform: scale(1.3);
 }
 .map-pin span {
   width: 100%;
