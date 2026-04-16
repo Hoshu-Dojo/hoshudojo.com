@@ -4,14 +4,8 @@ permalink: "/locations/naha/"
 title: Hoshu Dojo Naha
 
 locationName: Hoshu Dojo Naha
-instructor: {
-    name: Taisuke Yonamine,
-    rank: "5th Dan Jodo, 3rd Dan Daito Ryu",
-    image: {
-        srcset: "https://placedog.net/250/250",
-        src: "https://placedog.net/250/250"
-    }
-}
+# NOTE: names must match name field in leadership.json
+instructor: Taisuke Yonamine
 address: [
     Contact for details
 ]
