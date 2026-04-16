@@ -67,7 +67,7 @@ const waitForImageRender = (imgEl, callback) => {
 				}
 			});
 		}
-	});
+	}, 100);
 };
 
 const getNewPhotoSource = (pictureElem) => {
