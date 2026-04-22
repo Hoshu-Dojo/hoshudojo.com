@@ -170,10 +170,12 @@ h6 {
   --shadow-opacity: 0.2;
   box-shadow: 0px 0.8px 0.9px hsl(var(--shadow-colour)/var(--shadow-opacity)), 0px 2.7px 3px -0.8px hsl(var(--shadow-colour)/var(--shadow-opacity)), 0px 6.8px 7.7px -1.7px hsl(var(--shadow-colour)/var(--shadow-opacity)), 0px 16.5px 18.6px -2.5px hsl(var(--shadow-colour)/var(--shadow-opacity));
 }
-.event-summary.registration-closed .button--registration {
-  display: none;
+
+.registration {
+  width: 100%;
 }
-.event-summary.registration-closed .registration__closed-banner {
+
+.registration__closed-banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,13 +192,6 @@ h6 {
   font-style: italic;
 }
 
-.registration {
-  width: 100%;
-}
-.registration .registration__closed-banner {
-  display: none;
-}
-
 .bold {
   font-weight: 600;
 }
@@ -210,6 +205,9 @@ h6 {
 }
 .schedule .italic {
   color: var(--link-primary);
+}
+.schedule + .info {
+  margin-top: 0.75rem;
 }
 
 /*# sourceMappingURL=events.css.map */
