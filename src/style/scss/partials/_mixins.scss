@@ -58,12 +58,12 @@
     }
 
     // tint to $bokuto_brown
-    @if $target ==bokuto_brown {
+    @if $target ==bokuto_brown or $target ==info {
         filter: invert(73%) sepia(6%) saturate(3439%) hue-rotate(335deg) brightness(79%) contrast(83%);
     }
 
     // tint to $palatinate_blue
-    @if $target ==palatinate_blue {
+    @if $target ==palatinate_blue or $target ==success {
         filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
     }
 
@@ -75,11 +75,6 @@
     // tint to $error
     @if $target ==error {
         filter: invert(29%) sepia(92%) saturate(5946%) hue-rotate(353deg) brightness(89%) contrast(102%);
-    }
-
-    // tint to $success
-    @if $target ==success {
-        filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
     }
 }
 

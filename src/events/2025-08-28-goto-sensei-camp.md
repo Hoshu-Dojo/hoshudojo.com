@@ -8,6 +8,8 @@ preload: {
 		"/assets/img/events/2025-annual-camp-hero.jpg"
 	]
 }
+formLink: "https://forms.gle/Ear9WkbjDfhMrWaJ8"
+registrationClosed: true
 ---
 
 <section class="event-hero event-hero--2025-annual-camp">
@@ -21,7 +23,7 @@ preload: {
 		</div>
 	</article>
 </section>
-<section class="event-summary page-wrapper registration-closed">
+<section class="event-summary page-wrapper">
 	<article class="content-wrapper">
 		<h2 class="h3">Welcome to registration for the 2025 Hoshu Dojo Jodo Camp!</h2>
 		<p>Repeating the success of previous years, we will be doing a gasshuku-style event&mdash;an all-inclusive camp where we train, stay, eat, and socialize together.</p>
@@ -31,8 +33,11 @@ preload: {
 	</article>
 	<article class="content-wrapper">
 		<div class="registration">
-			<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
-			<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- if registrationClosed -%}
+				<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- else -%}
+				<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
+			{%- endif -%}
 		</div>
 	</article>
 	<article class="content-wrapper">
@@ -164,8 +169,11 @@ preload: {
 	</article>
 	<article class="content-wrapper">
 		<div class="registration">
-			<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
-			<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- if registrationClosed -%}
+				<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- else -%}
+				<a class="button button--primary button--large button--registration" href="https://forms.gle/Ear9WkbjDfhMrWaJ8" target="_blank">Click here to register</a>
+			{%- endif -%}
 		</div>
 	</article>
 </section>

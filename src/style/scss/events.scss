@@ -96,33 +96,23 @@
         margin: 1rem auto;
         @include mixins.generateBoxShadow($elevation: medium, $hsl: colours.$bokuto_brown_hsl, $opacity: 0.2);
     }
-
-    &.registration-closed {
-        .button--registration {
-            display: none;
-        }
-
-        .registration__closed-banner {
-            @include mixins.flex();
-            width: 100%;
-            border-top: double;
-            border-bottom: double;
-            border-color: colours.$bokuto_brown;
-            border-radius: 0.375rem;
-            padding: 0.75rem 1.25rem;
-            font-size: 1.125em;
-            font-weight: 600;
-            font-style: italic;
-        }
-    }
 }
 
 .registration {
     width: 100%;
+}
 
-    .registration__closed-banner {
-        display: none;
-    }
+.registration__closed-banner {
+    @include mixins.flex();
+    width: 100%;
+    border-top: double;
+    border-bottom: double;
+    border-color: colours.$bokuto_brown;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.125em;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .bold {
@@ -142,5 +132,9 @@
 
     .italic {
         color: var(--link-primary);
+    }
+
+    &+.info {
+        margin-top: 0.75rem;
     }
 }

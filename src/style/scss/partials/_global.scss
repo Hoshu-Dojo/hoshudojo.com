@@ -18,6 +18,7 @@
     --borders: #{colours.$subtle};
     --error: #{colours.$error};
     --success: #{colours.$palatinate_blue};
+    --info: #{colours.$bokuto_brown};
 
     --font-body: Inter, Arial, Helvetica, sans-serif;
     --font-title: Cormorant,
@@ -551,4 +552,50 @@ textarea {
     background: var(--borders);
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+// future iterations: .info--warning, .info--tip, etc.
+.info {
+    --info-border-color: var(--info);
+
+    @include mixins.flex($gap: 0, $justify: flex-start);
+
+    .icon {
+        transform: scale(1.2);
+        margin-right: 0.375em;
+        margin-top: 0.25em;
+
+        @include mixins.tint(info);
+    }
+
+    p:has(.icon) {
+        @include mixins.flex($gap: 0, $align: flex-start);
+    }
+
+    &:not(:empty) {
+        background: var(--subtle-bg);
+        border-radius: 0.25rem;
+        border: 2px solid var(--info-border-color);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-inline: 0.625rem;
+    }
+}
+
+.info--success {
+    --info-border-color: var(--success);
+
+    .icon {
+        @include mixins.tint(success);
+    }
+}
+
+.info--error {
+    --info-border-color: var(--error);
+
+    color: var(--error);
+
+    .icon {
+        @include mixins.tint(error);
+    }
 }

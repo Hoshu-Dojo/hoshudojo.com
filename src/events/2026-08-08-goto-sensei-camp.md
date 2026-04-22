@@ -8,6 +8,14 @@ preload: {
 		"/assets/img/events/2026-annual-camp-hero.jpg"
 	]
 }
+formLink: "https://forms.gle/e8HvNYUhfNtdvyP17"
+registrationClosed: false
+# dinnerLocation: {
+# 	name: Elysian Brewing,
+# 	address: "1221 E Pike St, Seattle, WA 98122",
+# 	link: "https://maps.app.goo.gl/LovT17qAGRxEJZW97",
+# 	embedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.2892382374866!2d-122.31851516555349!3d47.614067350445154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acddbe83d29%3A0x858062b58c682862!2sElysian%20Capitol%20Hill%20Brewery!5e0!3m2!1sen!2sca!4v1755842164025!5m2!1sen!2sca"
+# }
 ---
 
 <section class="event-hero event-hero--2026-annual-camp">
@@ -31,15 +39,18 @@ preload: {
 	</article>
 	<article class="content-wrapper">
 		<div class="registration">
-			<a class="button button--primary button--large button--registration" href="" target="_blank">Click here to register</a>
+		{%- if registrationClosed -%}
 			<div class="registration__closed-banner">Registration for this event is now closed</div>
+		{%- else -%}
+			<a class="button button--primary button--large button--registration" href="{{ formLink }}" target="_blank">Click here to register</a>
+		{%- endif -%}
 		</div>
 	</article>
 	<article class="content-wrapper">
 		<p>Deadlines for registration are</p>
 		<ul class="list list--indent">
-			<li><b>Monday, June 1st</b> for Early Bird pricing</li>
-			<li><b>Friday, July 10th</b> for regular pricing</li>
+			<li><span class="bold">Monday, June 1st</span> for Early Bird pricing</li>
+			<li><span class="bold">Friday, July 10th</span> for regular pricing</li>
 		</ul>
 		<p>The total due will be calculated from your choices for:</p>
 		<ul class="list list--indent">
@@ -66,6 +77,7 @@ preload: {
 					<li>9:00 am&ndash;12:00 pm: Morning seminar at Redhawk Activity Court</li>
 					<li>12:00 pm&ndash;12:45 pm: Lunch</li>
 					<li>1:00 pm&ndash;4:00 pm: Afternoon seminar at Redhawk Activity Court</li>
+					<li>6:30 pm until late: Camp dinner at <span class="bold">{% if dinnerLocation.name %}{{ dinnerLocation.name }}{% else %}TBD{% endif %}</span></li>
 					<li>Socialising and question time with Sensei after dinner</li>
 				</ul>
 			</li>
@@ -76,7 +88,7 @@ preload: {
 					<li>9:00 am&ndash;12:00 pm: Morning seminar at Redhawk Activity Court</li>
 					<li>12:00 pm&ndash;12:45 pm: Lunch</li>
 					<li>1:00 pm&ndash;4:00 pm: Afternoon seminar at Redhawk Activity Court</li>
-					<li>6:30 pm until late: Camp dinner at <span class="bold">TBD</span></li>
+					<li>Socialising and question time with Sensei after dinner</li>
 				</ul>
 			</li>
 			<li>
@@ -88,11 +100,16 @@ preload: {
 				</ul>
 			</li>
 		</ol>
-		<!-- TODO: dinner location -->
-		<!-- <p>
-			<span class="bold">Elysian Brewing:</span> <a href="https://maps.app.goo.gl/LovT17qAGRxEJZW97" target="_blank">1221 E Pike St, Seattle, WA 98122</a>
-		</p>
-		<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.2892382374866!2d-122.31851516555349!3d47.614067350445154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acddbe83d29%3A0x858062b58c682862!2sElysian%20Capitol%20Hill%20Brewery!5e0!3m2!1sen!2sca!4v1755842164025!5m2!1sen!2sca" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+		{%- if dinnerLocation -%}
+			<p>
+				<span class="bold">{{ dinnerLocation.name }}:</span> <a href="{{ dinnerLocation.link }}" target="_blank">{{ dinnerLocation.address }}</a>
+			</p>
+			<iframe class="gmap" src="{{ dinnerLocation.embedSrc }}" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		{%- else -%}
+			<div class="info">
+				<p><img alt="" aria-hidden="true" class="icon" src="/assets/icons/info-circle.svg">Dinner details are still to be determined. Check back here closer to the camp dates for updates.</p>
+			</div>
+		{%- endif -%}
 	</article>
 	<article class="content-wrapper">
 		<h2 class="h3">Seminar</h2>
@@ -103,7 +120,7 @@ preload: {
 					<span class="bold">Early Bird</span> pricing for the seminar is $250 per person.
 				</p>
 				<p>
-					Registration and payment must be received on or before <b>Monday June 1st</b> to be eligible.
+					Registration and payment must be received on or before <span class="bold">Monday June 1st</span> to be eligible.
 				</p>
 			</li>
 			<li>
@@ -126,20 +143,24 @@ preload: {
 		</ul>
 		<h3 class="h4">About the accommodation</h3>
 		<p>This year, accommodation options are the &ldquo;Deluxe Single&rdquo; and &ldquo;Deluxe Double&rdquo; units in Chardin Hall. All units include sinks, mirrors, cabinets, desks, compact refrigerator/microwave, wardrobes, and fans. All beds are single-person beds and each unit comes with its own private bathroom. Please note the units are not air-conditioned, and fans are provided. Wi-Fi internet throughout the campus buildings is also included. There are <span class="bold">only 8 Deluxe Single rooms available</span>, so get in quick!</p>
-		<p>All accommodation options are for 3 nights, checking in on Fridy and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and also if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
+		<p>All accommodation options are for 3 nights, checking in on Friday and checking out on Monday. You will need to check-in when you arrive to collect your room key and information. Friday check-in is between 1pm and 10pm; Monday check-out is any time before 10am. Luggage storage is available for the remainder of the seminar on Monday, and also if you arrive earlier than 1pm on Friday. More information on what to expect when checking in and out will be provided closer to the date.</p>
 		<p>
 			<span class="bold">Chardin Hall</span>: <a href="https://goo.gl/maps/6gdJY84x5AWaDzUH9" target="_blank">1020 East Jefferson, Seattle, WA 98122</a>
 		</p>
 		<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0728548327484!2d-122.31830910000001!3d47.60678829999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac7d0f0c9cb%3A0x45ab2858bb9bbbc1!2sChardin%20Hall%2C%20E%20Jefferson%20St%2C%20Seattle%2C%20WA%2098122%2C%20USA!5e1!3m2!1sen!2sca!4v1776212424217!5m2!1sen!2sca" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<h3 class="h4">About the meal plan</h3>
-		<p>A meal plan is available to everyone attending the seminar, even if you&apos;re not staying at Seattle University. If you <em>are</em> staying at Seattle University, it&apos;s included in your accommodation package (required by Seattle University). Meals will be served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
+		<p>Seattle U will be serving breakfast and lunch as part of the lodging fee. Meal plans are required when staying on campus. Lunch is optional for camp attendees who commute. Meals will be served at the Cherry Street Market at the Seattle University Student Center. The meal plan includes:</p>
 		<ul class="list list--indent">
 			<li>Saturday breakfast, and lunch</li>
 			<li>Sunday breakfast, and lunch</li>
 			<li>Monday breakfast</li>
 		</ul>
-		<p>The commuter meal plan will be lunch only. More info on the meals will be provided closer to the date. Vegan options are also available&mdash;please let us know in the &ldquo;Dietary and Special Accommodations&rdquo; section of the registration form.</p>
-		<p>There is also a group dinner planned for Saturday night at a nearby TBD location. Attendees will pay for their own meal and drinks directly to the restaurant on the night&mdash;more on this later.</p>
+		<p>More info on the meals will be provided closer to the date. Vegan options are also available&mdash;please let us know in the &ldquo;Dietary and Special Accommodations&rdquo; section of the registration form.</p>
+		{%- if dinnerLocation -%}
+			<!-- TODO: group dinner info -->
+		{%- else -%}
+			<p>There is also a group dinner planned for Saturday night at a nearby TBD location. Attendees will pay for their own meal and drinks directly to the restaurant on the night&mdash;more on this later.</p>
+		{%- endif -%}
 		<p>
 			<span class="bold">Cherry Street Market</span>: <a href="https://goo.gl/maps/C6X1r57GbfFWxjRN8" target="_blank">Su Campus Walk, Seattle, WA 98122</a>
 		</p>
@@ -163,8 +184,11 @@ preload: {
 	</article>
 	<article class="content-wrapper">
 		<div class="registration">
-			<a class="button button--primary button--large button--registration" href="" target="_blank">Click here to register</a>
-			<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- if registrationClosed -%}
+				<div class="registration__closed-banner">Registration for this event is now closed</div>
+			{%- else -%}
+				<a class="button button--primary button--large button--registration" href="{{ formLink }}" target="_blank">Click here to register</a>
+			{%- endif -%}
 		</div>
 	</article>
 </section>

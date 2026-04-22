@@ -228,6 +228,7 @@ h6 {
   --borders: #CAC9CD;
   --error: #E41010;
   --success: #4242C3;
+  --info: #BE855E;
   --font-body: Inter, Arial, Helvetica, sans-serif;
   --font-title: Cormorant,
       Georgia,
@@ -756,6 +757,51 @@ textarea {
   background: var(--borders);
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.info {
+  --info-border-color: var(--info);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.info .icon {
+  transform: scale(1.2);
+  margin-right: 0.375em;
+  margin-top: 0.25em;
+  filter: invert(73%) sepia(6%) saturate(3439%) hue-rotate(335deg) brightness(79%) contrast(83%);
+}
+.info p:has(.icon) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 0;
+}
+.info:not(:empty) {
+  background: var(--subtle-bg);
+  border-radius: 0.25rem;
+  border: 2px solid var(--info-border-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 0.625rem;
+}
+
+.info--success {
+  --info-border-color: var(--success);
+}
+.info--success .icon {
+  filter: invert(27%) sepia(42%) saturate(2728%) hue-rotate(224deg) brightness(90%) contrast(103%);
+}
+
+.info--error {
+  --info-border-color: var(--error);
+  color: var(--error);
+}
+.info--error .icon {
+  filter: invert(29%) sepia(92%) saturate(5946%) hue-rotate(353deg) brightness(89%) contrast(102%);
 }
 
 .not-found-wrapper {
