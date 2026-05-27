@@ -117,14 +117,14 @@ registrationClosed: false
 		<ul class="list list--indent">
 			<li class="no-margin">
 				<p>
-					<span class="bold">Early Bird</span> pricing for the seminar is $250 per person.
+					<span class="bold">Early Bird</span> pricing for the seminar is $300 per person.
 				</p>
 				<p>
 					Registration and payment must be received on or before <span class="bold">Monday June 1st</span> to be eligible.
 				</p>
 			</li>
 			<li>
-				<span class="bold">Regular pricing</span> from June 2nd is $300 per person
+				<span class="bold">Regular pricing</span> from June 2nd is $350 per person
 			</li>
 		</ul>
 		<p>
