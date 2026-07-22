@@ -9,7 +9,7 @@ preload: {
 	]
 }
 formLink: "https://forms.gle/e8HvNYUhfNtdvyP17"
-registrationClosed: false
+registrationClosed: true
 # dinnerLocation: {
 # 	name: Elysian Brewing,
 # 	address: "1221 E Pike St, Seattle, WA 98122",
