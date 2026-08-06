@@ -270,6 +270,11 @@ html {
     scroll-behavior: initial;
   }
 }
+@media (min-width: 540px) {
+  html {
+    scroll-padding-top: 7.375rem;
+  }
+}
 
 html,
 body {
