@@ -1,6 +1,5 @@
 const subNav = document.getElementById("subnav");
 const subNavItems = subNav.querySelectorAll("a");
-const subNavLinks = subNav.querySelectorAll("li > a");
 
 const openSubNav = () => {
 	subNav.setAttribute("data-open", "true");
@@ -29,6 +28,8 @@ const toggleSubNav = (e) => {
 };
 
 const handleBodyClick = (e) => {
+	e.stopPropagation();
+
 	const isInSubNav = subNav.contains(e.target);
 
 	if (!isInSubNav) {
@@ -45,7 +46,3 @@ document.addEventListener("keydown", (e) => {
 		toggleMenu();
 	}
 });
-
-for (const item of subNavItems) {
-	item.addEventListener("click", closeSubNav);
-}
