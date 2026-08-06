@@ -64,6 +64,10 @@ html {
     @media (prefers-reduced-motion) {
         scroll-behavior: initial;
     }
+
+    @media(min-width: variables.$media_tablet_small) {
+        scroll-padding-top: calc(variables.$fixed_header_height + variables.$desktop_nav_height);
+    }
 }
 
 html,
