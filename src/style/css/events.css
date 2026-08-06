@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* partials */
 /**
  * from joshwcomeau.com
@@ -138,8 +139,21 @@ h6 {
     font-size: 2.5rem;
   }
 }
+.event-hero__text .subtitle {
+  display: none;
+  font-size: 1.125rem;
+}
+@media (min-width: 540px) {
+  .event-hero__text .subtitle {
+    display: block;
+  }
+}
+.event-hero__text .subtitle span {
+  display: block;
+}
 
 .event-summary {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -208,6 +222,108 @@ h6 {
 }
 .schedule + .info {
   margin-top: 0.75rem;
+}
+
+.subnav-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+@media (min-width: 540px) {
+  .subnav-wrapper {
+    top: 2.5rem;
+    right: 1.5rem;
+  }
+}
+
+.subnav {
+  position: sticky;
+  top: calc(5rem - 1px);
+  right: -1px;
+  pointer-events: all;
+  width: 14rem;
+  background: var(--subtle-bg);
+  border: 1px solid var(--link-primary);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-left-radius: 0.125rem;
+  font-size: 0.875rem;
+}
+@media (min-width: 540px) {
+  .subnav {
+    top: calc(7.375rem - 1px);
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-radius: 0.125rem;
+  }
+}
+.subnav button {
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  padding-inline: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.subnav button::after {
+  content: "↴";
+  display: block;
+  margin-left: auto;
+}
+.subnav ul {
+  display: block;
+  text-align: center;
+}
+.subnav[data-open=false] ul {
+  display: none;
+}
+.subnav li {
+  transition: all 0.2s ease;
+}
+.subnav li:not(:last-child) {
+  border-bottom: 1px solid var(--borders);
+}
+.subnav li:hover {
+  background: color-mix(in srgb, var(--link-primary) 15%, transparent);
+}
+.subnav li a {
+  display: block;
+  width: 100%;
+  padding: 0.25em;
+  text-decoration: none;
+}
+
+.event-footer-banner {
+  position: sticky;
+  bottom: 0;
+  background: color-mix(in srgb, var(--secondary-bg) 85%, transparent);
+  backdrop-filter: blur(6px);
+  color: #BE855E;
+  padding: 1rem;
+  font-size: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
+}
+.event-footer-banner span {
+  display: block;
+}
+@media (min-width: 425px) {
+  .event-footer-banner {
+    font-size: 1.0625rem;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=events.css.map */

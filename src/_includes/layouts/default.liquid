@@ -68,7 +68,16 @@
 
 <body>
     {% include "sections/header" %}
-    <main id="content">{{ content }}</main>
+    <main id="content">
+        {{ content }}
+        {% if includeScrollToTop != false %}
+            <div class="scroll-to-top-wrapper">
+                <a class="scroll-to-top button button--icon" href="#" aria-label="Scroll to top">
+                    <img src="/assets/icons/arrow-up.svg" alt="" class="icon" loading="lazy">
+                </a>
+            </div>
+        {% endif %}
+    </main>
     {% include "sections/footer" %}
 </body>
 </html>

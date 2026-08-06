@@ -321,14 +321,17 @@ button,
     @include mixins.flex();
     position: relative;
 
+    img {
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     &.button--primary {
         img {
-            width: 1.25rem;
-            height: 1.25rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             @include mixins.tint(parchment);
         }
     }
@@ -598,4 +601,25 @@ textarea {
     .icon {
         @include mixins.tint(error);
     }
+}
+
+.scroll-to-top-wrapper {
+    --appear-height: calc(100vh * 1.5);
+
+    position: absolute;
+    right: 1rem;
+    top: var(--appear-height);
+    bottom: -1rem;
+    z-index: 100;
+    pointer-events: none;
+
+    @media(min-width: variables.$media_tablet_small) {
+        right: 1.5rem;
+    }
+}
+
+.scroll-to-top {
+    position: sticky;
+    top: calc(100vh - 2.5rem * 2 + 1.5rem);
+    pointer-events: all;
 }

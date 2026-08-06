@@ -8,14 +8,44 @@ preload: {
 		"/assets/img/events/2026-annual-camp-hero.jpg"
 	]
 }
+nav: [
+	{
+		id: welcome,
+		heading: Welcome
+	},
+	{
+		id: schedule,
+		heading: "Full Schedule"
+	},
+	{
+		id: seminar,
+		heading: "Seminar Details"
+	},
+	{
+		id: accommodation,
+		heading: "Accommodation & Meals"
+	},
+	{
+		id: parking,
+		heading: Parking
+	},
+	{
+		id: special-accommodations,
+		heading: "Dietary & Special Accommodations"
+	},
+	{
+		id: smoking-policy,
+		heading: "Smoking Policy"
+	}
+]
 formLink: "https://forms.gle/e8HvNYUhfNtdvyP17"
 registrationClosed: true
-# dinnerLocation: {
-# 	name: Elysian Brewing,
-# 	address: "1221 E Pike St, Seattle, WA 98122",
-# 	link: "https://maps.app.goo.gl/LovT17qAGRxEJZW97",
-# 	embedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.2892382374866!2d-122.31851516555349!3d47.614067350445154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acddbe83d29%3A0x858062b58c682862!2sElysian%20Capitol%20Hill%20Brewery!5e0!3m2!1sen!2sca!4v1755842164025!5m2!1sen!2sca"
-# }
+dinnerLocation: {
+	name: Elysian Brewing,
+	address: "1221 E Pike St, Seattle, WA 98122",
+	link: "https://maps.app.goo.gl/LovT17qAGRxEJZW97",
+	embedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.2892382374866!2d-122.31851516555349!3d47.614067350445154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acddbe83d29%3A0x858062b58c682862!2sElysian%20Capitol%20Hill%20Brewery!5e0!3m2!1sen!2sca!4v1755842164025!5m2!1sen!2sca"
+}
 ---
 
 <section class="event-hero event-hero--2026-annual-camp">
@@ -25,12 +55,32 @@ registrationClosed: true
 	</picture>
 	<article class="content-wrapper">
 		<div class="event-hero__text">
-			<h1>2026 Jodo Seminar</h1>
+			<h1>
+				<span>2026 Jodo Seminar</span>
+				<div class="subtitle">
+					<span>Fri Aug 7th&ndash;Mon Aug 10th</span>
+					<span>Seattle University</span>
+				</div>
+			</h1>
 		</div>
 	</article>
 </section>
 <section class="event-summary page-wrapper">
-	<article class="content-wrapper">
+	{%- if nav != false -%}
+		<div class="subnav-wrapper">
+			<nav id="subnav" class="subnav" aria-label="Table of contents" data-open="false" aria-expanded="false">
+				<button class="button--unstyled">Jump to...</button>
+				<ul class="list list--unstyled">
+					{%- for navItem in nav -%}
+						<li aria-hidden="true">
+							<a href="#{{ navItem.id }}">{{ navItem.heading }}</a>
+						</li>
+					{%- endfor -%}
+				</ul>
+			</nav>
+		</div>
+	{%- endif -%}
+	<article id="welcome" class="content-wrapper">
 		<h2 class="h3">Welcome to registration for the 2026 Hoshu Dojo Jodo Camp!</h2>
 		<p>Repeating the success of previous years, we will be doing a gasshuku-style event&mdash;an all-inclusive camp where we train, stay, eat, and socialize together.</p>
 		<p>This year&apos;s camp will be held again at Seattle University in Seattle, WA, from Friday August 7th through Monday August 10th, with training across two and a half days from Saturday through Monday. Room and board are provided by Seattle U&mdash;see the Accommodation and Meals section for more info. There is also a "formal" camp dinner on Saturday night held at a TBD location. While staying at Seattle U is not required, it is highly encouraged. Food is available at the university even if you are not staying there&mdash;but will need to be pre-registered.</p>
@@ -61,7 +111,7 @@ registrationClosed: true
 		<p>We will reach out to you via email after you have submitted your registration to confirm your arrangements, provide payment totals, instructions, and to let you know what to expect when you arrive. Please reach out to us at <a href="mailto:summer-camp@hoshudojo.com">summer-camp@hoshudojo.com</a> if you have any questions.</p>
 		<p>If you anticipate you cannot make the deadlines, or if the provided options don&apos;t work for you please contact us directly.</p>
 	</article>
-	<article class="content-wrapper">
+	<article id="schedule" class="content-wrapper">
 		<h2 class="h3">Full Schedule</h2>
 		<ol class="list list--unstyled schedule">
 			<li>
@@ -101,6 +151,8 @@ registrationClosed: true
 			</li>
 		</ol>
 		{%- if dinnerLocation -%}
+			<h3 class="h4">Saturday Night Social</h3>
+			<p>Join us on Saturday as we celebrate another year of gathering and good practice, with a group dinner reservation hosted at <span class="bold">Elysian Brewing</span> at <span class="bold">6:30pm</span>, a short drive and approximately 15-minute walk from the university. Afterwards, we'll return to the Chardin Hall common room on floor 2 for sensei questions and socialising. Please note that dinner costs are up to the individual.</p>
 			<p>
 				<span class="bold">{{ dinnerLocation.name }}:</span> <a href="{{ dinnerLocation.link }}" target="_blank">{{ dinnerLocation.address }}</a>
 			</p>
@@ -111,7 +163,7 @@ registrationClosed: true
 			</div>
 		{%- endif -%}
 	</article>
-	<article class="content-wrapper">
+	<article id="seminar" class="content-wrapper">
 		<h2 class="h3">Seminar</h2>
 		<p>The seminar will be held in <span class="bold">Seattle University&apos;s Redhawk Activity Court</span>. The Seminar fee covers the cost of the facility and contributes to the airfare for Goto Sensei and Yuka. Costs for lodging, meal plans and parking are not included&mdash;more on those below.</p>
 		<ul class="list list--indent">
@@ -132,7 +184,7 @@ registrationClosed: true
 		</p>
 		<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9676822307533!2d-122.31579468360036!3d47.607318079184836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac5df623887%3A0x73c2e01c0cdb6c47!2sRedhawk%20Center!5e0!3m2!1sen!2sus!4v1680636688119!5m2!1sen!2sus" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</article>
-	<article class="content-wrapper">
+	<article id="accommodation" class="content-wrapper">
 		<h2 class="h3">Accommodation and Meals</h2>
 		<p>Accommodation is available in Seattle University&apos;s <span class="bold">Chardin Hall</span>, which is a short walk to the Redhawk Activity Court and Cherry Street Market. You are free to make your own arrangements to stay off-campus, but we encourage you to join the group!</p>
 		<p>A meal plan is included in the accommodation packages (required by Seattle University), and is also available even if you&apos;re not staying at Seattle University.</p>
@@ -158,6 +210,7 @@ registrationClosed: true
 		<p>More info on the meals will be provided closer to the date. Vegan options are also available&mdash;please let us know in the &ldquo;Dietary and Special Accommodations&rdquo; section of the registration form.</p>
 		{%- if dinnerLocation -%}
 			<!-- TODO: group dinner info -->
+			<p>There is also a group dinner planned for Saturday night at Elysian Brewing, a short distance away. See the <a href="#schedule">schedule section</a> above for details. Attendees will pay for their own meal and drinks directly to the restaurant on the night.</p>
 		{%- else -%}
 			<p>There is also a group dinner planned for Saturday night at a nearby TBD location. Attendees will pay for their own meal and drinks directly to the restaurant on the night&mdash;more on this later.</p>
 		{%- endif -%}
@@ -167,18 +220,18 @@ registrationClosed: true
 		<p>Please note: We are not requesting dinners at Seattle U this year, but we are also not formally planning a second group dinner. There are plenty of food options nearby, or people can bring their own food given the availability of fridges.</p>
 		<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10759.674471310844!2d-122.3183187!3d47.6082721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ac891ab9599%3A0x1ed911c8f3e21013!2sCherry%20Street%20Market%20-%20Seattle%20University!5e0!3m2!1sen!2sus!4v1680639375963!5m2!1sen!2sus" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
 	</article>
-	<article class="content-wrapper">
+	<article id="parking" class="content-wrapper">
 		<h2 class="h3">Parking</h2>
 		<p>Parking is available through Seattle University. There will be a payment link from Seattle U which provides a discounted price of $13.50 day, or pay a higher fee if you decide when you arrive. The standard parking rate is over $24 per calendar day if you aren’t pre-registered. Street parking in the area is very limited. We strongly recommend parking with Seattle University if you are driving.</p>
 		<p>The discounted parking rate will be through a link provided by Seattle U shortly before the event.</p>
 	</article>
-	<article class="content-wrapper">
+	<article id="special-accommodations" class="content-wrapper">
 		<h2 class="h3">Dietary and Special Accommodations</h2>
 		<p>Please let us know in the &ldquo;Dietary and Special Accommodations&rdquo; section of the registration form if you require any special accommodation to fully participate in the seminar. Hoshu Dojo is responsible for notifying the University of any requests by seminar participants with disabilities for reasonable accommodation that would require modification of University facilities. Such notification must be made sufficiently in advance of the seminar for the University to consider the request, determine whether the requested modification constitutes a reasonable accommodation or creates an undue hardship, and enter a dialogue regarding the requested accommodation, if necessary. The University is not responsible for making the content of the seminar accessible to persons with disabilities, such as providing interpreters for the deaf or assistance to the vision-impaired.</p>
 		<p>Please also note that Seattle University dining hall kitchens and the venue for Saturday night's dinner are not kosher or gluten free. Seattle University does have a station that avoids gluten but the kitchen still works with gluten in other areas. This may be okay for people avoiding gluten for dietary or philosophical reasons, but might cause problems for people with Celiac disease.</p>
 		<p>Please let us know in the &ldquo;Dietary and Special Accommodations&rdquo; section of the registration form if any of this affects you so we can discuss arrangements.</p>
 	</article>
-	<article class="content-wrapper">
+	<article id="smoking-policy" class="content-wrapper">
 		<h2 class="h3">Seattle University is a non-smoking campus</h2>
 		<p>Smoking, vaping, and tobacco in any form are strictly prohibited everywhere on campus. Please find a public street off-campus to smoke, vape, chew tobacco, etc.</p>
 	</article>
@@ -192,3 +245,7 @@ registrationClosed: true
 		</div>
 	</article>
 </section>
+<div class="event-footer-banner heading">
+	<span>Fri Aug 7th&ndash;Mon Aug 10th</span>
+	<span>Seattle University</span>
+</div>

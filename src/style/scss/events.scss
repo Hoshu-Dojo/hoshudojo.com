@@ -65,9 +65,23 @@
             font-size: 2.5rem;
         }
     }
+
+    .subtitle {
+        display: none;
+        font-size: 1.125rem;
+
+        @media(min-width: variables.$media_tablet_small) {
+            display: block;
+        }
+    }
+
+    .subtitle span {
+        display: block;
+    }
 }
 
 .event-summary {
+    position: relative;
     @include mixins.flex($direction: column, $justify: flex-start, $align: flex-start, $gap: 1.5rem);
 
     &.page-wrapper {
@@ -136,5 +150,106 @@
 
     &+.info {
         margin-top: 0.75rem;
+    }
+}
+
+.subnav-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    pointer-events: none;
+
+    @media(min-width: variables.$media_tablet_small) {
+        top: 2.5rem;
+        right: 1.5rem;
+    }
+}
+
+.subnav {
+    position: sticky;
+    top: calc(variables.$fixed_header_height - 1px);
+    right: -1px;
+    pointer-events: all;
+    width: 14rem;
+    background: var(--subtle-bg);
+    border: 1px solid var(--link-primary);
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-left-radius: 0.125rem;
+    font-size: 0.875rem;
+
+    @media(min-width: variables.$media_tablet_small) {
+        top: calc(variables.$fixed_header_height + variables.$desktop_nav_height - 1px);
+        border-right-width: 1px;
+        border-top-width: 1px;
+        border-radius: 0.125rem;
+    }
+
+    button {
+        width: 100%;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+        padding-inline: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+        @include mixins.flex();
+
+        &::after {
+            content: "↴";
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+
+    &[data-open=false] ul {
+        display: none;
+    }
+
+    li {
+        transition: all 0.2s ease;
+    }
+
+    li:not(:last-child) {
+        border-bottom: 1px solid var(--borders);
+    }
+
+    li:hover {
+        background: color-mix(in srgb, var(--link-primary) 15%, transparent);
+    }
+
+    li a {
+        display: block;
+        width: 100%;
+        padding: 0.25em;
+        text-decoration: none;
+    }
+}
+
+.event-footer-banner {
+    position: sticky;
+    bottom: 0;
+    background: color-mix(in srgb, var(--secondary-bg) 85%, transparent);
+    backdrop-filter: blur(6px);
+    color: colours.$bokuto_brown;
+    padding: 1rem;
+    font-size: 0.9375rem;
+    @include mixins.flex($direction: column, $gap: 0, $align: flex-start);
+
+    span {
+        display: block;
+    }
+
+    @media(min-width: variables.$media_mobile_large) {
+        font-size: 1.0625rem;
+        align-items: center;
     }
 }
