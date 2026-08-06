@@ -95,7 +95,7 @@
                     </path>
                 </svg>
             </button>
-            <nav data-open="false">
+            <nav aria-label="Main" data-open="false">
                 <div class="nav-header__mobile-nav-wrapper">
                     <a href="/#contact" class="button button--primary">Join Us</a>
                     <ul class="list list--unstyled">
@@ -149,11 +149,20 @@
     </div>
 </header>
     <main id="content">
+        
 <section class="content-wrapper not-found-wrapper">
     <h1 class="h2"><span class="status">404</span> <span class="pipe">|</span> Page Not Found</h1>
     <p>Oops! The page you are looking for could not be found.</p>
     <a href="/" class="button">Go Home</a>
-</section></main>
+</section>
+        
+            <div class="scroll-to-top-wrapper">
+                <a class="scroll-to-top button button--icon" href="#" aria-label="Scroll to top">
+                    <img src="/assets/icons/arrow-up.svg" alt="" class="icon" loading="lazy">
+                </a>
+            </div>
+        
+    </main>
     <footer class="page-footer">
     <div class="page-wrapper">
         <div class="page-footer__socials">
