@@ -41,7 +41,7 @@ schedule: {
     }
 }
 cost: [
-    "$50 USD per month for Portland Aikikai membership"
+    "$100 USD per month for Portland Aikikai membership"
 ]
 arts: [Jodo, Daito Ryu]
 images: [
